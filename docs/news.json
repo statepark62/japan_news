@@ -1,0 +1,60 @@
+{
+  "app_title": "日々の便り",
+  "app_subtitle": "일본 주요 뉴스 · 한국의 시선",
+  "generated_at": "2026-07-12 07:00 KST",
+  "count": 3,
+  "items": [
+    {
+      "id": "a1b2c3d4e5f6",
+      "source": "NHK 정치",
+      "category": "정치",
+      "jp_title": "日韓外相 来週会談へ調整 経済安全保障を協議",
+      "jp_summary": "日韓両政府は来週、外相会談を行う方向で調整に入った。半導体をめぐる供給網や経済安全保障について協議するとみられる。",
+      "link": "https://www3.nhk.or.jp/news/html/sample1.html",
+      "published": "2026-07-12T06:20:00+09:00",
+      "ko_title": "한일 외교장관, 다음 주 회담 조율…경제안보 논의",
+      "ko_summary": "한일 양국이 다음 주 외교장관 회담을 여는 방향으로 조율에 들어갔다. 반도체 공급망과 경제안보가 주요 의제가 될 전망이다.",
+      "keywords": ["한일 외교장관 회담", "경제안보", "반도체 공급망"],
+      "korea_related": true,
+      "korea_note": "한일 양자 회담 사안으로 한국 언론도 비중 있게 다룸",
+      "kr_matches": [
+        { "title": "한일 외교장관 다음 주 회담 조율…반도체·공급망 논의", "desc": "외교부는 한일 외교장관 회담을 다음 주 개최하는 방향으로 일정을 조율 중이라고 밝혔다.", "link": "https://news.example.co.kr/1", "pub": "Sat, 12 Jul 2026 06:40:00 +0900" },
+        { "title": "경제안보 협의 재개…한일 장관급 대화 물꼬", "desc": "양국이 경제안보 분야 협력 방안을 논의할 것으로 알려졌다.", "link": "https://news.example.co.kr/2", "pub": "Sat, 12 Jul 2026 06:12:00 +0900" }
+      ]
+    },
+    {
+      "id": "b2c3d4e5f6a1",
+      "source": "NHK 경제",
+      "category": "경제",
+      "jp_title": "日銀 追加利上げ見送り 円相場は一時変動",
+      "jp_summary": "日銀は金融政策決定会合で追加の利上げを見送った。発表を受けて外国為替市場では円相場が一時変動した。",
+      "link": "https://www3.nhk.or.jp/news/html/sample2.html",
+      "published": "2026-07-12T05:05:00+09:00",
+      "ko_title": "일본은행, 추가 금리인상 보류…엔화 환율 일시 요동",
+      "ko_summary": "일본은행이 금융정책결정회의에서 추가 금리인상을 보류했다. 발표 직후 외환시장에서 엔화 환율이 일시적으로 출렁였다.",
+      "keywords": ["일본은행 금리", "엔화 환율", "일본 통화정책"],
+      "korea_related": false,
+      "korea_note": "",
+      "kr_matches": [
+        { "title": "일본은행 금리 동결…엔저 흐름 지속되나", "desc": "일본은행이 기준금리를 동결하면서 엔화 약세 흐름에 관심이 쏠린다.", "link": "https://news.example.co.kr/3", "pub": "Sat, 12 Jul 2026 05:30:00 +0900" }
+      ]
+    },
+    {
+      "id": "c3d4e5f6a1b2",
+      "source": "NHK 국제",
+      "category": "국제",
+      "jp_title": "百済ゆかりの寺院跡で新たな出土品 奈良",
+      "jp_summary": "奈良県の寺院跡から新たな出土品が見つかった。百済との交流を示す資料として注目されている。",
+      "link": "https://www3.nhk.or.jp/news/html/sample3.html",
+      "published": "2026-07-11T22:10:00+09:00",
+      "ko_title": "백제 관련 사찰 터에서 새 출토품…나라현",
+      "ko_summary": "일본 나라현의 한 사찰 터에서 새로운 출토품이 발견됐다. 백제와의 교류를 보여주는 자료로 주목받고 있다.",
+      "keywords": ["백제 나라현", "백제 일본 교류", "출토 유물"],
+      "korea_related": true,
+      "korea_note": "백제-일본 고대 교류사 관련. 집필 주제와 직접 연결됨",
+      "kr_matches": [
+        { "title": "나라현서 백제계 유물 출토…고대 교류사 재조명", "desc": "백제와 일본의 교류를 보여주는 유물이 나라현에서 발견됐다.", "link": "https://news.example.co.kr/4", "pub": "Fri, 11 Jul 2026 23:00:00 +0900" }
+      ]
+    }
+  ]
+}

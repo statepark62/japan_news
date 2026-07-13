@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日々の便り · 일본 뉴스와 한국의 시선</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+KR:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1B33;        /* 深藍 background */
+    --ink-2:#182a4d;
+    --washi:#F3EEE3;      /* paper card */
+    --washi-2:#E9E2D2;
+    --text:#20201C;
+    --muted:#6D6A5E;
+    --seal:#C0362C;       /* 印 vermilion — used only for 한일관련 */
+    --line:#CDC5B2;
+    --link:#1D3461;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(120% 80% at 50% -10%, #1b2f57 0%, var(--ink) 55%, #0a1327 100%);
+    color:var(--washi);
+    font-family:"Noto Sans KR",system-ui,sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:28px 18px 80px;}
+
+  /* ---------- masthead ---------- */
+  .mast{padding:18px 0 22px;border-bottom:1px solid rgba(243,238,227,.16);}
+  .mast .kanji{
+    font-family:"Shippori Mincho",serif;font-weight:800;
+    font-size:clamp(34px,9vw,54px);letter-spacing:.06em;line-height:1;margin:0;
+    color:var(--washi);
+  }
+  .mast .sub{
+    margin:10px 0 0;font-size:14px;color:#C7D0E4;letter-spacing:.02em;font-weight:500;
+  }
+  .mast .meta{
+    display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;
+    margin-top:16px;font-family:"Space Mono",monospace;font-size:11.5px;
+    color:#8E9BBA;letter-spacing:.04em;
+  }
+  .stamp-time{color:#B9C4DD;}
+  .filter{display:flex;gap:6px;margin-left:auto;}
+  .filter button{
+    font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.05em;
+    background:transparent;color:#8E9BBA;border:1px solid rgba(243,238,227,.22);
+    padding:5px 11px;border-radius:2px;cursor:pointer;transition:.15s;
+  }
+  .filter button:hover{color:var(--washi);border-color:rgba(243,238,227,.5);}
+  .filter button[aria-pressed="true"]{
+    background:var(--seal);border-color:var(--seal);color:#fff;
+  }
+  .filter button:focus-visible{outline:2px solid #fff;outline-offset:2px;}
+
+  /* ---------- card ---------- */
+  .feed{margin-top:26px;display:flex;flex-direction:column;gap:20px;}
+  .card{
+    position:relative;background:var(--washi);color:var(--text);
+    border-radius:4px;padding:20px 20px 18px;
+    box-shadow:0 10px 30px -18px rgba(0,0,0,.7);
+    opacity:0;transform:translateY(14px);
+    animation:rise .5s cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  @keyframes rise{to{opacity:1;transform:none;}}
+  .card.kr{border-left:3px solid var(--seal);}
+
+  .seal{
+    position:absolute;top:16px;right:16px;width:34px;height:34px;
+    border:2px solid var(--seal);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:"Shippori Mincho",serif;font-weight:700;font-size:17px;
+    color:var(--seal);transform:rotate(-8deg);
+    box-shadow:inset 0 0 0 1px rgba(192,54,44,.25);
+  }
+
+  .cmeta{
+    font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.03em;
+    color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+    padding-right:44px;
+  }
+  .cat{color:var(--seal);font-weight:700;}
+  .dot{color:var(--line);}
+
+  .jp{
+    font-family:"Shippori Mincho",serif;font-weight:700;
+    font-size:clamp(19px,4.6vw,23px);line-height:1.42;letter-spacing:.01em;
+    margin:12px 0 4px;color:#171b24;
+  }
+  .kt{font-size:15px;font-weight:700;color:#2c2c26;margin:0 0 8px;line-height:1.45;}
+  .ks{font-size:14.5px;line-height:1.68;color:#413e35;margin:0;}
+
+  /* ---------- seam: 한국의 시선 ---------- */
+  .seam{
+    margin:16px 0 0;padding-top:14px;position:relative;
+    border-top:1px solid var(--line);
+  }
+  .seam-label{
+    font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);
+    display:inline-flex;align-items:center;gap:7px;margin-bottom:9px;
+  }
+  .seam-label::before{content:"韓";font-family:"Shippori Mincho",serif;
+    color:var(--seal);font-size:13px;letter-spacing:0;}
+  .kr-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;}
+  .kr-item{line-height:1.4;}
+  .kr-item a{
+    color:var(--link);text-decoration:none;font-size:13.5px;font-weight:500;
+    border-bottom:1px solid transparent;transition:.15s;
+  }
+  .kr-item a:hover{border-bottom-color:var(--link);}
+  .kr-desc{display:block;font-size:12px;color:var(--muted);margin-top:2px;line-height:1.5;}
+  .no-match{font-size:12.5px;color:var(--muted);font-style:normal;}
+  .note{
+    margin-top:10px;font-size:12.5px;color:#7a3b35;background:rgba(192,54,44,.07);
+    border-radius:3px;padding:7px 10px;line-height:1.5;
+  }
+  .src-link{
+    display:inline-block;margin-top:14px;font-family:"Space Mono",monospace;
+    font-size:11px;letter-spacing:.03em;color:var(--muted);text-decoration:none;
+    border-bottom:1px solid var(--line);
+  }
+  .src-link:hover{color:var(--text);}
+
+  .empty{color:#B9C4DD;text-align:center;padding:60px 20px;font-size:14px;line-height:1.7;}
+  .empty code{font-family:"Space Mono",monospace;background:rgba(255,255,255,.08);padding:2px 6px;border-radius:3px;}
+
+  footer{margin-top:40px;text-align:center;font-family:"Space Mono",monospace;
+    font-size:10.5px;color:#6c789a;letter-spacing:.05em;}
+
+  @media (prefers-reduced-motion:reduce){
+    .card{animation:none;opacity:1;transform:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <h1 class="kanji" id="mastTitle">日々の便り</h1>
+    <p class="sub" id="mastSub">일본 주요 뉴스 · 한국의 시선</p>
+    <div class="meta">
+      <span class="stamp-time" id="stamp">불러오는 중…</span>
+      <span class="dot">·</span>
+      <span id="countLabel"></span>
+      <div class="filter">
+        <button id="fAll" aria-pressed="true">전체</button>
+        <button id="fKr" aria-pressed="false">한일 관련</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="feed" class="feed" aria-live="polite"></main>
+
+  <footer>日本のニュース × 한국의 반응 · 정해진 시각에 갱신되는 개인 뉴스판</footer>
+</div>
+
+<script>
+const feedEl = document.getElementById('feed');
+let DATA = null;
+let filterKr = false;
+
+function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+function card(it, i){
+  const kr = it.korea_related;
+  const matches = (it.kr_matches||[]);
+  const matchHtml = matches.length
+    ? `<ul class="kr-list">${matches.map(m=>`
+        <li class="kr-item">
+          <a href="${esc(m.link)}" target="_blank" rel="noopener">${esc(m.title)}</a>
+          ${m.desc?`<span class="kr-desc">${esc(m.desc)}</span>`:''}
+        </li>`).join('')}</ul>`
+    : `<span class="no-match">한국 언론 매칭 없음 — 아직 한국에서 보도되지 않았거나 키워드 불일치</span>`;
+
+  return `
+  <article class="card ${kr?'kr':''}" style="animation-delay:${i*70}ms">
+    ${kr?`<div class="seal" title="한일 관련">韓</div>`:''}
+    <div class="cmeta">
+      <span class="cat">${esc(it.category||'')}</span><span class="dot">·</span>
+      <span>${esc(it.source||'')}</span>
+    </div>
+    <h2 class="jp">${esc(it.jp_title)}</h2>
+    ${it.ko_title?`<p class="kt">${esc(it.ko_title)}</p>`:''}
+    ${it.ko_summary?`<p class="ks">${esc(it.ko_summary)}</p>`:''}
+    ${kr&&it.korea_note?`<div class="note">${esc(it.korea_note)}</div>`:''}
+    <div class="seam">
+      <div class="seam-label">한국의 시선</div>
+      ${matchHtml}
+    </div>
+    <a class="src-link" href="${esc(it.link)}" target="_blank" rel="noopener">일본 원문 →</a>
+  </article>`;
+}
+
+function render(){
+  if(!DATA){return;}
+  const items = DATA.items.filter(it=>!filterKr || it.korea_related);
+  if(!items.length){
+    feedEl.innerHTML = `<div class="empty">표시할 기사가 없습니다.<br>${filterKr?'한일 관련 기사가 이번 갱신에는 없습니다.':''}</div>`;
+    return;
+  }
+  feedEl.innerHTML = items.map(card).join('');
+}
+
+function setFilter(kr){
+  filterKr = kr;
+  document.getElementById('fAll').setAttribute('aria-pressed', String(!kr));
+  document.getElementById('fKr').setAttribute('aria-pressed', String(kr));
+  render();
+}
+document.getElementById('fAll').onclick = ()=>setFilter(false);
+document.getElementById('fKr').onclick = ()=>setFilter(true);
+
+fetch('./news.json?_=' + Date.now())
+  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d=>{
+    DATA = d;
+    document.getElementById('mastTitle').textContent = d.app_title || '日々の便り';
+    document.getElementById('mastSub').textContent = d.app_subtitle || '';
+    document.getElementById('stamp').textContent = '갱신 ' + (d.generated_at||'');
+    const krCount = d.items.filter(x=>x.korea_related).length;
+    document.getElementById('countLabel').textContent = `${d.count}건 · 한일 ${krCount}건`;
+    render();
+  })
+  .catch(e=>{
+    feedEl.innerHTML = `<div class="empty">뉴스를 불러오지 못했습니다 (${esc(String(e.message))}).<br>
+      <code>news.json</code> 이 같은 폴더에 있어야 하며, 로컬에서 열 때는 간이 서버가 필요합니다:<br>
+      <code>python3 -m http.server</code></div>`;
+    document.getElementById('stamp').textContent = '연결 실패';
+  });
+</script>
+</body>
+</html>
