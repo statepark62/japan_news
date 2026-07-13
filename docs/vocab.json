@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14 07:51 KST",
+  "generated_at": "2026-07-14 08:02 KST",
   "date": "2026-07-14",
   "words": [
     {
@@ -7,72 +7,72 @@
       "reading": "こうげき",
       "meaning": "공격",
       "level": "N3",
-      "example": "軍は敵の基地に対して攻撃を開始した。",
-      "example_reading": "ぐんはてきのきちにたいしてこうげきをかいしした。",
-      "example_meaning": "군은 적의 기지에 대해 공격을 개시했다."
+      "example": "敵の基地が突然攻撃を受けた。",
+      "example_reading": "てきのきちがとつぜんこうげきをうけた。",
+      "example_meaning": "적의 기지가 갑자기 공격을 받았다."
     },
     {
       "word": "猛暑日",
       "reading": "もうしょび",
-      "meaning": "폭염일 (최고기온 35도 이상인 날)",
+      "meaning": "폭염일(최고기온 35도 이상인 날)",
       "level": "N2",
-      "example": "今週は猛暑日が続く見込みです。",
-      "example_reading": "こんしゅうはもうしょびがつづくみこみです。",
-      "example_meaning": "이번 주는 폭염일이 계속될 전망입니다."
+      "example": "今日は今年初めての猛暑日になる見込みです。",
+      "example_reading": "きょうはことしはじめてのもうしょびになるみこみです。",
+      "example_meaning": "오늘은 올해 첫 폭염일이 될 전망입니다."
     },
     {
       "word": "徹底",
       "reading": "てってい",
-      "meaning": "철저(히 함)",
+      "meaning": "철저(하게 함)",
       "level": "N2",
       "example": "熱中症対策の徹底が呼びかけられている。",
       "example_reading": "ねっちゅうしょうたいさくのてっていがよびかけられている。",
       "example_meaning": "열사병 대책을 철저히 할 것이 촉구되고 있다."
     },
     {
-      "word": "制限",
-      "reading": "せいげん",
-      "meaning": "제한",
-      "level": "N3",
-      "example": "このアプリは利用時間を制限する機能がある。",
-      "example_reading": "このアプリはりようじかんをせいげんするきのうがある。",
-      "example_meaning": "이 앱은 이용 시간을 제한하는 기능이 있다."
-    },
-    {
       "word": "反発",
       "reading": "はんぱつ",
       "meaning": "반발",
       "level": "N2",
-      "example": "新しい政策に対して国民から強い反発が出ている。",
-      "example_reading": "あたらしいせいさくにたいしてこくみんからつよいはんぱつがでている。",
-      "example_meaning": "새로운 정책에 대해 국민들의 강한 반발이 나오고 있다."
+      "example": "その発言にイランが強く反発した。",
+      "example_reading": "そのはつげんにいらんがつよくはんぱつした。",
+      "example_meaning": "그 발언에 이란이 강하게 반발했다."
+    },
+    {
+      "word": "差し止め",
+      "reading": "さしとめ",
+      "meaning": "정지, 금지(가처분)",
+      "level": "N1",
+      "example": "住民が原発の運転差し止めを求めて訴訟を起こした。",
+      "example_reading": "じゅうみんがげんぱつのうんてんさしとめをもとめてそしょうをおこした。",
+      "example_meaning": "주민들이 원전 운전 정지를 요구하며 소송을 제기했다."
     },
     {
       "word": "判決",
       "reading": "はんけつ",
       "meaning": "판결",
       "level": "N2",
-      "example": "裁判所はきょう重要な判決を下した。",
-      "example_reading": "さいばんしょはきょうじゅうようなはんけつをくだした。",
-      "example_meaning": "법원은 오늘 중요한 판결을 내렸다."
+      "example": "地裁はきょう重要な判決を下す予定だ。",
+      "example_reading": "ちさいはきょうじゅうようなはんけつをくだすよていだ。",
+      "example_meaning": "지방법원은 오늘 중요한 판결을 내릴 예정이다."
     },
     {
       "word": "実装",
       "reading": "じっそう",
-      "meaning": "실장, 실용화(구현)",
+      "meaning": "실용화, 실장(구현)",
       "level": "N1",
-      "example": "研究の成果を社会実装につなげることが重要だ。",
-      "example_reading": "けんきゅうのせいかをしゃかいじっそうにつなげることがじゅうようだ。",
-      "example_meaning": "연구 성과를 사회에 실용화하는 것이 중요하다."
+      "example": "研究成果を社会実装するための取り組みが進んでいる。",
+      "example_reading": "けんきゅうせいかをしゃかいじっそうするためのとりくみがすすんでいる。",
+      "example_meaning": "연구 성과를 사회에 실용화하기 위한 노력이 진행되고 있다."
     },
     {
-      "word": "差し止め",
-      "reading": "さしとめ",
-      "meaning": "정지, 금지(처분)",
+      "word": "対価",
+      "reading": "たいか",
+      "meaning": "대가, 보상",
       "level": "N1",
-      "example": "住民は工事の差し止めを求めて訴訟を起こした。",
-      "example_reading": "じゅうみんはこうじのさしとめをもとめてそしょうをおこした。",
-      "example_meaning": "주민들은 공사 중지를 요구하며 소송을 제기했다."
+      "example": "彼はその情報の対価として多額の金を要求した。",
+      "example_reading": "かれはそのじょうほうのたいかとしてたがくのかねをようきゅうした。",
+      "example_meaning": "그는 그 정보의 대가로 거액의 돈을 요구했다."
     }
   ]
 }
