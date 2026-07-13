@@ -1,1 +1,49 @@
+name: build-news
 
+on:
+  schedule:
+    # GitHub cron 은 UTC 기준. KST = UTC+9  →  07:00 KST = 22:00 UTC
+    - cron: "0 22 * * *"    # 매일 아침 7시(KST) 1회
+  workflow_dispatch:        # Actions 탭에서 수동 실행(즉시 갱신)
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Collect news
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          GAS_SHEET_URL: ${{ secrets.GAS_SHEET_URL }}
+          GAS_SHARED_SECRET: ${{ secrets.GAS_SHARED_SECRET }}
+          NAVER_REFRESH_TOKEN: ${{ secrets.NAVER_REFRESH_TOKEN }}
+          NAVER_LOGIN_CLIENT_ID: ${{ secrets.NAVER_LOGIN_CLIENT_ID }}
+          NAVER_LOGIN_CLIENT_SECRET: ${{ secrets.NAVER_LOGIN_CLIENT_SECRET }}
+          NAVER_CAFE_CLUB_ID: ${{ secrets.NAVER_CAFE_CLUB_ID }}
+          NAVER_CAFE_MENU_ID: ${{ secrets.NAVER_CAFE_MENU_ID }}
+        run: python scripts/collect.py
+
+      - name: Commit news.json
+        run: |
+          git config user.name  "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add docs/news.json docs/vocab.json state/analysis_cache.json
+          if git diff --staged --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "news: update $(date -u +'%Y-%m-%d %H:%M')Z"
+            git push
+          fi
