@@ -2,8 +2,16 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>日々の便り · 일본 뉴스와 한국의 시선</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#0F1B33">
+<link rel="icon" type="image/png" href="./icons/favicon-64.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="日々の便り">
+<meta name="mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+KR:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -29,7 +37,7 @@
     min-height:100vh;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:760px;margin:0 auto;padding:28px 18px 80px;}
+  .wrap{max-width:760px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top)) 18px calc(80px + env(safe-area-inset-bottom));}
 
   /* ---------- masthead ---------- */
   .mast{padding:18px 0 22px;border-bottom:1px solid rgba(243,238,227,.16);}
@@ -233,6 +241,13 @@ fetch('./news.json?_=' + Date.now())
       <code>python3 -m http.server</code></div>`;
     document.getElementById('stamp').textContent = '연결 실패';
   });
+</script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js").catch(() => {});
+    });
+  }
 </script>
 </body>
 </html>
