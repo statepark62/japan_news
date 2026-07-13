@@ -1,10 +1,9 @@
-/* 日々の便り 서비스워커
-   - 앱 껍데기(HTML/아이콘/manifest)는 캐시 우선 → 오프라인에서도 열림
-   - news.json / vocab.json 은 네트워크 우선 → 항상 최신, 실패 시 캐시 사용
+/* 日々の便り 서비스워커 (v2)
+   - HTML 화면과 news.json/vocab.json 은 "네트워크 우선" → 항상 최신, 실패 시 캐시
+   - 아이콘/manifest 등 정적 자원만 "캐시 우선" (자주 안 바뀜)
 */
-const CACHE = "hibinotayori-v1";
-const SHELL = [
-  "./index.html",
+const CACHE = "hibinotayori-v2";
+const STATIC = [
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
@@ -12,7 +11,7 @@ const SHELL = [
 ];
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(STATIC)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener("activate", (e) => {
@@ -24,29 +23,33 @@ self.addEventListener("activate", (e) => {
 });
 
 self.addEventListener("fetch", (e) => {
+  if (e.request.method !== "GET") return;
   const url = new URL(e.request.url);
+  const isHTML = e.request.mode === "navigate" ||
+                 url.pathname.endsWith("/") ||
+                 url.pathname.endsWith(".html");
   const isData = url.pathname.endsWith("news.json") || url.pathname.endsWith("vocab.json");
 
-  if (isData) {
-    // 네트워크 우선, 실패하면 캐시
+  // HTML 과 데이터: 네트워크 우선, 실패하면 캐시
+  if (isHTML || isData) {
     e.respondWith(
       fetch(e.request).then((res) => {
         const copy = res.clone();
         caches.open(CACHE).then((c) => c.put(e.request, copy));
         return res;
-      }).catch(() => caches.match(e.request))
+      }).catch(() => caches.match(e.request).then((hit) => hit || caches.match("./index.html")))
     );
     return;
   }
 
-  // 그 외(앱 껍데기): 캐시 우선, 없으면 네트워크
+  // 그 외 정적 자원: 캐시 우선
   e.respondWith(
     caches.match(e.request).then((hit) => hit || fetch(e.request).then((res) => {
-      if (e.request.method === "GET" && res.ok && url.origin === location.origin) {
+      if (res.ok && url.origin === location.origin) {
         const copy = res.clone();
         caches.open(CACHE).then((c) => c.put(e.request, copy));
       }
       return res;
-    }).catch(() => caches.match("./index.html")))
+    }))
   );
 });
