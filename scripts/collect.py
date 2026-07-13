@@ -250,24 +250,29 @@ def extract_vocab(items, model, n):
 제목 목록:
 {titles}
 
+각 단어마다 그 단어를 쓴 자연스러운 일본어 예문을 하나 만들고, 그 예문의 히라가나 읽기와
+한국어 뜻도 함께 제시하세요. JLPT 레벨(N1~N5)도 추정해 주세요.
+
 아래 JSON 형식으로만 답하세요(코드펜스 없이 JSON 배열 하나만):
 [
   {{
     "word": "표제어(한자 표기)",
-    "reading": "요미가나(히라가나)",
-    "pos": "품사 (명사/동사/형용사/부사/표현 등)",
+    "reading": "표제어 요미가나(히라가나)",
     "meaning": "한국어 뜻",
-    "example": "이 단어가 쓰인 뉴스 제목 또는 짧은 예문"
+    "level": "JLPT 레벨 (N1/N2/N3/N4/N5 중 하나)",
+    "example": "이 단어를 쓴 자연스러운 일본어 예문",
+    "example_reading": "예문 전체의 히라가나 읽기",
+    "example_meaning": "예문의 한국어 뜻"
   }}
 ]"""
-    r = claude_json(prompt, model, max_tokens=1200)
+    r = claude_json(prompt, model, max_tokens=400 + 220 * n)
     if isinstance(r, dict):
         r = r.get("words") or r.get("vocab") or []
     return r if isinstance(r, list) else []
 
 
 # ----------------------------------------------------------------------------- 5. 시트 기록 (범용 GAS)
-def push_rows(sheet, headers, rows, dedup_index=None):
+def push_rows(sheet, headers, rows, dedup_index=None, id_prefix=None):
     if not (GAS_SHEET_URL and GAS_SHARED_SECRET):
         print(f"[skip] 시트[{sheet}]: GAS_SHEET_URL/SECRET 없음")
         return
@@ -276,6 +281,8 @@ def push_rows(sheet, headers, rows, dedup_index=None):
         return
     payload = {"secret": GAS_SHARED_SECRET, "sheet": sheet,
                "headers": headers, "rows": rows, "dedupIndex": dedup_index}
+    if id_prefix:
+        payload["idPrefix"] = id_prefix
     req = urllib.request.Request(
         GAS_SHEET_URL, data=json.dumps(payload).encode("utf-8"),
         headers={"content-type": "application/json"}, method="POST",
@@ -305,14 +312,16 @@ def record_sheets(cfg, items, vocab, today):
          "한일관련", "한일메모", "일본원문링크", "한국보도", "article_id"],
         news_rows, dedup_index=10,
     )
+    # 단어장 (기존 ことば帖 구조: id | 단어 | 읽기 | 의미 | 레벨 | 예문 | 예문읽기 | 예문뜻 | 등록일)
+    # id 와 등록일(맨 끝)은 GAS 가 자동 생성 → 여기서는 가운데 7칸만 보낸다.
     vocab_rows = [[
-        today, v.get("word", ""), v.get("reading", ""), v.get("pos", ""),
-        v.get("meaning", ""), v.get("example", ""),
+        v.get("word", ""), v.get("reading", ""), v.get("meaning", ""), v.get("level", ""),
+        v.get("example", ""), v.get("example_reading", ""), v.get("example_meaning", ""),
     ] for v in vocab]
     push_rows(
         s.get("vocab_sheet", "단어장"),
-        ["수집일", "표제어", "읽기", "품사", "뜻", "예문"],
-        vocab_rows, dedup_index=1,
+        ["단어", "읽기", "의미", "레벨", "예문", "예문읽기", "예문뜻"],
+        vocab_rows, dedup_index=0, id_prefix="news",
     )
 
 
