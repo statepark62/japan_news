@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-07-14 08:02 KST",
-  "date": "2026-07-14",
+  "generated_at": "2026-07-15 08:02 KST",
+  "date": "2026-07-15",
   "words": [
     {
-      "word": "攻撃",
-      "reading": "こうげき",
-      "meaning": "공격",
-      "level": "N3",
-      "example": "敵の基地が突然攻撃を受けた。",
-      "example_reading": "てきのきちがとつぜんこうげきをうけた。",
-      "example_meaning": "적의 기지가 갑자기 공격을 받았다."
+      "word": "封鎖",
+      "reading": "ふうさ",
+      "meaning": "봉쇄",
+      "level": "N2",
+      "example": "台風の影響で道路が封鎖された。",
+      "example_reading": "たいふうのえいきょうでどうろがふうさされた。",
+      "example_meaning": "태풍의 영향으로 도로가 봉쇄되었다."
     },
     {
-      "word": "猛暑日",
-      "reading": "もうしょび",
-      "meaning": "폭염일(최고기온 35도 이상인 날)",
-      "level": "N2",
-      "example": "今日は今年初めての猛暑日になる見込みです。",
-      "example_reading": "きょうはことしはじめてのもうしょびになるみこみです。",
-      "example_meaning": "오늘은 올해 첫 폭염일이 될 전망입니다."
+      "word": "撤回",
+      "reading": "てっかい",
+      "meaning": "철회",
+      "level": "N1",
+      "example": "彼は自分の発言を撤回した。",
+      "example_reading": "かれはじぶんのはつげんをてっかいした。",
+      "example_meaning": "그는 자신의 발언을 철회했다."
     },
     {
-      "word": "徹底",
-      "reading": "てってい",
-      "meaning": "철저(하게 함)",
-      "level": "N2",
-      "example": "熱中症対策の徹底が呼びかけられている。",
-      "example_reading": "ねっちゅうしょうたいさくのてっていがよびかけられている。",
-      "example_meaning": "열사병 대책을 철저히 할 것이 촉구되고 있다."
+      "word": "審議",
+      "reading": "しんぎ",
+      "meaning": "심의",
+      "level": "N1",
+      "example": "国会でその法案が審議されている。",
+      "example_reading": "こっかいでそのほうあんがしんぎされている。",
+      "example_meaning": "국회에서 그 법안이 심의되고 있다."
     },
     {
-      "word": "反発",
-      "reading": "はんぱつ",
-      "meaning": "반발",
+      "word": "猛烈",
+      "reading": "もうれつ",
+      "meaning": "맹렬함, 극심함",
       "level": "N2",
-      "example": "その発言にイランが強く反発した。",
-      "example_reading": "そのはつげんにいらんがつよくはんぱつした。",
-      "example_meaning": "그 발언에 이란이 강하게 반발했다."
+      "example": "今日は猛烈な暑さで外に出たくない。",
+      "example_reading": "きょうはもうれつなあつさでそとにでたくない。",
+      "example_meaning": "오늘은 극심한 더위라 밖에 나가고 싶지 않다."
+    },
+    {
+      "word": "厳重",
+      "reading": "げんじゅう",
+      "meaning": "엄중함, 철저함",
+      "level": "N2",
+      "example": "空港では荷物の検査が厳重に行われている。",
+      "example_reading": "くうこうではにもつのけんさがげんじゅうにおこなわれている。",
+      "example_meaning": "공항에서는 짐 검사가 엄중하게 이루어지고 있다."
     },
     {
       "word": "差し止め",
       "reading": "さしとめ",
-      "meaning": "정지, 금지(가처분)",
+      "meaning": "정지, 금지 (특히 법적 조치)",
       "level": "N1",
-      "example": "住民が原発の運転差し止めを求めて訴訟を起こした。",
-      "example_reading": "じゅうみんがげんぱつのうんてんさしとめをもとめてそしょうをおこした。",
-      "example_meaning": "주민들이 원전 운전 정지를 요구하며 소송을 제기했다."
+      "example": "住民は工場の操業差し止めを求めて提訴した。",
+      "example_reading": "じゅうみんはこうじょうのそうぎょうさしとめをもとめてていそした。",
+      "example_meaning": "주민들은 공장 조업 중지를 요구하며 소송을 제기했다."
     },
     {
-      "word": "判決",
-      "reading": "はんけつ",
-      "meaning": "판결",
+      "word": "普及",
+      "reading": "ふきゅう",
+      "meaning": "보급, 확산",
       "level": "N2",
-      "example": "地裁はきょう重要な判決を下す予定だ。",
-      "example_reading": "ちさいはきょうじゅうようなはんけつをくだすよていだ。",
-      "example_meaning": "지방법원은 오늘 중요한 판결을 내릴 예정이다."
+      "example": "スマートフォンの普及で生活が大きく変わった。",
+      "example_reading": "すまーとふぉんのふきゅうでせいかつがおおきくかわった。",
+      "example_meaning": "스마트폰의 보급으로 생활이 크게 바뀌었다."
     },
     {
-      "word": "実装",
-      "reading": "じっそう",
-      "meaning": "실용화, 실장(구현)",
+      "word": "選考",
+      "reading": "せんこう",
+      "meaning": "선고, 심사 선발",
       "level": "N1",
-      "example": "研究成果を社会実装するための取り組みが進んでいる。",
-      "example_reading": "けんきゅうせいかをしゃかいじっそうするためのとりくみがすすんでいる。",
-      "example_meaning": "연구 성과를 사회에 실용화하기 위한 노력이 진행되고 있다."
-    },
-    {
-      "word": "対価",
-      "reading": "たいか",
-      "meaning": "대가, 보상",
-      "level": "N1",
-      "example": "彼はその情報の対価として多額の金を要求した。",
-      "example_reading": "かれはそのじょうほうのたいかとしてたがくのかねをようきゅうした。",
-      "example_meaning": "그는 그 정보의 대가로 거액의 돈을 요구했다."
+      "example": "採用試験の選考結果が来週発表される。",
+      "example_reading": "さいようしけんのせんこうけっかがらいしゅうはっぴょうされる。",
+      "example_meaning": "채용 시험의 선발 결과가 다음 주 발표된다."
     }
   ]
 }
