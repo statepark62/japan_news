@@ -1,7 +1,7 @@
 {
   "app_title": "日々の便り",
   "app_subtitle": "일본 주요 뉴스 · 한국의 시선",
-  "generated_at": "2026-07-15 17:07 KST",
+  "generated_at": "2026-07-15 17:14 KST",
   "count": 12,
   "items": [
     {
@@ -72,7 +72,7 @@
       "id": "b5081a1661b3",
       "source": "NHK 주요뉴스",
       "category": "종합",
-      "jp_title": "【ライブ予定】第175回芥川賞・直木賞 受賞作発表へ",
+      "jp_title": "【ライブ】第175回芥川賞・直木賞 受賞作発表へ",
       "jp_summary": "第175回芥川賞・直木賞の選考会が15日午後4時から都内で開かれ、受賞作が決まり次第、発表されます。",
       "link": "http://www3.nhk.or.jp/news/html/20260715/k10015176901000.html",
       "published": "Wed, 15 Jul 2026 17:02:27 +0900",
