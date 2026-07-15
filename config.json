@@ -46,7 +46,7 @@
     "enabled": true,
     "include": "korea_first",
     "max_items": 6,
-    "title_prefix": "[일본뉴스]",
+    "title_prefix": "[Japan News]",
     "open_to_public": false
   },
   "analysis_batch_size": 6,
