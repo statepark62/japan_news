@@ -88,10 +88,49 @@ def claude_json(prompt, model, max_tokens=1500):
             data = json.loads(resp.read().decode("utf-8"))
         text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
         text = text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
-        return json.loads(text)
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            # 응답이 길어 중간에 잘린 경우: 완성된 객체만 건져낸다(0개보다 낫다)
+            salvaged = _salvage_json_array(text)
+            if salvaged:
+                print(f"[warn] claude 응답이 잘려 {len(salvaged)}개만 복구")
+                return salvaged
+            raise
     except Exception as e:
         print(f"[warn] claude 호출 실패: {e}")
         return None
+
+
+def _salvage_json_array(text):
+    """잘린 JSON 배열 문자열에서 완전한 { ... } 객체들만 파싱해 리스트로 돌려준다."""
+    if not text.lstrip().startswith("["):
+        return None
+    items, depth, start, in_str, esc = [], 0, None, False, False
+    for i, ch in enumerate(text):
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == "{":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0 and start is not None:
+                try:
+                    items.append(json.loads(text[start:i + 1]))
+                except Exception:
+                    pass
+                start = None
+    return items or None
 
 
 # ----------------------------------------------------------------------------- 분석 캐시
@@ -265,7 +304,7 @@ def extract_vocab(items, model, n):
     "example_meaning": "예문의 한국어 뜻"
   }}
 ]"""
-    r = claude_json(prompt, model, max_tokens=400 + 220 * n)
+    r = claude_json(prompt, model, max_tokens=800 + 700 * n)
     if isinstance(r, dict):
         r = r.get("words") or r.get("vocab") or []
     return r if isinstance(r, list) else []

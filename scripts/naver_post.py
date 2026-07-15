@@ -75,6 +75,8 @@ def post_article(subject, content_html, open_to_public=False):
         url, data=body.encode("ascii"),
         headers={
             "Authorization": "Bearer " + token,
+            "X-Naver-Client-Id": os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip(),
+            "X-Naver-Client-Secret": os.environ.get("NAVER_LOGIN_CLIENT_SECRET", "").strip(),
             "Content-Type": "application/x-www-form-urlencoded",
         },
         method="POST",
