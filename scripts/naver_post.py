@@ -49,18 +49,18 @@ def _get_access_token():
         return None
 
 
-def _euckr_quote(text):
-    """네이버 카페 API 는 본문을 EUC-KR 로 받는다.
-    EUC-KR 에 없는 글자(일본어 가나/한자, 이모지 등)는 HTML 숫자 참조(&#12354;)로 바꿔
-    깨지지 않게 한 뒤 EUC-KR 로 URL 인코딩한다."""
+def _ascii_quote(text):
+    """인코딩 추측을 피하기 위해, ASCII 가 아닌 모든 글자(한글/일본어/기호)를
+    HTML 숫자 참조(&#54620;)로 바꾼 뒤 URL 인코딩한다.
+    결과 바디는 순수 ASCII 라 서버가 UTF-8 로 읽든 EUC-KR 로 읽든 바이트가 같아 깨지지 않고,
+    브라우저가 렌더링할 때 원래 글자로 복원된다."""
     out = []
     for ch in text:
-        try:
-            ch.encode("euc-kr")
+        if ord(ch) < 128:
             out.append(ch)
-        except UnicodeEncodeError:
+        else:
             out.append("&#%d;" % ord(ch))
-    return urllib.parse.quote("".join(out), encoding="euc-kr")
+    return urllib.parse.quote("".join(out), encoding="ascii")
 
 
 def post_article(subject, content_html, open_to_public=False):
@@ -76,9 +76,9 @@ def post_article(subject, content_html, open_to_public=False):
         return None
 
     url = ARTICLE_URL.format(club=club, menu=menu)
-    # subject/content 를 EUC-KR 로 URL 인코딩하여 폼 바디로 전송
-    body = "subject=" + _euckr_quote(subject)
-    body += "&content=" + _euckr_quote(content_html)
+    # subject/content 를 ASCII(HTML 숫자참조) 로 URL 인코딩하여 폼 바디로 전송
+    body = "subject=" + _ascii_quote(subject)
+    body += "&content=" + _ascii_quote(content_html)
     if open_to_public:
         body += "&openyn=true"
 
@@ -88,7 +88,7 @@ def post_article(subject, content_html, open_to_public=False):
             "Authorization": "Bearer " + token,
             "X-Naver-Client-Id": os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip(),
             "X-Naver-Client-Secret": os.environ.get("NAVER_LOGIN_CLIENT_SECRET", "").strip(),
-            "Content-Type": "application/x-www-form-urlencoded; charset=euc-kr",
+            "Content-Type": "application/x-www-form-urlencoded",
         },
         method="POST",
     )
