@@ -211,7 +211,7 @@ def analyze_batch(subset, model):
   "korea_related": true 또는 false (한국 언급/한일관계/한반도 사안이면 true),
   "korea_note": "한국과 어떤 관련이 있는지 한 줄. 없으면 빈 문자열"
 }}"""
-    r = claude_json(prompt, model, max_tokens=400 + 260 * len(subset))
+    r = claude_json(prompt, model, max_tokens=600 + 700 * len(subset))
     out = {}
     if isinstance(r, list):
         for el in r:

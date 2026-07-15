@@ -63,25 +63,19 @@ def post_article(subject, content_html, open_to_public=False):
 
     url = ARTICLE_URL.format(club=club, menu=menu)
 
-    # tenseijingo 의 실제 동작 경로와 동일:
-    #   값을 UTF-8 로 "한 번" 퍼센트 인코딩하고, multipart/form-data 로 전송한다.
-    #   (requests 가 files 와 함께 보낼 때 값을 재인코딩하지 않는 것과 같은 결과)
-    #   multipart 는 값이 순수 ASCII 로 실려 서버 charset 해석에 영향받지 않는다.
+    # 전송 방식 정리 (실측 근거)
+    #  - form-urlencoded 로 보낸 시도들은 항상 "게시 성공"했다(글자만 깨짐).
+    #  - 이중 인코딩 / multipart 로 바꾸자 403(내부 500/999) 로 거부됐다.
+    #    → transport 는 반드시 form-urlencoded 여야 한다.
+    #  - 깨짐 양상이 서로 모순(UTF-8→CP949로 읽힘 / EUC-KR→UTF-8로 읽다 실패)인 것은
+    #    네이버가 charset 을 추측하기 때문. 그래서 charset 을 명시해 추측을 없앤다.
     fields = {
-        "subject": urllib.parse.quote(subject, safe=""),
-        "content": urllib.parse.quote(content_html, safe=""),
+        "subject": urllib.parse.quote(subject, safe="", encoding="utf-8"),
+        "content": urllib.parse.quote(content_html, safe="", encoding="utf-8"),
     }
     if open_to_public:
         fields["openyn"] = "true"
-
-    boundary = "----jpnewsBoundary7MA4YWxkTrZu0gW"
-    parts = []
-    for k, v in fields.items():
-        parts.append(f"--{boundary}\r\n")
-        parts.append(f'Content-Disposition: form-data; name="{k}"\r\n\r\n')
-        parts.append(v + "\r\n")
-    parts.append(f"--{boundary}--\r\n")
-    body = "".join(parts)
+    body = "&".join(f"{k}={v}" for k, v in fields.items())
 
     req = urllib.request.Request(
         url, data=body.encode("ascii"),
@@ -89,7 +83,7 @@ def post_article(subject, content_html, open_to_public=False):
             "Authorization": "Bearer " + token,
             "X-Naver-Client-Id": os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip(),
             "X-Naver-Client-Secret": os.environ.get("NAVER_LOGIN_CLIENT_SECRET", "").strip(),
-            "Content-Type": f"multipart/form-data; boundary={boundary}",
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
         },
         method="POST",
     )
