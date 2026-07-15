@@ -16,6 +16,7 @@ import os
 import json
 import urllib.parse
 import urllib.request
+import urllib.error
 
 TOKEN_URL = "https://nid.naver.com/oauth2.0/token"
 ARTICLE_URL = "https://openapi.naver.com/v1/cafe/{club}/menu/{menu}/articles"
@@ -86,6 +87,16 @@ def post_article(subject, content_html, open_to_public=False):
             res = json.loads(resp.read().decode("utf-8"))
         print(f"[ok] 카페 게시 완료: {res}")
         return res
+    except urllib.error.HTTPError as e:
+        # 네이버가 보낸 실제 사유를 그대로 출력 (원인 파악에 필수)
+        try:
+            detail = e.read().decode("utf-8", "replace")
+        except Exception:
+            detail = "(응답 본문 없음)"
+        print(f"[warn] 카페 게시 실패: HTTP {e.code}")
+        print(f"[warn] 네이버 응답: {detail[:800]}")
+        print(f"[info] 전송 바디 길이: {len(body)}자")
+        return None
     except Exception as e:
         print(f"[warn] 카페 게시 실패: {e}")
         return None
