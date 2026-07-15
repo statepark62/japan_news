@@ -344,7 +344,7 @@ def build_cafe_html(cfg, items, vocab, stamp):
 
     parts = [f'<p><b>{esc(stamp)}</b> 기준 일본 주요 뉴스와 한국의 시선입니다.</p>']
     for it in chosen:
-        badge = " 🔴한일관련" if it.get("korea_related") else ""
+        badge = " [한일관련]" if it.get("korea_related") else ""
         parts.append("<hr>")
         parts.append(f'<p><b>[{esc(it.get("category",""))}]{badge} {esc(it.get("ko_title") or it.get("jp_title"))}</b></p>')
         parts.append(f'<p style="color:#555">{esc(it.get("jp_title"))}</p>')
@@ -360,7 +360,7 @@ def build_cafe_html(cfg, items, vocab, stamp):
         parts.append(f'<p><a href="{esc(it.get("link"))}">일본 원문 보기</a></p>')
 
     if vocab:
-        parts.append("<hr><p><b>📖 오늘의 일본어 단어</b></p>")
+        parts.append("<hr><p><b>오늘의 일본어 단어</b></p>")
         rows = "".join(
             f'<tr><td>{esc(v.get("word"))}</td><td>{esc(v.get("reading"))}</td>'
             f'<td>{esc(v.get("meaning"))}</td></tr>' for v in vocab

@@ -49,6 +49,20 @@ def _get_access_token():
         return None
 
 
+def _euckr_quote(text):
+    """네이버 카페 API 는 본문을 EUC-KR 로 받는다.
+    EUC-KR 에 없는 글자(일본어 가나/한자, 이모지 등)는 HTML 숫자 참조(&#12354;)로 바꿔
+    깨지지 않게 한 뒤 EUC-KR 로 URL 인코딩한다."""
+    out = []
+    for ch in text:
+        try:
+            ch.encode("euc-kr")
+            out.append(ch)
+        except UnicodeEncodeError:
+            out.append("&#%d;" % ord(ch))
+    return urllib.parse.quote("".join(out), encoding="euc-kr")
+
+
 def post_article(subject, content_html, open_to_public=False):
     """카페 게시판에 글 작성. 성공 시 응답 dict, 실패 시 None."""
     club = os.environ.get("NAVER_CAFE_CLUB_ID", "").strip()
@@ -62,19 +76,19 @@ def post_article(subject, content_html, open_to_public=False):
         return None
 
     url = ARTICLE_URL.format(club=club, menu=menu)
-    # 네이버 카페 API 는 subject/content 를 URL 인코딩하여 폼 바디로 전송
-    body = "subject=" + urllib.parse.quote(subject)
-    body += "&content=" + urllib.parse.quote(content_html)
+    # subject/content 를 EUC-KR 로 URL 인코딩하여 폼 바디로 전송
+    body = "subject=" + _euckr_quote(subject)
+    body += "&content=" + _euckr_quote(content_html)
     if open_to_public:
         body += "&openyn=true"
 
     req = urllib.request.Request(
-        url, data=body.encode("utf-8"),
+        url, data=body.encode("ascii"),
         headers={
             "Authorization": "Bearer " + token,
             "X-Naver-Client-Id": os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip(),
             "X-Naver-Client-Secret": os.environ.get("NAVER_LOGIN_CLIENT_SECRET", "").strip(),
-            "Content-Type": "application/x-www-form-urlencoded",
+            "Content-Type": "application/x-www-form-urlencoded; charset=euc-kr",
         },
         method="POST",
     )
