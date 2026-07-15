@@ -435,7 +435,9 @@ def main():
     record_sheets(cfg, items, vocab, today)
 
     if cfg.get("cafe", {}).get("enabled"):
-        title = f"{cfg['cafe'].get('title_prefix','[일본뉴스]')} {today} 주요 뉴스와 한국의 시선"
+        # 제목은 HTML 렌더링이 되지 않고, 서버 charset 처리를 제어할 수 없어
+        # 한글을 넣으면 반드시 깨진다. 따라서 ASCII 문자만 사용한다.
+        title = f"{cfg['cafe'].get('title_prefix', '[Japan News]')} {today}"
         html_body = build_cafe_html(cfg, items, vocab, stamp)
         naver_post.post_article(title, html_body, cfg["cafe"].get("open_to_public", False))
 
