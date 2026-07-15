@@ -22,7 +22,7 @@ TOKEN_URL = "https://nid.naver.com/oauth2.0/token"
 ARTICLE_URL = "https://openapi.naver.com/v1/cafe/{club}/menu/{menu}/articles"
 
 # 제목 인코딩 방식: "utf-8" | "euc-kr" | "ascii"  (깨지면 값만 바꿔 재실행)
-SUBJECT_ENCODING = "utf-8"
+SUBJECT_ENCODING = "euc-kr"
 
 
 def _get_access_token():
