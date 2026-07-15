@@ -21,6 +21,9 @@ import urllib.request
 TOKEN_URL = "https://nid.naver.com/oauth2.0/token"
 ARTICLE_URL = "https://openapi.naver.com/v1/cafe/{club}/menu/{menu}/articles"
 
+# 제목 인코딩 방식: "utf-8" | "euc-kr" | "ascii"  (깨지면 값만 바꿔 재실행)
+SUBJECT_ENCODING = "utf-8"
+
 
 def _get_access_token():
     """리프레시 토큰으로 접근 토큰 갱신. 실패 시 None."""
@@ -63,6 +66,27 @@ def _ascii_quote(text):
     return urllib.parse.quote("".join(out), encoding="ascii")
 
 
+def _subject_quote(text):
+    """제목 인코딩 방식. 제목은 HTML 렌더링이 되지 않으므로 숫자참조를 쓸 수 없다.
+    SUBJECT_ENCODING 을 바꿔가며 어떤 방식이 맞는지 확인한다.
+      "utf-8"  : UTF-8 로 URL 인코딩  (현재 시험 중)
+      "euc-kr" : EUC-KR 로 URL 인코딩 (utf-8 이 깨지면 이걸로)
+      "ascii"  : 비ASCII 제거(최후 수단)
+    """
+    if SUBJECT_ENCODING == "euc-kr":
+        # EUC-KR 에 없는 글자(일본어 등)는 ? 로 대체
+        safe = []
+        for ch in text:
+            try:
+                ch.encode("euc-kr"); safe.append(ch)
+            except UnicodeEncodeError:
+                safe.append("?")
+        return urllib.parse.quote("".join(safe), encoding="euc-kr")
+    if SUBJECT_ENCODING == "ascii":
+        return urllib.parse.quote("".join(c for c in text if ord(c) < 128))
+    return urllib.parse.quote(text, encoding="utf-8")
+
+
 def post_article(subject, content_html, open_to_public=False):
     """카페 게시판에 글 작성. 성공 시 응답 dict, 실패 시 None."""
     club = os.environ.get("NAVER_CAFE_CLUB_ID", "").strip()
@@ -77,13 +101,13 @@ def post_article(subject, content_html, open_to_public=False):
 
     url = ARTICLE_URL.format(club=club, menu=menu)
     # subject/content 를 ASCII(HTML 숫자참조) 로 URL 인코딩하여 폼 바디로 전송
-    body = "subject=" + _ascii_quote(subject)
+    body = "subject=" + _subject_quote(subject)
     body += "&content=" + _ascii_quote(content_html)
     if open_to_public:
         body += "&openyn=true"
 
     req = urllib.request.Request(
-        url, data=body.encode("ascii"),
+        url, data=body.encode("ascii"),  # 퍼센트 인코딩 결과라 항상 ASCII
         headers={
             "Authorization": "Bearer " + token,
             "X-Naver-Client-Id": os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip(),
