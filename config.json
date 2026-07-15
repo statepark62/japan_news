@@ -34,7 +34,7 @@
     }
   ],
   "max_items_per_feed": 6,
-  "max_total_items": 12,
+  "max_total_items": 26,
   "naver_matches_per_item": 3,
   "vocab_per_day": 8,
   "claude_model": "claude-sonnet-5",
@@ -45,7 +45,7 @@
   "cafe": {
     "enabled": true,
     "include": "korea_first",
-    "max_items": 10,
+    "max_items": 6,
     "title_prefix": "[일본뉴스]",
     "open_to_public": false
   },
