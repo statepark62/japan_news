@@ -19,6 +19,7 @@
 """
 import os
 import json
+import time
 import urllib.parse
 import urllib.request
 import urllib.error
@@ -63,24 +64,8 @@ def _ascii_quote(text):
     return urllib.parse.quote("".join(out), safe="")
 
 
-def post_article(subject, content_html, open_to_public=False):
-    """카페 게시판에 글 작성. 성공 시 응답 dict, 실패 시 None."""
-    club = os.environ.get("NAVER_CAFE_CLUB_ID", "").strip()
-    menu = os.environ.get("NAVER_CAFE_MENU_ID", "").strip()
-    if not (club and menu):
-        print("[skip] 카페: CLUB_ID/MENU_ID 없음")
-        return None
-
-    token = _get_access_token()
-    if not token:
-        return None
-
-    url = ARTICLE_URL.format(club=club, menu=menu)
-
-    # 제목에 비ASCII 가 있으면 숫자참조가 그대로 노출되므로 미리 경고
-    if any(ord(c) > 127 for c in subject):
-        print("[warn] 제목에 비ASCII 문자가 있어 깨질 수 있습니다: " + subject)
-
+def _send(url, token, subject, content_html, open_to_public):
+    """실제 전송. (성공 dict, None) 또는 (None, 오류설명) 반환."""
     fields = {
         "subject": _ascii_quote(subject),
         "content": _ascii_quote(content_html),
@@ -88,6 +73,7 @@ def post_article(subject, content_html, open_to_public=False):
     if open_to_public:
         fields["openyn"] = "true"
     body = "&".join(f"{k}={v}" for k, v in fields.items())
+    print(f"[info] 전송 바디 {len(body)}자 (본문 원문 {len(content_html)}자)")
 
     req = urllib.request.Request(
         url, data=body.encode("ascii"),
@@ -101,17 +87,53 @@ def post_article(subject, content_html, open_to_public=False):
     )
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
-            res = json.loads(resp.read().decode("utf-8"))
-        print(f"[ok] 카페 게시 완료: {res}")
-        return res
+            return json.loads(resp.read().decode("utf-8")), None
     except urllib.error.HTTPError as e:
         try:
             detail = e.read().decode("utf-8", "replace")
         except Exception:
             detail = "(응답 본문 없음)"
-        print(f"[warn] 카페 게시 실패: HTTP {e.code}")
-        print(f"[warn] 네이버 응답: {detail[:500]}")
-        return None
+        return None, f"HTTP {e.code} / {detail[:300]}"
     except Exception as e:
-        print(f"[warn] 카페 게시 실패: {e}")
+        return None, str(e)
+
+
+def post_article(subject, content_html, open_to_public=False):
+    """카페 게시판에 글 작성. 실패 시 짧은 본문으로 한 번 재시도한다."""
+    club = os.environ.get("NAVER_CAFE_CLUB_ID", "").strip()
+    menu = os.environ.get("NAVER_CAFE_MENU_ID", "").strip()
+    if not (club and menu):
+        print("[skip] 카페: CLUB_ID/MENU_ID 없음")
         return None
+
+    token = _get_access_token()
+    if not token:
+        return None
+
+    url = ARTICLE_URL.format(club=club, menu=menu)
+
+    if any(ord(c) > 127 for c in subject):
+        print("[warn] 제목에 비ASCII 문자가 있어 깨질 수 있습니다: " + subject)
+
+    # 1차: 정상 본문
+    res, err = _send(url, token, subject, content_html, open_to_public)
+    if res:
+        print(f"[ok] 카페 게시 완료: {res}")
+        return res
+    print(f"[warn] 카페 게시 실패(1차): {err}")
+
+    # 2차: 본문을 대폭 줄여 재시도 → 성공하면 길이 문제, 실패하면 길이 무관(서버측 제한 등)
+    time.sleep(5)
+    short = content_html[:1500]
+    if "<" in short:
+        short = short.rsplit("<", 1)[0]        # 태그 중간에서 잘리지 않게
+    short += "<p>(본문 일부만 게시되었습니다)</p>"
+    print("[info] 짧은 본문으로 재시도합니다.")
+    res2, err2 = _send(url, token, subject, short, open_to_public)
+    if res2:
+        print(f"[ok] 카페 게시 완료(짧은 본문): {res2}")
+        print("[진단] 짧은 본문은 성공 → 본문 길이가 원인입니다. config 의 cafe.max_items 를 줄이세요.")
+        return res2
+    print(f"[warn] 카페 게시 실패(2차): {err2}")
+    print("[진단] 짧은 본문도 실패 → 길이 문제 아님. 네이버측 일시 제한(도배 방지) 가능성이 큽니다.")
+    return None
