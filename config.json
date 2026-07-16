@@ -45,7 +45,7 @@
   "cafe": {
     "enabled": true,
     "include": "korea_first",
-    "max_items": 6,
+    "max_items": 4,
     "title_prefix": "[Japan News]",
     "open_to_public": false
   },
