@@ -36,7 +36,7 @@
   "max_items_per_feed": 6,
   "max_total_items": 12,
   "naver_matches_per_item": 3,
-  "vocab_per_day": 8,
+  "vocab_per_day": 4,
   "claude_model": "claude-sonnet-5",
   "sheet": {
     "news_sheet": "뉴스기록",
