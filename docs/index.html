@@ -143,7 +143,10 @@
   .empty code{font-family:"Space Mono",monospace;background:rgba(255,255,255,.08);padding:2px 6px;border-radius:3px;}
 
   footer{margin-top:40px;text-align:center;font-family:"Space Mono",monospace;
-    font-size:10.5px;color:#6c789a;letter-spacing:.05em;}
+    font-size:10.5px;color:#6c789a;letter-spacing:.05em;line-height:1.9;}
+  footer .credit{display:block;margin-top:6px;color:#8894b5;}
+  footer .credit a{color:#9aa6c8;text-decoration:none;border-bottom:1px solid rgba(154,166,200,.35);}
+  footer .credit a:hover{color:#c7d0e4;}
 
   @media (prefers-reduced-motion:reduce){
     .card{animation:none;opacity:1;transform:none;}
@@ -169,7 +172,9 @@
 
   <main id="feed" class="feed" aria-live="polite"></main>
 
-  <footer>日本のニュース × 한국의 반응 · 정해진 시각에 갱신되는 개인 뉴스판</footer>
+  <footer>日本のニュース × 한국의 반응 · 정해진 시각에 갱신되는 개인 뉴스판
+    <span class="credit">© 2026 StatePark · 日々の便り · <a href="https://statepark62.github.io" target="_blank" rel="noopener">statepark62.github.io</a></span>
+  </footer>
 </div>
 
 <script>
