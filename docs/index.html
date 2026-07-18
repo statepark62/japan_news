@@ -66,6 +66,9 @@
     background:var(--seal);border-color:var(--seal);color:#fff;
   }
   .filter button:focus-visible{outline:2px solid #fff;outline-offset:2px;}
+  .filter button.refresh{font-size:15px;line-height:1;padding:5px 9px;}
+  .filter button.refresh.spinning{animation:spin .8s linear infinite;pointer-events:none;opacity:.6;}
+  @keyframes spin{to{transform:rotate(360deg);}}
 
   /* ---------- card ---------- */
   .feed{margin-top:26px;display:flex;flex-direction:column;gap:20px;}
@@ -159,6 +162,7 @@
       <div class="filter">
         <button id="fAll" aria-pressed="true">전체</button>
         <button id="fKr" aria-pressed="false">한일 관련</button>
+        <button id="refreshBtn" class="refresh" title="새로고침" aria-label="새로고침">↻</button>
       </div>
     </div>
   </header>
@@ -224,23 +228,32 @@ function setFilter(kr){
 document.getElementById('fAll').onclick = ()=>setFilter(false);
 document.getElementById('fKr').onclick = ()=>setFilter(true);
 
-fetch('./news.json?_=' + Date.now())
-  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d=>{
-    DATA = d;
-    document.getElementById('mastTitle').textContent = d.app_title || '日々の便り';
-    document.getElementById('mastSub').textContent = d.app_subtitle || '';
-    document.getElementById('stamp').textContent = '갱신 ' + (d.generated_at||'');
-    const krCount = d.items.filter(x=>x.korea_related).length;
-    document.getElementById('countLabel').textContent = `${d.count}건 · 한일 ${krCount}건`;
-    render();
-  })
-  .catch(e=>{
-    feedEl.innerHTML = `<div class="empty">뉴스를 불러오지 못했습니다 (${esc(String(e.message))}).<br>
-      <code>news.json</code> 이 같은 폴더에 있어야 하며, 로컬에서 열 때는 간이 서버가 필요합니다:<br>
-      <code>python3 -m http.server</code></div>`;
-    document.getElementById('stamp').textContent = '연결 실패';
-  });
+function load(){
+  const btn = document.getElementById('refreshBtn');
+  btn.classList.add('spinning');
+  document.getElementById('stamp').textContent = '불러오는 중…';
+  return fetch('./news.json?_=' + Date.now(), {cache:'no-store'})
+    .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d=>{
+      DATA = d;
+      document.getElementById('mastTitle').textContent = d.app_title || '日々の便り';
+      document.getElementById('mastSub').textContent = d.app_subtitle || '';
+      document.getElementById('stamp').textContent = '갱신 ' + (d.generated_at||'');
+      const krCount = d.items.filter(x=>x.korea_related).length;
+      document.getElementById('countLabel').textContent = `${d.count}건 · 한일 ${krCount}건`;
+      render();
+    })
+    .catch(e=>{
+      feedEl.innerHTML = `<div class="empty">뉴스를 불러오지 못했습니다 (${esc(String(e.message))}).<br>
+        <code>news.json</code> 이 같은 폴더에 있어야 하며, 로컬에서 열 때는 간이 서버가 필요합니다:<br>
+        <code>python3 -m http.server</code></div>`;
+      document.getElementById('stamp').textContent = '연결 실패';
+    })
+    .finally(()=>{ setTimeout(()=>btn.classList.remove('spinning'), 400); });
+}
+
+document.getElementById('refreshBtn').onclick = load;
+load();
 </script>
 <script>
   if ("serviceWorker" in navigator) {
