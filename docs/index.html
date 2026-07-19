@@ -174,6 +174,7 @@
 
   <footer>日本のニュース × 한국의 반응 · 정해진 시각에 갱신되는 개인 뉴스판
     <span class="credit">© 2026 StatePark · 日々の便り · <a href="https://statepark62.github.io" target="_blank" rel="noopener">statepark62.github.io</a></span>
+    <span class="credit" id="visitCount" style="display:none"></span>
   </footer>
 </div>
 
@@ -210,7 +211,7 @@ function card(it, i){
       <div class="seam-label">한국의 시선</div>
       ${matchHtml}
     </div>
-    <a class="src-link" href="${esc(it.link)}" target="_blank" rel="noopener">일본 원문 →</a>
+    <a class="src-link" href="${esc(it.link)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">일본 원문 →</a>
   </article>`;
 }
 
@@ -259,6 +260,27 @@ function load(){
 
 document.getElementById('refreshBtn').onclick = load;
 load();
+
+/* ── 방문자 카운터 ──────────────────────────────
+   아래 COUNTER_URL 에 GAS 웹앱 /exec 주소를 넣으세요 (시트 웹앱과 동일 URL).
+   비워두면 카운터는 표시되지 않습니다. 하루 1회만 +1 (순 방문자 근사). */
+const COUNTER_URL = "https://script.google.com/macros/s/AKfycbwMvWsmjv-eR65XsGbcKvw2mP5o0ThX_2vzyQjUn3wZCuM9Pwh4KrIP1J8pbFjcVFg/exec";
+(function(){
+  if(!COUNTER_URL) return;
+  const el = document.getElementById('visitCount');
+  const today = new Date().toISOString().slice(0,10);
+  const mode = (localStorage.getItem('news_visit_day') === today) ? 'read' : 'hit';
+  fetch(COUNTER_URL + '?mode=' + mode)
+    .then(r=>r.json())
+    .then(d=>{
+      localStorage.setItem('news_visit_day', today);
+      if(el && d && typeof d.count === 'number'){
+        el.textContent = '👁 누적 방문 ' + Number(d.count).toLocaleString();
+        el.style.display = '';
+      }
+    })
+    .catch(()=>{ if(el) el.style.display='none'; });
+})();
 </script>
 <script>
   if ("serviceWorker" in navigator) {
