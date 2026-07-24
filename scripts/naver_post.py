@@ -30,6 +30,29 @@ BODY_CAP = 1400          # HTML 원문 기준 안전 길이
 NOTE_MORE = '<p>(요약본입니다. 전체 뉴스는 <a href="https://statepark62.github.io/japan_news/">여기</a>에서)</p>'
 
 
+CAP_STATE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "state", "cafe_cap.json")
+
+
+def _load_last_cap():
+    """지난번 게시에 성공한 본문 길이를 읽는다(없으면 None)."""
+    try:
+        with open(CAP_STATE, encoding="utf-8") as f:
+            return int(json.load(f).get("cap"))
+    except Exception:
+        return None
+
+
+def _save_last_cap(cap):
+    """이번에 성공한 길이를 기록한다."""
+    try:
+        os.makedirs(os.path.dirname(CAP_STATE), exist_ok=True)
+        with open(CAP_STATE, "w", encoding="utf-8") as f:
+            json.dump({"cap": cap}, f)
+    except Exception as e:
+        print(f"[warn] 길이 기록 실패(무시): {e}")
+
+
 def _get_access_token():
     """리프레시 토큰으로 접근 토큰 갱신. 실패 시 None."""
     rt = os.environ.get("NAVER_REFRESH_TOKEN", "").strip()
@@ -129,9 +152,18 @@ def post_article(subject, content_html, open_to_public=False):
     if any(ord(c) > 127 for c in subject):
         print("[warn] 제목에 비ASCII 가 있어 깨질 수 있습니다: " + subject)
 
-    # 네이버의 길이 허용치가 날마다 다르게 나타난다(어제 1500자 성공, 오늘 1000자 실패).
-    # 그래서 긴 것부터 차례로 줄여가며 "그날 통과하는 최대 길이"를 자동으로 찾는다.
+    # 네이버의 길이 허용치가 날마다 달라진다(어제 1500자 성공, 오늘 1000자 실패).
+    # 지난번 통과한 길이를 기억해 거기서부터 시작하고, 한 단계 위를 먼저 한 번만 탐색한다.
+    # → 매일 3~4회씩 실패 요청을 보내는 낭비를 줄인다.
     caps = [1400, 1200, 1000, 800, 600, 400]
+    last = _load_last_cap()
+    if last in caps:
+        i0 = caps.index(last)
+        # 한 단계 위부터 시도(여유 있는 날 더 많은 내용이 들어가도록)
+        start = max(0, i0 - 1)
+        caps = caps[start:]
+        print(f"[info] 지난번 통과 길이 {last}자 → {caps[0]}자부터 시도")
+
     for i, cap in enumerate(caps):
         if i:
             time.sleep(8)
@@ -141,6 +173,7 @@ def post_article(subject, content_html, open_to_public=False):
             print(f"[ok] 카페 게시 완료 ({cap}자): {res}")
             if i:
                 print(f"[진단] {cap}자에서 통과 (앞 {i}회 실패)")
+            _save_last_cap(cap)
             return res
         print(f"[warn] {cap}자 실패: {res}")
 
