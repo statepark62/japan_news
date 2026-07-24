@@ -394,7 +394,7 @@ def build_cafe_text(cfg, items, vocab, stamp):
     L.append(f"{stamp} 기준 일본 주요 뉴스와 한국의 시선입니다.")
     L.append("")
     for it in chosen:
-        L.append("─────────────────────")
+        L.append("──────────")
         badge = "[한일관련] " if it.get("korea_related") else ""
         L.append(f"[{it.get('category','')}] {badge}{it.get('ko_title') or it.get('jp_title')}")
         L.append(f"{it.get('jp_title','')}")
@@ -406,7 +406,7 @@ def build_cafe_text(cfg, items, vocab, stamp):
         if it.get("kr_matches"):
             L.append("")
             L.append("[한국 보도]")
-            for mm in it["kr_matches"]:
+            for mm in it["kr_matches"][:1]:
                 L.append(f"· {mm.get('title','')}")
                 if mm.get("link"):
                     L.append(f"  {mm['link']}")
@@ -416,7 +416,7 @@ def build_cafe_text(cfg, items, vocab, stamp):
         L.append("")
 
     if vocab:
-        L.append("─────────────────────")
+        L.append("──────────")
         L.append("오늘의 일본어 단어")
         L.append("")
         for v in vocab:
@@ -424,7 +424,7 @@ def build_cafe_text(cfg, items, vocab, stamp):
             L.append(f"· {v.get('word','')} [{v.get('reading','')}] {lv}{v.get('meaning','')}")
         L.append("")
 
-    L.append("─────────────────────")
+    L.append("──────────")
     L.append("전체 뉴스 보기: https://statepark62.github.io/japan_news/")
     L.append("© 2026 StatePark · 日々の便り")
     return "\n".join(L)

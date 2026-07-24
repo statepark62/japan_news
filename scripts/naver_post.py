@@ -165,33 +165,41 @@ def post_article(subject, content, open_to_public=False):
     if png:
         print(f"[info] 표지 이미지 첨부 ({len(png)}바이트)")
 
-    # 1차: 원본 평문 (URL 포함)
-    ok, res = _try_post(url, token, subject, content, open_to_public, png, "1차 평문")
-    if ok:
-        print(f"[ok] 카페 게시 완료: {res}")
-        return res
-    print(f"[warn] 1차 실패: {res}")
+    # 실측으로 확인된 성공 조건: 평문 + 1500자 이내 (+ 이미지 첨부 가능)
+    # 링크를 최대한 살리되, 실패하면 조건을 좁혀가며 재시도한다.
+    CAP = 1400
 
-    # 2차: URL 제거
-    time.sleep(5)
+    def _cap(t):
+        t = t.strip()
+        if len(t) <= CAP:
+            return t
+        cut = t[:CAP]
+        if "\n" in cut:
+            cut = cut.rsplit("\n", 1)[0]
+        return cut + "\n\n… (전체 내용은 아래 링크에서)"
+
     no_url = re.sub(r"https?://\S+", "", content)
-    ok, res = _try_post(url, token, subject, no_url, open_to_public, png, "2차 URL제거")
-    if ok:
-        print(f"[ok] 카페 게시 완료(URL 제거본): {res}")
-        print("[진단] URL 을 빼니 성공 → 본문의 링크가 차단 사유입니다.")
-        return res
-    print(f"[warn] 2차 실패: {res}")
+    app_link = "\n\n전체 뉴스 보기: https://statepark62.github.io/japan_news/"
 
-    # 3차: 이미지 없이 최소 텍스트
-    time.sleep(5)
-    ok, res = _try_post(url, token, subject, "오늘의 일본 뉴스 요약입니다.",
-                        open_to_public, None, "3차 최소텍스트(이미지 없음)")
-    if ok:
-        print(f"[ok] 최소 텍스트 게시 성공: {res}")
-        print("[진단] 최소 텍스트만 성공 → 본문 내용 또는 첨부 이미지에 차단 요인이 있습니다.")
-        return res
-    print(f"[warn] 3차 실패: {res}")
-    print("[진단] 최소 텍스트조차 실패 → 일시적 게시 제한일 수 있습니다.")
+    attempts = [
+        ("1차 평문+링크(1400자)", _cap(content)),
+        ("2차 링크제거(1400자)",  _cap(no_url)),
+        ("3차 링크제거+앱링크만", _cap(no_url)[:1000] + app_link),
+        ("4차 최소텍스트",        "오늘의 일본 뉴스 요약입니다." + app_link),
+    ]
+
+    for i, (label, body) in enumerate(attempts):
+        if i:
+            time.sleep(5)
+        ok, res = _try_post(url, token, subject, body, open_to_public, png, label)
+        if ok:
+            print(f"[ok] 카페 게시 완료 ({label}): {res}")
+            if i:
+                print(f"[진단] {label} 에서 성공 → 앞 단계 조건이 차단 사유입니다.")
+            return res
+        print(f"[warn] {label} 실패: {res}")
+
+    print("[진단] 모든 단계 실패 → 일시적 게시 제한일 수 있습니다.")
     return None
 
 
