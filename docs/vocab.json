@@ -1,5 +1,42 @@
 {
-  "generated_at": "2026-07-24 10:29 KST",
+  "generated_at": "2026-07-24 10:34 KST",
   "date": "2026-07-24",
-  "words": []
+  "words": [
+    {
+      "word": "施行",
+      "reading": "しこう",
+      "meaning": "시행",
+      "level": "N2",
+      "example": "新しい法律は来月から施行される。",
+      "example_reading": "あたらしいほうりつはらいげつからしこうされる。",
+      "example_meaning": "새로운 법률은 다음 달부터 시행된다."
+    },
+    {
+      "word": "変動",
+      "reading": "へんどう",
+      "meaning": "변동",
+      "level": "N2",
+      "example": "為替相場の変動が激しくて心配だ。",
+      "example_reading": "かわせそうばのへんどうがはげしくてしんぱいだ。",
+      "example_meaning": "환율 시세의 변동이 심해서 걱정이다."
+    },
+    {
+      "word": "警戒",
+      "reading": "けいかい",
+      "meaning": "경계, 주의",
+      "level": "N2",
+      "example": "台風の接近に伴い、厳重な警戒が呼びかけられている。",
+      "example_reading": "たいふうのせっきんにともない、げんじゅうなけいかいがよびかけられている。",
+      "example_meaning": "태풍의 접근에 따라 엄중한 경계가 촉구되고 있다."
+    },
+    {
+      "word": "勧告",
+      "reading": "かんこく",
+      "meaning": "권고",
+      "level": "N1",
+      "example": "委員会は施設の改善を勧告した。",
+      "example_reading": "いいんかいはしせつのかいぜんをかんこくした。",
+      "example_meaning": "위원회는 시설의 개선을 권고했다."
+    }
+  ]
 }
