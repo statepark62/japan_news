@@ -503,9 +503,9 @@ def main():
         # 제목은 HTML 렌더링이 되지 않고, 서버 charset 처리를 제어할 수 없어
         # 한글을 넣으면 반드시 깨진다. 따라서 ASCII 문자만 사용한다.
         title = f"{cfg['cafe'].get('title_prefix', '[Japan News]')} {today}"
-        # 네이버 카페 API 는 HTML 본문을 거부하므로 평문으로 보낸다(실측 확인).
-        body_text = build_cafe_text(cfg, items, vocab, stamp)
-        naver_post.post_article(title, body_text, cfg["cafe"].get("open_to_public", False))
+        # HTML 본문은 정상 렌더링된다(굵은 글씨·링크 확인됨). 길이만 naver_post 가 제한한다.
+        body_html = build_cafe_html(cfg, items, vocab, stamp)
+        naver_post.post_article(title, body_html, cfg["cafe"].get("open_to_public", False))
 
     os.makedirs(os.path.dirname(NEWS_OUT), exist_ok=True)
     with open(NEWS_OUT, "w", encoding="utf-8") as f:

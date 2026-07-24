@@ -2,15 +2,13 @@
 """
 네이버 카페 글쓰기 모듈.
 
-tenseijingo_naver 의 "오늘도 실제로 성공하는" 경로를 그대로 복제한다.
-  · requests 사용
-  · data = {"subject": quote(...), "content": quote(...)}   (UTF-8 단일 퍼센트 인코딩)
-  · files 에 이미지를 붙여 multipart/form-data 로 전송
-    → files 가 있으면 requests 는 값을 재인코딩하지 않으므로,
-      최종 전송값 = "단일 퍼센트 인코딩된 문자열" 이 된다.
-
-이미지가 없으면 (form-urlencoded 로 빠지면서) 실패하는 사례가 있어,
-첨부할 이미지가 없을 때는 작은 표지 이미지를 자동 생성해 붙인다.
+[실측으로 확정된 사실]
+ 1) transport: form-urlencoded (urllib). multipart/이중인코딩으로 바꾸면 403.
+ 2) 인코딩: 비ASCII 를 HTML 숫자참조(&#51068;)로 바꿔 보내면 서버 charset 과 무관하게 안 깨진다.
+    본문은 HTML 로 렌더링되므로 숫자참조가 원래 글자로 표시된다.
+    제목은 렌더링되지 않으므로 ASCII 문자만 사용해야 한다.
+ 3) 길이: 본문이 길면 500/999 로 거부된다. HTML 원문 기준 약 1500자 이내가 안전.
+    → 이 조건에서 굵은 글씨·링크가 포함된 정상 게시글이 확인되었다.
 
 필요 환경변수(GitHub Secrets):
   NAVER_REFRESH_TOKEN
@@ -18,132 +16,104 @@ tenseijingo_naver 의 "오늘도 실제로 성공하는" 경로를 그대로 복
   NAVER_CAFE_CLUB_ID / NAVER_CAFE_MENU_ID
 """
 import os
-import io
 import re
+import json
 import time
-from urllib.parse import quote
-
-import requests
+import urllib.parse
+import urllib.request
+import urllib.error
 
 TOKEN_URL = "https://nid.naver.com/oauth2.0/token"
+ARTICLE_URL = "https://openapi.naver.com/v1/cafe/{club}/menu/{menu}/articles"
+
+BODY_CAP = 1400          # HTML 원문 기준 안전 길이
+NOTE_MORE = '<p>(요약본입니다. 전체 뉴스는 <a href="https://statepark62.github.io/japan_news/">여기</a>에서)</p>'
 
 
 def _get_access_token():
-    """리프레시 토큰으로 접근 토큰 발급. 실패 시 None."""
+    """리프레시 토큰으로 접근 토큰 갱신. 실패 시 None."""
     rt = os.environ.get("NAVER_REFRESH_TOKEN", "").strip()
     cid = os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip()
     csec = os.environ.get("NAVER_LOGIN_CLIENT_SECRET", "").strip()
     if not (rt and cid and csec):
         print("[skip] 카페: 네이버 로그인 토큰/클라이언트 정보 없음")
         return None
+    params = urllib.parse.urlencode({
+        "grant_type": "refresh_token",
+        "client_id": cid,
+        "client_secret": csec,
+        "refresh_token": rt,
+    })
     try:
-        r = requests.get(TOKEN_URL, params={
-            "grant_type": "refresh_token",
-            "client_id": cid,
-            "client_secret": csec,
-            "refresh_token": rt,
-        }, timeout=20)
-        r.raise_for_status()
-        j = r.json()
-        if "access_token" not in j:
-            print(f"[warn] 카페 토큰 갱신 실패: {j}")
-            return None
-        return j["access_token"]
+        with urllib.request.urlopen(f"{TOKEN_URL}?{params}", timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        token = data.get("access_token")
+        if not token:
+            print(f"[warn] 카페 토큰 갱신 응답 이상: {data}")
+        return token
     except Exception as e:
         print(f"[warn] 카페 토큰 갱신 실패: {e}")
         return None
 
 
-def _make_cover_image(text_lines):
-    """첨부용 표지 이미지를 만든다(PNG bytes). Pillow 가 없으면 None."""
-    try:
-        from PIL import Image, ImageDraw, ImageFont
-    except Exception:
-        return None
-    W, H = 800, 420
-    img = Image.new("RGB", (W, H), (15, 27, 51))
-    d = ImageDraw.Draw(img)
-    for y in range(H):
-        t = y / H
-        d.line([(0, y), (W, y)],
-               fill=(int(27*(1-t)+15*t), int(47*(1-t)+27*t), int(87*(1-t)+51*t)))
-    font_paths = [
-        "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    ]
-    def _font(size):
-        for p in font_paths:
-            if os.path.exists(p):
-                try:
-                    return ImageFont.truetype(p, size)
-                except Exception:
-                    pass
-        return ImageFont.load_default()
-    d.text((48, 60), "日々の便り", font=_font(56), fill=(243, 238, 227))
-    d.text((48, 140), "일본 주요 뉴스 · 한국의 시선", font=_font(28), fill=(199, 208, 228))
-    y = 210
-    for line in (text_lines or [])[:3]:
-        d.text((48, y), ("· " + line)[:44], font=_font(22), fill=(154, 166, 200))
-        y += 38
-    d.ellipse([W-110, H-110, W-60, H-60], outline=(192, 54, 44), width=3)
-    d.ellipse([W-93, H-93, W-77, H-77], fill=(192, 54, 44))
-    buf = io.BytesIO()
-    img.save(buf, format="PNG")
-    return buf.getvalue()
-
-
-def _headlines(content_html):
-    """본문에서 굵은 제목 몇 개를 뽑아 표지 이미지에 쓴다."""
-    items = re.findall(r"<b>(.*?)</b>", content_html)
+def _ascii_quote(text):
+    """비ASCII 문자를 HTML 숫자참조로 바꾼 뒤 URL 인코딩.
+    결과가 순수 ASCII 라 서버 charset 해석과 무관하게 깨지지 않는다."""
     out = []
-    for s in items:
-        s = re.sub(r"<[^>]+>", "", s).strip()
-        if s and not s.startswith("한국 보도") and not re.match(r"^\d{4}-\d{2}-\d{2}", s):
-            out.append(s)
-    return out[:3]
+    for ch in text:
+        out.append(ch if ord(ch) < 128 else "&#%d;" % ord(ch))
+    return urllib.parse.quote("".join(out), safe="")
 
 
-def _remove_anchors(html_text):
-    """<a href=...>텍스트</a> → 텍스트  (HTML 구조는 유지, 링크만 제거)"""
-    t = re.sub(r'<a\b[^>]*>(.*?)</a>', r'\1', html_text, flags=re.I | re.S)
-    t = re.sub(r'https?://\S+', '', t)     # 본문에 노출된 생 URL 도 제거
-    return t
+def _trim_html(html_text, cap=BODY_CAP):
+    """HTML 을 태그 경계에서 안전하게 잘라 cap 이내로 만든다."""
+    if len(html_text) <= cap:
+        return html_text
+    cut = html_text[:cap]
+    # 태그 중간에서 끊기지 않도록 마지막 '>' 까지만 남긴다
+    if ">" in cut:
+        cut = cut[: cut.rindex(">") + 1]
+    # 열린 <a> 가 남았으면 닫아준다
+    if cut.count("<a ") > cut.count("</a>"):
+        cut += "</a>"
+    return cut + NOTE_MORE
 
 
-def _to_plain(html_text):
-    """HTML 태그와 URL 을 모두 제거한 순수 텍스트."""
-    t = re.sub(r'<br\s*/?>|</p>|<hr\s*/?>', '\n', html_text, flags=re.I)
-    t = re.sub(r'<[^>]+>', '', t)
-    t = re.sub(r'https?://\S+', '', t)
-    return re.sub(r'\n{3,}', '\n\n', t).strip()
-
-
-def _try_post(url, token, subject, content, open_to_public, png, label):
-    """한 번 전송하고 (성공여부, 응답/오류) 반환."""
-    data = {"subject": quote(subject, safe=""), "content": quote(content, safe="")}
+def _send(url, token, subject, body_html, open_to_public, label):
+    fields = {
+        "subject": _ascii_quote(subject),
+        "content": _ascii_quote(body_html),
+    }
     if open_to_public:
-        data["openyn"] = "true"
-    files = {}
-    if png:
-        files["image"] = ("cover.png", io.BytesIO(png), "image/png")
-    print(f"[info] {label} 전송 (본문 {len(content)}자)")
+        fields["openyn"] = "true"
+    body = "&".join(f"{k}={v}" for k, v in fields.items())
+    print(f"[info] {label}: 본문 원문 {len(body_html)}자 / 전송 {len(body)}자")
+
+    req = urllib.request.Request(
+        url, data=body.encode("ascii"),
+        headers={
+            "Authorization": "Bearer " + token,
+            "X-Naver-Client-Id": os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip(),
+            "X-Naver-Client-Secret": os.environ.get("NAVER_LOGIN_CLIENT_SECRET", "").strip(),
+            "Content-Type": "application/x-www-form-urlencoded",
+        },
+        method="POST",
+    )
     try:
-        r = requests.post(url, headers={"Authorization": f"Bearer {token}"},
-                          data=data, files=files if files else None, timeout=60)
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return True, json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        try:
+            detail = e.read().decode("utf-8", "replace")
+        except Exception:
+            detail = "(응답 없음)"
+        return False, f"HTTP {e.code} / {detail[:200]}"
     except Exception as e:
-        return False, f"요청 오류: {e}"
-    if r.status_code != 200:
-        return False, f"HTTP {r.status_code} / {r.text[:200]}"
-    try:
-        return True, r.json()
-    except Exception:
-        return True, {"raw": r.text[:200]}
+        return False, str(e)
 
 
-def post_article(subject, content, open_to_public=False):
-    """카페 게시판에 글 작성 (본문은 평문).
-    실패하면 URL 을 뺀 본문으로 한 번 재시도한다."""
+def post_article(subject, content_html, open_to_public=False):
+    """카페 게시판에 글 작성. 길이를 줄여가며 최대 3회 시도."""
     club = os.environ.get("NAVER_CAFE_CLUB_ID", "").strip()
     menu = os.environ.get("NAVER_CAFE_MENU_ID", "").strip()
     if not (club and menu):
@@ -154,62 +124,26 @@ def post_article(subject, content, open_to_public=False):
     if not token:
         return None
 
-    url = f"https://openapi.naver.com/v1/cafe/{club}/menu/{menu}/articles"
+    url = ARTICLE_URL.format(club=club, menu=menu)
 
-    # 혹시 HTML 이 섞여 들어오면 평문으로 정리 (네이버가 HTML 본문을 거부함)
-    if "<" in content and ">" in content:
-        print("[info] 본문에 HTML 이 있어 평문으로 변환합니다.")
-        content = _to_plain(content)
-
-    png = _make_cover_image(_headlines_from_text(content))
-    if png:
-        print(f"[info] 표지 이미지 첨부 ({len(png)}바이트)")
-
-    # 실측으로 확인된 성공 조건: 평문 + 1500자 이내 (+ 이미지 첨부 가능)
-    # 링크를 최대한 살리되, 실패하면 조건을 좁혀가며 재시도한다.
-    CAP = 1400
-
-    def _cap(t):
-        t = t.strip()
-        if len(t) <= CAP:
-            return t
-        cut = t[:CAP]
-        if "\n" in cut:
-            cut = cut.rsplit("\n", 1)[0]
-        return cut + "\n\n… (전체 내용은 아래 링크에서)"
-
-    no_url = re.sub(r"https?://\S+", "", content)
-    app_link = "\n\n전체 뉴스 보기: https://statepark62.github.io/japan_news/"
+    if any(ord(c) > 127 for c in subject):
+        print("[warn] 제목에 비ASCII 가 있어 깨질 수 있습니다: " + subject)
 
     attempts = [
-        ("1차 평문+링크(1400자)", _cap(content)),
-        ("2차 링크제거(1400자)",  _cap(no_url)),
-        ("3차 링크제거+앱링크만", _cap(no_url)[:1000] + app_link),
-        ("4차 최소텍스트",        "오늘의 일본 뉴스 요약입니다." + app_link),
+        ("1차(1400자)", _trim_html(content_html, 1400)),
+        ("2차(1000자)", _trim_html(content_html, 1000)),
+        ("3차(600자)",  _trim_html(content_html, 600)),
     ]
-
     for i, (label, body) in enumerate(attempts):
         if i:
             time.sleep(5)
-        ok, res = _try_post(url, token, subject, body, open_to_public, png, label)
+        ok, res = _send(url, token, subject, body, open_to_public, label)
         if ok:
             print(f"[ok] 카페 게시 완료 ({label}): {res}")
             if i:
-                print(f"[진단] {label} 에서 성공 → 앞 단계 조건이 차단 사유입니다.")
+                print(f"[진단] {label} 에서 성공 → 본문 길이를 더 줄여야 합니다(config.cafe.max_items).")
             return res
         print(f"[warn] {label} 실패: {res}")
 
-    print("[진단] 모든 단계 실패 → 일시적 게시 제한일 수 있습니다.")
+    print("[진단] 모든 길이에서 실패 → 길이 외의 요인일 수 있습니다.")
     return None
-
-
-def _headlines_from_text(text):
-    """평문 본문에서 '[분류] 제목' 형태 줄을 뽑아 표지 이미지에 쓴다."""
-    out = []
-    for line in text.split("\n"):
-        s = line.strip()
-        if s.startswith("[") and "]" in s and not s.startswith("[한국 보도]"):
-            out.append(s)
-        if len(out) >= 3:
-            break
-    return out
