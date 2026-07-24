@@ -129,21 +129,20 @@ def post_article(subject, content_html, open_to_public=False):
     if any(ord(c) > 127 for c in subject):
         print("[warn] 제목에 비ASCII 가 있어 깨질 수 있습니다: " + subject)
 
-    attempts = [
-        ("1차(1400자)", _trim_html(content_html, 1400)),
-        ("2차(1000자)", _trim_html(content_html, 1000)),
-        ("3차(600자)",  _trim_html(content_html, 600)),
-    ]
-    for i, (label, body) in enumerate(attempts):
+    # 네이버의 길이 허용치가 날마다 다르게 나타난다(어제 1500자 성공, 오늘 1000자 실패).
+    # 그래서 긴 것부터 차례로 줄여가며 "그날 통과하는 최대 길이"를 자동으로 찾는다.
+    caps = [1400, 1200, 1000, 800, 600, 400]
+    for i, cap in enumerate(caps):
         if i:
-            time.sleep(5)
-        ok, res = _send(url, token, subject, body, open_to_public, label)
+            time.sleep(8)
+        body = _trim_html(content_html, cap)
+        ok, res = _send(url, token, subject, body, open_to_public, f"{cap}자")
         if ok:
-            print(f"[ok] 카페 게시 완료 ({label}): {res}")
+            print(f"[ok] 카페 게시 완료 ({cap}자): {res}")
             if i:
-                print(f"[진단] {label} 에서 성공 → 본문 길이를 더 줄여야 합니다(config.cafe.max_items).")
+                print(f"[진단] {cap}자에서 통과 (앞 {i}회 실패)")
             return res
-        print(f"[warn] {label} 실패: {res}")
+        print(f"[warn] {cap}자 실패: {res}")
 
-    print("[진단] 모든 길이에서 실패 → 길이 외의 요인일 수 있습니다.")
+    print("[진단] 모든 길이에서 실패 → 길이 외의 요인(일시적 게시 제한 등)일 수 있습니다.")
     return None
