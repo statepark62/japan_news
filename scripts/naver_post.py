@@ -141,9 +141,9 @@ def _try_post(url, token, subject, content, open_to_public, png, label):
         return True, {"raw": r.text[:200]}
 
 
-def post_article(subject, content_html, open_to_public=False):
-    """카페 게시판에 글 작성.
-    실패하면 링크를 뺀 본문 → 순수 텍스트 순으로 재시도해 원인을 판별한다."""
+def post_article(subject, content, open_to_public=False):
+    """카페 게시판에 글 작성 (본문은 평문).
+    실패하면 URL 을 뺀 본문으로 한 번 재시도한다."""
     club = os.environ.get("NAVER_CAFE_CLUB_ID", "").strip()
     menu = os.environ.get("NAVER_CAFE_MENU_ID", "").strip()
     if not (club and menu):
@@ -155,46 +155,53 @@ def post_article(subject, content_html, open_to_public=False):
         return None
 
     url = f"https://openapi.naver.com/v1/cafe/{club}/menu/{menu}/articles"
-    png = _make_cover_image(_headlines(content_html))
+
+    # 혹시 HTML 이 섞여 들어오면 평문으로 정리 (네이버가 HTML 본문을 거부함)
+    if "<" in content and ">" in content:
+        print("[info] 본문에 HTML 이 있어 평문으로 변환합니다.")
+        content = _to_plain(content)
+
+    png = _make_cover_image(_headlines_from_text(content))
     if png:
         print(f"[info] 표지 이미지 첨부 ({len(png)}바이트)")
 
-    # 1차: 원본 (링크 포함)
-    ok, res = _try_post(url, token, subject, content_html, open_to_public, png, "1차 원본")
+    # 1차: 원본 평문 (URL 포함)
+    ok, res = _try_post(url, token, subject, content, open_to_public, png, "1차 평문")
     if ok:
         print(f"[ok] 카페 게시 완료: {res}")
         return res
     print(f"[warn] 1차 실패: {res}")
 
-    # 2차: 링크만 제거 (HTML 유지)
+    # 2차: URL 제거
     time.sleep(5)
-    ok, res = _try_post(url, token, subject, _remove_anchors(content_html),
-                        open_to_public, png, "2차 링크제거")
+    no_url = re.sub(r"https?://\S+", "", content)
+    ok, res = _try_post(url, token, subject, no_url, open_to_public, png, "2차 URL제거")
     if ok:
-        print(f"[ok] 카페 게시 완료(링크 제거본): {res}")
-        print("[진단] 링크를 빼니 성공 → 외부 링크가 차단 사유입니다.")
+        print(f"[ok] 카페 게시 완료(URL 제거본): {res}")
+        print("[진단] URL 을 빼니 성공 → 본문의 링크가 차단 사유입니다.")
         return res
     print(f"[warn] 2차 실패: {res}")
 
-    # 3차: 순수 텍스트 (HTML·링크 모두 제거)
-    time.sleep(5)
-    ok, res = _try_post(url, token, subject, _to_plain(content_html)[:1500],
-                        open_to_public, png, "3차 순수텍스트")
-    if ok:
-        print(f"[ok] 카페 게시 완료(순수 텍스트): {res}")
-        print("[진단] HTML 을 빼니 성공 → 본문 HTML 이 차단 사유입니다.")
-        return res
-    print(f"[warn] 3차 실패: {res}")
-
-    # 4차: 최소 텍스트 (내용 자체가 문제인지 최종 확인)
+    # 3차: 이미지 없이 최소 텍스트
     time.sleep(5)
     ok, res = _try_post(url, token, subject, "오늘의 일본 뉴스 요약입니다.",
-                        open_to_public, None, "4차 최소텍스트(이미지 없음)")
+                        open_to_public, None, "3차 최소텍스트(이미지 없음)")
     if ok:
-        print(f"[ok] 최소 텍스트는 게시 성공: {res}")
-        print("[진단] 최소 텍스트만 성공 → 본문 내용/이미지에 차단 요인이 있습니다.")
+        print(f"[ok] 최소 텍스트 게시 성공: {res}")
+        print("[진단] 최소 텍스트만 성공 → 본문 내용 또는 첨부 이미지에 차단 요인이 있습니다.")
         return res
-    print(f"[warn] 4차 실패: {res}")
-    print("[진단] 최소 텍스트조차 실패 → 본문 문제가 아닙니다.")
-    print("[진단] 이 앱(Client ID)의 카페 글쓰기 권한 또는 API 이용 설정을 확인하세요.")
+    print(f"[warn] 3차 실패: {res}")
+    print("[진단] 최소 텍스트조차 실패 → 일시적 게시 제한일 수 있습니다.")
     return None
+
+
+def _headlines_from_text(text):
+    """평문 본문에서 '[분류] 제목' 형태 줄을 뽑아 표지 이미지에 쓴다."""
+    out = []
+    for line in text.split("\n"):
+        s = line.strip()
+        if s.startswith("[") and "]" in s and not s.startswith("[한국 보도]"):
+            out.append(s)
+        if len(out) >= 3:
+            break
+    return out

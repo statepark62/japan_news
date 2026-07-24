@@ -307,6 +307,15 @@ def extract_vocab(items, model, n):
     r = claude_json(prompt, model, max_tokens=800 + 700 * n)
     if isinstance(r, dict):
         r = r.get("words") or r.get("vocab") or []
+    if not isinstance(r, list) or not r:
+        # 응답이 깨졌을 때 한 번 더 시도 (개수를 줄여 응답을 짧게)
+        print("[info] 단어 추출 재시도")
+        time.sleep(1)
+        r2 = claude_json(prompt.replace(f"{n}개", f"{max(3, n//2)}개"), model,
+                         max_tokens=800 + 700 * n)
+        if isinstance(r2, dict):
+            r2 = r2.get("words") or r2.get("vocab") or []
+        r = r2 if isinstance(r2, list) else []
     return r if isinstance(r, list) else []
 
 
@@ -365,6 +374,62 @@ def record_sheets(cfg, items, vocab, today):
 
 
 # ----------------------------------------------------------------------------- 6. 카페 게시글 HTML
+def build_cafe_text(cfg, items, vocab, stamp):
+    """카페 게시용 '평문' 본문.
+    네이버 카페 API 는 HTML 본문을 거부하므로(실측 확인), 태그 없이 줄바꿈으로만 구성한다.
+    링크는 <a> 태그 대신 URL 을 그대로 적는다."""
+    c = cfg.get("cafe", {})
+    include = c.get("include", "korea_first")
+    limit = c.get("max_items", 4)
+    korea = [x for x in items if x.get("korea_related")]
+    others = [x for x in items if not x.get("korea_related")]
+    if include == "korea":
+        chosen = korea[:limit]
+    elif include == "all":
+        chosen = items[:limit]
+    else:
+        chosen = (korea + others)[:limit]
+
+    L = []
+    L.append(f"{stamp} 기준 일본 주요 뉴스와 한국의 시선입니다.")
+    L.append("")
+    for it in chosen:
+        L.append("─────────────────────")
+        badge = "[한일관련] " if it.get("korea_related") else ""
+        L.append(f"[{it.get('category','')}] {badge}{it.get('ko_title') or it.get('jp_title')}")
+        L.append(f"{it.get('jp_title','')}")
+        if it.get("ko_summary"):
+            L.append("")
+            L.append(it["ko_summary"])
+        if it.get("korea_related") and it.get("korea_note"):
+            L.append(f"↳ {it['korea_note']}")
+        if it.get("kr_matches"):
+            L.append("")
+            L.append("[한국 보도]")
+            for mm in it["kr_matches"]:
+                L.append(f"· {mm.get('title','')}")
+                if mm.get("link"):
+                    L.append(f"  {mm['link']}")
+        if it.get("link"):
+            L.append("")
+            L.append(f"일본 원문: {it['link']}")
+        L.append("")
+
+    if vocab:
+        L.append("─────────────────────")
+        L.append("오늘의 일본어 단어")
+        L.append("")
+        for v in vocab:
+            lv = f"({v.get('level','')}) " if v.get("level") else ""
+            L.append(f"· {v.get('word','')} [{v.get('reading','')}] {lv}{v.get('meaning','')}")
+        L.append("")
+
+    L.append("─────────────────────")
+    L.append("전체 뉴스 보기: https://statepark62.github.io/japan_news/")
+    L.append("© 2026 StatePark · 日々の便り")
+    return "\n".join(L)
+
+
 def build_cafe_html(cfg, items, vocab, stamp):
     c = cfg.get("cafe", {})
     include = c.get("include", "korea_first")
@@ -438,8 +503,9 @@ def main():
         # 제목은 HTML 렌더링이 되지 않고, 서버 charset 처리를 제어할 수 없어
         # 한글을 넣으면 반드시 깨진다. 따라서 ASCII 문자만 사용한다.
         title = f"{cfg['cafe'].get('title_prefix', '[Japan News]')} {today}"
-        html_body = build_cafe_html(cfg, items, vocab, stamp)
-        naver_post.post_article(title, html_body, cfg["cafe"].get("open_to_public", False))
+        # 네이버 카페 API 는 HTML 본문을 거부하므로 평문으로 보낸다(실측 확인).
+        body_text = build_cafe_text(cfg, items, vocab, stamp)
+        naver_post.post_article(title, body_text, cfg["cafe"].get("open_to_public", False))
 
     os.makedirs(os.path.dirname(NEWS_OUT), exist_ok=True)
     with open(NEWS_OUT, "w", encoding="utf-8") as f:
