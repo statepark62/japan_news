@@ -2,15 +2,15 @@
 """
 네이버 카페 글쓰기 모듈.
 
-[실측으로 확정된 사실]
- 1) transport 는 form-urlencoded 여야 한다.
-    (이중 인코딩 / multipart 로 바꾸면 403 + 내부 500/999 로 거부됨)
- 2) 서버의 charset 처리는 제어 불가능하다.
-    UTF-8 로 보내도, EUC-KR 로 보내도, charset 을 명시해도 모두 깨졌다.
- 3) 그러나 ASCII 는 어떤 charset 으로 읽어도 바이트가 동일하므로 절대 깨지지 않는다.
-    → 본문: 비ASCII 를 HTML 숫자참조(&#51068;)로 변환. 브라우저가 렌더링할 때 원래 글자로 표시됨.
-      (실제 게시글에서 본문이 정상 표시됨을 확인)
-    → 제목: HTML 렌더링이 안 되므로 숫자참조를 쓸 수 없다. 제목은 ASCII 문자만 사용한다.
+tenseijingo_naver 의 "오늘도 실제로 성공하는" 경로를 그대로 복제한다.
+  · requests 사용
+  · data = {"subject": quote(...), "content": quote(...)}   (UTF-8 단일 퍼센트 인코딩)
+  · files 에 이미지를 붙여 multipart/form-data 로 전송
+    → files 가 있으면 requests 는 값을 재인코딩하지 않으므로,
+      최종 전송값 = "단일 퍼센트 인코딩된 문자열" 이 된다.
+
+이미지가 없으면 (form-urlencoded 로 빠지면서) 실패하는 사례가 있어,
+첨부할 이미지가 없을 때는 작은 표지 이미지를 자동 생성해 붙인다.
 
 필요 환경변수(GitHub Secrets):
   NAVER_REFRESH_TOKEN
@@ -18,88 +18,94 @@
   NAVER_CAFE_CLUB_ID / NAVER_CAFE_MENU_ID
 """
 import os
-import json
+import io
+import re
 import time
-import urllib.parse
-import urllib.request
-import urllib.error
+from urllib.parse import quote
+
+import requests
 
 TOKEN_URL = "https://nid.naver.com/oauth2.0/token"
-ARTICLE_URL = "https://openapi.naver.com/v1/cafe/{club}/menu/{menu}/articles"
 
 
 def _get_access_token():
-    """리프레시 토큰으로 접근 토큰 갱신. 실패 시 None."""
+    """리프레시 토큰으로 접근 토큰 발급. 실패 시 None."""
     rt = os.environ.get("NAVER_REFRESH_TOKEN", "").strip()
     cid = os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip()
     csec = os.environ.get("NAVER_LOGIN_CLIENT_SECRET", "").strip()
     if not (rt and cid and csec):
         print("[skip] 카페: 네이버 로그인 토큰/클라이언트 정보 없음")
         return None
-
-    params = urllib.parse.urlencode({
-        "grant_type": "refresh_token",
-        "client_id": cid,
-        "client_secret": csec,
-        "refresh_token": rt,
-    })
     try:
-        with urllib.request.urlopen(f"{TOKEN_URL}?{params}", timeout=30) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        token = data.get("access_token")
-        if not token:
-            print(f"[warn] 카페 토큰 갱신 응답 이상: {data}")
-        return token
+        r = requests.get(TOKEN_URL, params={
+            "grant_type": "refresh_token",
+            "client_id": cid,
+            "client_secret": csec,
+            "refresh_token": rt,
+        }, timeout=20)
+        r.raise_for_status()
+        j = r.json()
+        if "access_token" not in j:
+            print(f"[warn] 카페 토큰 갱신 실패: {j}")
+            return None
+        return j["access_token"]
     except Exception as e:
         print(f"[warn] 카페 토큰 갱신 실패: {e}")
         return None
 
 
-def _ascii_quote(text):
-    """비ASCII 문자를 HTML 숫자참조로 바꾼 뒤 URL 인코딩.
-    결과가 순수 ASCII 라 서버가 어떤 charset 으로 읽어도 깨지지 않는다."""
-    out = []
-    for ch in text:
-        out.append(ch if ord(ch) < 128 else "&#%d;" % ord(ch))
-    return urllib.parse.quote("".join(out), safe="")
-
-
-def _send(url, token, subject, content_html, open_to_public):
-    """실제 전송. (성공 dict, None) 또는 (None, 오류설명) 반환."""
-    fields = {
-        "subject": _ascii_quote(subject),
-        "content": _ascii_quote(content_html),
-    }
-    if open_to_public:
-        fields["openyn"] = "true"
-    body = "&".join(f"{k}={v}" for k, v in fields.items())
-    print(f"[info] 전송 바디 {len(body)}자 (본문 원문 {len(content_html)}자)")
-
-    req = urllib.request.Request(
-        url, data=body.encode("ascii"),
-        headers={
-            "Authorization": "Bearer " + token,
-            "X-Naver-Client-Id": os.environ.get("NAVER_LOGIN_CLIENT_ID", "").strip(),
-            "X-Naver-Client-Secret": os.environ.get("NAVER_LOGIN_CLIENT_SECRET", "").strip(),
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        method="POST",
-    )
+def _make_cover_image(text_lines):
+    """첨부용 표지 이미지를 만든다(PNG bytes). Pillow 가 없으면 None."""
     try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            return json.loads(resp.read().decode("utf-8")), None
-    except urllib.error.HTTPError as e:
-        try:
-            detail = e.read().decode("utf-8", "replace")
-        except Exception:
-            detail = "(응답 본문 없음)"
-        return None, f"HTTP {e.code} / {detail[:300]}"
-    except Exception as e:
-        return None, str(e)
+        from PIL import Image, ImageDraw, ImageFont
+    except Exception:
+        return None
+    W, H = 800, 420
+    img = Image.new("RGB", (W, H), (15, 27, 51))
+    d = ImageDraw.Draw(img)
+    for y in range(H):
+        t = y / H
+        d.line([(0, y), (W, y)],
+               fill=(int(27*(1-t)+15*t), int(47*(1-t)+27*t), int(87*(1-t)+51*t)))
+    font_paths = [
+        "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    ]
+    def _font(size):
+        for p in font_paths:
+            if os.path.exists(p):
+                try:
+                    return ImageFont.truetype(p, size)
+                except Exception:
+                    pass
+        return ImageFont.load_default()
+    d.text((48, 60), "日々の便り", font=_font(56), fill=(243, 238, 227))
+    d.text((48, 140), "일본 주요 뉴스 · 한국의 시선", font=_font(28), fill=(199, 208, 228))
+    y = 210
+    for line in (text_lines or [])[:3]:
+        d.text((48, y), ("· " + line)[:44], font=_font(22), fill=(154, 166, 200))
+        y += 38
+    d.ellipse([W-110, H-110, W-60, H-60], outline=(192, 54, 44), width=3)
+    d.ellipse([W-93, H-93, W-77, H-77], fill=(192, 54, 44))
+    buf = io.BytesIO()
+    img.save(buf, format="PNG")
+    return buf.getvalue()
+
+
+def _headlines(content_html):
+    """본문에서 굵은 제목 몇 개를 뽑아 표지 이미지에 쓴다."""
+    items = re.findall(r"<b>(.*?)</b>", content_html)
+    out = []
+    for s in items:
+        s = re.sub(r"<[^>]+>", "", s).strip()
+        if s and not s.startswith("한국 보도") and not re.match(r"^\d{4}-\d{2}-\d{2}", s):
+            out.append(s)
+    return out[:3]
 
 
 def post_article(subject, content_html, open_to_public=False):
-    """카페 게시판에 글 작성. 실패 시 짧은 본문으로 한 번 재시도한다."""
+    """카페 게시판에 글 작성. 성공 시 응답 dict, 실패 시 None."""
     club = os.environ.get("NAVER_CAFE_CLUB_ID", "").strip()
     menu = os.environ.get("NAVER_CAFE_MENU_ID", "").strip()
     if not (club and menu):
@@ -110,30 +116,46 @@ def post_article(subject, content_html, open_to_public=False):
     if not token:
         return None
 
-    url = ARTICLE_URL.format(club=club, menu=menu)
+    url = f"https://openapi.naver.com/v1/cafe/{club}/menu/{menu}/articles"
 
-    if any(ord(c) > 127 for c in subject):
-        print("[warn] 제목에 비ASCII 문자가 있어 깨질 수 있습니다: " + subject)
+    # tenseijingo 와 동일: UTF-8 단일 퍼센트 인코딩 값을 data 에 담고, 이미지를 붙여 multipart 로 보냄
+    data = {
+        "subject": quote(subject, safe=""),
+        "content": quote(content_html, safe=""),
+    }
+    if open_to_public:
+        data["openyn"] = "true"
 
-    # 1차: 정상 본문
-    res, err = _send(url, token, subject, content_html, open_to_public)
-    if res:
-        print(f"[ok] 카페 게시 완료: {res}")
-        return res
-    print(f"[warn] 카페 게시 실패(1차): {err}")
+    png = _make_cover_image(_headlines(content_html))
+    files = {}
+    if png:
+        files["image"] = ("cover.png", io.BytesIO(png), "image/png")
+        print(f"[info] 표지 이미지 첨부 ({len(png)}바이트)")
+    else:
+        print("[warn] 표지 이미지 생성 실패 — 이미지 없이 전송합니다.")
 
-    # 2차: 본문을 대폭 줄여 재시도 → 성공하면 길이 문제, 실패하면 길이 무관(서버측 제한 등)
-    time.sleep(5)
-    short = content_html[:1500]
-    if "<" in short:
-        short = short.rsplit("<", 1)[0]        # 태그 중간에서 잘리지 않게
-    short += "<p>(본문 일부만 게시되었습니다)</p>"
-    print("[info] 짧은 본문으로 재시도합니다.")
-    res2, err2 = _send(url, token, subject, short, open_to_public)
-    if res2:
-        print(f"[ok] 카페 게시 완료(짧은 본문): {res2}")
-        print("[진단] 짧은 본문은 성공 → 본문 길이가 원인입니다. config 의 cafe.max_items 를 줄이세요.")
-        return res2
-    print(f"[warn] 카페 게시 실패(2차): {err2}")
-    print("[진단] 짧은 본문도 실패 → 길이 문제 아님. 네이버측 일시 제한(도배 방지) 가능성이 큽니다.")
-    return None
+    print(f"[info] 전송: 제목 {len(subject)}자 / 본문 원문 {len(content_html)}자")
+
+    try:
+        r = requests.post(
+            url,
+            headers={"Authorization": f"Bearer {token}"},
+            data=data,
+            files=files if files else None,
+            timeout=60,
+        )
+    except Exception as e:
+        print(f"[warn] 카페 게시 실패(요청 오류): {e}")
+        return None
+
+    if r.status_code != 200:
+        print(f"[warn] 카페 게시 실패: HTTP {r.status_code}")
+        print(f"[warn] 네이버 응답: {r.text[:400]}")
+        return None
+
+    try:
+        res = r.json()
+    except Exception:
+        res = {"raw": r.text[:200]}
+    print(f"[ok] 카페 게시 완료: {res}")
+    return res
