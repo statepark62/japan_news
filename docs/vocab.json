@@ -1,42 +1,78 @@
 {
-  "generated_at": "2026-07-24 10:34 KST",
+  "generated_at": "2026-07-24 10:39 KST",
   "date": "2026-07-24",
   "words": [
     {
+      "word": "公布",
+      "reading": "こうふ",
+      "meaning": "공포(법령 등을 널리 알림)",
+      "level": "N1",
+      "example": "新しい法律が来月公布される予定です。",
+      "example_reading": "あたらしいほうりつがらいげつこうふされるよていです。",
+      "example_meaning": "새로운 법률이 다음 달 공포될 예정입니다."
+    },
+    {
       "word": "施行",
       "reading": "しこう",
-      "meaning": "시행",
-      "level": "N2",
-      "example": "新しい法律は来月から施行される。",
-      "example_reading": "あたらしいほうりつはらいげつからしこうされる。",
-      "example_meaning": "새로운 법률은 다음 달부터 시행된다."
+      "meaning": "시행(법령 등을 실제로 실시함)",
+      "level": "N1",
+      "example": "この法律は来年から施行されます。",
+      "example_reading": "このほうりつはらいねんからしこうされます。",
+      "example_meaning": "이 법률은 내년부터 시행됩니다."
     },
     {
       "word": "変動",
       "reading": "へんどう",
-      "meaning": "변동",
+      "meaning": "변동(상태나 수치가 바뀜)",
       "level": "N2",
-      "example": "為替相場の変動が激しくて心配だ。",
-      "example_reading": "かわせそうばのへんどうがはげしくてしんぱいだ。",
-      "example_meaning": "환율 시세의 변동이 심해서 걱정이다."
+      "example": "為替相場の変動が経済に大きな影響を与える。",
+      "example_reading": "かわせそうばのへんどうがけいざいにおおきなえいきょうをあたえる。",
+      "example_meaning": "환율 변동이 경제에 큰 영향을 미친다."
+    },
+    {
+      "word": "関税",
+      "reading": "かんぜい",
+      "meaning": "관세",
+      "level": "N2",
+      "example": "アメリカは輸入品に高い関税をかけた。",
+      "example_reading": "あめりかはゆにゅうひんにたかいかんぜいをかけた。",
+      "example_meaning": "미국은 수입품에 높은 관세를 부과했다."
     },
     {
       "word": "警戒",
       "reading": "けいかい",
-      "meaning": "경계, 주의",
+      "meaning": "경계(위험에 대비함)",
       "level": "N2",
-      "example": "台風の接近に伴い、厳重な警戒が呼びかけられている。",
-      "example_reading": "たいふうのせっきんにともない、げんじゅうなけいかいがよびかけられている。",
-      "example_meaning": "태풍의 접근에 따라 엄중한 경계가 촉구되고 있다."
+      "example": "台風の接近で厳重な警戒が必要です。",
+      "example_reading": "たいふうのせっきんでげんじゅうなけいかいがひつようです。",
+      "example_meaning": "태풍의 접근으로 엄중한 경계가 필요합니다."
     },
     {
       "word": "勧告",
       "reading": "かんこく",
-      "meaning": "권고",
+      "meaning": "권고(공식적으로 조언·권유함)",
       "level": "N1",
-      "example": "委員会は施設の改善を勧告した。",
-      "example_reading": "いいんかいはしせつのかいぜんをかんこくした。",
-      "example_meaning": "위원회는 시설의 개선을 권고했다."
+      "example": "専門家委員会は改善を勧告した。",
+      "example_reading": "せんもんかいいんかいはかいぜんをかんこくした。",
+      "example_meaning": "전문가 위원회는 개선을 권고했다."
+    },
+    {
+      "word": "慎重",
+      "reading": "しんちょう",
+      "meaning": "신중(조심스럽고 진중함)",
+      "level": "N2",
+      "example": "彼はいつも慎重に判断を下す。",
+      "example_reading": "かれはいつもしんちょうにはんだんをくだす。",
+      "example_meaning": "그는 항상 신중하게 판단을 내린다."
+    },
+    {
+      "word": "情勢",
+      "reading": "じょうせい",
+      "meaning": "정세(사회나 정치 등의 상황)",
+      "level": "N1",
+      "example": "国際情勢は日々変化している。",
+      "example_reading": "こくさいじょうせいはひびへんかしている。",
+      "example_meaning": "국제 정세는 나날이 변화하고 있다."
     }
   ]
 }
