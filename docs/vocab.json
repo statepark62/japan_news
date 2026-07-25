@@ -1,69 +1,78 @@
 {
-  "generated_at": "2026-07-25 08:09 KST",
-  "date": "2026-07-25",
+  "generated_at": "2026-07-26 08:01 KST",
+  "date": "2026-07-26",
   "words": [
     {
-      "word": "経営破綻",
-      "reading": "けいえいはたん",
-      "meaning": "경영 파탄(파산)",
+      "word": "死傷者",
+      "reading": "ししょうしゃ",
+      "meaning": "사상자 (죽거나 다친 사람)",
       "level": "N2",
-      "example": "その会社は資金繰りが悪化し、経営破綻に至った。",
-      "example_reading": "そのかいしゃはしきんぐりがあっかし、けいえいはたんにいたった。",
-      "example_meaning": "그 회사는 자금 사정이 악화되어 경영 파탄에 이르렀다."
+      "example": "交通事故で多くの死傷者が出た。",
+      "example_reading": "こうつうじこで おおくの ししょうしゃが でた。",
+      "example_meaning": "교통사고로 많은 사상자가 발생했다."
+    },
+    {
+      "word": "兆候",
+      "reading": "ちょうこう",
+      "meaning": "징후, 조짐",
+      "level": "N1",
+      "example": "景気回復の兆候が見え始めた。",
+      "example_reading": "けいきかいふくの ちょうこうが みえはじめた。",
+      "example_meaning": "경기 회복의 징후가 보이기 시작했다."
     },
     {
       "word": "透明性",
       "reading": "とうめいせい",
       "meaning": "투명성",
+      "level": "N1",
+      "example": "政府は情報公開の透明性を高める必要がある。",
+      "example_reading": "せいふは じょうほうこうかいの とうめいせいを たかめる ひつようが ある。",
+      "example_meaning": "정부는 정보 공개의 투명성을 높일 필요가 있다."
+    },
+    {
+      "word": "加速",
+      "reading": "かそく",
+      "meaning": "가속, 속도를 높임",
       "level": "N2",
-      "example": "調査の透明性を確保することが求められている。",
-      "example_reading": "ちょうさのとうめいせいをかくほすることがもとめられている。",
-      "example_meaning": "조사의 투명성을 확보하는 것이 요구되고 있다."
+      "example": "新製品の開発を加速させる方針だ。",
+      "example_reading": "しんせいひんの かいはつを かそくさせる ほうしんだ。",
+      "example_meaning": "신제품 개발을 가속화하는 방침이다."
     },
     {
-      "word": "審議",
-      "reading": "しんぎ",
-      "meaning": "심의",
+      "word": "規模",
+      "reading": "きぼ",
+      "meaning": "규모",
       "level": "N2",
-      "example": "この法案は来週の国会で審議される予定だ。",
-      "example_reading": "このほうあんはらいしゅうのこっかいでしんぎされるよていだ。",
-      "example_meaning": "이 법안은 다음 주 국회에서 심의될 예정이다."
+      "example": "この工事は非常に大きな規模で行われている。",
+      "example_reading": "この こうじは ひじょうに おおきな きぼで おこなわれている。",
+      "example_meaning": "이 공사는 매우 큰 규모로 진행되고 있다."
     },
     {
-      "word": "成立",
-      "reading": "せいりつ",
-      "meaning": "성립(법 등이 통과됨)",
-      "level": "N3",
-      "example": "新しい法律が国会で成立した。",
-      "example_reading": "あたらしいほうりつがこっかいでせいりつした。",
-      "example_meaning": "새로운 법률이 국회에서 성립되었다(통과되었다)."
+      "word": "彩る",
+      "reading": "いろどる",
+      "meaning": "물들이다, 색을 더하다",
+      "level": "N1",
+      "example": "紅葉が山々を美しく彩っている。",
+      "example_reading": "こうようが やまやまを うつくしく いろどっている。",
+      "example_meaning": "단풍이 산들을 아름답게 물들이고 있다."
     },
     {
-      "word": "在庫量",
-      "reading": "ざいこりょう",
-      "meaning": "재고량",
-      "level": "N3",
-      "example": "米の在庫量が例年に比べて増加している。",
-      "example_reading": "こめのざいこりょうがれいねんにくらべてぞうかしている。",
-      "example_meaning": "쌀 재고량이 예년에 비해 증가하고 있다."
+      "word": "見据える",
+      "reading": "みすえる",
+      "meaning": "(미래 등을) 내다보다, 응시하다",
+      "level": "N1",
+      "example": "将来を見据えて計画を立てることが大切だ。",
+      "example_reading": "しょうらいを みすえて けいかくを たてることが たいせつだ。",
+      "example_meaning": "미래를 내다보고 계획을 세우는 것이 중요하다."
     },
     {
-      "word": "焦点",
-      "reading": "しょうてん",
-      "meaning": "초점, 쟁점",
+      "word": "移籍",
+      "reading": "いせき",
+      "meaning": "(선수 등의) 이적",
       "level": "N2",
-      "example": "今回の問題は責任の所在が焦点になっている。",
-      "example_reading": "こんかいのもんだいはせきにんのしょざいがしょうてんになっている。",
-      "example_meaning": "이번 문제는 책임 소재가 쟁점이 되고 있다."
-    },
-    {
-      "word": "構想",
-      "reading": "こうそう",
-      "meaning": "구상, 계획",
-      "level": "N2",
-      "example": "政府は新しい都市開発の構想を発表した。",
-      "example_reading": "せいふはあたらしいとしかいはつのこうそうをはっぴょうした。",
-      "example_meaning": "정부는 새로운 도시 개발 구상을 발표했다."
+      "example": "彼は海外のチームへの移籍を決めた。",
+      "example_reading": "かれは かいがいの チームへの いせきを きめた。",
+      "example_meaning": "그는 해외 팀으로의 이적을 결정했다."
     }
   ]
 }
