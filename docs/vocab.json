@@ -1,42 +1,78 @@
 {
-  "generated_at": "2026-07-27 08:04 KST",
-  "date": "2026-07-27",
+  "generated_at": "2026-07-28 08:12 KST",
+  "date": "2026-07-28",
   "words": [
     {
-      "word": "懸念",
-      "reading": "けねん",
-      "meaning": "우려, 걱정",
+      "word": "局地的",
+      "reading": "きょくちてき",
+      "meaning": "국지적(인), 특정 지역에 한정된",
       "level": "N2",
-      "example": "専門家はインフレの再加速を懸念している。",
-      "example_reading": "せんもんかはインフレのさいかそくをけねんしている。",
-      "example_meaning": "전문가는 인플레이션 재가속을 우려하고 있다."
+      "example": "今日は局地的に激しい雷雨が予想されています。",
+      "example_reading": "きょうはきょくちてきにはげしいらいうがよそうされています。",
+      "example_meaning": "오늘은 국지적으로 심한 뇌우가 예상됩니다."
     },
     {
-      "word": "解禁",
-      "reading": "かいきん",
-      "meaning": "(금지 조치의) 해제, 해금",
-      "level": "N1",
-      "example": "米国産のジャガイモの輸入が解禁された。",
-      "example_reading": "べいこくさんのジャガイモのゆにゅうがかいきんされた。",
-      "example_meaning": "미국산 감자 수입이 해금(허용)되었다."
+      "word": "減税",
+      "reading": "げんぜい",
+      "meaning": "감세, 세금 인하",
+      "level": "N2",
+      "example": "政府は経済対策として消費税の減税を検討している。",
+      "example_reading": "せいふはけいざいたいさくとしてしょうひぜいのげんぜいをけんとうしている。",
+      "example_meaning": "정부는 경제 대책으로 소비세 감세를 검토하고 있다."
     },
     {
-      "word": "据え置き",
-      "reading": "すえおき",
-      "meaning": "(변경하지 않고) 그대로 둠, 동결",
-      "level": "N1",
-      "example": "日銀は政策金利を据え置くことを決定した。",
-      "example_reading": "にちぎんはせいさくきんりをすえおくことをけっていした。",
-      "example_meaning": "일본은행은 정책금리를 동결하기로 결정했다."
+      "word": "死去",
+      "reading": "しきょ",
+      "meaning": "사거, 사망(격식체 표현)",
+      "level": "N2",
+      "example": "有名な作家が昨日死去したというニュースが流れた。",
+      "example_reading": "ゆうめいなさっかがきのうしきょしたというニュースがながれた。",
+      "example_meaning": "유명한 작가가 어제 사망했다는 뉴스가 나왔다."
     },
     {
-      "word": "告示",
-      "reading": "こくじ",
-      "meaning": "(공식적인) 공고, 고시",
+      "word": "悼む",
+      "reading": "いたむ",
+      "meaning": "애도하다, 슬퍼하다",
       "level": "N1",
-      "example": "知事選挙の告示まで残り1か月となった。",
-      "example_reading": "ちじせんきょのこくじまでのこりいっかげつとなった。",
-      "example_meaning": "지사 선거 공고까지 남은 기간이 한 달이 되었다."
+      "example": "多くの読者が作家の死を悼んでいる。",
+      "example_reading": "おおくのどくしゃがさっかのしをいたんでいる。",
+      "example_meaning": "많은 독자들이 작가의 죽음을 애도하고 있다."
+    },
+    {
+      "word": "授受",
+      "reading": "じゅじゅ",
+      "meaning": "수수, 주고받음",
+      "level": "N1",
+      "example": "この事件では金銭の授受が問題になっている。",
+      "example_reading": "このじけんではきんせんのじゅじゅがもんだいになっている。",
+      "example_meaning": "이 사건에서는 금전 수수가 문제가 되고 있다."
+    },
+    {
+      "word": "無断",
+      "reading": "むだん",
+      "meaning": "무단, 허락 없이",
+      "level": "N2",
+      "example": "他人の写真を無断で使用してはいけません。",
+      "example_reading": "たにんのしゃしんをむだんでしようしてはいけません。",
+      "example_meaning": "타인의 사진을 무단으로 사용해서는 안 됩니다."
+    },
+    {
+      "word": "統合",
+      "reading": "とうごう",
+      "meaning": "통합, 합병",
+      "level": "N2",
+      "example": "二つの会社が統合して新しい企業になった。",
+      "example_reading": "ふたつのかいしゃがとうごうしてあたらしいきぎょうになった。",
+      "example_meaning": "두 회사가 통합하여 새로운 기업이 되었다."
+    },
+    {
+      "word": "獲得",
+      "reading": "かくとく",
+      "meaning": "획득, 얻음",
+      "level": "N2",
+      "example": "彼女は大会で銅メダルを獲得した。",
+      "example_reading": "かのじょはたいかいでどうメダルをかくとくした。",
+      "example_meaning": "그녀는 대회에서 동메달을 획득했다."
     }
   ]
 }
