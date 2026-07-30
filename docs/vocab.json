@@ -1,42 +1,69 @@
 {
-  "generated_at": "2026-07-30 08:04 KST",
-  "date": "2026-07-30",
+  "generated_at": "2026-07-31 08:13 KST",
+  "date": "2026-07-31",
   "words": [
     {
-      "word": "倒壊",
-      "reading": "とうかい",
-      "meaning": "붕괴, 무너짐",
+      "word": "復旧",
+      "reading": "ふっきゅう",
+      "meaning": "복구",
       "level": "N2",
-      "example": "地震の影響で古い建物が倒壊した。",
-      "example_reading": "じしんのえいきょうでふるいたてものがとうかいした。",
-      "example_meaning": "지진의 영향으로 오래된 건물이 붕괴했다."
+      "example": "台風で止まった電気は3日後に復旧した。",
+      "example_reading": "たいふうで とまった でんきは みっかごに ふっきゅうした。",
+      "example_meaning": "태풍으로 끊긴 전기는 3일 후에 복구되었다."
     },
     {
-      "word": "据え置き",
-      "reading": "すえおき",
-      "meaning": "동결, 그대로 유지함(주로 금리·가격 등)",
+      "word": "不正",
+      "reading": "ふせい",
+      "meaning": "부정(부정행위)",
+      "level": "N2",
+      "example": "会社の不正が発覚し、社長が謝罪した。",
+      "example_reading": "かいしゃの ふせいが はっかくし、しゃちょうが しゃざいした。",
+      "example_meaning": "회사의 부정행위가 밝혀져 사장이 사과했다."
+    },
+    {
+      "word": "議論",
+      "reading": "ぎろん",
+      "meaning": "논의, 토론",
+      "level": "N3",
+      "example": "この問題については、まだ議論が続いている。",
+      "example_reading": "この もんだいについては、まだ ぎろんが つづいている。",
+      "example_meaning": "이 문제에 대해서는 아직 논의가 계속되고 있다."
+    },
+    {
+      "word": "懸念",
+      "reading": "けねん",
+      "meaning": "우려, 염려",
       "level": "N1",
-      "example": "FRBは政策金利を据え置くことを決定した。",
-      "example_reading": "エフアールビーはせいさくきんりをすえおくことをけっていした。",
-      "example_meaning": "FRB는 정책금리를 동결하기로 결정했다."
+      "example": "経済の先行きに対する懸念が広がっている。",
+      "example_reading": "けいざいの さきゆきに たいする けねんが ひろがっている。",
+      "example_meaning": "경제 전망에 대한 우려가 확산되고 있다."
     },
     {
-      "word": "見通し",
-      "reading": "みとおし",
-      "meaning": "전망, 예상",
-      "level": "N2",
-      "example": "首相は消費税率を引き下げる方針を表明する見通しだ。",
-      "example_reading": "しゅしょうはしょうひぜいりつをひきさげるほうしんをひょうめいするみとおしだ。",
-      "example_meaning": "총리는 소비세율을 인하하는 방침을 표명할 전망이다."
+      "word": "介入",
+      "reading": "かいにゅう",
+      "meaning": "개입",
+      "level": "N1",
+      "example": "政府は市場の混乱を防ぐために介入した。",
+      "example_reading": "せいふは しじょうの こんらんを ふせぐために かいにゅうした。",
+      "example_meaning": "정부는 시장의 혼란을 막기 위해 개입했다."
     },
     {
-      "word": "重点的",
-      "reading": "じゅうてんてき",
-      "meaning": "중점적으로, 집중적으로",
+      "word": "敗退",
+      "reading": "はいたい",
+      "meaning": "패배하여 물러남, 탈락",
+      "level": "N1",
+      "example": "日本代表は準決勝で敗退した。",
+      "example_reading": "にほんだいひょうは じゅんけっしょうで はいたいした。",
+      "example_meaning": "일본 대표팀은 준결승에서 패배하여 탈락했다."
+    },
+    {
+      "word": "表明",
+      "reading": "ひょうめい",
+      "meaning": "표명, (공식적으로) 밝힘",
       "level": "N2",
-      "example": "政府は被災地の復旧に重点的に取り組む方針だ。",
-      "example_reading": "せいふはひさいちのふっきゅうにじゅうてんてきにとりくむほうしんだ。",
-      "example_meaning": "정부는 재해 지역 복구에 중점적으로 임할 방침이다."
+      "example": "首相は新政策への支持を表明した。",
+      "example_reading": "しゅしょうは しんせいさくへの しじを ひょうめいした。",
+      "example_meaning": "총리는 새 정책에 대한 지지를 표명했다."
     }
   ]
 }
