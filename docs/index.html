@@ -98,6 +98,8 @@
   }
   .cat{color:var(--seal);font-weight:700;}
   .dot{color:var(--line);}
+  .date{color:var(--muted);}
+  .kr-date{font-family:"Space Mono",monospace;font-size:10.5px;color:var(--muted);margin-left:6px;letter-spacing:.03em;}
 
   .jp{
     font-family:"Shippori Mincho",serif;font-weight:700;
@@ -192,6 +194,7 @@ function card(it, i){
     ? `<ul class="kr-list">${matches.map(m=>`
         <li class="kr-item">
           <a href="${esc(m.link)}" target="_blank" rel="noopener">${esc(m.title)}</a>
+          ${m.date?`<span class="kr-date">${esc(m.date)}</span>`:''}
           ${m.desc?`<span class="kr-desc">${esc(m.desc)}</span>`:''}
         </li>`).join('')}</ul>`
     : `<span class="no-match">한국 언론 매칭 없음 — 아직 한국에서 보도되지 않았거나 키워드 불일치</span>`;
@@ -202,6 +205,7 @@ function card(it, i){
     <div class="cmeta">
       <span class="cat">${esc(it.category||'')}</span><span class="dot">·</span>
       <span>${esc(it.source||'')}</span>
+      ${it.jp_date?`<span class="dot">·</span><span class="date">${esc(it.jp_date)}</span>`:''}
     </div>
     <h2 class="jp">${esc(it.jp_title)}</h2>
     ${it.ko_title?`<p class="kt">${esc(it.ko_title)}</p>`:''}
