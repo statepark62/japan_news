@@ -57,6 +57,33 @@ def clean_text(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+def fmt_date(raw):
+    """RSS/네이버의 다양한 날짜 형식을 'YYYY-MM-DD' 로 변환. 실패 시 빈 문자열."""
+    if not raw:
+        return ""
+    raw = raw.strip()
+    # RFC-822 (예: "Sat, 12 Jul 2026 06:40:00 +0900") — 네이버 pubDate
+    try:
+        from email.utils import parsedate_to_datetime
+        dt = parsedate_to_datetime(raw)
+        if dt:
+            return dt.astimezone(KST).strftime("%Y-%m-%d")
+    except Exception:
+        pass
+    # ISO 8601 (예: "2026-07-12T06:20:00+09:00")
+    try:
+        iso = raw.replace("Z", "+00:00")
+        dt = datetime.datetime.fromisoformat(iso)
+        return dt.astimezone(KST).strftime("%Y-%m-%d")
+    except Exception:
+        pass
+    # 앞 10글자가 날짜꼴이면 그대로
+    m = re.match(r"(\d{4})[-/.](\d{2})[-/.](\d{2})", raw)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+    return ""
+
+
 def item_id(link):
     return hashlib.md5(link.encode("utf-8")).hexdigest()[:12]
 
@@ -180,6 +207,7 @@ def collect_feeds(cfg):
                 "jp_summary": clean_text(entry.get("summary", entry.get("description", "")))[:400],
                 "link": link,
                 "published": entry.get("published", entry.get("updated", "")),
+                "jp_date": fmt_date(entry.get("published", entry.get("updated", ""))),
             })
             count += 1
             if count >= per_feed:
@@ -272,6 +300,7 @@ def search_naver(keywords, display):
                 "desc": clean_text(it.get("description", ""))[:160],
                 "link": it.get("originallink") or it.get("link", ""),
                 "pub": it.get("pubDate", ""),
+                "date": fmt_date(it.get("pubDate", "")),
             })
         return out
     except Exception as e:
