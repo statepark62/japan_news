@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-11 07:46 KST",
-  "date": "2026-08-11",
+  "generated_at": "2026-08-12 07:52 KST",
+  "date": "2026-08-12",
   "words": [
     {
       "word": "警戒",
       "reading": "けいかい",
-      "meaning": "경계",
-      "level": "N3",
-      "example": "台風の接近に伴い、住民は厳重に警戒している。",
-      "example_reading": "たいふうのせっきんにともない、じゅうみんはげんじゅうにけいかいしている。",
-      "example_meaning": "태풍의 접근에 따라 주민들이 엄중히 경계하고 있다."
-    },
-    {
-      "word": "延期",
-      "reading": "えんき",
-      "meaning": "연기(일정을 미룸)",
-      "level": "N3",
-      "example": "悪天候のため、イベントは来週に延期された。",
-      "example_reading": "あくてんこうのため、いべんとはらいしゅうにえんきされた。",
-      "example_meaning": "악천후로 인해 이벤트는 다음 주로 연기되었다."
+      "meaning": "경계, 조심",
+      "level": "N2",
+      "example": "台風が接近しているため、気象庁は警戒を呼びかけている。",
+      "example_reading": "たいふうがせっきんしているため、きしょうちょうはけいかいをよびかけている。",
+      "example_meaning": "태풍이 접근하고 있어서 기상청은 경계를 촉구하고 있다."
     },
     {
       "word": "高騰",
       "reading": "こうとう",
-      "meaning": "(물가 등이) 급등, 폭등",
-      "level": "N1",
-      "example": "原油価格の高騰が家計に影響を与えている。",
-      "example_reading": "げんゆかかくのこうとうがかけいにえいきょうをあたえている。",
-      "example_meaning": "원유 가격 급등이 가계에 영향을 미치고 있다."
+      "meaning": "가격 급등",
+      "level": "N2",
+      "example": "野菜の価格が高騰していて、家計に大きな影響を与えている。",
+      "example_reading": "やさいのかかくがこうとうしていて、かけいにおおきなえいきょうをあたえている。",
+      "example_meaning": "채소 가격이 급등해서 가계에 큰 영향을 주고 있다."
     },
     {
       "word": "倒産",
       "reading": "とうさん",
       "meaning": "도산, 파산",
       "level": "N2",
-      "example": "不景気の影響で多くの中小企業が倒産した。",
-      "example_reading": "ふけいきのえいきょうでおおくのちゅうしょうきぎょうがとうさんした。",
-      "example_meaning": "불경기의 영향으로 많은 중소기업이 도산했다."
+      "example": "経営不振が続き、その会社は倒産してしまった。",
+      "example_reading": "けいえいふしんがつづき、そのかいしゃはとうさんしてしまった。",
+      "example_meaning": "경영 부진이 계속되어 그 회사는 도산해버렸다."
     },
     {
       "word": "避難",
       "reading": "ひなん",
       "meaning": "피난, 대피",
-      "level": "N2",
-      "example": "地震が発生したら、すぐに避難してください。",
-      "example_reading": "じしんがはっせいしたら、すぐにひなんしてください。",
-      "example_meaning": "지진이 발생하면 즉시 대피해 주세요."
-    },
-    {
-      "word": "混雑",
-      "reading": "こんざつ",
-      "meaning": "혼잡",
-      "level": "N2",
-      "example": "お盆休みは高速道路が非常に混雑する。",
-      "example_reading": "おぼんやすみはこうそくどうろがひじょうにこんざつする。",
-      "example_meaning": "오봉 연휴에는 고속도로가 매우 혼잡하다."
+      "level": "N3",
+      "example": "大雨のため、多くの住民が避難所に避難した。",
+      "example_reading": "おおあめのため、おおくのじゅうみんがひなんじょにひなんした。",
+      "example_meaning": "큰비 때문에 많은 주민들이 대피소로 피난했다."
     },
     {
       "word": "見込み",
       "reading": "みこみ",
       "meaning": "전망, 예상",
       "level": "N2",
-      "example": "来年の売り上げは増加する見込みだ。",
-      "example_reading": "らいねんのうりあげはぞうかするみこみだ。",
-      "example_meaning": "내년 매출은 증가할 전망이다."
+      "example": "明日は天気が回復する見込みです。",
+      "example_reading": "あしたはてんきがかいふくするみこみです。",
+      "example_meaning": "내일은 날씨가 회복될 전망입니다."
     },
     {
-      "word": "なりすまし",
-      "reading": "なりすまし",
-      "meaning": "사칭, 신분 위장",
-      "level": "N1",
-      "example": "有名人になりすまして広告を出す詐欺が増えている。",
-      "example_reading": "ゆうめいじんになりすましてこうこくをだすさぎがふえている。",
-      "example_meaning": "유명인을 사칭하여 광고를 내는 사기가 늘고 있다."
+      "word": "要請",
+      "reading": "ようせい",
+      "meaning": "요청, 요구",
+      "level": "N2",
+      "example": "政府は企業に対して感染対策の強化を要請した。",
+      "example_reading": "せいふはきぎょうにたいしてかんせんたいさくのきょうかをようせいした。",
+      "example_meaning": "정부는 기업에 대해 감염 대책 강화를 요청했다."
+    },
+    {
+      "word": "混雑",
+      "reading": "こんざつ",
+      "meaning": "혼잡",
+      "level": "N3",
+      "example": "お盆の時期は高速道路がひどく混雑する。",
+      "example_reading": "おぼんのじきはこうそくどうろがひどくこんざつする。",
+      "example_meaning": "오봉(추석) 시기에는 고속도로가 심하게 혼잡해진다."
+    },
+    {
+      "word": "一致",
+      "reading": "いっち",
+      "meaning": "일치, 합의",
+      "level": "N2",
+      "example": "両国は経済協力の推進で一致した。",
+      "example_reading": "りょうこくはけいざいきょうりょくのすいしんでいっちした。",
+      "example_meaning": "양국은 경제협력 추진에 합의했다."
     }
   ]
 }
