@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-13 07:50 KST",
-  "date": "2026-08-13",
+  "generated_at": "2026-08-14 07:52 KST",
+  "date": "2026-08-14",
   "words": [
     {
       "word": "警戒",
       "reading": "けいかい",
-      "meaning": "경계, 주의",
+      "meaning": "경계",
       "level": "N2",
-      "example": "台風の接近に伴い、住民は警戒を強めています。",
-      "example_reading": "たいふうのせっきんにともない、じゅうみんはけいかいをつよめています。",
-      "example_meaning": "태풍의 접근에 따라 주민들은 경계를 강화하고 있습니다."
-    },
-    {
-      "word": "延期",
-      "reading": "えんき",
-      "meaning": "연기",
-      "level": "N3",
-      "example": "悪天候のため、打ち上げは来週に延期された。",
-      "example_reading": "あくてんこうのため、うちあげはらいしゅうにえんきされた。",
-      "example_meaning": "악천후 때문에 발사가 다음 주로 연기되었다."
-    },
-    {
-      "word": "なりすまし",
-      "reading": "なりすまし",
-      "meaning": "사칭, 신분 도용",
-      "level": "N1",
-      "example": "有名人になりすました広告が急増している。",
-      "example_reading": "ゆうめいじんになりすましたこうこくがきゅうぞうしている。",
-      "example_meaning": "유명인을 사칭한 광고가 급증하고 있다."
+      "example": "台風が近づいているので、警戒を怠らないでください。",
+      "example_reading": "たいふうがちかづいているので、けいかいをおこたらないでください。",
+      "example_meaning": "태풍이 다가오고 있으니 경계를 게을리하지 마세요."
     },
     {
       "word": "高騰",
       "reading": "こうとう",
-      "meaning": "(가격) 급등, 폭등",
+      "meaning": "급등, 폭등",
       "level": "N1",
-      "example": "輸入品の価格高騰が家計を圧迫している。",
-      "example_reading": "ゆにゅうひんのかかくこうとうがかけいをあっぱくしている。",
-      "example_meaning": "수입품 가격 급등이 가계를 압박하고 있다."
-    },
-    {
-      "word": "倒産",
-      "reading": "とうさん",
-      "meaning": "도산, 파산",
-      "level": "N2",
-      "example": "資金繰りが悪化し、その会社は倒産した。",
-      "example_reading": "しきんぐりがあっかし、そのかいしゃはとうさんした。",
-      "example_meaning": "자금 사정이 악화되어 그 회사는 도산했다."
+      "example": "最近、野菜の価格が高騰している。",
+      "example_reading": "さいきん、やさいのかかくがこうとうしている。",
+      "example_meaning": "최근 채소 가격이 급등하고 있다."
     },
     {
       "word": "廃業",
       "reading": "はいぎょう",
       "meaning": "폐업",
       "level": "N1",
-      "example": "後継者不足のため、老舗の店が廃業を決めた。",
-      "example_reading": "こうけいしゃぶそくのため、しにせのみせがはいぎょうをきめた。",
-      "example_meaning": "후계자 부족으로 오래된 가게가 폐업을 결정했다."
+      "example": "経営難のため、その店は廃業することになった。",
+      "example_reading": "けいえいなんのため、そのみせははいぎょうすることになった。",
+      "example_meaning": "경영난 때문에 그 가게는 폐업하게 되었다."
     },
     {
       "word": "避難",
       "reading": "ひなん",
       "meaning": "피난, 대피",
       "level": "N3",
-      "example": "大雨警報が出たため、住民に避難が呼びかけられた。",
-      "example_reading": "おおあめけいほうがでたため、じゅうみんにひなんがよびかけられた。",
-      "example_meaning": "폭우 경보가 발령되어 주민들에게 대피가 촉구되었다."
+      "example": "地震が発生したら、すぐに避難してください。",
+      "example_reading": "じしんがはっせいしたら、すぐにひなんしてください。",
+      "example_meaning": "지진이 발생하면 즉시 대피하세요."
     },
     {
-      "word": "一致",
-      "reading": "いっち",
-      "meaning": "일치, 합의",
+      "word": "混雑",
+      "reading": "こんざつ",
+      "meaning": "혼잡, 붐빔",
+      "level": "N3",
+      "example": "連休中は空港が混雑することが予想される。",
+      "example_reading": "れんきゅうちゅうはくうこうがこんざつすることがよそうされる。",
+      "example_meaning": "연휴 중에는 공항이 혼잡할 것으로 예상된다."
+    },
+    {
+      "word": "要請",
+      "reading": "ようせい",
+      "meaning": "요청",
       "level": "N2",
-      "example": "両国は経済協力の推進で一致した。",
-      "example_reading": "りょうこくはけいざいきょうりょくのすいしんでいっちした。",
-      "example_meaning": "양국은 경제 협력 추진에서 의견이 일치했다."
+      "example": "政府は企業に対策強化を要請した。",
+      "example_reading": "せいふはきぎょうにたいさくきょうかをようせいした。",
+      "example_meaning": "정부는 기업에 대책 강화를 요청했다."
+    },
+    {
+      "word": "なりすまし",
+      "reading": "なりすまし",
+      "meaning": "사칭, 신분 도용",
+      "level": "N1",
+      "example": "なりすましメールに注意してください。",
+      "example_reading": "なりすましめーるにちゅういしてください。",
+      "example_meaning": "사칭 이메일에 주의하세요."
+    },
+    {
+      "word": "中断",
+      "reading": "ちゅうだん",
+      "meaning": "중단",
+      "level": "N3",
+      "example": "大雨のため、試合は中断された。",
+      "example_reading": "おおあめのため、しあいはちゅうだんされた。",
+      "example_meaning": "폭우로 인해 경기가 중단되었다."
     }
   ]
 }
