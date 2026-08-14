@@ -1,51 +1,33 @@
 {
-  "generated_at": "2026-08-14 07:52 KST",
-  "date": "2026-08-14",
+  "generated_at": "2026-08-15 07:31 KST",
+  "date": "2026-08-15",
   "words": [
     {
       "word": "警戒",
       "reading": "けいかい",
-      "meaning": "경계",
+      "meaning": "경계, 주의",
       "level": "N2",
       "example": "台風が近づいているので、警戒を怠らないでください。",
       "example_reading": "たいふうがちかづいているので、けいかいをおこたらないでください。",
       "example_meaning": "태풍이 다가오고 있으니 경계를 게을리하지 마세요."
     },
     {
-      "word": "高騰",
-      "reading": "こうとう",
-      "meaning": "급등, 폭등",
-      "level": "N1",
-      "example": "最近、野菜の価格が高騰している。",
-      "example_reading": "さいきん、やさいのかかくがこうとうしている。",
-      "example_meaning": "최근 채소 가격이 급등하고 있다."
-    },
-    {
-      "word": "廃業",
-      "reading": "はいぎょう",
-      "meaning": "폐업",
-      "level": "N1",
-      "example": "経営難のため、その店は廃業することになった。",
-      "example_reading": "けいえいなんのため、そのみせははいぎょうすることになった。",
-      "example_meaning": "경영난 때문에 그 가게는 폐업하게 되었다."
-    },
-    {
-      "word": "避難",
-      "reading": "ひなん",
-      "meaning": "피난, 대피",
+      "word": "延期",
+      "reading": "えんき",
+      "meaning": "연기, 미룸",
       "level": "N3",
-      "example": "地震が発生したら、すぐに避難してください。",
-      "example_reading": "じしんがはっせいしたら、すぐにひなんしてください。",
-      "example_meaning": "지진이 발생하면 즉시 대피하세요."
+      "example": "悪天候のため、イベントは来週に延期されました。",
+      "example_reading": "あくてんこうのため、いべんとはらいしゅうにえんきされました。",
+      "example_meaning": "악천후 때문에 이벤트는 다음 주로 연기되었습니다."
     },
     {
-      "word": "混雑",
-      "reading": "こんざつ",
-      "meaning": "혼잡, 붐빔",
-      "level": "N3",
-      "example": "連休中は空港が混雑することが予想される。",
-      "example_reading": "れんきゅうちゅうはくうこうがこんざつすることがよそうされる。",
-      "example_meaning": "연휴 중에는 공항이 혼잡할 것으로 예상된다."
+      "word": "なりすまし",
+      "reading": "なりすまし",
+      "meaning": "사칭, 위장",
+      "level": "N1",
+      "example": "有名人になりすましたアカウントが詐欺広告を出していた。",
+      "example_reading": "ゆうめいじんになりすましたあかうんとがさぎこうこくをだしていた。",
+      "example_meaning": "유명인을 사칭한 계정이 사기 광고를 내고 있었다."
     },
     {
       "word": "要請",
@@ -57,22 +39,40 @@
       "example_meaning": "정부는 기업에 대책 강화를 요청했다."
     },
     {
-      "word": "なりすまし",
-      "reading": "なりすまし",
-      "meaning": "사칭, 신분 도용",
+      "word": "高騰",
+      "reading": "こうとう",
+      "meaning": "(가격 등이) 급등, 폭등",
       "level": "N1",
-      "example": "なりすましメールに注意してください。",
-      "example_reading": "なりすましめーるにちゅういしてください。",
-      "example_meaning": "사칭 이메일에 주의하세요."
+      "example": "原材料の価格高騰で、多くの企業が苦しんでいる。",
+      "example_reading": "げんざいりょうのかかくこうとうで、おおくのきぎょうがくるしんでいる。",
+      "example_meaning": "원자재 가격 급등으로 많은 기업이 어려움을 겪고 있다."
     },
     {
-      "word": "中断",
-      "reading": "ちゅうだん",
-      "meaning": "중단",
+      "word": "倒産",
+      "reading": "とうさん",
+      "meaning": "도산, 파산",
+      "level": "N2",
+      "example": "不景気の影響で、中小企業の倒産が相次いでいる。",
+      "example_reading": "ふけいきのえいきょうで、ちゅうしょうきぎょうのとうさんがあいついでいる。",
+      "example_meaning": "불경기의 영향으로 중소기업의 도산이 잇따르고 있다."
+    },
+    {
+      "word": "避難",
+      "reading": "ひなん",
+      "meaning": "피난, 대피",
       "level": "N3",
-      "example": "大雨のため、試合は中断された。",
-      "example_reading": "おおあめのため、しあいはちゅうだんされた。",
-      "example_meaning": "폭우로 인해 경기가 중단되었다."
+      "example": "大雨警報が出たので、住民は高台に避難した。",
+      "example_reading": "おおあめけいほうがでたので、じゅうみんはたかだいにひなんした。",
+      "example_meaning": "폭우 경보가 발령되어 주민들은 고지대로 대피했다."
+    },
+    {
+      "word": "見込み",
+      "reading": "みこみ",
+      "meaning": "전망, 예상",
+      "level": "N2",
+      "example": "来週から気温が上がる見込みです。",
+      "example_reading": "らいしゅうからきおんがあがるみこみです。",
+      "example_meaning": "다음 주부터 기온이 오를 전망입니다."
     }
   ]
 }
