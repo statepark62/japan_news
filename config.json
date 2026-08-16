@@ -3,37 +3,50 @@
   "app_subtitle": "일본 주요 뉴스 · 한국의 시선",
   "feeds": [
     {
+      "name": "livedoor 뉴스",
+      "category": "종합",
+      "url": "http://news.livedoor.com/topics/rss.xml",
+      "lang": "ja",
+      "reclassify": true
+    },
+    {
       "name": "NHK 주요뉴스",
       "category": "종합",
-      "url": "https://www3.nhk.or.jp/rss/news/cat0.xml"
+      "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+      "lang": "ja"
     },
     {
       "name": "NHK 정치",
       "category": "정치",
-      "url": "https://www3.nhk.or.jp/rss/news/cat3.xml"
+      "url": "https://www3.nhk.or.jp/rss/news/cat3.xml",
+      "lang": "ja"
     },
     {
       "name": "NHK 경제",
       "category": "경제",
-      "url": "https://www3.nhk.or.jp/rss/news/cat4.xml"
+      "url": "https://www3.nhk.or.jp/rss/news/cat4.xml",
+      "lang": "ja"
     },
     {
       "name": "NHK 국제",
       "category": "국제",
-      "url": "https://www3.nhk.or.jp/rss/news/cat5.xml"
+      "url": "https://www3.nhk.or.jp/rss/news/cat5.xml",
+      "lang": "ja"
     },
     {
       "name": "NHK 사회",
       "category": "사회",
-      "url": "https://www3.nhk.or.jp/rss/news/cat2.xml"
+      "url": "https://www3.nhk.or.jp/rss/news/cat2.xml",
+      "lang": "ja"
     },
     {
       "name": "NHK 과학문화",
       "category": "문화",
-      "url": "https://www3.nhk.or.jp/rss/news/cat7.xml"
+      "url": "https://www3.nhk.or.jp/rss/news/cat7.xml",
+      "lang": "ja"
     }
   ],
-  "max_items_per_feed": 2,
+  "max_items_per_feed": 8,
   "max_total_items": 12,
   "naver_matches_per_item": 3,
   "vocab_per_day": 8,
