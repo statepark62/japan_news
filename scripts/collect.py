@@ -25,6 +25,7 @@ import urllib.request
 
 import feedparser
 import naver_post
+from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(ROOT, "config.json")
@@ -97,6 +98,66 @@ def fmt_date(raw):
     if m:
         return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
     return ""
+
+
+# 본문 컨테이너로 흔히 쓰이는 태그 속성 키워드 (특정 사이트 전용이 아니라 범용 휴리스틱)
+ARTICLE_HINT_WORDS = ("article", "content", "entry", "post", "main", "body-text", "articlebody", "storybody")
+STRIP_TAGS = ("script", "style", "nav", "header", "footer", "aside", "iframe", "form", "button", "svg", "noscript")
+
+
+def fetch_article_text(url, min_len=200, max_len=2500, timeout=15):
+    """기사 원문 페이지에서 본문 텍스트를 추출한다.
+    특정 사이트 구조에 의존하지 않는 범용 방식(<article> 우선 → 본문류 클래스/id → body 전체)이라
+    소스가 바뀌어도 대체로 동작한다. 실패하거나 내용이 너무 짧으면 None (호출부는 RSS 요약으로 대체)."""
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; japan-news-bot/1.0)",
+            "Accept-Language": "ja,ko;q=0.8,en;q=0.5",
+        })
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            raw = resp.read()
+        try:
+            page_html = raw.decode("utf-8")
+        except UnicodeDecodeError:
+            page_html = raw.decode("utf-8", "replace")
+
+        soup = BeautifulSoup(page_html, "html.parser")
+        for tag in soup(STRIP_TAGS):
+            tag.decompose()
+
+        def text_of(tag):
+            return re.sub(r"[ \t]+", " ", tag.get_text(separator="\n", strip=True))
+
+        best = ""
+        article_tag = soup.find("article")
+        if article_tag:
+            best = text_of(article_tag)
+
+        if len(best) < min_len:
+            for tag in soup.find_all(["div", "section"]):
+                attrs = " ".join(
+                    (tag.get("class") or []) + [tag.get("id") or ""]
+                ).lower()
+                if any(k in attrs for k in ARTICLE_HINT_WORDS):
+                    t = text_of(tag)
+                    if len(t) > len(best):
+                        best = t
+
+        if len(best) < min_len:
+            body = soup.find("body")
+            if body:
+                lines = [l.strip() for l in text_of(body).split("\n")]
+                # 메뉴/버튼류의 짧은 줄은 걸러내고 문장다운 줄만 남긴다
+                lines = [l for l in lines if len(l) > 15]
+                best = "\n".join(lines)
+
+        best = re.sub(r"\n{3,}", "\n\n", best).strip()
+        if len(best) < min_len:
+            return None
+        return best[:max_len]
+    except Exception as e:
+        print(f"[warn] 본문 가져오기 실패({url[:50]}...): {e}")
+        return None
 
 
 def item_id(link):
@@ -304,10 +365,16 @@ def analyze_batch(subset, model):
     CATS = ["정치", "경제", "국제", "사회", "문화", "스포츠", "과학"]
     lines = []
     for i, it in enumerate(subset, 1):
-        lines.append(f"[{i}] 제목: {it['jp_title']}\n    요약: {it['jp_summary']}")
-    listing = "\n".join(lines)
+        full = it.get("jp_fulltext", "")
+        if full:
+            lines.append(f"[{i}] 제목: {it['jp_title']}\n    본문(원문 발췌):\n{full}")
+        else:
+            lines.append(f"[{i}] 제목: {it['jp_title']}\n    요약(본문을 가져오지 못해 RSS 스니펫만 있음): {it['jp_summary']}")
+    listing = "\n\n".join(lines)
     prompt = f"""다음은 일본 관련 뉴스 기사 목록입니다(원문은 일본어 또는 영어일 수 있습니다).
-각 기사를 한국 독자를 위해 분석하세요.
+각 기사에는 본문 전체(가능한 경우) 또는 짧은 요약만 주어집니다.
+각 기사를 한국 독자를 위해 분석하세요. 반드시 주어진 텍스트에 있는 사실만 사용하고,
+본문이 없어 정보가 제한적인 경우 문장 수를 억지로 채우려 하지 말고 아는 만큼만 정확하게 쓰세요.
 각 기사에는 번호 [n] 이 있습니다. 반드시 모든 번호에 대해 하나씩, JSON 배열로만 답하세요.
 설명·마크다운·코드펜스 없이 JSON 배열 하나만 출력합니다.
 
@@ -319,12 +386,12 @@ def analyze_batch(subset, model):
   "n": 기사 번호(정수),
   "category": "기사 내용에 가장 맞는 분류 하나: {'/'.join(CATS)} 중 선택",
   "ko_title": "한국어 제목 (인명·지명 등 고유명사는 한국에서 통용되는 한국식 표기로: 岸田/Kishida -> 기시다)",
-  "ko_summary": "한국어 2~3문장 요약",
+  "ko_summary": "한국어 요약. 본문이 주어졌다면 4~6문장으로 배경·경위·전망까지 포함해 심도 있게. 요약만 있다면 2~3문장으로 정확하게만.",
   "keywords": ["한국 언론 검색용 키워드 2~3개 (한국식 표기, 고유명사 우선)"],
   "korea_related": true 또는 false (한국 언급/한일관계/한반도 사안이면 true),
   "korea_note": "한국과 어떤 관련이 있는지 한 줄. 없으면 빈 문자열"
 }}"""
-    r = claude_json(prompt, model, max_tokens=600 + 700 * len(subset))
+    r = claude_json(prompt, model, max_tokens=900 + 900 * len(subset))
     out = {}
     if isinstance(r, list):
         for el in r:
@@ -348,6 +415,17 @@ def analyze_items(items, model, cfg, cache):
     todo = [it for it in items if it["id"] not in cache]
     cached_n = len(items) - len(todo)
     print(f"[ok] 분석: 캐시 재사용 {cached_n}건 / 신규 {len(todo)}건")
+
+    # 새로 분석할 기사만 원문 페이지에서 본문을 가져온다(캐시된 것은 이미 요약이 있으니 불필요).
+    if todo and cfg.get("fetch_full_article", True):
+        fetched = 0
+        for it in todo:
+            text = fetch_article_text(it["link"])
+            if text:
+                it["jp_fulltext"] = text
+                fetched += 1
+            time.sleep(0.4)  # 대상 사이트에 대한 예의상 간격
+        print(f"[ok] 기사 본문 확보: {fetched}/{len(todo)}건 (나머지는 RSS 요약으로 대체)")
 
     batch_size = cfg.get("analysis_batch_size", 6)
     for batch in chunks(todo, batch_size):
