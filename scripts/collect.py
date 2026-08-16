@@ -187,6 +187,10 @@ def empty_analysis():
 def collect_feeds(cfg):
     items, seen = [], set()
     per_feed = cfg.get("max_items_per_feed", 6)
+    max_age_days = cfg.get("max_article_age_days", 3)
+    cutoff = datetime.datetime.now(KST).date() - datetime.timedelta(days=max_age_days)
+    skipped_stale = 0
+
     for feed in cfg["feeds"]:
         try:
             parsed = feedparser.parse(feed["url"])
@@ -198,6 +202,18 @@ def collect_feeds(cfg):
             link = entry.get("link", "").strip()
             if not link or link in seen:
                 continue
+            raw_date = entry.get("published", entry.get("updated", ""))
+            jp_date = fmt_date(raw_date)
+            # 날짜를 알 수 있는데 너무 오래됐으면 건너뛴다.
+            # (날짜 파싱 실패로 빈 값이면 걸러내지 않고 통과시킨다 — 오탐 방지)
+            if jp_date:
+                try:
+                    d = datetime.date.fromisoformat(jp_date)
+                    if d < cutoff:
+                        skipped_stale += 1
+                        continue
+                except ValueError:
+                    pass
             seen.add(link)
             items.append({
                 "id": item_id(link),
@@ -206,13 +222,15 @@ def collect_feeds(cfg):
                 "jp_title": clean_text(entry.get("title", "")),
                 "jp_summary": clean_text(entry.get("summary", entry.get("description", "")))[:400],
                 "link": link,
-                "published": entry.get("published", entry.get("updated", "")),
-                "jp_date": fmt_date(entry.get("published", entry.get("updated", ""))),
+                "published": raw_date,
+                "jp_date": jp_date,
             })
             count += 1
             if count >= per_feed:
                 break
         print(f"[ok] {feed['name']}: {count} items")
+    if skipped_stale:
+        print(f"[ok] 오래된 기사 {skipped_stale}건 제외 (기준: {max_age_days}일 이전)")
     return items[: cfg.get("max_total_items", 26)]
 
 
