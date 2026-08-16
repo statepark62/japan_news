@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-17 07:28 KST",
+  "generated_at": "2026-08-17 07:34 KST",
   "date": "2026-08-17",
   "words": [
     {
-      "word": "見直す",
-      "reading": "みなおす",
-      "meaning": "재검토하다, 다시 살펴보다",
+      "word": "警戒",
+      "reading": "けいかい",
+      "meaning": "경계, 조심함",
       "level": "N2",
-      "example": "政府は新しい政策を見直すことにした。",
-      "example_reading": "せいふはあたらしいせいさくをみなおすことにした。",
-      "example_meaning": "정부는 새로운 정책을 재검토하기로 했다."
+      "example": "台風が接近しているため、住民は警戒を強めている。",
+      "example_reading": "たいふうがせっきんしているため、じゅうみんはけいかいをつよめている。",
+      "example_meaning": "태풍이 접근하고 있어서 주민들은 경계를 강화하고 있다."
     },
     {
-      "word": "相次ぐ",
-      "reading": "あいつぐ",
-      "meaning": "잇따르다, 연이어 일어나다",
+      "word": "延期",
+      "reading": "えんき",
+      "meaning": "연기, 미룸",
       "level": "N2",
-      "example": "各地で自然災害が相次いでいる。",
-      "example_reading": "かくちでしぜんさいがいがあいついでいる。",
-      "example_meaning": "각지에서 자연재해가 잇따르고 있다."
+      "example": "悪天候のため、ロケットの打ち上げは延期された。",
+      "example_reading": "あくてんこうのため、ロケットのうちあげはえんきされた。",
+      "example_meaning": "악천후로 인해 로켓 발사가 연기되었다."
     },
     {
-      "word": "巡る",
-      "reading": "めぐる",
-      "meaning": "~을 둘러싸다, ~에 관한",
+      "word": "なりすまし",
+      "reading": "なりすまし",
+      "meaning": "사칭, 위장",
+      "level": "N1",
+      "example": "有名人のなりすまし広告による詐欺被害が増えている。",
+      "example_reading": "ゆうめいじんのなりすましこうこくによるさぎひがいがふえている。",
+      "example_meaning": "유명인 사칭 광고로 인한 사기 피해가 늘고 있다."
+    },
+    {
+      "word": "高騰",
+      "reading": "こうとう",
+      "meaning": "(가격 등의) 폭등, 급등",
+      "level": "N1",
+      "example": "野菜の価格が高騰し、家計に大きな負担となっている。",
+      "example_reading": "やさいのかかくがこうとうし、かけいにおおきなふたんとなっている。",
+      "example_meaning": "채소 가격이 폭등하여 가계에 큰 부담이 되고 있다."
+    },
+    {
+      "word": "倒産",
+      "reading": "とうさん",
+      "meaning": "도산, 파산",
       "level": "N2",
-      "example": "増税を巡る議論が続いている。",
-      "example_reading": "ぞうぜいをめぐるぎろんがつづいている。",
-      "example_meaning": "증세를 둘러싼 논의가 계속되고 있다."
+      "example": "経営難により、多くの中小企業が倒産に追い込まれた。",
+      "example_reading": "けいえいなんにより、おおくのちゅうしょうきぎょうがとうさんにおいこまれた。",
+      "example_meaning": "경영난으로 많은 중소기업이 도산으로 내몰렸다."
     },
     {
-      "word": "発表",
-      "reading": "はっぴょう",
-      "meaning": "발표",
-      "level": "N4",
-      "example": "首相は新しい経済対策を発表した。",
-      "example_reading": "しゅしょうはあたらしいけいざいたいさくをはっぴょうした。",
-      "example_meaning": "총리는 새로운 경제 대책을 발표했다."
-    },
-    {
-      "word": "懸念",
-      "reading": "けねん",
-      "meaning": "우려, 걱정",
+      "word": "避難",
+      "reading": "ひなん",
+      "meaning": "피난, 대피",
       "level": "N2",
-      "example": "専門家は経済の先行きに懸念を示した。",
-      "example_reading": "せんもんかはけいざいのさきゆきにけねんをしめした。",
-      "example_meaning": "전문가는 경제 전망에 우려를 나타냈다."
+      "example": "大雨警報が出たため、住民は近くの避難所に移動した。",
+      "example_reading": "おおあめけいほうがでたため、じゅうみんはちかくのひなんじょにいどうした。",
+      "example_meaning": "폭우 경보가 발령되어 주민들은 근처 대피소로 이동했다."
     },
     {
-      "word": "対応",
-      "reading": "たいおう",
-      "meaning": "대응, 대처",
-      "level": "N3",
-      "example": "政府は迅速な対応を求められている。",
-      "example_reading": "せいふはじんそくなたいおうをもとめられている。",
-      "example_meaning": "정부는 신속한 대응을 요구받고 있다."
-    },
-    {
-      "word": "与党",
-      "reading": "よとう",
-      "meaning": "여당",
+      "word": "要請",
+      "reading": "ようせい",
+      "meaning": "요청",
       "level": "N2",
-      "example": "与党は新しい法案の成立を目指している。",
-      "example_reading": "よとうはあたらしいほうあんのせいりつをめざしている。",
-      "example_meaning": "여당은 새로운 법안 성립을 목표로 하고 있다."
+      "example": "政府は企業に対して省エネの協力を要請した。",
+      "example_reading": "せいふはきぎょうにたいしてしょうエネのきょうりょくをようせいした。",
+      "example_meaning": "정부는 기업에 에너지 절약 협력을 요청했다."
     },
     {
-      "word": "改正",
-      "reading": "かいせい",
-      "meaning": "개정",
+      "word": "一致",
+      "reading": "いっち",
+      "meaning": "일치, 합의",
       "level": "N2",
-      "example": "来年から労働法が改正される予定だ。",
-      "example_reading": "らいねんからろうどうほうがかいせいされるよていだ。",
-      "example_meaning": "내년부터 노동법이 개정될 예정이다."
+      "example": "両国の外相は経済協力の推進で意見が一致した。",
+      "example_reading": "りょうこくのがいしょうはけいざいきょうりょくのすいしんでいけんがいっちした。",
+      "example_meaning": "양국 외무장관은 경제 협력 추진에 대해 의견이 일치했다."
     }
   ]
 }
