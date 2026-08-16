@@ -198,6 +198,26 @@ def empty_analysis():
     return {"ko_title": "", "ko_summary": "", "keywords": [], "korea_related": False, "korea_note": ""}
 
 
+# URL 경로 조각 → 한글 카테고리 라벨 (path_category 소스용)
+PATH_CATEGORY_MAP = [
+    (("business", "economy", "companies", "markets", "tech"), "경제"),
+    (("politics",), "정치"),
+    (("world", "asia-pacific"), "국제"),
+    (("sports",), "스포츠"),
+    (("culture", "life", "style", "entertainment"), "문화"),
+    (("environment", "science"), "과학"),
+    (("japan", "national", "society", "crime-legal"), "사회"),
+]
+
+
+def guess_category_from_url(url, default):
+    path = urllib.parse.urlparse(url).path.lower()
+    for keys, label in PATH_CATEGORY_MAP:
+        if any(f"/{k}/" in path or path.startswith(f"/{k}") for k in keys):
+            return label
+    return default
+
+
 # ----------------------------------------------------------------------------- 1. RSS
 def collect_feeds(cfg):
     items, seen = [], set()
@@ -255,15 +275,19 @@ def collect_feeds(cfg):
                 except ValueError:
                     pass
             seen.add(link)
+            category = (guess_category_from_url(link, feed.get("category", ""))
+                        if feed.get("path_category") else feed.get("category", ""))
             items.append({
                 "id": item_id(link),
                 "source": feed["name"],
-                "category": feed.get("category", ""),
+                "category": category,
                 "jp_title": clean_text(entry.get("title", "")),
                 "jp_summary": clean_text(entry.get("summary", entry.get("description", "")))[:400],
                 "link": link,
                 "published": raw_date,
                 "jp_date": jp_date,
+                "lang": feed.get("lang", "ja"),
+                "_reclassify": bool(feed.get("reclassify", False)),
             })
             count += 1
             if count >= per_feed:
@@ -277,11 +301,13 @@ def collect_feeds(cfg):
 # ----------------------------------------------------------------------------- 2. 분석 (캐시 + 묶음)
 def analyze_batch(subset, model):
     """여러 기사를 한 번의 호출로 분석. n(입력순번)->분석dict 반환."""
+    CATS = ["정치", "경제", "국제", "사회", "문화", "스포츠", "과학"]
     lines = []
     for i, it in enumerate(subset, 1):
         lines.append(f"[{i}] 제목: {it['jp_title']}\n    요약: {it['jp_summary']}")
     listing = "\n".join(lines)
-    prompt = f"""다음은 일본 뉴스 기사 목록입니다. 각 기사를 한국 독자를 위해 분석하세요.
+    prompt = f"""다음은 일본 관련 뉴스 기사 목록입니다(원문은 일본어 또는 영어일 수 있습니다).
+각 기사를 한국 독자를 위해 분석하세요.
 각 기사에는 번호 [n] 이 있습니다. 반드시 모든 번호에 대해 하나씩, JSON 배열로만 답하세요.
 설명·마크다운·코드펜스 없이 JSON 배열 하나만 출력합니다.
 
@@ -291,7 +317,8 @@ def analyze_batch(subset, model):
 각 원소 형식:
 {{
   "n": 기사 번호(정수),
-  "ko_title": "한국어 제목 (고유명사는 한국식 표기: 岸田->기시다, 半導体->반도체)",
+  "category": "기사 내용에 가장 맞는 분류 하나: {'/'.join(CATS)} 중 선택",
+  "ko_title": "한국어 제목 (인명·지명 등 고유명사는 한국에서 통용되는 한국식 표기로: 岸田/Kishida -> 기시다)",
   "ko_summary": "한국어 2~3문장 요약",
   "keywords": ["한국 언론 검색용 키워드 2~3개 (한국식 표기, 고유명사 우선)"],
   "korea_related": true 또는 false (한국 언급/한일관계/한반도 사안이면 true),
@@ -306,6 +333,7 @@ def analyze_batch(subset, model):
             except Exception:
                 continue
             out[n] = {
+                "category": el.get("category", ""),
                 "ko_title": el.get("ko_title", ""),
                 "ko_summary": el.get("ko_summary", ""),
                 "keywords": el.get("keywords", []),
@@ -335,6 +363,11 @@ def analyze_items(items, model, cfg, cache):
         a = cache.get(it["id"]) or empty_analysis()
         for k in ANALYSIS_FIELDS:
             it[k] = a.get(k, empty_analysis()[k])
+        # 카테고리 재분류가 필요한 소스(예: livedoor 종합피드)만 Claude 가 준 분류로 교체.
+        # 다른 소스(NHK 등)의 원래 카테고리는 건드리지 않는다.
+        if it.get("_reclassify") and a.get("category"):
+            it["category"] = a["category"]
+        it.pop("_reclassify", None)
 
 
 # ----------------------------------------------------------------------------- 3. 네이버 검색
@@ -368,7 +401,14 @@ def search_naver(keywords, display):
 
 # ----------------------------------------------------------------------------- 4. 단어 추출
 def extract_vocab(items, model, n):
-    titles = "\n".join(f"- {it['jp_title']}" for it in items[:20])
+    # 일본어 원문 기사에서만 단어를 뽑는다(영어 기사에서 억지로 일본어 단어를
+    # 만들어내면 실제 뉴스와 무관한 가짜 예문이 되어 학습에 오히려 해롭다).
+    ja_items = [it for it in items if it.get("lang", "ja") == "ja"]
+    if not ja_items:
+        print("[info] 오늘 수집된 일본어 원문 기사가 없어 단어 추출을 건너뜁니다.")
+        return []
+
+    titles = "\n".join(f"- {it['jp_title']}" for it in ja_items[:20])
     prompt = f"""다음은 오늘의 일본 뉴스 제목 목록입니다.
 여기서 한국인 중급~고급 학습자에게 유용한 일본어 단어/표현 {n}개를 골라 주세요.
 너무 쉬운 기초어(する, ある 등)는 제외하고, 뉴스에서 자주 쓰이는 어휘 위주로.
