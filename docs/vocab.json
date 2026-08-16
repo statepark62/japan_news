@@ -1,69 +1,78 @@
 {
-  "generated_at": "2026-08-16 20:22 KST",
-  "date": "2026-08-16",
+  "generated_at": "2026-08-17 07:28 KST",
+  "date": "2026-08-17",
   "words": [
     {
-      "word": "政府",
-      "reading": "せいふ",
-      "meaning": "정부",
-      "level": "N3",
-      "example": "政府は来月から新しい税制を導入する予定だ。",
-      "example_reading": "せいふはらいげつからあたらしいぜいせいをどうにゅうするよていだ。",
-      "example_meaning": "정부는 다음 달부터 새로운 세제를 도입할 예정이다."
+      "word": "見直す",
+      "reading": "みなおす",
+      "meaning": "재검토하다, 다시 살펴보다",
+      "level": "N2",
+      "example": "政府は新しい政策を見直すことにした。",
+      "example_reading": "せいふはあたらしいせいさくをみなおすことにした。",
+      "example_meaning": "정부는 새로운 정책을 재검토하기로 했다."
     },
     {
-      "word": "対策",
-      "reading": "たいさく",
-      "meaning": "대책",
+      "word": "相次ぐ",
+      "reading": "あいつぐ",
+      "meaning": "잇따르다, 연이어 일어나다",
       "level": "N2",
-      "example": "台風による被害を防ぐため、自治体はさまざまな対策を講じている。",
-      "example_reading": "たいふうによるひがいをふせぐため、じちたいはさまざまなたいさくをこうじている。",
-      "example_meaning": "태풍으로 인한 피해를 막기 위해 지자체는 다양한 대책을 마련하고 있다."
+      "example": "各地で自然災害が相次いでいる。",
+      "example_reading": "かくちでしぜんさいがいがあいついでいる。",
+      "example_meaning": "각지에서 자연재해가 잇따르고 있다."
+    },
+    {
+      "word": "巡る",
+      "reading": "めぐる",
+      "meaning": "~을 둘러싸다, ~에 관한",
+      "level": "N2",
+      "example": "増税を巡る議論が続いている。",
+      "example_reading": "ぞうぜいをめぐるぎろんがつづいている。",
+      "example_meaning": "증세를 둘러싼 논의가 계속되고 있다."
     },
     {
       "word": "発表",
       "reading": "はっぴょう",
       "meaning": "발표",
+      "level": "N4",
+      "example": "首相は新しい経済対策を発表した。",
+      "example_reading": "しゅしょうはあたらしいけいざいたいさくをはっぴょうした。",
+      "example_meaning": "총리는 새로운 경제 대책을 발표했다."
+    },
+    {
+      "word": "懸念",
+      "reading": "けねん",
+      "meaning": "우려, 걱정",
+      "level": "N2",
+      "example": "専門家は経済の先行きに懸念を示した。",
+      "example_reading": "せんもんかはけいざいのさきゆきにけねんをしめした。",
+      "example_meaning": "전문가는 경제 전망에 우려를 나타냈다."
+    },
+    {
+      "word": "対応",
+      "reading": "たいおう",
+      "meaning": "대응, 대처",
       "level": "N3",
-      "example": "新しい製品の発表会には多くの記者が集まった。",
-      "example_reading": "あたらしいせいひんのはっぴょうかいにはおおくのきしゃがあつまった。",
-      "example_meaning": "새로운 제품 발표회에는 많은 기자가 모였다."
+      "example": "政府は迅速な対応を求められている。",
+      "example_reading": "せいふはじんそくなたいおうをもとめられている。",
+      "example_meaning": "정부는 신속한 대응을 요구받고 있다."
     },
     {
-      "word": "影響",
-      "reading": "えいきょう",
-      "meaning": "영향",
+      "word": "与党",
+      "reading": "よとう",
+      "meaning": "여당",
       "level": "N2",
-      "example": "円安が輸出企業の業績に大きな影響を与えている。",
-      "example_reading": "えんやすがゆしゅつきぎょうのぎょうせきにおおきなえいきょうをあたえている。",
-      "example_meaning": "엔저가 수출 기업의 실적에 큰 영향을 미치고 있다."
+      "example": "与党は新しい法案の成立を目指している。",
+      "example_reading": "よとうはあたらしいほうあんのせいりつをめざしている。",
+      "example_meaning": "여당은 새로운 법안 성립을 목표로 하고 있다."
     },
     {
-      "word": "増加",
-      "reading": "ぞうか",
-      "meaning": "증가",
+      "word": "改正",
+      "reading": "かいせい",
+      "meaning": "개정",
       "level": "N2",
-      "example": "高齢者人口の増加により、医療費が年々上昇している。",
-      "example_reading": "こうれいしゃじんこうのぞうかにより、いりょうひがねんねんじょうしょうしている。",
-      "example_meaning": "고령자 인구 증가로 인해 의료비가 매년 상승하고 있다."
-    },
-    {
-      "word": "事件",
-      "reading": "じけん",
-      "meaning": "사건",
-      "level": "N3",
-      "example": "昨夜、都内で発生した事件について警察が捜査を進めている。",
-      "example_reading": "さくや、とないではっせいしたじけんについてけいさつがそうさをすすめている。",
-      "example_meaning": "어젯밤 도내에서 발생한 사건에 대해 경찰이 수사를 진행하고 있다."
-    },
-    {
-      "word": "検討",
-      "reading": "けんとう",
-      "meaning": "검토",
-      "level": "N2",
-      "example": "市は新しい交通ルールの導入を検討している。",
-      "example_reading": "しはあたらしいこうつうルールのどうにゅうをけんとうしている。",
-      "example_meaning": "시는 새로운 교통 규칙 도입을 검토하고 있다."
+      "example": "来年から労働法が改正される予定だ。",
+      "example_reading": "らいねんからろうどうほうがかいせいされるよていだ。",
+      "example_meaning": "내년부터 노동법이 개정될 예정이다."
     }
   ]
 }
