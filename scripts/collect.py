@@ -209,14 +209,24 @@ def collect_feeds(cfg):
 
     for feed in cfg["feeds"]:
         try:
-            # NHK 응답이 캐시된 오래된 스냅샷을 줄 때가 있어(실측: 6개 피드 전부가 같은 주말
-            # 날짜만 반환한 사례 확인) 캐시 우회용 헤더와 타임스탬프 쿼리를 추가해서 요청한다.
+            # feedparser 를 거치지 않은 완전 원본 응답을 먼저 확인한다.
+            # (NHK 가 실제로 무엇을 보내는지 직접 눈으로 검증하기 위한 진단 코드)
             bust_url = feed["url"] + ("&" if "?" in feed["url"] else "?") + f"_={int(time.time())}"
-            parsed = feedparser.parse(bust_url, request_headers={
+            raw_req = urllib.request.Request(bust_url, headers={
                 "Cache-Control": "no-cache, no-store, must-revalidate",
                 "Pragma": "no-cache",
                 "User-Agent": "Mozilla/5.0 (compatible; japan-news-bot/1.0)",
             })
+            with urllib.request.urlopen(raw_req, timeout=20) as resp:
+                raw_xml = resp.read().decode("utf-8", "replace")
+                resp_headers = dict(resp.getheaders())
+            m = re.search(r"<pubDate>(.*?)</pubDate>", raw_xml)
+            print(f"[raw] {feed['name']}: 원본 응답의 첫 pubDate = "
+                  f"{m.group(1) if m else '(못 찾음)'}"
+                  f" | Last-Modified={resp_headers.get('Last-Modified','?')}"
+                  f" | Age={resp_headers.get('Age','?')}"
+                  f" | X-Cache={resp_headers.get('X-Cache', resp_headers.get('CF-Cache-Status','?'))}")
+            parsed = feedparser.parse(raw_xml)
         except Exception as e:
             print(f"[warn] feed 실패 {feed['name']}: {e}")
             continue
