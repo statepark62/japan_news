@@ -144,31 +144,6 @@
   .empty{color:#B9C4DD;text-align:center;padding:60px 20px;font-size:14px;line-height:1.7;}
   .empty code{font-family:"Space Mono",monospace;background:rgba(255,255,255,.08);padding:2px 6px;border-radius:3px;}
 
-  .notice{
-    background:rgba(192,54,44,.1);border:1px solid rgba(192,54,44,.35);
-    border-radius:4px;padding:16px 18px;margin-bottom:20px;
-    display:flex;gap:12px;align-items:flex-start;
-  }
-  .notice .ns{
-    flex:none;width:30px;height:30px;border-radius:50%;border:2px solid var(--seal);
-    display:flex;align-items:center;justify-content:center;
-    font-family:"Shippori Mincho",serif;font-weight:700;color:var(--seal);font-size:14px;
-  }
-  .notice .nt{font-size:13px;line-height:1.65;color:#E7D9D6;}
-  .notice .nt b{color:#fff;}
-  .notice-card{
-    background:var(--washi);border-radius:4px;padding:36px 26px;text-align:center;
-    box-shadow:0 10px 30px -18px rgba(0,0,0,.7);
-  }
-  .notice-card .seal-big{
-    width:52px;height:52px;margin:0 auto 16px;border-radius:50%;border:2.5px solid var(--seal);
-    display:flex;align-items:center;justify-content:center;
-    font-family:"Shippori Mincho",serif;font-weight:700;color:var(--seal);font-size:24px;
-  }
-  .notice-card h3{font-family:"Shippori Mincho",serif;font-size:19px;margin:0 0 10px;color:#171b24;}
-  .notice-card p{font-size:14px;line-height:1.7;color:#413e35;margin:0 0 6px;}
-  .notice-card .small{font-size:12px;color:var(--muted);margin-top:14px;}
-
   footer{margin-top:40px;text-align:center;font-family:"Space Mono",monospace;
     font-size:10.5px;color:#6c789a;letter-spacing:.05em;line-height:1.9;}
   footer .credit{display:block;margin-top:6px;color:#8894b5;}
@@ -246,22 +221,12 @@ function card(it, i){
 
 function render(){
   if(!DATA){return;}
-  const bannerHtml = DATA.__stale ? `
-    <div class="notice">
-      <div class="ns">休</div>
-      <div class="nt">
-        <b>일본 뉴스 제공처(NHK) 접속 문제로 새 뉴스 수집이 일시 중단되었습니다.</b><br>
-        아래는 마지막으로 정상 수집된 뉴스입니다 (${esc(DATA.generated_at||'')} 기준).
-        문제가 해결되는 대로 자동으로 재개됩니다.
-      </div>
-    </div>` : '';
-
   const items = DATA.items.filter(it=>!filterKr || it.korea_related);
   if(!items.length){
-    feedEl.innerHTML = bannerHtml + `<div class="empty">표시할 기사가 없습니다.<br>${filterKr?'한일 관련 기사가 이번 갱신에는 없습니다.':''}</div>`;
+    feedEl.innerHTML = `<div class="empty">표시할 기사가 없습니다.<br>${filterKr?'한일 관련 기사가 이번 갱신에는 없습니다.':''}</div>`;
     return;
   }
-  feedEl.innerHTML = bannerHtml + items.map(card).join('');
+  feedEl.innerHTML = items.map(card).join('');
 }
 
 function setFilter(kr){
@@ -273,31 +238,6 @@ function setFilter(kr){
 document.getElementById('fAll').onclick = ()=>setFilter(false);
 document.getElementById('fKr').onclick = ()=>setFilter(true);
 
-const LAST_GOOD_KEY = 'hibinotayori_last_good';
-
-function saveLastGood(d){
-  try{ localStorage.setItem(LAST_GOOD_KEY, JSON.stringify(d)); }catch(e){}
-}
-function loadLastGood(){
-  try{
-    const raw = localStorage.getItem(LAST_GOOD_KEY);
-    return raw ? JSON.parse(raw) : null;
-  }catch(e){ return null; }
-}
-
-function showServiceNotice(){
-  document.getElementById('stamp').textContent = '서비스 일시 중단';
-  document.getElementById('countLabel').textContent = '';
-  feedEl.innerHTML = `
-    <div class="notice-card">
-      <div class="seal-big">休</div>
-      <h3>일시적으로 뉴스 수집이 중단되었습니다</h3>
-      <p>일본 뉴스 제공처(NHK)의 접속 제한으로 인해<br>현재 새 뉴스를 가져오지 못하고 있습니다.</p>
-      <p>문제가 해결되는 대로 자동으로 재개되며,<br>별도로 하실 일은 없습니다.</p>
-      <div class="small">불편을 드려 죄송합니다 · 日々の便り</div>
-    </div>`;
-}
-
 function load(){
   const btn = document.getElementById('refreshBtn');
   btn.classList.add('spinning');
@@ -305,43 +245,19 @@ function load(){
   return fetch('./news.json?_=' + Date.now(), {cache:'no-store'})
     .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
     .then(d=>{
-      if(d.items && d.items.length){
-        // 정상 수집됨 → 다음번 중단에 대비해 로컬에 보관
-        DATA = d; DATA.__stale = false;
-        saveLastGood(d);
-      }else{
-        // 이번 수집은 0건 → 마지막 정상 데이터가 있으면 그걸로 대체 표시
-        const last = loadLastGood();
-        if(last && last.items && last.items.length){
-          DATA = last; DATA.__stale = true;
-        }else{
-          showServiceNotice();
-          return;
-        }
-      }
-      document.getElementById('mastTitle').textContent = DATA.app_title || '日々の便り';
-      document.getElementById('mastSub').textContent = DATA.app_subtitle || '';
-      document.getElementById('stamp').textContent = (DATA.__stale?'마지막 갱신 ':'갱신 ') + (DATA.generated_at||'');
-      const krCount = DATA.items.filter(x=>x.korea_related).length;
-      document.getElementById('countLabel').textContent = `${DATA.items.length}건 · 한일 ${krCount}건`;
+      DATA = d;
+      document.getElementById('mastTitle').textContent = d.app_title || '日々の便り';
+      document.getElementById('mastSub').textContent = d.app_subtitle || '';
+      document.getElementById('stamp').textContent = '갱신 ' + (d.generated_at||'');
+      const krCount = d.items.filter(x=>x.korea_related).length;
+      document.getElementById('countLabel').textContent = `${d.count}건 · 한일 ${krCount}건`;
       render();
     })
     .catch(e=>{
-      const last = loadLastGood();
-      if(last && last.items && last.items.length){
-        DATA = last; DATA.__stale = true;
-        document.getElementById('mastTitle').textContent = DATA.app_title || '日々の便り';
-        document.getElementById('mastSub').textContent = DATA.app_subtitle || '';
-        document.getElementById('stamp').textContent = '마지막 갱신 ' + (DATA.generated_at||'');
-        const krCount = DATA.items.filter(x=>x.korea_related).length;
-        document.getElementById('countLabel').textContent = `${DATA.items.length}건 · 한일 ${krCount}건`;
-        render();
-      }else{
-        feedEl.innerHTML = `<div class="empty">뉴스를 불러오지 못했습니다 (${esc(String(e.message))}).<br>
-          <code>news.json</code> 이 같은 폴더에 있어야 하며, 로컬에서 열 때는 간이 서버가 필요합니다:<br>
-          <code>python3 -m http.server</code></div>`;
-        document.getElementById('stamp').textContent = '연결 실패';
-      }
+      feedEl.innerHTML = `<div class="empty">뉴스를 불러오지 못했습니다 (${esc(String(e.message))}).<br>
+        <code>news.json</code> 이 같은 폴더에 있어야 하며, 로컬에서 열 때는 간이 서버가 필요합니다:<br>
+        <code>python3 -m http.server</code></div>`;
+      document.getElementById('stamp').textContent = '연결 실패';
     })
     .finally(()=>{ setTimeout(()=>btn.classList.remove('spinning'), 400); });
 }
