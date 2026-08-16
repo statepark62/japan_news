@@ -204,11 +204,19 @@ def collect_feeds(cfg):
     per_feed = cfg.get("max_items_per_feed", 6)
     max_age_days = cfg.get("max_article_age_days", 3)
     cutoff = datetime.datetime.now(KST).date() - datetime.timedelta(days=max_age_days)
+    print(f"[info] 오늘(KST) {datetime.datetime.now(KST).date()} / 필터 기준일(cutoff) {cutoff}")
     skipped_stale = 0
 
     for feed in cfg["feeds"]:
         try:
-            parsed = feedparser.parse(feed["url"])
+            # NHK 응답이 캐시된 오래된 스냅샷을 줄 때가 있어(실측: 6개 피드 전부가 같은 주말
+            # 날짜만 반환한 사례 확인) 캐시 우회용 헤더와 타임스탬프 쿼리를 추가해서 요청한다.
+            bust_url = feed["url"] + ("&" if "?" in feed["url"] else "?") + f"_={int(time.time())}"
+            parsed = feedparser.parse(bust_url, request_headers={
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                "Pragma": "no-cache",
+                "User-Agent": "Mozilla/5.0 (compatible; japan-news-bot/1.0)",
+            })
         except Exception as e:
             print(f"[warn] feed 실패 {feed['name']}: {e}")
             continue
