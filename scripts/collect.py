@@ -57,6 +57,21 @@ def clean_text(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+def fmt_date_from_struct(struct_time):
+    """feedparser 가 이미 정규화해서 파싱해 준 published_parsed(time.struct_time, UTC)
+    를 KST 날짜 문자열로 변환한다. feedparser 자체의 파서를 신뢰하는 방식이라,
+    직접 정규식/RFC822 문자열을 재해석하는 것보다 훨씬 안정적이다."""
+    if not struct_time:
+        return ""
+    try:
+        import calendar
+        epoch = calendar.timegm(struct_time)  # struct_time 은 UTC 로 정규화되어 있음
+        dt = datetime.datetime.fromtimestamp(epoch, tz=datetime.timezone.utc)
+        return dt.astimezone(KST).strftime("%Y-%m-%d")
+    except Exception:
+        return ""
+
+
 def fmt_date(raw):
     """RSS/네이버의 다양한 날짜 형식을 'YYYY-MM-DD' 로 변환. 실패 시 빈 문자열."""
     if not raw:
@@ -198,14 +213,21 @@ def collect_feeds(cfg):
             print(f"[warn] feed 실패 {feed['name']}: {e}")
             continue
         count = 0
+        sample_logged = False
         for entry in parsed.entries:
             link = entry.get("link", "").strip()
             if not link or link in seen:
                 continue
             raw_date = entry.get("published", entry.get("updated", ""))
-            jp_date = fmt_date(raw_date)
+            # feedparser 가 이미 정규화한 published_parsed(UTC struct_time) 를 우선 사용.
+            # 이게 없을 때만 원문 문자열을 직접 해석한다.
+            struct = entry.get("published_parsed") or entry.get("updated_parsed")
+            jp_date = fmt_date_from_struct(struct) or fmt_date(raw_date)
+            if not sample_logged:
+                print(f"[debug] {feed['name']} 표본: raw='{raw_date}' → jp_date='{jp_date}'")
+                sample_logged = True
             # 날짜를 알 수 있는데 너무 오래됐으면 건너뛴다.
-            # (날짜 파싱 실패로 빈 값이면 걸러내지 않고 통과시킨다 — 오탐 방지)
+            # (날짜를 못 구했으면 걸러내지 않고 통과시킨다 — 오탐으로 전체가 빠지는 것을 방지)
             if jp_date:
                 try:
                     d = datetime.date.fromisoformat(jp_date)
