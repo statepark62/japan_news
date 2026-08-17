@@ -1,33 +1,78 @@
 {
-  "generated_at": "2026-08-17 08:14 KST",
-  "date": "2026-08-17",
+  "generated_at": "2026-08-18 07:30 KST",
+  "date": "2026-08-18",
   "words": [
     {
-      "word": "絶縁",
-      "reading": "ぜつえん",
-      "meaning": "절연, 인연을 끊음",
-      "level": "N1",
-      "example": "彼女は家族との絶縁を決意した。",
-      "example_reading": "かのじょはかぞくとのぜつえんをけついした。",
-      "example_meaning": "그녀는 가족과의 인연을 끊기로 결심했다."
+      "word": "逮捕",
+      "reading": "たいほ",
+      "meaning": "체포",
+      "level": "N2",
+      "example": "警察は容疑者を逮捕した。",
+      "example_reading": "けいさつはようぎしゃをたいほした。",
+      "example_meaning": "경찰은 용의자를 체포했다."
     },
     {
-      "word": "転売",
-      "reading": "てんばい",
-      "meaning": "전매, 되팔기 (특히 부당하게 비싸게 되파는 것)",
+      "word": "救助",
+      "reading": "きゅうじょ",
+      "meaning": "구조",
       "level": "N2",
-      "example": "限定商品の転売で利益を得る業者が問題になっている。",
-      "example_reading": "げんていしょうひんのてんばいでりえきをえるぎょうしゃがもんだいになっている。",
-      "example_meaning": "한정 상품 전매로 이익을 얻는 업자가 문제가 되고 있다."
+      "example": "遭難者は無事に救助された。",
+      "example_reading": "そうなんしゃはぶじにきゅうじょされた。",
+      "example_meaning": "조난자는 무사히 구조되었다."
+    },
+    {
+      "word": "行方不明",
+      "reading": "ゆくえふめい",
+      "meaning": "행방불명",
+      "level": "N2",
+      "example": "台風の影響で数人が行方不明になっている。",
+      "example_reading": "たいふうのえいきょうですうにんがゆくえふめいになっている。",
+      "example_meaning": "태풍의 영향으로 몇 명이 행방불명 상태이다."
+    },
+    {
+      "word": "装う",
+      "reading": "よそおう",
+      "meaning": "가장하다, ~인 척하다",
+      "level": "N1",
+      "example": "彼は警察官を装って家に侵入した。",
+      "example_reading": "かれはけいさつかんをよそおっていえにしんにゅうした。",
+      "example_meaning": "그는 경찰관인 척하며 집에 침입했다."
     },
     {
       "word": "警戒",
       "reading": "けいかい",
-      "meaning": "경계, 조심",
+      "meaning": "경계",
       "level": "N2",
-      "example": "台風の接近に伴い、強風への警戒が必要です。",
-      "example_reading": "たいふうのせっきんにともない、きょうふうへのけいかいがひつようです。",
-      "example_meaning": "태풍의 접근에 따라 강풍에 대한 경계가 필요합니다."
+      "example": "台風が接近しているので警戒が必要だ。",
+      "example_reading": "たいふうがせっきんしているのでけいかいがひつようだ。",
+      "example_meaning": "태풍이 접근하고 있어서 경계가 필요하다."
+    },
+    {
+      "word": "相次ぐ",
+      "reading": "あいつぐ",
+      "meaning": "잇따르다, 연이어 일어나다",
+      "level": "N1",
+      "example": "今年は自然災害が相次いでいる。",
+      "example_reading": "ことしはしぜんさいがいがあいついでいる。",
+      "example_meaning": "올해는 자연재해가 잇따르고 있다."
+    },
+    {
+      "word": "側近",
+      "reading": "そっきん",
+      "meaning": "측근",
+      "level": "N1",
+      "example": "大統領の側近が不正に関与していたことが分かった。",
+      "example_reading": "だいとうりょうのそっきんがふせいにかんよしていたことがわかった。",
+      "example_meaning": "대통령의 측근이 부정에 관여했다는 것이 밝혀졌다."
+    },
+    {
+      "word": "不安定",
+      "reading": "ふあんてい",
+      "meaning": "불안정",
+      "level": "N3",
+      "example": "大気の状態が不安定で、突然雨が降ることがある。",
+      "example_reading": "たいきのじょうたいがふあんていで、とつぜんあめがふることがある。",
+      "example_meaning": "대기 상태가 불안정해서 갑자기 비가 내리는 경우가 있다."
     }
   ]
 }
