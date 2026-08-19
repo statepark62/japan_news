@@ -1,42 +1,78 @@
 {
-  "generated_at": "2026-08-19 07:31 KST",
-  "date": "2026-08-19",
+  "generated_at": "2026-08-20 07:31 KST",
+  "date": "2026-08-20",
   "words": [
     {
-      "word": "検知",
-      "reading": "けんち",
-      "meaning": "감지, 검지",
+      "word": "暴行",
+      "reading": "ぼうこう",
+      "meaning": "폭행",
       "level": "N2",
-      "example": "警報器が煙を検知して鳴った。",
-      "example_reading": "けいほうきがけむりをけんちしてなった。",
-      "example_meaning": "경보기가 연기를 감지하여 울렸다."
+      "example": "彼は電車内で暴行事件を起こした。",
+      "example_reading": "かれはでんしゃないでぼうこうじけんをおこした。",
+      "example_meaning": "그는 전철 안에서 폭행 사건을 일으켰다."
     },
     {
-      "word": "導入",
-      "reading": "どうにゅう",
-      "meaning": "도입",
+      "word": "逮捕",
+      "reading": "たいほ",
+      "meaning": "체포",
       "level": "N2",
-      "example": "会社は新しいシステムを導入することにした。",
-      "example_reading": "かいしゃはあたらしいしすてむをどうにゅうすることにした。",
-      "example_meaning": "회사는 새로운 시스템을 도입하기로 했다."
+      "example": "警察は容疑者を逮捕した。",
+      "example_reading": "けいさつはようぎしゃをたいほした。",
+      "example_meaning": "경찰은 용의자를 체포했다."
     },
     {
-      "word": "危惧",
-      "reading": "きぐ",
-      "meaning": "우려, 걱정",
+      "word": "復旧",
+      "reading": "ふっきゅう",
+      "meaning": "복구",
       "level": "N1",
-      "example": "環境破壊が進むことが危惧されている。",
-      "example_reading": "かんきょうはかいがすすむことがきぐされている。",
-      "example_meaning": "환경 파괴가 진행되는 것이 우려되고 있다."
+      "example": "台風による被害からの復旧作業が続いている。",
+      "example_reading": "たいふうによるひがいからのふっきゅうさぎょうがつづいている。",
+      "example_meaning": "태풍으로 인한 피해로부터의 복구 작업이 계속되고 있다."
     },
     {
-      "word": "動向",
-      "reading": "どうこう",
-      "meaning": "동향, 움직임",
+      "word": "洗浄",
+      "reading": "せんじょう",
+      "meaning": "세척",
       "level": "N1",
-      "example": "市場の動向を注意深く見守る必要がある。",
-      "example_reading": "しじょうのどうこうをちゅういぶかくみまもるひつようがある。",
-      "example_meaning": "시장의 동향을 주의 깊게 지켜볼 필요가 있다."
+      "example": "傷口を清潔な水で洗浄してください。",
+      "example_reading": "きずぐちをせいけつなみずでせんじょうしてください。",
+      "example_meaning": "상처 부위를 깨끗한 물로 세척해 주세요."
+    },
+    {
+      "word": "踏切",
+      "reading": "ふみきり",
+      "meaning": "철도 건널목",
+      "level": "N3",
+      "example": "踏切の遮断機が下りたら、絶対に渡ってはいけない。",
+      "example_reading": "ふみきりのしゃだんきがおりたら、ぜったいにわたってはいけない。",
+      "example_meaning": "건널목 차단기가 내려오면 절대 건너서는 안 된다."
+    },
+    {
+      "word": "激励",
+      "reading": "げきれい",
+      "meaning": "격려",
+      "level": "N1",
+      "example": "コーチは選手たちを激励した。",
+      "example_reading": "コーチはせんしゅたちをげきれいした。",
+      "example_meaning": "코치는 선수들을 격려했다."
+    },
+    {
+      "word": "衝突",
+      "reading": "しょうとつ",
+      "meaning": "충돌",
+      "level": "N2",
+      "example": "交差点で二台の車が衝突した。",
+      "example_reading": "こうさてんでにだいのくるまがしょうとつした。",
+      "example_meaning": "교차로에서 두 대의 차가 충돌했다."
+    },
+    {
+      "word": "衰弱",
+      "reading": "すいじゃく",
+      "meaning": "쇠약",
+      "level": "N1",
+      "example": "長い闘病生活で彼の体は衰弱していた。",
+      "example_reading": "ながいとうびょうせいかつでかれのからだはすいじゃくしていた。",
+      "example_meaning": "긴 투병 생활로 그의 몸은 쇠약해져 있었다."
     }
   ]
 }
