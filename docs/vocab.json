@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-21 07:34 KST",
-  "date": "2026-08-21",
+  "generated_at": "2026-08-22 07:31 KST",
+  "date": "2026-08-22",
   "words": [
     {
-      "word": "困惑",
-      "reading": "こんわく",
-      "meaning": "곤혹, 당혹함",
+      "word": "不信任決議案",
+      "reading": "ふしんにんけつぎあん",
+      "meaning": "불신임 결의안",
+      "level": "N1",
+      "example": "野党は内閣に対する不信任決議案を提出した。",
+      "example_reading": "やとうはないかくにたいするふしんにんけつぎあんをていしゅつした。",
+      "example_meaning": "야당은 내각에 대한 불신임 결의안을 제출했다."
+    },
+    {
+      "word": "難色を示す",
+      "reading": "なんしょくをしめす",
+      "meaning": "난색을 표하다, 반대의 뜻을 보이다",
+      "level": "N1",
+      "example": "会社側はその提案に難色を示した。",
+      "example_reading": "かいしゃがわはそのていあんになんしょくをしめした。",
+      "example_meaning": "회사 측은 그 제안에 난색을 표했다."
+    },
+    {
+      "word": "遺族",
+      "reading": "いぞく",
+      "meaning": "유족",
       "level": "N2",
-      "example": "彼女の突然の質問に、彼は困惑を隠せなかった。",
-      "example_reading": "かのじょのとつぜんのしつもんに、かれはこんわくをかくせなかった。",
-      "example_meaning": "그녀의 갑작스러운 질문에 그는 당혹감을 감추지 못했다."
+      "example": "事故の遺族が記者会見で心境を語った。",
+      "example_reading": "じこのいぞくがきしゃかいけんでしんきょうをかたった。",
+      "example_meaning": "사고 유족이 기자회견에서 심경을 밝혔다."
     },
     {
-      "word": "仄めかす",
-      "reading": "ほのめかす",
-      "meaning": "암시하다, 넌지시 비치다",
-      "level": "N1",
-      "example": "彼は会社を辞めることを仄めかしていた。",
-      "example_reading": "かれはかいしゃをやめることをほのめかしていた。",
-      "example_meaning": "그는 회사를 그만두는 것을 암시하고 있었다."
-    },
-    {
-      "word": "不祥事",
-      "reading": "ふしょうじ",
-      "meaning": "불상사, 스캔들",
-      "level": "N1",
-      "example": "企業の不祥事が発覚し、株価が急落した。",
-      "example_reading": "きぎょうのふしょうじがはっかくし、かぶかがきゅうらくした。",
-      "example_meaning": "기업의 불상사가 발각되어 주가가 급락했다."
-    },
-    {
-      "word": "厳戒態勢",
-      "reading": "げんかいたいせい",
-      "meaning": "삼엄한 경계 태세",
-      "level": "N1",
-      "example": "要人の来日に備えて、空港は厳戒態勢が敷かれた。",
-      "example_reading": "ようじんのらいにちにそなえて、くうこうはげんかいたいせいがしかれた。",
-      "example_meaning": "요인의 방일에 대비해 공항은 삼엄한 경계 태세가 갖춰졌다."
-    },
-    {
-      "word": "快挙",
-      "reading": "かいきょ",
-      "meaning": "쾌거, 훌륭한 업적",
-      "level": "N1",
-      "example": "若手選手が世界大会で優勝するという快挙を成し遂げた。",
-      "example_reading": "わかてせんしゅがせかいたいかいでゆうしょうするというかいきょをなしとげた。",
-      "example_meaning": "젊은 선수가 세계대회에서 우승하는 쾌거를 이루었다."
-    },
-    {
-      "word": "確執",
-      "reading": "かくしつ",
-      "meaning": "알력, 갈등, 불화",
-      "level": "N1",
-      "example": "兄弟間の確執が長年続いている。",
-      "example_reading": "きょうだいかんのかくしつがながねんつづいている。",
-      "example_meaning": "형제간의 갈등이 오랫동안 계속되고 있다."
-    },
-    {
-      "word": "混入",
-      "reading": "こんにゅう",
-      "meaning": "혼입, 섞여 들어감",
+      "word": "辞退",
+      "reading": "じたい",
+      "meaning": "사퇴, 사양",
       "level": "N2",
-      "example": "製品に異物が混入していたことが判明した。",
-      "example_reading": "せいひんにいぶつがこんにゅうしていたことがはんめいした。",
-      "example_meaning": "제품에 이물질이 혼입되어 있었던 것이 판명되었다."
+      "example": "彼は出場を辞退することになった。",
+      "example_reading": "かれはしゅつじょうをじたいすることになった。",
+      "example_meaning": "그는 출전을 사퇴하게 되었다."
     },
     {
-      "word": "逃走",
-      "reading": "とうそう",
-      "meaning": "도주, 도망",
+      "word": "執行",
+      "reading": "しっこう",
+      "meaning": "집행",
       "level": "N2",
-      "example": "犯人は警察の追跡を振り切って逃走した。",
-      "example_reading": "はんにんはけいさつのついせきをふりきってとうそうした。",
-      "example_meaning": "범인은 경찰의 추적을 뿌리치고 도주했다."
+      "example": "死刑執行の是非をめぐって議論が続いている。",
+      "example_reading": "しけいしっこうのぜひをめぐってぎろんがつづいている。",
+      "example_meaning": "사형 집행의 옳고 그름을 둘러싸고 논의가 계속되고 있다."
+    },
+    {
+      "word": "廃止論",
+      "reading": "はいしろん",
+      "meaning": "폐지론",
+      "level": "N1",
+      "example": "死刑廃止論には賛否両論がある。",
+      "example_reading": "しけいはいしろんにはさんぴりょうろんがある。",
+      "example_meaning": "사형 폐지론에는 찬반양론이 있다."
+    },
+    {
+      "word": "遭難",
+      "reading": "そうなん",
+      "meaning": "조난",
+      "level": "N2",
+      "example": "登山中に遭難する人が毎年後を絶たない。",
+      "example_reading": "とざんちゅうにそうなんするひとがまいとしあとをたたない。",
+      "example_meaning": "등산 중에 조난당하는 사람이 매년 끊이지 않는다."
+    },
+    {
+      "word": "行方不明",
+      "reading": "ゆくえふめい",
+      "meaning": "행방불명",
+      "level": "N3",
+      "example": "彼女は昨日から行方不明になっている。",
+      "example_reading": "かのじょはきのうからゆくえふめいになっている。",
+      "example_meaning": "그녀는 어제부터 행방불명 상태이다."
     }
   ]
 }
