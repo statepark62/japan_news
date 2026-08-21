@@ -1,39 +1,40 @@
 # 日々の便り — 일본 뉴스 통합 파이프라인
 
-정해진 시각에 일본 주요 뉴스를 모아 다음을 한 번에 처리합니다.
-
-1. **한국어 요약 + 한국 언론 매칭** — 각 기사를 Claude 로 요약하고, 같은 사안의 한국 보도를 네이버 검색으로 찾음
-2. **구글 시트 기록** — 뉴스 전체를 `뉴스기록` 시트에, 오늘의 단어를 `단어장` 시트에 누적 (중복 제거)
-3. **네이버 카페 게시** — tenseijingo 처럼 게시판에 요약 글 자동 작성 (한일 관련 우선)
-4. **일본어 단어 업데이트** — 오늘 뉴스에서 학습용 단어를 뽑아 시트·`vocab.json` 갱신 (ことば帖 연동용)
-5. **GitHub Pages** — `docs/index.html` 이 `news.json` 을 읽어 카드로 표시 (한일 관련엔 붉은 도장 印)
+매일 아침 정해진 시각에 일본 뉴스를 모아 한국어로 요약하고, 같은 사안의 한국 보도를 찾아 나란히 보여주는 개인용 뉴스 시스템입니다.
+뉴스 → 구글 시트 기록 → 고토바초(ことば帖) 단어장 연동 → 네이버 카페 게시 → 홈 화면 앱(PWA)까지 하루 한 번 자동으로 돕니다.
 
 ## 전체 흐름
 
 ```
 GitHub Actions (매일 아침 7시 KST 1회, 또는 수동 실행)
-   └─ scripts/collect.py
-        1) NHK RSS 6종 수집
-        2) Claude: 한국어 요약·키워드·한일관련 분류
-           · 이미 분석한 기사는 캐시 재사용(state/analysis_cache.json) — 품질 동일, 중복 호출 제거
-           · 새 기사만 6개씩 묶어 분석 — 반복 지시문 토큰 절약
-        3) 네이버 검색: 한국 보도 매칭
-        4) Claude: 오늘의 일본어 단어 추출
-        5) GAS 웹앱 → 구글 시트(뉴스기록 / 단어장) 누적
-        6) naver_post.py → 카페 게시판에 요약 글 게시
-        7) docs/news.json, docs/vocab.json 출력 → Pages 반영
+  └─ scripts/collect.py
+       1) livedoor 뉴스 + NHK RSS 수집 (오래된 기사는 자동 제외)
+       2) 새 기사만 원문 페이지에서 본문 전체를 가져옴 (범용 추출기)
+       3) Claude: 카테고리 분류 · 한국어 요약(본문 있으면 심도 있게) · 검색 키워드 · 한일관련 여부
+          · 이미 분석한 기사는 캐시 재사용 (품질 동일, 중복 호출 제거)
+       4) 네이버 검색: 같은 사안의 한국 보도 매칭
+       5) Claude: 오늘의 일본어 단어 추출 (일본어 원문 기사가 있는 날에만)
+       6) GAS 웹앱 → 구글 시트(뉴스기록 / 단어장) 누적, 방문자 카운트
+       7) naver_post.py → 카페 게시판에 요약 글 게시 (길이 자동 조절)
+       8) docs/news.json, docs/vocab.json 출력 → GitHub Pages 반영
 ```
 
 ## 파일 구성
 
 ```
-config.json              소스·처리량·시트·카페 설정
-scripts/collect.py       메인 오케스트레이터
-scripts/naver_post.py    네이버 카페 글쓰기(토큰 갱신 포함)
-gas/Code.gs              구글 시트 수집 웹앱(범용, 여러 시트 처리)
-docs/index.html          Pages 프론트
-docs/news.json           생성물(뉴스)
-docs/vocab.json          생성물(단어) — ことば帖 에서 읽어 쓸 수 있음
+config.json                  소스·처리량·시트·카페 설정
+scripts/collect.py           메인 오케스트레이터
+scripts/naver_post.py        네이버 카페 글쓰기 모듈
+scripts/requirements.txt     Python 의존성
+gas/Code.gs                  구글 시트 수집 웹앱 (여러 시트 처리 + 방문자 카운터)
+docs/index.html              PWA 프론트 (새로고침 버튼·방문자 수·중단 안내 포함)
+docs/manifest.webmanifest    PWA 매니페스트
+docs/sw.js                   서비스워커 (오프라인 지원, 항상 최신 우선)
+docs/icons/                  앱 아이콘
+docs/news.json               생성물(뉴스) — 매 실행마다 갱신
+docs/vocab.json               생성물(단어) — ことば帖 연동용
+state/analysis_cache.json    기사 분석 캐시 (중복 분석 방지)
+state/cafe_cap.json          카페 게시 성공 길이 기록 (다음 실행의 시작점)
 .github/workflows/build.yml  크론 + 수동 실행
 ```
 
@@ -43,59 +44,82 @@ docs/vocab.json          생성물(단어) — ことば帖 에서 읽어 쓸 �
 1. 저장소에 업로드 → **Settings → Pages** → 브랜치 배포, 폴더 `/docs`.
 2. **Secrets** 등록:
    - `ANTHROPIC_API_KEY`
-   - `NAVER_CLIENT_ID` / `NAVER_CLIENT_SECRET` (네이버 개발자센터 "검색" API)
+   - `NAVER_CLIENT_ID` / `NAVER_CLIENT_SECRET` (네이버 개발자센터 "검색" API 전용 애플리케이션 — 카페용 앱과 반드시 분리)
 3. **Actions → build-news → Run workflow** 로 첫 실행.
 
-### B. 구글 시트 기록
-1. 스프레드시트 생성 → 확장 프로그램 → Apps Script → `gas/Code.gs` 붙여넣기.
-2. `SHEET_ID`, `SHARED_SECRET` 채우기 → 웹 앱으로 배포(액세스: 모든 사용자).
-3. Secrets: `GAS_SHEET_URL`(웹앱 URL), `GAS_SHARED_SECRET`(같은 비밀문자열).
-   - `뉴스기록`(전체, 한일관련 Y/N 열 포함) + `단어장` 시트가 자동 생성됩니다.
+### B. 구글 시트 기록 + 방문자 카운터
+1. 시트를 만들고 확장 프로그램 → Apps Script → `gas/Code.gs` 붙여넣기.
+2. 코드 상단 `SHEET_ID`, `SHARED_SECRET` 채우기 → 웹 앱으로 배포(액세스: 모든 사용자).
+3. Secrets: `GAS_SHEET_URL`(웹앱 URL), `GAS_SHARED_SECRET`.
+4. `뉴스기록` · `단어장` 탭이 자동 생성됩니다. 기존에 쓰던 단어장이 있다면 `config.json`의 `sheet.vocab_sheet` 이름을 그 탭과 맞추면 이어 붙습니다.
+5. 방문자 카운터를 쓰려면 `docs/index.html`의 `COUNTER_URL`에 같은 웹앱 `/exec` 주소를 넣으세요.
 
-### C. 네이버 카페 게시 (tenseijingo 값 재사용)
+### C. 네이버 카페 자동 게시
 Secrets:
-- `NAVER_REFRESH_TOKEN` — 네이버 로그인(카페) OAuth 리프레시 토큰
-- `NAVER_LOGIN_CLIENT_ID` / `NAVER_LOGIN_CLIENT_SECRET` — "네이버 아이디로 로그인" 애플리케이션
-- `NAVER_CAFE_CLUB_ID` / `NAVER_CAFE_MENU_ID` — 카페/게시판 ID
+- `NAVER_REFRESH_TOKEN`
+- `NAVER_LOGIN_CLIENT_ID` / `NAVER_LOGIN_CLIENT_SECRET` (카페 글쓰기 권한이 있는 애플리케이션 — 검색용과 별개)
+- `NAVER_CAFE_CLUB_ID` / `NAVER_CAFE_MENU_ID`
 
-> 카페 글쓰기는 검색 API 와 별개로 "네이버 아이디로 로그인 + 카페" 권한이 필요합니다.
-> 이미 tenseijingo_naver 에서 발급/보관 중인 토큰과 클럽/메뉴 ID 를 그대로 넣으면 됩니다.
-> 접근 토큰은 리프레시 토큰으로 매 실행마다 자동 갱신됩니다.
+각 단계는 해당 Secret이 없으면 자동으로 건너뜁니다. A → B → C 순서로 하나씩 붙여도 됩니다.
 
-각 단계는 해당 Secret 이 없으면 자동으로 건너뜁니다. A → B → C 순으로 하나씩 붙여도 됩니다.
+## config.json 주요 설정
 
-## 조절 (config.json)
+| 키 | 설명 |
+|---|---|
+| `feeds` | 뉴스 소스 목록. 각 항목에 `lang`("ja"/"en"), `path_category`(URL로 카테고리 추정), `reclassify`(Claude가 카테고리 재분류) 지정 가능 |
+| `max_items_per_feed` / `max_total_items` | 처리량(=API 비용) 조절 |
+| `max_article_age_days` | 이보다 오래된 기사는 자동 제외 (날짜를 못 읽은 기사는 통과시켜 오탐 방지) |
+| `fetch_full_article` | 새 기사의 원문 페이지에서 본문 전체를 가져올지 (기본 true). 끄면 RSS 짧은 요약만 사용 |
+| `vocab_per_day` | 하루 추출 단어 수 (일본어 원문 기사가 있는 날에만 채워짐) |
+| `claude_model` / `analysis_batch_size` / `analysis_cache_cap` | 비용·속도 조절 |
+| `sheet.news_sheet` / `sheet.vocab_sheet` | 시트 탭 이름 |
+| `cafe.enabled` / `cafe.include` / `cafe.max_items` / `cafe.title_prefix` | 카페 게시 on/off, 기사 선정 기준, 개수, 제목 접두어(**ASCII만** — 한글 제목은 깨짐) |
 
-- `feeds` / `max_items_per_feed` / `max_total_items` — 소스와 처리량(=API 비용)
-- `naver_matches_per_item` — 기사당 한국 보도 매칭 개수
-- `vocab_per_day` — 하루 추출 단어 수
-- `claude_model` — 기본 `claude-sonnet-5`(신형, 8/31까지 도입가 $2/$10)
-- `analysis_batch_size` — 한 번 호출에 묶어 분석할 기사 수(기본 6)
-- `analysis_cache_cap` — 분석 캐시 보관 개수(기본 600)
-- `cafe.include` — `korea_first`(기본) / `korea`(한일만) / `all`
-- `cafe.max_items` — 카페 글에 넣을 기사 수
-- `cafe.enabled` — 카페 게시 on/off
+## 뉴스 소스에 관하여 — 왜 livedoor 뉴스인가
 
-## 비용과 품질
+**NHK는 2025년 7월부터 클라우드 인프라(Google Cloud, Azure 등)에서 오는 RSS 요청을 의도적으로 차단하고 있습니다.**
+GitHub Actions도 Azure 클라우드에서 실행되므로 이 차단 대상에 해당합니다. 캐시 우회, 헤더 위장 등을 시도했지만 `Last-Modified` 헤더가 서버 측에서 실제로 갱신을 멈춘 것으로 확인되어(중간 캐시 문제가 아님), 코드로 해결할 수 없는 사안임을 확정했습니다.
 
-품질(요약·번역)은 그대로 두고 낭비만 줄이도록 설계했습니다.
-- **모델**: Sonnet 5 — 신형이라 품질 저하 없이 현재 더 저렴(도입가). Haiku 로 낮추지 않음.
-- **분석 캐시**: 어제 처리한 기사가 오늘 피드에 남아 있어도 다시 분석하지 않고 재사용.
-- **묶음 분석**: 기사별 분석 깊이는 유지하되 호출 수를 줄여 반복 지시문 토큰 절약.
+그래서 현재는 **livedoor 뉴스**(`news.livedoor.com/topics/rss.xml`, NHK와 무관한 별도 시스템)를 메인 소스로 씁니다. NHK 피드는 설정에 그대로 남아 있어 **접속이 복구되면 자동으로 다시 섞여 들어옵니다** — 별도 조치가 필요 없습니다.
 
-하루 1회 기준 대략 월 수천 원 수준이며, 캐시가 쌓일수록 신규 기사만 분석해 더 낮아집니다.
-`state/analysis_cache.json` 은 매 실행 후 자동 갱신·커밋되므로 직접 건드릴 필요 없습니다.
+아사히·마이니치·요미우리는 이미 공개 RSS를 중단했고, Yahoo! Japan은 이용약관상 이런 자동화 앱에 쓸 수 없어 제외했습니다. Japan Times(영어)도 시도했으나, 일본어 학습(단어 추출 등) 목적에 맞지 않아 최종적으로 제외했습니다.
+
+livedoor는 카테고리별 개별 RSS가 불확실해 "종합" 하나로 수집한 뒤, **Claude가 기사 내용을 보고 정치/경제/국제/사회/문화/스포츠/과학으로 재분류**합니다. NHK처럼 이미 정확한 카테고리를 가진 소스는 건드리지 않습니다.
+
+## 요약 품질 — 본문 전체를 읽고 요약합니다
+
+RSS가 주는 스니펫만으로는 요약이 얕고 부정확해질 수 있어(정보가 부족하면 Claude가 문장 수를 채우려다 사실이 아닌 내용을 지어낼 위험), **새로 분석하는 기사는 원문 페이지에서 본문 전체를 긁어와** 그걸 바탕으로 요약합니다.
+
+- 본문 추출은 특정 사이트 구조에 의존하지 않는 범용 방식(`<article>` 태그 → 본문류 class/id → body 전체에서 메뉴류 제외)이라 소스가 바뀌어도 대체로 동작합니다.
+- 본문을 확보하면 **4~6문장**(배경·경위·전망 포함)으로 심도 있게, 못 구하면 **2~3문장**으로 정확하게만 — Claude에게 정보가 부족할 때 억지로 채우지 말라고 명시했습니다.
+- 이미 분석된(캐시된) 기사는 본문을 다시 긁지 않아 불필요한 요청이 없습니다.
+
+## 네이버 카페 게시 — 알아두면 좋은 것들
+
+수십 차례 실측 끝에 확정된 사실들입니다:
+
+- **전송 방식은 반드시 `application/x-www-form-urlencoded`** — 이중 인코딩이나 `multipart/form-data`(이미지 첨부 포함)로 바꾸면 403/500 오류가 납니다.
+- **본문은 ASCII HTML 숫자참조로 인코딩**(`&#51068;` 형식)해서 보냅니다. 서버가 UTF-8이든 EUC-KR이든 어떤 charset으로 읽어도 깨지지 않는 유일한 방법입니다. 브라우저가 렌더링할 때 원래 글자로 표시됩니다.
+- **제목은 ASCII 문자만 사용해야 합니다.** 제목은 HTML로 렌더링되지 않아 숫자참조를 쓸 수 없고, 어떤 인코딩 조합을 시도해도 한글 제목은 깨졌습니다. 그래서 `[Japan News] YYYY-MM-DD` 형식을 씁니다.
+- **게시 가능한 본문 길이가 날마다 다릅니다** (같은 계정·앱인데도 어떤 날은 1500자가 통과하고 어떤 날은 1000자도 거부됩니다). 그래서 `naver_post.py`는 긴 것부터 시도하며 자동으로 줄여가는 사다리(`1400→1200→1000→800→600→400`)를 쓰고, **성공한 길이를 `state/cafe_cap.json`에 기억**해 다음 실행은 그 근처부터 시작해 불필요한 재시도를 줄입니다.
+- 실패 시 네이버가 보낸 실제 오류 메시지를 로그에 그대로 출력하도록 되어 있어(`[warn] 카페 게시 실패: ...`), 문제가 생기면 원인 파악이 빠릅니다.
 
 ## 天声人語 시스템과의 관계
 
-이 저장소는 tenseijingo_naver 와 **별개**입니다. 천성인어 글 1편과 이 뉴스 글 1편이
-각각 독립적으로 카페에 올라갑니다(합치지 않음). 두 시스템은 서로 영향을 주지 않습니다.
+이 저장소는 tenseijingo_naver 와 **별개**입니다. 천성인어 글 1편과 이 뉴스 글 1편이 각각 독립적으로 카페에 올라갑니다(합치지 않음). 다만 카페 글쓰기 애플리케이션(Client ID/Secret)은 tenseijingo가 이미 검증해둔 것을 공유해서 씁니다 — 검색용 애플리케이션과는 반드시 분리되어 있어야 합니다.
 
-## 뉴스 소스에 관하여
+## 앱 화면 — 서비스 일시 중단 시 동작
 
-현재 **NHK** 6개 카테고리(종합·정치·경제·국제·사회·과학문화). 아사히·마이니치·요미우리는
-공개 RSS 를 중단했고, Yahoo! Japan 은 약관상 취득 정보로 앱을 만들어 공개하는 것을 금지합니다.
-백제·유물 등 문화 교류 뉴스는 NHK **과학문화(cat7)** 피드가 잘 잡습니다.
+뉴스 소스에 문제가 생겨 그날 수집이 0건이면, 화면이 완전히 비지 않습니다:
+- 예전에 성공적으로 수집된 뉴스가 브라우저에 저장되어 있으면, 그걸 계속 보여주면서 상단에 "새 뉴스 수집이 일시 중단되었습니다" 배너를 띄웁니다.
+- 저장된 게 전혀 없는 첫 방문자에게는 정중한 안내 카드를 보여줍니다.
+- 문제가 해결되어 다음 실행이 정상 수집되면 배너는 자동으로 사라집니다. 별도 조치가 필요 없습니다.
+
+## 조절 예시
+
+- **뉴스·비용을 더 줄이고 싶다면**: `max_items_per_feed`, `max_total_items`를 낮추세요. 카테고리를 고르게 가져가려면 두 값을 함께 낮추는 게 좋습니다.
+- **본문 추출을 끄고 싶다면**: `fetch_full_article: false` — 비용은 줄지만 요약이 다시 얕아집니다.
+- **카페 게시를 잠시 끄고 싶다면**: `cafe.enabled: false` — 뉴스·시트·앱은 그대로 돌아갑니다.
 
 ## 로컬 미리보기
 
