@@ -41,7 +41,7 @@ NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "").strip()
 GAS_SHEET_URL = os.environ.get("GAS_SHEET_URL", "").strip()
 GAS_SHARED_SECRET = os.environ.get("GAS_SHARED_SECRET", "").strip()
 
-ANALYSIS_FIELDS = ("ko_title", "ko_summary", "keywords", "korea_related", "korea_note")
+ANALYSIS_FIELDS = ("ko_title", "ko_summary", "keywords", "korea_related", "korea_note", "jp_title_furigana")
 
 
 # ----------------------------------------------------------------------------- utils
@@ -256,7 +256,52 @@ def save_cache(cache, cap):
 
 
 def empty_analysis():
-    return {"ko_title": "", "ko_summary": "", "keywords": [], "korea_related": False, "korea_note": ""}
+    return {"ko_title": "", "ko_summary": "", "keywords": [], "korea_related": False,
+            "korea_note": "", "jp_title_furigana": ""}
+
+
+def build_furigana_html(text, segments):
+    """text 안에서 한자 단어(segments)에 해당하는 부분을
+    <ruby>한자<rt>よみ</rt></ruby> 로 감싼 HTML을 직접 조립한다.
+    (모델이 만든 HTML을 그대로 신뢰하지 않고, 텍스트/읽기만 받아 여기서 안전하게 합성한다)
+    긴 단어부터 먼저 매칭해 짧은 부분 문자열이 먼저 먹어버리는 걸 방지한다."""
+    if not text:
+        return ""
+    if not segments:
+        return html.escape(text)
+
+    segs = sorted(
+        [s for s in segments if s.get("text") and s.get("reading") and s["text"] in text],
+        key=lambda s: -len(s["text"])
+    )
+
+    marks = [None] * len(text)  # None=미처리, ("ruby", text, reading) | ("skip",)
+    for seg in segs:
+        t = seg["text"]
+        start = 0
+        while True:
+            idx = text.find(t, start)
+            if idx == -1:
+                break
+            if all(marks[j] is None for j in range(idx, idx + len(t))):
+                marks[idx] = ("ruby", t, seg["reading"])
+                for j in range(idx + 1, idx + len(t)):
+                    marks[j] = ("skip",)
+            start = idx + 1
+
+    out, i = [], 0
+    while i < len(text):
+        m = marks[i]
+        if m and m[0] == "ruby":
+            _, t, reading = m
+            out.append(f"<ruby>{html.escape(t)}<rt>{html.escape(reading)}</rt></ruby>")
+            i += len(t)
+        elif m and m[0] == "skip":
+            i += 1
+        else:
+            out.append(html.escape(text[i]))
+            i += 1
+    return "".join(out)
 
 
 # URL 경로 조각 → 한글 카테고리 라벨 (path_category 소스용)
@@ -389,9 +434,16 @@ def analyze_batch(subset, model):
   "ko_summary": "한국어 요약. 본문이 주어졌다면 4~6문장으로 배경·경위·전망까지 포함해 심도 있게. 요약만 있다면 2~3문장으로 정확하게만.",
   "keywords": ["한국 언론 검색용 키워드 2~3개 (한국식 표기, 고유명사 우선)"],
   "korea_related": true 또는 false (한국 언급/한일관계/한반도 사안이면 true),
-  "korea_note": "한국과 어떤 관련이 있는지 한 줄. 없으면 빈 문자열"
-}}"""
-    r = claude_json(prompt, model, max_tokens=900 + 900 * len(subset))
+  "korea_note": "한국과 어떤 관련이 있는지 한 줄. 없으면 빈 문자열",
+  "furigana": [
+    {{"text": "제목에 나온 한자 단어(원문 그대로, 예: 追加利上げ)", "reading": "그 단어의 히라가나 읽기(예: ついかりあげ)"}}
+  ]
+}}
+furigana 규칙: 제목(title) 원문이 일본어일 때만 채우고, 영어 제목이면 빈 배열([])로 둡니다.
+제목에 나오는 한자 포함 단어/구절마다 하나씩, 표제어는 제목 원문에 실제로 등장하는 형태 그대로 적으세요
+(예: "追加" 와 "利上げ" 를 따로따로가 아니라 붙어 있으면 "追加利上げ" 처럼 실제 붙어 있는 단위로).
+히라가나·가타카나로만 된 부분, 숫자, 기호는 포함하지 않습니다."""
+    r = claude_json(prompt, model, max_tokens=1000 + 1000 * len(subset))
     out = {}
     if isinstance(r, list):
         for el in r:
@@ -399,6 +451,10 @@ def analyze_batch(subset, model):
                 n = int(el.get("n"))
             except Exception:
                 continue
+            orig_title = subset[n - 1]["jp_title"] if 1 <= n <= len(subset) else ""
+            furigana_segs = el.get("furigana", [])
+            if not isinstance(furigana_segs, list):
+                furigana_segs = []
             out[n] = {
                 "category": el.get("category", ""),
                 "ko_title": el.get("ko_title", ""),
@@ -406,6 +462,7 @@ def analyze_batch(subset, model):
                 "keywords": el.get("keywords", []),
                 "korea_related": bool(el.get("korea_related", False)),
                 "korea_note": el.get("korea_note", ""),
+                "jp_title_furigana": build_furigana_html(orig_title, furigana_segs),
             }
     return out
 
