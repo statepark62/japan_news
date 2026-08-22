@@ -36,6 +36,13 @@ jobs:
           NAVER_CAFE_MENU_ID: ${{ secrets.NAVER_CAFE_MENU_ID }}
         run: python scripts/collect.py
 
+      - name: Threads에 오늘의 최상위 뉴스 게시
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        working-directory: scripts/threads
+        run: python hibi_to_threads.py --news ../../docs/news.json
+
       - name: Commit news.json
         run: |
           git config user.name  "news-bot"
