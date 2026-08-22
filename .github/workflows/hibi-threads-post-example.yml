@@ -1,0 +1,20 @@
+# japan_news 저장소의 .github/workflows/build.yml (기존 파일) 안에,
+# 기존 "scripts/collect.py 실행" 스텝 뒤에 아래 "Threads에 요약 게시" 스텝만
+# 추가하시면 됩니다. 새 워크플로 파일을 따로 만드셔도 되고, 기존 build.yml에
+# 스텝 하나만 끼워 넣으셔도 됩니다.
+#
+# 전제 조건:
+#   1) threads_publish.py, hibi_to_threads.py 를
+#      japan_news 저장소의 scripts/threads/ 폴더에 커밋
+#   2) THREADS_ACCESS_TOKEN, THREADS_USER_ID Secret 등록
+#      (statepark62.github.io에 등록한 것과 "같은 계정"을 쓴다면
+#       이 저장소에도 동일하게 Secret을 등록해야 합니다 —
+#       Secrets는 저장소별로 별도 관리됩니다)
+#   3) requests 패키지 필요 (scripts/requirements.txt에 이미 있다면 생략 가능)
+
+      - name: Threads에 오늘의 최상위 뉴스 게시
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        working-directory: scripts/threads
+        run: python hibi_to_threads.py --news ../../docs/news.json
