@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-22 10:27 KST",
-  "date": "2026-08-22",
+  "generated_at": "2026-08-23 07:29 KST",
+  "date": "2026-08-23",
   "words": [
     {
-      "word": "停職",
-      "reading": "ていしょく",
-      "meaning": "정직(직무 정지 처분)",
+      "word": "酸欠",
+      "reading": "さんけつ",
+      "meaning": "산소 결핍",
       "level": "N1",
-      "example": "彼は不適切な発言が原因で停職処分を受けた。",
-      "example_reading": "かれはふてきせつなはつげんがげんいんでていしょくしょぶんをうけた。",
-      "example_meaning": "그는 부적절한 발언이 원인이 되어 정직 처분을 받았다."
+      "example": "密閉された空間で作業する際は酸欠に注意する必要がある。",
+      "example_reading": "みっぺいされたくうかんでさぎょうするさいはさんけつにちゅういするひつようがある。",
+      "example_meaning": "밀폐된 공간에서 작업할 때는 산소 결핍에 주의해야 한다."
     },
     {
-      "word": "妥当",
-      "reading": "だとう",
-      "meaning": "타당함, 적절함",
-      "level": "N2",
-      "example": "この判断が本当に妥当かどうか、専門家の意見を聞く必要がある。",
-      "example_reading": "このはんだんがほんとうにだとうかどうか、せんもんかのいけんをきくひつようがある。",
-      "example_meaning": "이 판단이 정말로 타당한지, 전문가의 의견을 들을 필요가 있다."
-    },
-    {
-      "word": "偉業",
-      "reading": "いぎょう",
-      "meaning": "위업, 위대한 업적",
+      "word": "苦言",
+      "reading": "くげん",
+      "meaning": "쓴소리, 충고",
       "level": "N1",
-      "example": "彼は史上初となる偉業を成し遂げた。",
-      "example_reading": "かれはしじょうはつとなるいぎょうをなしとげた。",
-      "example_meaning": "그는 사상 최초의 위업을 이루었다."
+      "example": "上司は部下の態度に苦言を呈した。",
+      "example_reading": "じょうしはぶかのたいどにくげんをていした。",
+      "example_meaning": "상사는 부하의 태도에 쓴소리를 했다."
     },
     {
-      "word": "投棄",
-      "reading": "とうき",
-      "meaning": "투기, (쓰레기 등을) 버림",
+      "word": "避難",
+      "reading": "ひなん",
+      "meaning": "피난, 대피",
+      "level": "N2",
+      "example": "地震が発生した際は速やかに避難してください。",
+      "example_reading": "じしんがはっせいしたさいはすみやかにひなんしてください。",
+      "example_meaning": "지진이 발생했을 때는 신속히 대피해 주세요."
+    },
+    {
+      "word": "落雷",
+      "reading": "らくらい",
+      "meaning": "낙뢰, 벼락이 떨어짐",
       "level": "N1",
-      "example": "山中への不法投棄は法律で厳しく禁止されている。",
-      "example_reading": "さんちゅうへのふほうとうきはほうりつできびしくきんしされている。",
-      "example_meaning": "산속에 불법 투기하는 것은 법률로 엄격히 금지되어 있다."
+      "example": "昨夜の落雷で停電が発生した。",
+      "example_reading": "さくやのらくらいでていでんがはっせいした。",
+      "example_meaning": "어젯밤 낙뢰로 정전이 발생했다."
     },
     {
-      "word": "誘因",
-      "reading": "ゆういん",
-      "meaning": "유인, 원인이 되는 요소",
+      "word": "容疑",
+      "reading": "ようぎ",
+      "meaning": "혐의",
       "level": "N1",
-      "example": "食べ物の放置は野生動物を引き寄せる誘因になる。",
-      "example_reading": "たべもののほうちはやせいどうぶつをひきよせるゆういんになる。",
-      "example_meaning": "음식물 방치는 야생동물을 끌어들이는 유인이 된다."
+      "example": "彼は殺人の容疑で逮捕された。",
+      "example_reading": "かれはさつじんのようぎでたいほされた。",
+      "example_meaning": "그는 살인 혐의로 체포되었다."
     },
     {
-      "word": "制裁",
-      "reading": "せいさい",
-      "meaning": "제재",
-      "level": "N2",
-      "example": "国際社会はその国に対して経済制裁を科した。",
-      "example_reading": "こくさいしゃかいはそのくににたいしてけいざいせいさいをかした。",
-      "example_meaning": "국제사회는 그 나라에 대해 경제 제재를 가했다."
+      "word": "湿気",
+      "reading": "しっけ",
+      "meaning": "습기",
+      "level": "N3",
+      "example": "梅雨の時期は湿気が多くて不快だ。",
+      "example_reading": "つゆのじきはしっけがおおくてふかいだ。",
+      "example_meaning": "장마철에는 습기가 많아서 불쾌하다."
     },
     {
-      "word": "見解",
-      "reading": "けんかい",
-      "meaning": "견해, 의견",
+      "word": "標高",
+      "reading": "ひょうこう",
+      "meaning": "표고, 해발 고도",
       "level": "N2",
-      "example": "この問題について、専門家それぞれの見解が分かれている。",
-      "example_reading": "このもんだいについて、せんもんかそれぞれのけんかいがわかれている。",
-      "example_meaning": "이 문제에 대해 전문가마다 견해가 갈리고 있다."
+      "example": "この山の標高は3000メートルを超える。",
+      "example_reading": "このやまのひょうこうはさんぜんめーとるをこえる。",
+      "example_meaning": "이 산의 표고는 3000미터를 넘는다."
     },
     {
-      "word": "披露",
-      "reading": "ひろう",
-      "meaning": "피로, (남에게) 선보임",
+      "word": "謝罪",
+      "reading": "しゃざい",
+      "meaning": "사죄, 사과",
       "level": "N2",
-      "example": "彼女は新しいドレス姿をSNSで披露した。",
-      "example_reading": "かのじょはあたらしいドレスすがたをエスエヌエスでひろうした。",
-      "example_meaning": "그녀는 새로운 드레스 차림을 SNS에서 선보였다."
+      "example": "企業はミスについて記者会見で謝罪した。",
+      "example_reading": "きぎょうはみすについてきしゃかいけんでしゃざいした。",
+      "example_meaning": "기업은 실수에 대해 기자회견에서 사과했다."
     }
   ]
 }
