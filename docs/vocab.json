@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-23 07:29 KST",
-  "date": "2026-08-23",
+  "generated_at": "2026-08-24 07:29 KST",
+  "date": "2026-08-24",
   "words": [
     {
-      "word": "酸欠",
-      "reading": "さんけつ",
-      "meaning": "산소 결핍",
+      "word": "盗撮",
+      "reading": "とうさつ",
+      "meaning": "몰래카메라 촬영, 도촬",
       "level": "N1",
-      "example": "密閉された空間で作業する際は酸欠に注意する必要がある。",
-      "example_reading": "みっぺいされたくうかんでさぎょうするさいはさんけつにちゅういするひつようがある。",
-      "example_meaning": "밀폐된 공간에서 작업할 때는 산소 결핍에 주의해야 한다."
+      "example": "駅のトイレで盗撮の疑いがある男が逮捕された。",
+      "example_reading": "えきのといれでとうさつのうたがいがあるおとこがたいほされた。",
+      "example_meaning": "역 화장실에서 도촬 혐의가 있는 남자가 체포되었다."
     },
     {
-      "word": "苦言",
-      "reading": "くげん",
-      "meaning": "쓴소리, 충고",
-      "level": "N1",
-      "example": "上司は部下の態度に苦言を呈した。",
-      "example_reading": "じょうしはぶかのたいどにくげんをていした。",
-      "example_meaning": "상사는 부하의 태도에 쓴소리를 했다."
-    },
-    {
-      "word": "避難",
-      "reading": "ひなん",
-      "meaning": "피난, 대피",
+      "word": "ひき逃げ",
+      "reading": "ひきにげ",
+      "meaning": "뺑소니",
       "level": "N2",
-      "example": "地震が発生した際は速やかに避難してください。",
-      "example_reading": "じしんがはっせいしたさいはすみやかにひなんしてください。",
-      "example_meaning": "지진이 발생했을 때는 신속히 대피해 주세요."
+      "example": "夜道でひき逃げ事件が発生し、警察が犯人を捜している。",
+      "example_reading": "よみちでひきにげじけんがはっせいし、けいさつがはんにんをさがしている。",
+      "example_meaning": "밤길에서 뺑소니 사건이 발생하여 경찰이 범인을 찾고 있다."
     },
     {
-      "word": "落雷",
-      "reading": "らくらい",
-      "meaning": "낙뢰, 벼락이 떨어짐",
-      "level": "N1",
-      "example": "昨夜の落雷で停電が発生した。",
-      "example_reading": "さくやのらくらいでていでんがはっせいした。",
-      "example_meaning": "어젯밤 낙뢰로 정전이 발생했다."
+      "word": "接近",
+      "reading": "せっきん",
+      "meaning": "접근",
+      "level": "N2",
+      "example": "台風が急速に接近しているため、外出を控えてください。",
+      "example_reading": "たいふうがきゅうそくにせっきんしているため、がいしゅつをひかえてください。",
+      "example_meaning": "태풍이 급속히 접근하고 있으니 외출을 삼가 주세요."
     },
     {
-      "word": "容疑",
-      "reading": "ようぎ",
-      "meaning": "혐의",
-      "level": "N1",
-      "example": "彼は殺人の容疑で逮捕された。",
-      "example_reading": "かれはさつじんのようぎでたいほされた。",
-      "example_meaning": "그는 살인 혐의로 체포되었다."
+      "word": "警戒",
+      "reading": "けいかい",
+      "meaning": "경계, 조심",
+      "level": "N2",
+      "example": "沿岸部では高波への警戒が呼びかけられている。",
+      "example_reading": "えんがんぶではたかなみへのけいかいがよびかけられている。",
+      "example_meaning": "연안 지역에서는 높은 파도에 대한 경계가 촉구되고 있다."
     },
     {
-      "word": "湿気",
-      "reading": "しっけ",
-      "meaning": "습기",
+      "word": "放置",
+      "reading": "ほうち",
+      "meaning": "방치",
       "level": "N3",
-      "example": "梅雨の時期は湿気が多くて不快だ。",
-      "example_reading": "つゆのじきはしっけがおおくてふかいだ。",
-      "example_meaning": "장마철에는 습기가 많아서 불쾌하다."
+      "example": "子どもを一人で長時間放置するのは危険だ。",
+      "example_reading": "こどもをひとりでちょうじかんほうちするのはきけんだ。",
+      "example_meaning": "아이를 혼자 오랫동안 방치하는 것은 위험하다."
     },
     {
-      "word": "標高",
-      "reading": "ひょうこう",
-      "meaning": "표고, 해발 고도",
-      "level": "N2",
-      "example": "この山の標高は3000メートルを超える。",
-      "example_reading": "このやまのひょうこうはさんぜんめーとるをこえる。",
-      "example_meaning": "이 산의 표고는 3000미터를 넘는다."
+      "word": "危機管理",
+      "reading": "ききかんり",
+      "meaning": "위기 관리",
+      "level": "N1",
+      "example": "企業には万一の事態に備えた危機管理が求められる。",
+      "example_reading": "きぎょうにはまんいちのじたいにそなえたききかんりがもとめられる。",
+      "example_meaning": "기업에는 만일의 사태에 대비한 위기 관리가 요구된다."
     },
     {
-      "word": "謝罪",
-      "reading": "しゃざい",
-      "meaning": "사죄, 사과",
+      "word": "震度",
+      "reading": "しんど",
+      "meaning": "진도(지진의 세기)",
       "level": "N2",
-      "example": "企業はミスについて記者会見で謝罪した。",
-      "example_reading": "きぎょうはみすについてきしゃかいけんでしゃざいした。",
-      "example_meaning": "기업은 실수에 대해 기자회견에서 사과했다."
+      "example": "今朝の地震では最大震度5弱を観測した。",
+      "example_reading": "けさのじしんではさいだいしんどごじゃくをかんそくした。",
+      "example_meaning": "오늘 아침 지진에서는 최대 진도 5약을 관측했다."
+    },
+    {
+      "word": "勢力",
+      "reading": "せいりょく",
+      "meaning": "세력",
+      "level": "N2",
+      "example": "台風は強い勢力を維持したまま北上している。",
+      "example_reading": "たいふうはつよいせいりょくをいじしたままほくじょうしている。",
+      "example_meaning": "태풍은 강한 세력을 유지한 채 북상하고 있다."
     }
   ]
 }
