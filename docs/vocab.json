@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-24 07:29 KST",
-  "date": "2026-08-24",
+  "generated_at": "2026-08-25 07:33 KST",
+  "date": "2026-08-25",
   "words": [
     {
-      "word": "盗撮",
-      "reading": "とうさつ",
-      "meaning": "몰래카메라 촬영, 도촬",
+      "word": "脱走",
+      "reading": "だっそう",
+      "meaning": "탈주, 탈출",
+      "level": "N2",
+      "example": "刑務所から囚人が脱走した。",
+      "example_reading": "けいむしょからしゅうじんがだっそうした。",
+      "example_meaning": "교도소에서 죄수가 탈주했다."
+    },
+    {
+      "word": "確保",
+      "reading": "かくほ",
+      "meaning": "확보",
+      "level": "N2",
+      "example": "警察は容疑者の身柄を確保した。",
+      "example_reading": "けいさつはようぎしゃのみがらをかくほした。",
+      "example_meaning": "경찰은 용의자의 신병을 확보했다."
+    },
+    {
+      "word": "懸念",
+      "reading": "けねん",
+      "meaning": "우려, 걱정",
       "level": "N1",
-      "example": "駅のトイレで盗撮の疑いがある男が逮捕された。",
-      "example_reading": "えきのといれでとうさつのうたがいがあるおとこがたいほされた。",
-      "example_meaning": "역 화장실에서 도촬 혐의가 있는 남자가 체포되었다."
+      "example": "経済の悪化に懸念を抱いている。",
+      "example_reading": "けいざいのあっかにけねんをいだいている。",
+      "example_meaning": "경제 악화에 우려를 품고 있다."
     },
     {
-      "word": "ひき逃げ",
-      "reading": "ひきにげ",
-      "meaning": "뺑소니",
+      "word": "判明",
+      "reading": "はんめい",
+      "meaning": "판명, 밝혀짐",
       "level": "N2",
-      "example": "夜道でひき逃げ事件が発生し、警察が犯人を捜している。",
-      "example_reading": "よみちでひきにげじけんがはっせいし、けいさつがはんにんをさがしている。",
-      "example_meaning": "밤길에서 뺑소니 사건이 발생하여 경찰이 범인을 찾고 있다."
+      "example": "事故の原因が判明した。",
+      "example_reading": "じこのげんいんがはんめいした。",
+      "example_meaning": "사고의 원인이 밝혀졌다."
     },
     {
-      "word": "接近",
-      "reading": "せっきん",
-      "meaning": "접근",
-      "level": "N2",
-      "example": "台風が急速に接近しているため、外出を控えてください。",
-      "example_reading": "たいふうがきゅうそくにせっきんしているため、がいしゅつをひかえてください。",
-      "example_meaning": "태풍이 급속히 접근하고 있으니 외출을 삼가 주세요."
+      "word": "直撃",
+      "reading": "ちょくげき",
+      "meaning": "직격, 정면으로 강타함",
+      "level": "N1",
+      "example": "台風が関東地方を直撃する見込みだ。",
+      "example_reading": "たいふうがかんとうちほうをちょくげきするみこみだ。",
+      "example_meaning": "태풍이 간토 지방을 직격할 전망이다."
+    },
+    {
+      "word": "擁護",
+      "reading": "ようご",
+      "meaning": "옹호",
+      "level": "N1",
+      "example": "彼女は同僚から擁護された。",
+      "example_reading": "かのじょはどうりょうからようごされた。",
+      "example_meaning": "그녀는 동료로부터 옹호받았다."
+    },
+    {
+      "word": "追い風",
+      "reading": "おいかぜ",
+      "meaning": "순풍, 유리한 상황",
+      "level": "N1",
+      "example": "円安は輸出企業にとって追い風となっている。",
+      "example_reading": "えんやすはゆしゅつきぎょうにとっておいかぜとなっている。",
+      "example_meaning": "엔저는 수출 기업에게 순풍(호재)이 되고 있다."
     },
     {
       "word": "警戒",
       "reading": "けいかい",
-      "meaning": "경계, 조심",
+      "meaning": "경계, 주의",
       "level": "N2",
-      "example": "沿岸部では高波への警戒が呼びかけられている。",
-      "example_reading": "えんがんぶではたかなみへのけいかいがよびかけられている。",
-      "example_meaning": "연안 지역에서는 높은 파도에 대한 경계가 촉구되고 있다."
-    },
-    {
-      "word": "放置",
-      "reading": "ほうち",
-      "meaning": "방치",
-      "level": "N3",
-      "example": "子どもを一人で長時間放置するのは危険だ。",
-      "example_reading": "こどもをひとりでちょうじかんほうちするのはきけんだ。",
-      "example_meaning": "아이를 혼자 오랫동안 방치하는 것은 위험하다."
-    },
-    {
-      "word": "危機管理",
-      "reading": "ききかんり",
-      "meaning": "위기 관리",
-      "level": "N1",
-      "example": "企業には万一の事態に備えた危機管理が求められる。",
-      "example_reading": "きぎょうにはまんいちのじたいにそなえたききかんりがもとめられる。",
-      "example_meaning": "기업에는 만일의 사태에 대비한 위기 관리가 요구된다."
-    },
-    {
-      "word": "震度",
-      "reading": "しんど",
-      "meaning": "진도(지진의 세기)",
-      "level": "N2",
-      "example": "今朝の地震では最大震度5弱を観測した。",
-      "example_reading": "けさのじしんではさいだいしんどごじゃくをかんそくした。",
-      "example_meaning": "오늘 아침 지진에서는 최대 진도 5약을 관측했다."
-    },
-    {
-      "word": "勢力",
-      "reading": "せいりょく",
-      "meaning": "세력",
-      "level": "N2",
-      "example": "台風は強い勢力を維持したまま北上している。",
-      "example_reading": "たいふうはつよいせいりょくをいじしたままほくじょうしている。",
-      "example_meaning": "태풍은 강한 세력을 유지한 채 북상하고 있다."
+      "example": "大雨に警戒してください。",
+      "example_reading": "おおあめにけいかいしてください。",
+      "example_meaning": "폭우에 주의(경계)해 주세요."
     }
   ]
 }
