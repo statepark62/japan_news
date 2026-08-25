@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-25 07:33 KST",
-  "date": "2026-08-25",
+  "generated_at": "2026-08-26 07:34 KST",
+  "date": "2026-08-26",
   "words": [
     {
-      "word": "脱走",
-      "reading": "だっそう",
-      "meaning": "탈주, 탈출",
-      "level": "N2",
-      "example": "刑務所から囚人が脱走した。",
-      "example_reading": "けいむしょからしゅうじんがだっそうした。",
-      "example_meaning": "교도소에서 죄수가 탈주했다."
-    },
-    {
-      "word": "確保",
-      "reading": "かくほ",
-      "meaning": "확보",
-      "level": "N2",
-      "example": "警察は容疑者の身柄を確保した。",
-      "example_reading": "けいさつはようぎしゃのみがらをかくほした。",
-      "example_meaning": "경찰은 용의자의 신병을 확보했다."
-    },
-    {
-      "word": "懸念",
-      "reading": "けねん",
-      "meaning": "우려, 걱정",
+      "word": "殺到",
+      "reading": "さっとう",
+      "meaning": "쇄도, (한꺼번에) 몰려듦",
       "level": "N1",
-      "example": "経済の悪化に懸念を抱いている。",
-      "example_reading": "けいざいのあっかにけねんをいだいている。",
-      "example_meaning": "경제 악화에 우려를 품고 있다."
+      "example": "新商品の発売直後、注文が殺到した。",
+      "example_reading": "しんしょうひんのはつばいちょくご、ちゅうもんがさっとうした。",
+      "example_meaning": "신상품 발매 직후, 주문이 쇄도했다."
     },
     {
-      "word": "判明",
-      "reading": "はんめい",
-      "meaning": "판명, 밝혀짐",
+      "word": "逮捕",
+      "reading": "たいほ",
+      "meaning": "체포",
       "level": "N2",
-      "example": "事故の原因が判明した。",
-      "example_reading": "じこのげんいんがはんめいした。",
-      "example_meaning": "사고의 원인이 밝혀졌다."
+      "example": "警察は容疑者を逮捕した。",
+      "example_reading": "けいさつはようぎしゃをたいほした。",
+      "example_meaning": "경찰은 용의자를 체포했다."
     },
     {
-      "word": "直撃",
-      "reading": "ちょくげき",
-      "meaning": "직격, 정면으로 강타함",
-      "level": "N1",
-      "example": "台風が関東地方を直撃する見込みだ。",
-      "example_reading": "たいふうがかんとうちほうをちょくげきするみこみだ。",
-      "example_meaning": "태풍이 간토 지방을 직격할 전망이다."
-    },
-    {
-      "word": "擁護",
-      "reading": "ようご",
-      "meaning": "옹호",
-      "level": "N1",
-      "example": "彼女は同僚から擁護された。",
-      "example_reading": "かのじょはどうりょうからようごされた。",
-      "example_meaning": "그녀는 동료로부터 옹호받았다."
-    },
-    {
-      "word": "追い風",
-      "reading": "おいかぜ",
-      "meaning": "순풍, 유리한 상황",
-      "level": "N1",
-      "example": "円安は輸出企業にとって追い風となっている。",
-      "example_reading": "えんやすはゆしゅつきぎょうにとっておいかぜとなっている。",
-      "example_meaning": "엔저는 수출 기업에게 순풍(호재)이 되고 있다."
-    },
-    {
-      "word": "警戒",
-      "reading": "けいかい",
-      "meaning": "경계, 주의",
+      "word": "拒否",
+      "reading": "きょひ",
+      "meaning": "거부",
       "level": "N2",
-      "example": "大雨に警戒してください。",
-      "example_reading": "おおあめにけいかいしてください。",
-      "example_meaning": "폭우에 주의(경계)해 주세요."
+      "example": "彼はその提案を拒否した。",
+      "example_reading": "かれはそのていあんをきょひした。",
+      "example_meaning": "그는 그 제안을 거부했다."
+    },
+    {
+      "word": "審査",
+      "reading": "しんさ",
+      "meaning": "심사",
+      "level": "N2",
+      "example": "入国審査には時間がかかることがある。",
+      "example_reading": "にゅうこくしんさにはじかんがかかることがある。",
+      "example_meaning": "입국 심사에는 시간이 걸리는 경우가 있다."
+    },
+    {
+      "word": "逃走",
+      "reading": "とうそう",
+      "meaning": "도주",
+      "level": "N2",
+      "example": "犯人は車で逃走したとみられる。",
+      "example_reading": "はんにんはくるまでとうそうしたとみられる。",
+      "example_meaning": "범인은 차로 도주한 것으로 보인다."
+    },
+    {
+      "word": "入念",
+      "reading": "にゅうねん",
+      "meaning": "빈틈없음, 꼼꼼함, 치밀함",
+      "level": "N1",
+      "example": "彼らは犯行のために入念な準備をしていた。",
+      "example_reading": "かれらははんこうのためににゅうねんなじゅんびをしていた。",
+      "example_meaning": "그들은 범행을 위해 치밀한 준비를 하고 있었다."
+    },
+    {
+      "word": "異例",
+      "reading": "いれい",
+      "meaning": "이례적임, 전례 없음",
+      "level": "N1",
+      "example": "この事件は異例のスピードで解決した。",
+      "example_reading": "このじけんはいれいのスピードでかいけつした。",
+      "example_meaning": "이 사건은 이례적인 속도로 해결되었다."
+    },
+    {
+      "word": "復活",
+      "reading": "ふっかつ",
+      "meaning": "부활, 재개",
+      "level": "N2",
+      "example": "そのドラマは十三年ぶりに復活する。",
+      "example_reading": "そのドラマはじゅうさんねんぶりにふっかつする。",
+      "example_meaning": "그 드라마는 13년 만에 부활한다."
     }
   ]
 }
