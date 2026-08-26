@@ -443,7 +443,7 @@ furigana 규칙: 제목(title) 원문이 일본어일 때만 채우고, 영어 �
 제목에 나오는 한자 포함 단어/구절마다 하나씩, 표제어는 제목 원문에 실제로 등장하는 형태 그대로 적으세요
 (예: "追加" 와 "利上げ" 를 따로따로가 아니라 붙어 있으면 "追加利上げ" 처럼 실제 붙어 있는 단위로).
 히라가나·가타카나로만 된 부분, 숫자, 기호는 포함하지 않습니다."""
-    r = claude_json(prompt, model, max_tokens=1000 + 1000 * len(subset))
+    r = claude_json(prompt, model, max_tokens=800 + 1500 * len(subset))
     out = {}
     if isinstance(r, list):
         for el in r:
@@ -484,14 +484,31 @@ def analyze_items(items, model, cfg, cache):
             time.sleep(0.4)  # 대상 사이트에 대한 예의상 간격
         print(f"[ok] 기사 본문 확보: {fetched}/{len(todo)}건 (나머지는 RSS 요약으로 대체)")
 
-    batch_size = cfg.get("analysis_batch_size", 6)
+    batch_size = cfg.get("analysis_batch_size", 4)  # furigana·본문요약 추가로 응답이 길어져 기본값을 낮춤
     for batch in chunks(todo, batch_size):
         res = analyze_batch(batch, model)
+        missing = []
         for i, it in enumerate(batch, 1):
             a = res.get(i)
             if a:
                 cache[it["id"]] = a           # 성공한 것만 캐시(실패는 다음 실행에 재시도)
+            else:
+                missing.append(it)
         time.sleep(0.3)
+
+        # 묶음 응답이 중간에 잘려 일부 기사가 통째로 빠졌을 때(빈 제목/요약으로 남는 걸 방지):
+        # 빠진 기사만 하나씩 다시 시도한다. 개별 요청은 훨씬 짧아 잘릴 위험이 낮다.
+        if missing:
+            print(f"[info] 묶음 응답에서 {len(missing)}건 누락 → 개별 재시도")
+            for it in missing:
+                single = analyze_batch([it], model)
+                a = single.get(1)
+                if a:
+                    cache[it["id"]] = a
+                    print(f"[ok] 개별 재시도 성공: {it['jp_title'][:30]}")
+                else:
+                    print(f"[warn] 개별 재시도도 실패, 다음 실행에서 다시 시도됨: {it['jp_title'][:30]}")
+                time.sleep(0.3)
 
     # 모든 기사에 분석 적용 (캐시 우선, 없으면 빈 값)
     for it in items:
