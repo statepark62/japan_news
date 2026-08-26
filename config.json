@@ -62,7 +62,7 @@
     "title_prefix": "[Japan News]",
     "open_to_public": false
   },
-  "analysis_batch_size": 6,
+  "analysis_batch_size": 4,
   "analysis_cache_cap": 600,
   "max_article_age_days": 10
 }
