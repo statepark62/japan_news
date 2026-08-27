@@ -1,5 +1,78 @@
 {
-  "generated_at": "2026-08-27 09:29 KST",
+  "generated_at": "2026-08-27 12:02 KST",
   "date": "2026-08-27",
-  "words": []
+  "words": [
+    {
+      "word": "反響",
+      "reading": "はんきょう",
+      "meaning": "반향, 반응",
+      "level": "N2",
+      "example": "彼の発言はSNSで大きな反響を呼んだ。",
+      "example_reading": "かれのはつげんはえすえぬえすでおおきなはんきょうをよんだ。",
+      "example_meaning": "그의 발언은 SNS에서 큰 반향을 불러일으켰다."
+    },
+    {
+      "word": "容疑",
+      "reading": "ようぎ",
+      "meaning": "혐의",
+      "level": "N2",
+      "example": "彼は窃盗の容疑で逮捕された。",
+      "example_reading": "かれはせっとうのようぎでたいほされた。",
+      "example_meaning": "그는 절도 혐의로 체포되었다."
+    },
+    {
+      "word": "万引き",
+      "reading": "まんびき",
+      "meaning": "물건을 훔침, 좀도둑질(가게에서)",
+      "level": "N2",
+      "example": "コンビニで万引きをした少年が補導された。",
+      "example_reading": "こんびにでまんびきをしたしょうねんがほどうされた。",
+      "example_meaning": "편의점에서 물건을 훔친 소년이 선도되었다."
+    },
+    {
+      "word": "目玉商品",
+      "reading": "めだましょうひん",
+      "meaning": "특가 상품, 손님을 끌기 위한 주력 상품",
+      "level": "N2",
+      "example": "今回のセールの目玉商品は最新スマートフォンだ。",
+      "example_reading": "こんかいのせーるのめだましょうひんはさいしんすまーとふぉんだ。",
+      "example_meaning": "이번 세일의 목표 상품은 최신 스마트폰이다."
+    },
+    {
+      "word": "新進気鋭",
+      "reading": "しんしんきえい",
+      "meaning": "신진기예, 새롭게 두각을 나타내는 유망주",
+      "level": "N1",
+      "example": "彼女は新進気鋭の作家として注目されている。",
+      "example_reading": "かのじょはしんしんきえいのさっかとしてちゅうもくされている。",
+      "example_meaning": "그녀는 신진 유망 작가로서 주목받고 있다."
+    },
+    {
+      "word": "懸念",
+      "reading": "けねん",
+      "meaning": "우려, 걱정",
+      "level": "N1",
+      "example": "経済の先行きに懸念が広がっている。",
+      "example_reading": "けいざいのさきゆきにけねんがひろがっている。",
+      "example_meaning": "경제 전망에 대한 우려가 확산되고 있다."
+    },
+    {
+      "word": "緊急",
+      "reading": "きんきゅう",
+      "meaning": "긴급",
+      "level": "N3",
+      "example": "大雨のため緊急安全確保が呼びかけられた。",
+      "example_reading": "おおあめのためきんきゅうあんぜんかくほがよびかけられた。",
+      "example_meaning": "폭우로 인해 긴급 안전 확보가 촉구되었다."
+    },
+    {
+      "word": "跡地",
+      "reading": "あとち",
+      "meaning": "부지 터, 철거 후 남은 자리",
+      "level": "N1",
+      "example": "工場の跡地に新しい商業施設が建設される予定だ。",
+      "example_reading": "こうじょうのあとちにあたらしいしょうぎょうしせつがけんせつされるよていだ。",
+      "example_meaning": "공장 부지에 새로운 상업 시설이 건설될 예정이다."
+    }
+  ]
 }
