@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-27 12:02 KST",
-  "date": "2026-08-27",
+  "generated_at": "2026-08-28 09:40 KST",
+  "date": "2026-08-28",
   "words": [
     {
-      "word": "反響",
-      "reading": "はんきょう",
-      "meaning": "반향, 반응",
+      "word": "明かす",
+      "reading": "あかす",
+      "meaning": "밝히다, 털어놓다",
       "level": "N2",
-      "example": "彼の発言はSNSで大きな反響を呼んだ。",
-      "example_reading": "かれのはつげんはえすえぬえすでおおきなはんきょうをよんだ。",
-      "example_meaning": "그의 발언은 SNS에서 큰 반향을 불러일으켰다."
+      "example": "彼女はインタビューで初めて自分の過去を明かした。",
+      "example_reading": "かのじょはインタビューではじめてじぶんのかこをあかした。",
+      "example_meaning": "그녀는 인터뷰에서 처음으로 자신의 과거를 밝혔다."
     },
     {
-      "word": "容疑",
-      "reading": "ようぎ",
-      "meaning": "혐의",
-      "level": "N2",
-      "example": "彼は窃盗の容疑で逮捕された。",
-      "example_reading": "かれはせっとうのようぎでたいほされた。",
-      "example_meaning": "그는 절도 혐의로 체포되었다."
-    },
-    {
-      "word": "万引き",
-      "reading": "まんびき",
-      "meaning": "물건을 훔침, 좀도둑질(가게에서)",
-      "level": "N2",
-      "example": "コンビニで万引きをした少年が補導された。",
-      "example_reading": "こんびにでまんびきをしたしょうねんがほどうされた。",
-      "example_meaning": "편의점에서 물건을 훔친 소년이 선도되었다."
-    },
-    {
-      "word": "目玉商品",
-      "reading": "めだましょうひん",
-      "meaning": "특가 상품, 손님을 끌기 위한 주력 상품",
-      "level": "N2",
-      "example": "今回のセールの目玉商品は最新スマートフォンだ。",
-      "example_reading": "こんかいのせーるのめだましょうひんはさいしんすまーとふぉんだ。",
-      "example_meaning": "이번 세일의 목표 상품은 최신 스마트폰이다."
-    },
-    {
-      "word": "新進気鋭",
-      "reading": "しんしんきえい",
-      "meaning": "신진기예, 새롭게 두각을 나타내는 유망주",
+      "word": "葛藤",
+      "reading": "かっとう",
+      "meaning": "갈등",
       "level": "N1",
-      "example": "彼女は新進気鋭の作家として注目されている。",
-      "example_reading": "かのじょはしんしんきえいのさっかとしてちゅうもくされている。",
-      "example_meaning": "그녀는 신진 유망 작가로서 주목받고 있다."
+      "example": "彼は仕事と家庭の間で葛藤している。",
+      "example_reading": "かれはしごととかていのあいだでかっとうしている。",
+      "example_meaning": "그는 일과 가정 사이에서 갈등하고 있다."
     },
     {
-      "word": "懸念",
-      "reading": "けねん",
-      "meaning": "우려, 걱정",
+      "word": "疑い",
+      "reading": "うたがい",
+      "meaning": "의심, 혐의",
+      "level": "N2",
+      "example": "彼は詐欺の疑いで警察に逮捕された。",
+      "example_reading": "かれはさぎのうたがいでけいさつにたいほされた。",
+      "example_meaning": "그는 사기 혐의로 경찰에 체포되었다."
+    },
+    {
+      "word": "認証",
+      "reading": "にんしょう",
+      "meaning": "인증",
+      "level": "N2",
+      "example": "このアプリはログイン時に二段階認証が必要だ。",
+      "example_reading": "このアプリはログインじにだんかいにんしょうがひつようだ。",
+      "example_meaning": "이 앱은 로그인 시 2단계 인증이 필요하다."
+    },
+    {
+      "word": "跳ね上がる",
+      "reading": "はねあがる",
+      "meaning": "급등하다, 뛰어오르다",
+      "level": "N2",
+      "example": "円安の影響で輸入品の価格が跳ね上がった。",
+      "example_reading": "えんやすのえいきょうでゆにゅうひんのかかくがはねあがった。",
+      "example_meaning": "엔저의 영향으로 수입품 가격이 급등했다."
+    },
+    {
+      "word": "終焉",
+      "reading": "しゅうえん",
+      "meaning": "종언, 종말",
       "level": "N1",
-      "example": "経済の先行きに懸念が広がっている。",
-      "example_reading": "けいざいのさきゆきにけねんがひろがっている。",
-      "example_meaning": "경제 전망에 대한 우려가 확산되고 있다."
+      "example": "長く続いたブームもついに終焉を迎えた。",
+      "example_reading": "ながくつづいたブームもついにしゅうえんをむかえた。",
+      "example_meaning": "오래 지속된 붐도 마침내 종언을 맞이했다."
     },
     {
-      "word": "緊急",
-      "reading": "きんきゅう",
-      "meaning": "긴급",
-      "level": "N3",
-      "example": "大雨のため緊急安全確保が呼びかけられた。",
-      "example_reading": "おおあめのためきんきゅうあんぜんかくほがよびかけられた。",
-      "example_meaning": "폭우로 인해 긴급 안전 확보가 촉구되었다."
-    },
-    {
-      "word": "跡地",
-      "reading": "あとち",
-      "meaning": "부지 터, 철거 후 남은 자리",
+      "word": "明暗",
+      "reading": "めいあん",
+      "meaning": "명암, 희비(성공과 실패)",
       "level": "N1",
-      "example": "工場の跡地に新しい商業施設が建設される予定だ。",
-      "example_reading": "こうじょうのあとちにあたらしいしょうぎょうしせつがけんせつされるよていだ。",
-      "example_meaning": "공장 부지에 새로운 상업 시설이 건설될 예정이다."
+      "example": "同じ業界でも企業によって明暗が分かれている。",
+      "example_reading": "おなじぎょうかいでもきぎょうによってめいあんがわかれている。",
+      "example_meaning": "같은 업계라도 기업에 따라 희비가 갈리고 있다."
+    },
+    {
+      "word": "衝撃",
+      "reading": "しょうげき",
+      "meaning": "충격",
+      "level": "N2",
+      "example": "そのニュースは世界中に衝撃を与えた。",
+      "example_reading": "そのニュースはせかいじゅうにしょうげきをあたえた。",
+      "example_meaning": "그 뉴스는 전 세계에 충격을 주었다."
     }
   ]
 }
