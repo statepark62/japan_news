@@ -32,6 +32,7 @@ CONFIG_PATH = os.path.join(ROOT, "config.json")
 NEWS_OUT = os.path.join(ROOT, "docs", "news.json")
 VOCAB_OUT = os.path.join(ROOT, "docs", "vocab.json")
 CACHE_PATH = os.path.join(ROOT, "state", "analysis_cache.json")
+CAFE_POSTED_PATH = os.path.join(ROOT, "state", "cafe_posted.json")
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
@@ -253,6 +254,26 @@ def save_cache(cache, cap):
     os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
     with open(CACHE_PATH, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False)
+
+
+def already_posted_today(today):
+    """오늘 날짜로 카페 게시가 이미 성공했는지 확인한다.
+    예약 실행이 겹치거나(GitHub Actions 는 가끔 스케줄을 놓쳐 여러 번 재시도하게 되기도 함)
+    수동 실행과 자동 실행이 같은 날 겹쳐도, 카페에는 하루 한 번만 올라가게 막는 안전장치."""
+    try:
+        with open(CAFE_POSTED_PATH, encoding="utf-8") as f:
+            return json.load(f).get("date") == today
+    except Exception:
+        return False
+
+
+def mark_posted_today(today):
+    try:
+        os.makedirs(os.path.dirname(CAFE_POSTED_PATH), exist_ok=True)
+        with open(CAFE_POSTED_PATH, "w", encoding="utf-8") as f:
+            json.dump({"date": today}, f)
+    except Exception as e:
+        print(f"[warn] 게시 기록 저장 실패(무시): {e}")
 
 
 def empty_analysis():
@@ -779,12 +800,17 @@ def main():
     record_sheets(cfg, items, vocab, today)
 
     if cfg.get("cafe", {}).get("enabled"):
-        # 제목은 HTML 렌더링이 되지 않고, 서버 charset 처리를 제어할 수 없어
-        # 한글을 넣으면 반드시 깨진다. 따라서 ASCII 문자만 사용한다.
-        title = f"{cfg['cafe'].get('title_prefix', '[Japan News]')} {today}"
-        # HTML 본문은 정상 렌더링된다(굵은 글씨·링크 확인됨). 길이만 naver_post 가 제한한다.
-        body_html = build_cafe_html(cfg, items, vocab, stamp)
-        naver_post.post_article(title, body_html, cfg["cafe"].get("open_to_public", False))
+        if already_posted_today(today):
+            print(f"[skip] 카페: 오늘({today}) 이미 게시됨 — 중복 게시 방지")
+        else:
+            # 제목은 HTML 렌더링이 되지 않고, 서버 charset 처리를 제어할 수 없어
+            # 한글을 넣으면 반드시 깨진다. 따라서 ASCII 문자만 사용한다.
+            title = f"{cfg['cafe'].get('title_prefix', '[Japan News]')} {today}"
+            # HTML 본문은 정상 렌더링된다(굵은 글씨·링크 확인됨). 길이만 naver_post 가 제한한다.
+            body_html = build_cafe_html(cfg, items, vocab, stamp)
+            res = naver_post.post_article(title, body_html, cfg["cafe"].get("open_to_public", False))
+            if res:
+                mark_posted_today(today)
 
     os.makedirs(os.path.dirname(NEWS_OUT), exist_ok=True)
     with open(NEWS_OUT, "w", encoding="utf-8") as f:
