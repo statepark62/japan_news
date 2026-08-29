@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-29 13:00 KST",
+  "generated_at": "2026-08-29 13:10 KST",
   "date": "2026-08-29",
   "words": [
     {
-      "word": "好循環",
-      "reading": "こうじゅんかん",
-      "meaning": "선순환",
-      "level": "N1",
-      "example": "経済の好循環を生み出すためには、賃金の上昇が欠かせない。",
-      "example_reading": "けいざいのこうじゅんかんをうみだすためには、ちんぎんのじょうしょうがかかせない。",
-      "example_meaning": "경제의 선순환을 만들어내기 위해서는 임금 상승이 필수적이다."
-    },
-    {
       "word": "見解",
       "reading": "けんかい",
-      "meaning": "견해",
+      "meaning": "견해, 의견",
       "level": "N2",
-      "example": "専門家はこの問題について異なる見解を示した。",
-      "example_reading": "せんもんかはこのもんだいについてことなるけんかいをしめした。",
-      "example_meaning": "전문가는 이 문제에 대해 다른 견해를 나타냈다."
+      "example": "この問題について専門家の見解を聞きたい。",
+      "example_reading": "このもんだいについてせんもんかのけんかいをききたい。",
+      "example_meaning": "이 문제에 대해 전문가의 견해를 듣고 싶다."
+    },
+    {
+      "word": "懸念",
+      "reading": "けねん",
+      "meaning": "우려, 걱정",
+      "level": "N2",
+      "example": "新しい制度に懸念の声が上がっている。",
+      "example_reading": "あたらしいせいどにけねんのこえがあがっている。",
+      "example_meaning": "새로운 제도에 우려의 목소리가 나오고 있다."
     },
     {
       "word": "引き下げ",
       "reading": "ひきさげ",
       "meaning": "인하, 낮춤",
       "level": "N2",
-      "example": "政府は消費税の引き下げを検討している。",
-      "example_reading": "せいふはしょうひぜいのひきさげをけんとうしている。",
-      "example_meaning": "정부는 소비세 인하를 검토하고 있다."
-    },
-    {
-      "word": "懸念",
-      "reading": "けねん",
-      "meaning": "우려",
-      "level": "N2",
-      "example": "新しい制度に対して住民から懸念の声が上がっている。",
-      "example_reading": "あたらしいせいどにたいしてじゅうみんからけねんのこえがあがっている。",
-      "example_meaning": "새로운 제도에 대해 주민들로부터 우려의 목소리가 나오고 있다."
-    },
-    {
-      "word": "熱狂",
-      "reading": "ねっきょう",
-      "meaning": "열광",
-      "level": "N1",
-      "example": "観客はコンサートの最後の曲に熱狂した。",
-      "example_reading": "かんきゃくはコンサートのさいごのきょくにねっきょうした。",
-      "example_meaning": "관객들은 콘서트의 마지막 곡에 열광했다."
+      "example": "政府は税率の引き下げを検討している。",
+      "example_reading": "せいふはぜいりつのひきさげをけんとうしている。",
+      "example_meaning": "정부는 세율 인하를 검토하고 있다."
     },
     {
       "word": "孤立",
       "reading": "こりつ",
       "meaning": "고립",
       "level": "N2",
-      "example": "大雪のため、山間部の集落が孤立してしまった。",
-      "example_reading": "おおゆきのため、さんかんぶのしゅうらくがこりつしてしまった。",
-      "example_meaning": "폭설로 인해 산간 마을이 고립되고 말았다."
+      "example": "大雨で村が孤立してしまった。",
+      "example_reading": "おおあめでむらがこりつしてしまった。",
+      "example_meaning": "폭우로 마을이 고립되어 버렸다."
+    },
+    {
+      "word": "熱狂",
+      "reading": "ねっきょう",
+      "meaning": "열광",
+      "level": "N1",
+      "example": "ファンはコンサートで熱狂した。",
+      "example_reading": "ふぁんはこんさーとでねっきょうした。",
+      "example_meaning": "팬들은 콘서트에서 열광했다."
+    },
+    {
+      "word": "動員",
+      "reading": "どういん",
+      "meaning": "동원",
+      "level": "N1",
+      "example": "そのイベントは多くの人を動員した。",
+      "example_reading": "そのいべんとはおおくのひとをどういんした。",
+      "example_meaning": "그 이벤트는 많은 사람을 동원했다."
+    },
+    {
+      "word": "好循環",
+      "reading": "こうじゅんかん",
+      "meaning": "선순환",
+      "level": "N1",
+      "example": "経済の好循環を生み出すことが重要だ。",
+      "example_reading": "けいざいのこうじゅんかんをうみだすことがじゅうようだ。",
+      "example_meaning": "경제의 선순환을 만들어내는 것이 중요하다."
     },
     {
       "word": "堅実",
       "reading": "けんじつ",
       "meaning": "견실함, 착실함",
       "level": "N1",
-      "example": "彼は堅実な経営方針で会社を成長させてきた。",
-      "example_reading": "かれはけんじつなけいえいほうしんでかいしゃをせいちょうさせてきた。",
-      "example_meaning": "그는 견실한 경영 방침으로 회사를 성장시켜 왔다."
-    },
-    {
-      "word": "資産",
-      "reading": "しさん",
-      "meaning": "자산",
-      "level": "N2",
-      "example": "彼女は若い頃から資産運用に興味を持っていた。",
-      "example_reading": "かのじょはわかいころからしさんうんようにきょうみをもっていた。",
-      "example_meaning": "그녀는 젊은 시절부터 자산 운용에 관심을 가지고 있었다."
+      "example": "彼は堅実な経営方針で会社を成長させた。",
+      "example_reading": "かれはけんじつなけいえいほうしんでかいしゃをせいちょうさせた。",
+      "example_meaning": "그는 견실한 경영 방침으로 회사를 성장시켰다."
     }
   ]
 }
