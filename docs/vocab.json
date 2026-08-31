@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-31 10:22 KST",
+  "generated_at": "2026-08-31 10:34 KST",
   "date": "2026-08-31",
   "words": [
     {
       "word": "迷惑行為",
       "reading": "めいわくこうい",
       "meaning": "민폐 행위, 폐를 끼치는 행동",
-      "level": "N2",
-      "example": "電車内での迷惑行為が問題になっている。",
-      "example_reading": "でんしゃないでのめいわくこういがもんだいになっている。",
-      "example_meaning": "전철 안에서의 민폐 행위가 문제가 되고 있다."
+      "level": "N3",
+      "example": "電車の中で大声で話す迷惑行為はやめてください。",
+      "example_reading": "でんしゃのなかでおおごえではなすめいわくこういはやめてください。",
+      "example_meaning": "전철 안에서 큰 소리로 이야기하는 민폐 행위는 그만두세요."
     },
     {
       "word": "制裁",
       "reading": "せいさい",
-      "meaning": "제재, 처벌",
+      "meaning": "제재",
       "level": "N2",
       "example": "違反者には厳しい制裁が科せられる。",
       "example_reading": "いはんしゃにはきびしいせいさいがかせられる。",
       "example_meaning": "위반자에게는 엄격한 제재가 부과된다."
     },
     {
-      "word": "誠意",
-      "reading": "せいい",
-      "meaning": "성의, 진심",
+      "word": "非難",
+      "reading": "ひなん",
+      "meaning": "비난",
       "level": "N2",
-      "example": "会社は誠意をもって対応すると発表した。",
-      "example_reading": "かいしゃはせいいをもってたいおうするとはっぴょうした。",
-      "example_meaning": "회사는 성의를 다해 대응하겠다고 발표했다."
+      "example": "彼の発言は多くの人から非難を浴びた。",
+      "example_reading": "かれのはつげんはおおくのひとからひなんをあびた。",
+      "example_meaning": "그의 발언은 많은 사람들로부터 비난을 받았다."
     },
     {
-      "word": "転覆",
-      "reading": "てんぷく",
-      "meaning": "전복, 뒤집힘",
+      "word": "後ろめたさ",
+      "reading": "うしろめたさ",
+      "meaning": "떳떳하지 못함, 켕기는 마음",
       "level": "N1",
-      "example": "強風により船が転覆する事故が発生した。",
-      "example_reading": "きょうふうによりふねがてんぷくするじこがはっせいした。",
-      "example_meaning": "강풍으로 인해 배가 전복되는 사고가 발생했다."
+      "example": "彼女は嘘をついたことに後ろめたさを感じていた。",
+      "example_reading": "かのじょはうそをついたことにうしろめたさをかんじていた。",
+      "example_meaning": "그녀는 거짓말을 한 것에 대해 켕기는 마음을 느끼고 있었다."
+    },
+    {
+      "word": "誠意",
+      "reading": "せいい",
+      "meaning": "성의",
+      "level": "N2",
+      "example": "会社は誠意ある対応を心がけるべきだ。",
+      "example_reading": "かいしゃはせいいあるたいおうをこころがけるべきだ。",
+      "example_meaning": "회사는 성의 있는 대응에 힘써야 한다."
     },
     {
       "word": "逃走",
       "reading": "とうそう",
       "meaning": "도주, 도망",
       "level": "N2",
-      "example": "犯人は現場から逃走したとみられる。",
-      "example_reading": "はんにんはげんばからとうそうしたとみられる。",
-      "example_meaning": "범인은 현장에서 도주한 것으로 보인다."
+      "example": "犯人は現場から逃走したが、まもなく逮捕された。",
+      "example_reading": "はんにんはげんばからとうそうしたが、まもなくたいほされた。",
+      "example_meaning": "범인은 현장에서 도주했지만, 곧 체포되었다."
     },
     {
       "word": "値上げ",
       "reading": "ねあげ",
       "meaning": "가격 인상",
       "level": "N3",
-      "example": "来月から商品の値上げが実施される。",
-      "example_reading": "らいげつからしょうひんのねあげがじっしされる。",
-      "example_meaning": "다음 달부터 상품의 가격 인상이 시행된다."
+      "example": "原材料の高騰により、来月から値上げすることになった。",
+      "example_reading": "げんざいりょうのこうとうにより、らいげつからねあげすることになった。",
+      "example_meaning": "원자재 가격 급등으로 인해 다음 달부터 가격을 인상하게 되었다."
     },
     {
-      "word": "試算",
-      "reading": "しさん",
-      "meaning": "시산, 시험 삼아 계산해봄, 추산",
-      "level": "N1",
-      "example": "専門家が新制度の影響を試算した。",
-      "example_reading": "せんもんかがしんせいどのえいきょうをしさんした。",
-      "example_meaning": "전문가가 새 제도의 영향을 추산했다."
-    },
-    {
-      "word": "相次ぐ",
-      "reading": "あいつぐ",
-      "meaning": "잇따르다, 연달아 일어나다",
-      "level": "N2",
-      "example": "最近、地震の被害が相次いで報告されている。",
-      "example_reading": "さいきん、じしんのひがいがあいついでほうこくされている。",
-      "example_meaning": "최근 지진 피해가 잇따라 보고되고 있다."
+      "word": "説明会",
+      "reading": "せつめいかい",
+      "meaning": "설명회",
+      "level": "N3",
+      "example": "来週、新入社員向けの説明会が開かれる予定だ。",
+      "example_reading": "らいしゅう、しんにゅうしゃいんむけのせつめいかいがひらかれるよていだ。",
+      "example_meaning": "다음 주, 신입사원 대상 설명회가 열릴 예정이다."
     }
   ]
 }
