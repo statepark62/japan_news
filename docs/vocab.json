@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-31 10:34 KST",
-  "date": "2026-08-31",
+  "generated_at": "2026-09-01 14:26 KST",
+  "date": "2026-09-01",
   "words": [
     {
-      "word": "迷惑行為",
-      "reading": "めいわくこうい",
-      "meaning": "민폐 행위, 폐를 끼치는 행동",
+      "word": "違反",
+      "reading": "いはん",
+      "meaning": "위반",
       "level": "N3",
-      "example": "電車の中で大声で話す迷惑行為はやめてください。",
-      "example_reading": "でんしゃのなかでおおごえではなすめいわくこういはやめてください。",
-      "example_meaning": "전철 안에서 큰 소리로 이야기하는 민폐 행위는 그만두세요."
+      "example": "彼はスピード違反で罰金を払った。",
+      "example_reading": "かれはスピードいはんでばっきんをはらった。",
+      "example_meaning": "그는 속도위반으로 벌금을 냈다."
     },
     {
-      "word": "制裁",
-      "reading": "せいさい",
-      "meaning": "제재",
+      "word": "逮捕",
+      "reading": "たいほ",
+      "meaning": "체포",
       "level": "N2",
-      "example": "違反者には厳しい制裁が科せられる。",
-      "example_reading": "いはんしゃにはきびしいせいさいがかせられる。",
-      "example_meaning": "위반자에게는 엄격한 제재가 부과된다."
+      "example": "警察は容疑者を逮捕した。",
+      "example_reading": "けいさつはようぎしゃをたいほした。",
+      "example_meaning": "경찰은 용의자를 체포했다."
     },
     {
-      "word": "非難",
-      "reading": "ひなん",
-      "meaning": "비난",
+      "word": "謙虚",
+      "reading": "けんきょ",
+      "meaning": "겸허함, 겸손함",
       "level": "N2",
-      "example": "彼の発言は多くの人から非難を浴びた。",
-      "example_reading": "かれのはつげんはおおくのひとからひなんをあびた。",
-      "example_meaning": "그의 발언은 많은 사람들로부터 비난을 받았다."
+      "example": "彼女はいつも謙虚な態度で人と接する。",
+      "example_reading": "かのじょはいつもけんきょなたいどでひととせっする。",
+      "example_meaning": "그녀는 항상 겸손한 태도로 사람을 대한다."
     },
     {
-      "word": "後ろめたさ",
-      "reading": "うしろめたさ",
-      "meaning": "떳떳하지 못함, 켕기는 마음",
+      "word": "礼儀正しい",
+      "reading": "れいぎただしい",
+      "meaning": "예의바르다",
+      "level": "N3",
+      "example": "彼は礼儀正しい青年として知られている。",
+      "example_reading": "かれはれいぎただしいせいねんとしてしられている。",
+      "example_meaning": "그는 예의바른 청년으로 알려져 있다."
+    },
+    {
+      "word": "予防策",
+      "reading": "よぼうさく",
+      "meaning": "예방책",
+      "level": "N2",
+      "example": "会社は感染症の予防策を強化した。",
+      "example_reading": "かいしゃはかんせんしょうのよぼうさくをきょうかした。",
+      "example_meaning": "회사는 감염병 예방책을 강화했다."
+    },
+    {
+      "word": "圧倒的",
+      "reading": "あっとうてき",
+      "meaning": "압도적",
+      "level": "N2",
+      "example": "彼は圧倒的な人気を誇っている。",
+      "example_reading": "かれはあっとうてきなにんきをほこっている。",
+      "example_meaning": "그는 압도적인 인기를 자랑하고 있다."
+    },
+    {
+      "word": "激励",
+      "reading": "げきれい",
+      "meaning": "격려",
+      "level": "N2",
+      "example": "監督は選手たちを激励した。",
+      "example_reading": "かんとくはせんしゅたちをげきれいした。",
+      "example_meaning": "감독은 선수들을 격려했다."
+    },
+    {
+      "word": "泣き言を漏らす",
+      "reading": "なきごとをもらす",
+      "meaning": "하소연하다, 불만을 늘어놓다",
       "level": "N1",
-      "example": "彼女は嘘をついたことに後ろめたさを感じていた。",
-      "example_reading": "かのじょはうそをついたことにうしろめたさをかんじていた。",
-      "example_meaning": "그녀는 거짓말을 한 것에 대해 켕기는 마음을 느끼고 있었다."
-    },
-    {
-      "word": "誠意",
-      "reading": "せいい",
-      "meaning": "성의",
-      "level": "N2",
-      "example": "会社は誠意ある対応を心がけるべきだ。",
-      "example_reading": "かいしゃはせいいあるたいおうをこころがけるべきだ。",
-      "example_meaning": "회사는 성의 있는 대응에 힘써야 한다."
-    },
-    {
-      "word": "逃走",
-      "reading": "とうそう",
-      "meaning": "도주, 도망",
-      "level": "N2",
-      "example": "犯人は現場から逃走したが、まもなく逮捕された。",
-      "example_reading": "はんにんはげんばからとうそうしたが、まもなくたいほされた。",
-      "example_meaning": "범인은 현장에서 도주했지만, 곧 체포되었다."
-    },
-    {
-      "word": "値上げ",
-      "reading": "ねあげ",
-      "meaning": "가격 인상",
-      "level": "N3",
-      "example": "原材料の高騰により、来月から値上げすることになった。",
-      "example_reading": "げんざいりょうのこうとうにより、らいげつからねあげすることになった。",
-      "example_meaning": "원자재 가격 급등으로 인해 다음 달부터 가격을 인상하게 되었다."
-    },
-    {
-      "word": "説明会",
-      "reading": "せつめいかい",
-      "meaning": "설명회",
-      "level": "N3",
-      "example": "来週、新入社員向けの説明会が開かれる予定だ。",
-      "example_reading": "らいしゅう、しんにゅうしゃいんむけのせつめいかいがひらかれるよていだ。",
-      "example_meaning": "다음 주, 신입사원 대상 설명회가 열릴 예정이다."
+      "example": "彼はどんなに苦しくても泣き言を漏らさなかった。",
+      "example_reading": "かれはどんなにくるしくてもなきごとをもらさなかった。",
+      "example_meaning": "그는 아무리 힘들어도 하소연하지 않았다."
     }
   ]
 }
