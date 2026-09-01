@@ -6,9 +6,9 @@ on:
     # 예약 실행은 가끔 조용히 건너뛰어질 수 있어(GitHub 인프라 특성, 특히 정각에 몰릴 때)
     # 20분 간격으로 3번 겹쳐서 안전망을 둔다. 카페는 already_posted_today 로 하루 1회만 게시되므로
     # 여러 번 걸려도 중복 게시되지 않는다.
-    - cron: "0 23 * * *"    # 08:00 KST
-    - cron: "20 23 * * *"   # 08:20 KST
-    - cron: "40 23 * * *"   # 08:40 KST
+    - cron: "0 22 * * *"    # 07:00 KST
+    - cron: "20 22 * * *"   # 07:20 KST
+    - cron: "40 22 * * *"   # 07:40 KST
   workflow_dispatch:        # Actions 탭에서 수동 실행(즉시 갱신)
 
 permissions:
@@ -25,9 +25,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install deps
-        run: |
-          pip install -r scripts/requirements.txt
-          pip install beautifulsoup4
+        run: pip install -r scripts/requirements.txt
 
       - name: Collect news
         env:
@@ -43,40 +41,11 @@ jobs:
           NAVER_CAFE_MENU_ID: ${{ secrets.NAVER_CAFE_MENU_ID }}
         run: python scripts/collect.py
 
-      - name: 오늘 날짜(KST) 계산
-        id: kst_date
-        run: echo "date=$(date -u -d '+9 hours' +%F)" >> "$GITHUB_OUTPUT"
-
-      - name: Threads 게시 여부 확인 (중복 방지)
-        id: check_posted
-        run: |
-          STATE_FILE="scripts/threads/last_posted_date.txt"
-          TODAY="${{ steps.kst_date.outputs.date }}"
-          if [ -f "$STATE_FILE" ] && [ "$(cat "$STATE_FILE")" = "$TODAY" ]; then
-            echo "오늘($TODAY)은 이미 Threads에 게시했습니다. 건너뜁니다."
-            echo "already_posted=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "already_posted=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Threads에 오늘의 최상위 뉴스 게시
-        if: steps.check_posted.outputs.already_posted == 'false'
-        env:
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-        run: |
-          python scripts/threads/hibi_to_threads.py --news docs/news.json
-          mkdir -p scripts/threads
-          echo "${{ steps.kst_date.outputs.date }}" > scripts/threads/last_posted_date.txt
-
       - name: Commit news.json
         run: |
           git config user.name  "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
           git add docs/news.json docs/vocab.json state/analysis_cache.json state/cafe_cap.json state/cafe_posted.json
-          if [ -f scripts/threads/last_posted_date.txt ]; then
-            git add scripts/threads/last_posted_date.txt
-          fi
           if git diff --staged --quiet; then
             echo "변경 없음"
           else
