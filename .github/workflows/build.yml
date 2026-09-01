@@ -41,11 +41,19 @@ jobs:
           NAVER_CAFE_MENU_ID: ${{ secrets.NAVER_CAFE_MENU_ID }}
         run: python scripts/collect.py
 
+      - name: Threads에 오늘의 최상위 뉴스 게시
+        continue-on-error: true  # Threads 게시가 실패해도 news.json 커밋은 계속 진행
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        working-directory: scripts/threads
+        run: python hibi_to_threads.py --news ../../docs/news.json
+
       - name: Commit news.json
         run: |
           git config user.name  "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          git add docs/news.json docs/vocab.json state/analysis_cache.json state/cafe_cap.json state/cafe_posted.json
+          git add docs/news.json docs/vocab.json state/analysis_cache.json state/cafe_cap.json state/cafe_posted.json scripts/threads/last_posted_date.txt
           if git diff --staged --quiet; then
             echo "변경 없음"
           else
