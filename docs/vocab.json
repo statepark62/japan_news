@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-03 09:18 KST",
+  "generated_at": "2026-09-03 09:35 KST",
   "date": "2026-09-03",
   "words": [
     {
-      "word": "指摘される",
-      "reading": "してきされる",
-      "meaning": "지적받다",
+      "word": "混乱",
+      "reading": "こんらん",
+      "meaning": "혼란",
       "level": "N2",
-      "example": "会議で彼の発言の矛盾が指摘された。",
-      "example_reading": "かいぎでかれのはつげんのむじゅんがしてきされた。",
-      "example_meaning": "회의에서 그의 발언의 모순이 지적받았다."
+      "example": "急な方針変更で、現場は混乱に陥った。",
+      "example_reading": "きゅうなほうしんへんこうで、げんばはこんらんにおちいった。",
+      "example_meaning": "갑작스러운 방침 변경으로 현장은 혼란에 빠졌다."
+    },
+    {
+      "word": "悲痛",
+      "reading": "ひつう",
+      "meaning": "비통함",
+      "level": "N1",
+      "example": "彼女は悲痛な表情で事故の状況を語った。",
+      "example_reading": "かのじょはひつうなひょうじょうでじこのじょうきょうをかたった。",
+      "example_meaning": "그녀는 비통한 표정으로 사고 상황을 말했다."
+    },
+    {
+      "word": "謝罪",
+      "reading": "しゃざい",
+      "meaning": "사죄, 사과",
+      "level": "N2",
+      "example": "会社側から正式な謝罪はまだ行われていない。",
+      "example_reading": "かいしゃがわからせいしきなしゃざいはまだおこなわれていない。",
+      "example_meaning": "회사 측의 정식 사과는 아직 이루어지지 않았다."
+    },
+    {
+      "word": "指摘",
+      "reading": "してき",
+      "meaning": "지적",
+      "level": "N2",
+      "example": "専門家はこの制度の問題点を指摘した。",
+      "example_reading": "せんもんかはこのせいどのもんだいてんをしてきした。",
+      "example_meaning": "전문가는 이 제도의 문제점을 지적했다."
     },
     {
       "word": "迫る",
       "reading": "せまる",
       "meaning": "다가오다, 임박하다",
       "level": "N2",
-      "example": "台風が沖縄に迫っている。",
-      "example_reading": "たいふうがおきなわにせまっている。",
-      "example_meaning": "태풍이 오키나와에 다가오고 있다."
+      "example": "台風が接近し、上陸が迫っている。",
+      "example_reading": "たいふうがせっきんし、じょうりくがせまっている。",
+      "example_meaning": "태풍이 접근하여 상륙이 임박했다."
     },
     {
-      "word": "沈黙を貫く",
-      "reading": "ちんもくをつらぬく",
-      "meaning": "침묵을 지키다, 끝까지 침묵하다",
+      "word": "沈黙",
+      "reading": "ちんもく",
+      "meaning": "침묵",
       "level": "N1",
-      "example": "彼はスキャンダルについて沈黙を貫いた。",
-      "example_reading": "かれはスキャンダルについてちんもくをつらぬいた。",
-      "example_meaning": "그는 스캔들에 대해 끝까지 침묵을 지켰다."
+      "example": "スキャンダル報道以来、彼は沈黙を貫いている。",
+      "example_reading": "スキャンダルほうどういらい、かれはちんもくをつらぬいている。",
+      "example_meaning": "스캔들 보도 이후 그는 계속 침묵을 지키고 있다."
     },
     {
-      "word": "警鐘を鳴らす",
-      "reading": "けいしょうをならす",
-      "meaning": "경종을 울리다, 경고하다",
+      "word": "警鐘",
+      "reading": "けいしょう",
+      "meaning": "경종",
       "level": "N1",
-      "example": "専門家は環境破壊に警鐘を鳴らしている。",
-      "example_reading": "せんもんかはかんきょうはかいにけいしょうをならしている。",
-      "example_meaning": "전문가는 환경 파괴에 경종을 울리고 있다."
+      "example": "専門家は環境破壊の危険性に警鐘を鳴らした。",
+      "example_reading": "せんもんかはかんきょうはかいのきけんせいにけいしょうをならした。",
+      "example_meaning": "전문가는 환경 파괴의 위험성에 경종을 울렸다."
     },
     {
       "word": "脱退",
       "reading": "だったい",
       "meaning": "탈퇴",
       "level": "N2",
-      "example": "彼はグループからの脱退を発表した。",
-      "example_reading": "かれはグループからのだったいをはっぴょうした。",
-      "example_meaning": "그는 그룹 탈퇴를 발표했다."
-    },
-    {
-      "word": "横領",
-      "reading": "おうりょう",
-      "meaning": "횡령",
-      "level": "N1",
-      "example": "会社の資金を横領した容疑で逮捕された。",
-      "example_reading": "かいしゃのしきんをおうりょうしたようぎでたいほされた。",
-      "example_meaning": "회사 자금을 횡령한 혐의로 체포되었다."
-    },
-    {
-      "word": "信頼",
-      "reading": "しんらい",
-      "meaning": "신뢰",
-      "level": "N3",
-      "example": "彼女は長年の同僚から厚い信頼を得ている。",
-      "example_reading": "かのじょはながねんのどうりょうからあついしんらいをえている。",
-      "example_meaning": "그녀는 오랜 동료로부터 두터운 신뢰를 얻고 있다."
-    },
-    {
-      "word": "危機",
-      "reading": "きき",
-      "meaning": "위기",
-      "level": "N2",
-      "example": "経済危機により多くの企業が倒産した。",
-      "example_reading": "けいざいききによりおおくのきぎょうがとうさんした。",
-      "example_meaning": "경제 위기로 인해 많은 기업이 도산했다."
+      "example": "彼はグループからの脱退を突然発表した。",
+      "example_reading": "かれはグループからのだったいをとつぜんはっぴょうした。",
+      "example_meaning": "그는 그룹 탈퇴를 갑자기 발표했다."
     }
   ]
 }
