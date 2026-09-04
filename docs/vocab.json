@@ -1,78 +1,42 @@
 {
-  "generated_at": "2026-09-04 08:47 KST",
+  "generated_at": "2026-09-04 09:07 KST",
   "date": "2026-09-04",
   "words": [
+    {
+      "word": "警戒",
+      "reading": "けいかい",
+      "meaning": "경계, 주의",
+      "level": "N2",
+      "example": "台風が接近しているため、住民は警戒を強めている。",
+      "example_reading": "たいふうがせっきんしているため、じゅうみんはけいかいをつよめている。",
+      "example_meaning": "태풍이 접근하고 있어서 주민들은 경계를 강화하고 있다."
+    },
+    {
+      "word": "反響",
+      "reading": "はんきょう",
+      "meaning": "반향, 반응",
+      "level": "N2",
+      "example": "新しい広告が予想以上の反響を呼んでいる。",
+      "example_reading": "あたらしいこうこくがよそういじょうのはんきょうをよんでいる。",
+      "example_meaning": "새로운 광고가 예상 이상의 반향을 불러일으키고 있다."
+    },
     {
       "word": "逮捕",
       "reading": "たいほ",
       "meaning": "체포",
       "level": "N2",
-      "example": "警察は詐欺の疑いでその男を逮捕した。",
-      "example_reading": "けいさつはさぎのうたがいでそのおとこをたいほした。",
-      "example_meaning": "경찰은 사기 혐의로 그 남자를 체포했다."
+      "example": "警察は容疑者を窃盗の疑いで逮捕した。",
+      "example_reading": "けいさつはようぎしゃをせっとうのうたがいでたいほした。",
+      "example_meaning": "경찰은 용의자를 절도 혐의로 체포했다."
     },
     {
-      "word": "疑問符",
-      "reading": "ぎもんふ",
-      "meaning": "의문부호, 의문점",
+      "word": "拒否反応",
+      "reading": "きょひはんのう",
+      "meaning": "거부 반응",
       "level": "N1",
-      "example": "彼の説明には疑問符がつく点が多い。",
-      "example_reading": "かれのせつめいにはぎもんふがつくてんがおおい。",
-      "example_meaning": "그의 설명에는 의문이 드는 점이 많다."
-    },
-    {
-      "word": "命運を握る",
-      "reading": "めいうんをにぎる",
-      "meaning": "운명을 쥐다",
-      "level": "N1",
-      "example": "この試合の結果がチームの命運を握っている。",
-      "example_reading": "このしあいのけっかがチームのめいうんをにぎっている。",
-      "example_meaning": "이 경기의 결과가 팀의 운명을 쥐고 있다."
-    },
-    {
-      "word": "警戒",
-      "reading": "けいかい",
-      "meaning": "경계",
-      "level": "N2",
-      "example": "台風の接近に伴い、強風への警戒が必要です。",
-      "example_reading": "たいふうのせっきんにともない、きょうふうへのけいかいがひつようです。",
-      "example_meaning": "태풍의 접근에 따라 강풍에 대한 경계가 필요합니다."
-    },
-    {
-      "word": "勢力拡大",
-      "reading": "せいりょくかくだい",
-      "meaning": "세력 확대",
-      "level": "N1",
-      "example": "その企業は海外市場での勢力拡大を目指している。",
-      "example_reading": "そのきぎょうはかいがいしじょうでのせいりょくかくだいをめざしている。",
-      "example_meaning": "그 기업은 해외 시장에서의 세력 확대를 목표로 하고 있다."
-    },
-    {
-      "word": "買収",
-      "reading": "ばいしゅう",
-      "meaning": "매수, 인수",
-      "level": "N2",
-      "example": "大手企業が小さなスタートアップを買収した。",
-      "example_reading": "おおてきぎょうがちいさなスタートアップをばいしゅうした。",
-      "example_meaning": "대기업이 작은 스타트업을 인수했다."
-    },
-    {
-      "word": "驚愕",
-      "reading": "きょうがく",
-      "meaning": "경악",
-      "level": "N1",
-      "example": "彼はそのニュースを聞いて驚愕した。",
-      "example_reading": "かれはそのニュースをきいてきょうがくした。",
-      "example_meaning": "그는 그 뉴스를 듣고 경악했다."
-    },
-    {
-      "word": "恐れ",
-      "reading": "おそれ",
-      "meaning": "우려, 염려",
-      "level": "N2",
-      "example": "大雨により川が氾濫する恐れがある。",
-      "example_reading": "おおあめによりかわがはんらんするおそれがある。",
-      "example_meaning": "폭우로 인해 강이 범람할 우려가 있다."
+      "example": "彼のその発言に、多くの人が拒否反応を示した。",
+      "example_reading": "かれのそのはつげんに、おおくのひとがきょひはんのうをしめした。",
+      "example_meaning": "그의 그 발언에 많은 사람들이 거부 반응을 보였다."
     }
   ]
 }
