@@ -1,42 +1,78 @@
 {
-  "generated_at": "2026-09-06 09:11 KST",
-  "date": "2026-09-06",
+  "generated_at": "2026-09-07 08:29 KST",
+  "date": "2026-09-07",
   "words": [
+    {
+      "word": "停電",
+      "reading": "ていでん",
+      "meaning": "정전",
+      "level": "N3",
+      "example": "台風の影響で、街全体が停電しました。",
+      "example_reading": "たいふうのえいきょうで、まちぜんたいがていでんしました。",
+      "example_meaning": "태풍의 영향으로 마을 전체가 정전되었습니다."
+    },
+    {
+      "word": "通勤",
+      "reading": "つうきん",
+      "meaning": "통근, 출퇴근",
+      "level": "N3",
+      "example": "大雨のため、今朝の通勤はとても大変でした。",
+      "example_reading": "おおあめのため、けさのつうきんはとてもたいへんでした。",
+      "example_meaning": "폭우 때문에 오늘 아침 출퇴근이 매우 힘들었습니다."
+    },
+    {
+      "word": "暴行",
+      "reading": "ぼうこう",
+      "meaning": "폭행",
+      "level": "N2",
+      "example": "彼は暴行の疑いで警察に事情を聞かれている。",
+      "example_reading": "かれはぼうこうのうたがいでけいさつにじじょうをきかれている。",
+      "example_meaning": "그는 폭행 혐의로 경찰에게 조사를 받고 있다."
+    },
+    {
+      "word": "呼びかける",
+      "reading": "よびかける",
+      "meaning": "호소하다, 촉구하다",
+      "level": "N2",
+      "example": "政府は国民に節電を呼びかけた。",
+      "example_reading": "せいふはこくみんにせつでんをよびかけた。",
+      "example_meaning": "정부는 국민에게 절전을 호소했다."
+    },
     {
       "word": "警戒",
       "reading": "けいかい",
-      "meaning": "경계, 주의",
+      "meaning": "경계",
       "level": "N2",
-      "example": "台風が接近しているので、住民は警戒を強めている。",
-      "example_reading": "たいふうがせっきんしているので、じゅうみんはけいかいをつよめている。",
-      "example_meaning": "태풍이 접근하고 있어서 주민들은 경계를 강화하고 있다."
+      "example": "大雨のため、住民に最大限の警戒を呼びかけている。",
+      "example_reading": "おおあめのため、じゅうみんにさいだいげんのけいかいをよびかけている。",
+      "example_meaning": "폭우로 인해 주민들에게 최대한의 경계를 촉구하고 있다."
     },
     {
-      "word": "浸水",
-      "reading": "しんすい",
-      "meaning": "침수",
-      "level": "N2",
-      "example": "大雨の影響で、川の近くの家が浸水した。",
-      "example_reading": "おおあめのえいきょうで、かわのちかくのいえがしんすいした。",
-      "example_meaning": "폭우의 영향으로 강 근처의 집이 침수되었다."
-    },
-    {
-      "word": "直撃",
-      "reading": "ちょくげき",
-      "meaning": "직격, 직접적으로 맞음",
-      "level": "N2",
-      "example": "台風が関東地方を直撃する見込みだ。",
-      "example_reading": "たいふうがかんとうちほうをちょくげきするみこみだ。",
-      "example_meaning": "태풍이 간토 지방을 직격할 전망이다."
-    },
-    {
-      "word": "一命を取り留める",
-      "reading": "いちめいをとりとめる",
-      "meaning": "목숨을 건지다, 구사일생하다",
+      "word": "死傷",
+      "reading": "ししょう",
+      "meaning": "사상(죽거나 다침)",
       "level": "N1",
-      "example": "彼は交通事故に遭ったが、なんとか一命を取り留めた。",
-      "example_reading": "かれはこうつうじこにあったが、なんとかいちめいをとりとめた。",
-      "example_meaning": "그는 교통사고를 당했지만 간신히 목숨을 건졌다."
+      "example": "その事故で5人が死傷した。",
+      "example_reading": "そのじこでごにんがししょうした。",
+      "example_meaning": "그 사고로 5명이 사상했다."
+    },
+    {
+      "word": "関与",
+      "reading": "かんよ",
+      "meaning": "관여",
+      "level": "N1",
+      "example": "彼がその事件に関与していた可能性がある。",
+      "example_reading": "かれがそのじけんにかんよしていたかのうせいがある。",
+      "example_meaning": "그가 그 사건에 관여했을 가능성이 있다."
+    },
+    {
+      "word": "失望",
+      "reading": "しつぼう",
+      "meaning": "실망",
+      "level": "N2",
+      "example": "そのニュースを聞いて、多くのファンが失望した。",
+      "example_reading": "そのニュースをきいて、おおくのファンがしつぼうした。",
+      "example_meaning": "그 뉴스를 듣고 많은 팬들이 실망했다."
     }
   ]
 }
