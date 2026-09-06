@@ -1,78 +1,42 @@
 {
-  "generated_at": "2026-09-06 08:55 KST",
+  "generated_at": "2026-09-06 09:11 KST",
   "date": "2026-09-06",
   "words": [
-    {
-      "word": "報道陣",
-      "reading": "ほうどうじん",
-      "meaning": "보도진, 취재진",
-      "level": "N2",
-      "example": "監督は試合後、報道陣の質問に丁寧に答えた。",
-      "example_reading": "かんとくは しあいご、ほうどうじんの しつもんに ていねいに こたえた。",
-      "example_meaning": "감독은 경기 후 보도진의 질문에 정중하게 답했다."
-    },
-    {
-      "word": "苦言",
-      "reading": "くげん",
-      "meaning": "쓴소리, 충고",
-      "level": "N1",
-      "example": "彼の態度に対して先輩が苦言を呈した。",
-      "example_reading": "かれの たいどに たいして せんぱいが くげんを ていした。",
-      "example_meaning": "그의 태도에 대해 선배가 쓴소리를 했다."
-    },
     {
       "word": "警戒",
       "reading": "けいかい",
       "meaning": "경계, 주의",
       "level": "N2",
-      "example": "大雨のため、土砂災害への警戒が必要だ。",
-      "example_reading": "おおあめの ため、どしゃさいがいへの けいかいが ひつようだ。",
-      "example_meaning": "폭우 때문에 산사태에 대한 경계가 필요하다."
+      "example": "台風が接近しているので、住民は警戒を強めている。",
+      "example_reading": "たいふうがせっきんしているので、じゅうみんはけいかいをつよめている。",
+      "example_meaning": "태풍이 접근하고 있어서 주민들은 경계를 강화하고 있다."
     },
     {
       "word": "浸水",
       "reading": "しんすい",
       "meaning": "침수",
       "level": "N2",
-      "example": "低い土地では浸水の被害が広がった。",
-      "example_reading": "ひくい とちでは しんすいの ひがいが ひろがった。",
-      "example_meaning": "낮은 지대에서는 침수 피해가 확산되었다."
+      "example": "大雨の影響で、川の近くの家が浸水した。",
+      "example_reading": "おおあめのえいきょうで、かわのちかくのいえがしんすいした。",
+      "example_meaning": "폭우의 영향으로 강 근처의 집이 침수되었다."
     },
     {
-      "word": "揃い踏み",
-      "reading": "そろいぶみ",
-      "meaning": "(주요 인물들이) 한자리에 모임, 총출동",
+      "word": "直撃",
+      "reading": "ちょくげき",
+      "meaning": "직격, 직접적으로 맞음",
+      "level": "N2",
+      "example": "台風が関東地方を直撃する見込みだ。",
+      "example_reading": "たいふうがかんとうちほうをちょくげきするみこみだ。",
+      "example_meaning": "태풍이 간토 지방을 직격할 전망이다."
+    },
+    {
+      "word": "一命を取り留める",
+      "reading": "いちめいをとりとめる",
+      "meaning": "목숨을 건지다, 구사일생하다",
       "level": "N1",
-      "example": "決勝戦には強豪チームが揃い踏みした。",
-      "example_reading": "けっしょうせんには きょうごうチームが そろいぶみした。",
-      "example_meaning": "결승전에는 강호 팀들이 모두 한자리에 모였다."
-    },
-    {
-      "word": "入籍",
-      "reading": "にゅうせき",
-      "meaning": "혼인신고, 입적",
-      "level": "N2",
-      "example": "二人は先月、正式に入籍した。",
-      "example_reading": "ふたりは せんげつ、せいしきに にゅうせきした。",
-      "example_meaning": "두 사람은 지난달 정식으로 혼인신고를 했다."
-    },
-    {
-      "word": "削除",
-      "reading": "さくじょ",
-      "meaning": "삭제",
-      "level": "N3",
-      "example": "AI機能を使って写真から人物を削除した。",
-      "example_reading": "エーアイきのうを つかって しゃしんから じんぶつを さくじょした。",
-      "example_meaning": "AI 기능을 사용해 사진에서 인물을 삭제했다."
-    },
-    {
-      "word": "生成",
-      "reading": "せいせい",
-      "meaning": "생성",
-      "level": "N2",
-      "example": "このアプリは画像を自動で生成する機能がある。",
-      "example_reading": "この アプリは がぞうを じどうで せいせいする きのうが ある。",
-      "example_meaning": "이 앱은 이미지를 자동으로 생성하는 기능이 있다."
+      "example": "彼は交通事故に遭ったが、なんとか一命を取り留めた。",
+      "example_reading": "かれはこうつうじこにあったが、なんとかいちめいをとりとめた。",
+      "example_meaning": "그는 교통사고를 당했지만 간신히 목숨을 건졌다."
     }
   ]
 }
