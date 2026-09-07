@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-07 08:57 KST",
+  "generated_at": "2026-09-07 09:18 KST",
   "date": "2026-09-07",
   "words": [
     {
-      "word": "直撃",
-      "reading": "ちょくげき",
-      "meaning": "직격, 직접 타격을 받음",
+      "word": "衝突",
+      "reading": "しょうとつ",
+      "meaning": "충돌",
       "level": "N2",
-      "example": "台風が関東地方を直撃し、多くの交通機関が運休した。",
-      "example_reading": "たいふうがかんとうちほうをちょくげきし、おおくのこうつうきかんがうんきゅうした。",
-      "example_meaning": "태풍이 간토 지방을 직격하여 많은 교통기관이 운행을 중단했다."
+      "example": "二台の車が交差点で衝突した。",
+      "example_reading": "にだいのくるまがこうさてんでしょうとつした。",
+      "example_meaning": "두 대의 차가 교차로에서 충돌했다."
+    },
+    {
+      "word": "負傷",
+      "reading": "ふしょう",
+      "meaning": "부상",
+      "level": "N2",
+      "example": "事故で数名が負傷しました。",
+      "example_reading": "じこですうめいがふしょうしました。",
+      "example_meaning": "사고로 몇 명이 부상을 입었습니다."
+    },
+    {
+      "word": "告白",
+      "reading": "こくはく",
+      "meaning": "고백",
+      "level": "N2",
+      "example": "彼は友人に本当の気持ちを告白した。",
+      "example_reading": "かれはゆうじんにほんとうのきもちをこくはくした。",
+      "example_meaning": "그는 친구에게 진짜 마음을 고백했다."
+    },
+    {
+      "word": "定年退職",
+      "reading": "ていねんたいしょく",
+      "meaning": "정년퇴직",
+      "level": "N2",
+      "example": "父は来年、定年退職する予定です。",
+      "example_reading": "ちちはらいねん、ていねんたいしょくするよていです。",
+      "example_meaning": "아버지는 내년에 정년퇴직할 예정입니다."
     },
     {
       "word": "呼びかける",
       "reading": "よびかける",
       "meaning": "호소하다, 촉구하다",
       "level": "N2",
-      "example": "市役所は住民に節電を呼びかけている。",
-      "example_reading": "しやくしょはじゅうみんにせつでんをよびかけている。",
-      "example_meaning": "시청은 주민들에게 절전을 호소하고 있다."
+      "example": "政府は国民に節電を呼びかけている。",
+      "example_reading": "せいふはこくみんにせつでんをよびかけている。",
+      "example_meaning": "정부는 국민에게 절전을 호소하고 있다."
+    },
+    {
+      "word": "経営者",
+      "reading": "けいえいしゃ",
+      "meaning": "경영자",
+      "level": "N2",
+      "example": "あの会社の経営者は非常に厳しい人だ。",
+      "example_reading": "あのかいしゃのけいえいしゃはひじょうにきびしいひとだ。",
+      "example_meaning": "그 회사의 경영자는 매우 엄격한 사람이다."
+    },
+    {
+      "word": "出産",
+      "reading": "しゅっさん",
+      "meaning": "출산",
+      "level": "N3",
+      "example": "彼女は先月、無事に出産した。",
+      "example_reading": "かのじょはせんげつ、ぶじにしゅっさんした。",
+      "example_meaning": "그녀는 지난달 무사히 출산했다."
     },
     {
       "word": "掲載",
       "reading": "けいさい",
-      "meaning": "게재, 실음(신문·잡지 등에)",
+      "meaning": "게재",
       "level": "N2",
-      "example": "この記事は来月号の雑誌に掲載される予定だ。",
-      "example_reading": "このきじはらいげつごうのざっしにけいさいされるよていだ。",
-      "example_meaning": "이 기사는 다음 달 호 잡지에 게재될 예정이다."
-    },
-    {
-      "word": "死傷",
-      "reading": "ししょう",
-      "meaning": "사상(죽거나 다침)",
-      "level": "N1",
-      "example": "その事故で数名が死傷したと報じられた。",
-      "example_reading": "そのじこですうめいがししょうしたとほうじられた。",
-      "example_meaning": "그 사고로 몇 명이 사상했다고 보도되었다."
-    },
-    {
-      "word": "愛飲",
-      "reading": "あいいん",
-      "meaning": "즐겨 마심, 애음",
-      "level": "N1",
-      "example": "祖父は毎晩この地酒を愛飲している。",
-      "example_reading": "そふはまいばんこのじざけをあいいんしている。",
-      "example_meaning": "할아버지는 매일 밤 이 지역 술을 즐겨 마신다."
-    },
-    {
-      "word": "相次ぐ",
-      "reading": "あいつぐ",
-      "meaning": "잇따르다, 연이어 일어나다",
-      "level": "N2",
-      "example": "最近、この地域では空き巣の被害が相次いでいる。",
-      "example_reading": "さいきん、このちいきではあきすのひがいがあいついでいる。",
-      "example_meaning": "최근 이 지역에서는 빈집털이 피해가 잇따르고 있다."
-    },
-    {
-      "word": "改正",
-      "reading": "かいせい",
-      "meaning": "개정(법률·규칙 등을 고침)",
-      "level": "N2",
-      "example": "来年から労働法の一部が改正される予定だ。",
-      "example_reading": "らいねんからろうどうほうのいちぶがかいせいされるよていだ。",
-      "example_meaning": "내년부터 노동법의 일부가 개정될 예정이다."
-    },
-    {
-      "word": "再開",
-      "reading": "さいかい",
-      "meaning": "재개(다시 시작함)",
-      "level": "N3",
-      "example": "工事が中断していたが、来週から再開されるそうだ。",
-      "example_reading": "こうじがちゅうだんしていたが、らいしゅうからさいかいされるそうだ。",
-      "example_meaning": "공사가 중단되었었는데 다음 주부터 재개된다고 한다."
+      "example": "この記事は来週の雑誌に掲載される予定だ。",
+      "example_reading": "このきじはらいしゅうのざっしにけいさいされるよていだ。",
+      "example_meaning": "이 기사는 다음 주 잡지에 게재될 예정이다."
     }
   ]
 }
