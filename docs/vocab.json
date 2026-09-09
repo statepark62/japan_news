@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-09 08:50 KST",
+  "generated_at": "2026-09-09 09:17 KST",
   "date": "2026-09-09",
   "words": [
     {
-      "word": "あえて",
-      "reading": "あえて",
-      "meaning": "굳이, 일부러",
+      "word": "大興奮",
+      "reading": "だいこうふん",
+      "meaning": "대흥분, 매우 흥분함",
       "level": "N2",
-      "example": "彼はあえて難しい道を選んだ。",
-      "example_reading": "かれはあえてむずかしいみちをえらんだ。",
-      "example_meaning": "그는 굳이 어려운 길을 선택했다."
+      "example": "子供たちは遊園地の新しいアトラクションに大興奮していた。",
+      "example_reading": "こどもたちはゆうえんちのあたらしいアトラクションにだいこうふんしていた。",
+      "example_meaning": "아이들은 놀이공원의 새로운 놀이기구에 매우 흥분해 있었다."
+    },
+    {
+      "word": "拘留",
+      "reading": "こうりゅう",
+      "meaning": "구류, 구금",
+      "level": "N1",
+      "example": "容疑者は現在、警察署に拘留されている。",
+      "example_reading": "ようぎしゃはげんざい、けいさつしょにこうりゅうされている。",
+      "example_meaning": "용의자는 현재 경찰서에 구류되어 있다."
+    },
+    {
+      "word": "前代未聞",
+      "reading": "ぜんだいみもん",
+      "meaning": "전대미문, 전례 없는 일",
+      "level": "N1",
+      "example": "この事件は前代未聞のスキャンダルとして話題になった。",
+      "example_reading": "このじけんはぜんだいみもんのスキャンダルとしてわだいになった。",
+      "example_meaning": "이 사건은 전대미문의 스캔들로 화제가 되었다."
+    },
+    {
+      "word": "発祥",
+      "reading": "はっしょう",
+      "meaning": "발상, 기원",
+      "level": "N2",
+      "example": "この料理は中国発祥だと言われている。",
+      "example_reading": "このりょうりはちゅうごくはっしょうだといわれている。",
+      "example_meaning": "이 요리는 중국이 발상지라고 알려져 있다."
     },
     {
       "word": "富裕層",
       "reading": "ふゆうそう",
       "meaning": "부유층",
-      "level": "N2",
-      "example": "富裕層は税金対策に力を入れている。",
-      "example_reading": "ふゆうそうはぜいきんたいさくにちからをいれている。",
-      "example_meaning": "부유층은 세금 대책에 힘을 쏟고 있다."
+      "level": "N1",
+      "example": "富裕層をターゲットにした高級ブランドが人気を集めている。",
+      "example_reading": "ふゆうそうをターゲットにしたこうきゅうブランドがにんきをあつめている。",
+      "example_meaning": "부유층을 타깃으로 한 고급 브랜드가 인기를 끌고 있다."
     },
     {
       "word": "復活",
       "reading": "ふっかつ",
-      "meaning": "부활, 재기, 복귀",
+      "meaning": "부활, 다시 활동함",
       "level": "N3",
-      "example": "彼女は病気からの復活を果たした。",
-      "example_reading": "かのじょはびょうきからのふっかつをはたした。",
-      "example_meaning": "그녀는 병에서 회복하여 복귀를 이루었다."
+      "example": "彼女は怪我から復活し、再びステージに立った。",
+      "example_reading": "かのじょはけがからふっかつし、ふたたびステージにたった。",
+      "example_meaning": "그녀는 부상에서 회복하여 다시 무대에 섰다."
     },
     {
-      "word": "称賛",
-      "reading": "しょうさん",
-      "meaning": "칭찬, 찬사",
-      "level": "N2",
-      "example": "彼の勇気ある行動は多くの人々から称賛された。",
-      "example_reading": "かれのゆうきあるこうどうはおおくのひとびとからしょうさんされた。",
-      "example_meaning": "그의 용기 있는 행동은 많은 사람들로부터 칭찬받았다."
+      "word": "快挙",
+      "reading": "かいきょ",
+      "meaning": "쾌거, 훌륭한 업적",
+      "level": "N1",
+      "example": "彼のオリンピックでの金メダル獲得は快挙と称された。",
+      "example_reading": "かれのオリンピックでのきんメダルかくとくはかいきょとしょうされた。",
+      "example_meaning": "그의 올림픽 금메달 획득은 쾌거로 칭송받았다."
     },
     {
-      "word": "困惑",
-      "reading": "こんわく",
-      "meaning": "당혹, 곤혹",
+      "word": "巡る",
+      "reading": "めぐる",
+      "meaning": "(어떤 사안을) 둘러싸다, 관련되다",
       "level": "N2",
-      "example": "突然の質問に困惑してしまった。",
-      "example_reading": "とつぜんのしつもんにこんわくしてしまった。",
-      "example_meaning": "갑작스러운 질문에 당황해 버렸다."
-    },
-    {
-      "word": "意図",
-      "reading": "いと",
-      "meaning": "의도",
-      "level": "N2",
-      "example": "彼の発言の意図がよく分からない。",
-      "example_reading": "かれのはつげんのいとがよくわからない。",
-      "example_meaning": "그의 발언의 의도를 잘 모르겠다."
-    },
-    {
-      "word": "騒動",
-      "reading": "そうどう",
-      "meaning": "소동, 소란",
-      "level": "N2",
-      "example": "その事件は大きな騒動に発展した。",
-      "example_reading": "そのじけんはおおきなそうどうにはってんした。",
-      "example_meaning": "그 사건은 큰 소동으로 발전했다."
-    },
-    {
-      "word": "決断",
-      "reading": "けつだん",
-      "meaning": "결단, 결정",
-      "level": "N2",
-      "example": "彼女はついに離婚を決断した。",
-      "example_reading": "かのじょはついにりこんをけつだんした。",
-      "example_meaning": "그녀는 마침내 이혼을 결단했다."
+      "example": "新しい法律を巡って国会で激しい議論が交わされた。",
+      "example_reading": "あたらしいほうりつをめぐってこっかいではげしいぎろんがかわされた。",
+      "example_meaning": "새로운 법률을 둘러싸고 국회에서 격렬한 논의가 오갔다."
     }
   ]
 }
