@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-10 09:32 KST",
-  "date": "2026-09-10",
+  "generated_at": "2026-09-11 08:44 KST",
+  "date": "2026-09-11",
   "words": [
     {
-      "word": "死去",
-      "reading": "しきょ",
-      "meaning": "사망, 별세",
-      "level": "N2",
-      "example": "有名な俳優が昨夜、病気のため死去した。",
-      "example_reading": "ゆうめいなはいゆうがゆうべ、びょうきのためしきょした。",
-      "example_meaning": "유명한 배우가 어젯밤 병으로 사망했다."
+      "word": "効用",
+      "reading": "こうよう",
+      "meaning": "효용, 효과",
+      "level": "N1",
+      "example": "この薬には鎮痛の効用がある。",
+      "example_reading": "このくすりにはちんつうのこうようがある。",
+      "example_meaning": "이 약에는 진통 효과가 있다."
     },
     {
-      "word": "謝罪",
-      "reading": "しゃざい",
-      "meaning": "사죄, 사과",
+      "word": "通用",
+      "reading": "つうよう",
+      "meaning": "통용되다, 통하다",
       "level": "N2",
-      "example": "会社は不祥事について記者会見で謝罪した。",
-      "example_reading": "かいしゃはふしょうじについてきしゃかいけんでしゃざいした。",
-      "example_meaning": "회사는 불상사에 대해 기자회견에서 사죄했다."
+      "example": "その言い訳はもう通用しない。",
+      "example_reading": "そのいいわけはもうつうようしない。",
+      "example_meaning": "그 변명은 더 이상 통하지 않는다."
+    },
+    {
+      "word": "絡む",
+      "reading": "からむ",
+      "meaning": "얽히다, 관련되다",
+      "level": "N2",
+      "example": "この事件には複数の企業が絡んでいる。",
+      "example_reading": "このじけんにはふくすうのきぎょうがからんでいる。",
+      "example_meaning": "이 사건에는 여러 기업이 얽혀 있다."
+    },
+    {
+      "word": "逆走",
+      "reading": "ぎゃくそう",
+      "meaning": "역주행",
+      "level": "N2",
+      "example": "高速道路で逆走する車が増えている。",
+      "example_reading": "こうそくどうろでぎゃくそうするくるまがふえている。",
+      "example_meaning": "고속도로에서 역주행하는 차가 늘고 있다."
+    },
+    {
+      "word": "追放",
+      "reading": "ついほう",
+      "meaning": "추방",
+      "level": "N1",
+      "example": "彼は不正行為で組織から追放された。",
+      "example_reading": "かれはふせいこういでそしきからついほうされた。",
+      "example_meaning": "그는 부정행위로 조직에서 추방당했다."
+    },
+    {
+      "word": "殺到",
+      "reading": "さっとう",
+      "meaning": "쇄도, 몰림",
+      "level": "N1",
+      "example": "発売と同時に注文が殺到した。",
+      "example_reading": "はつばいとどうじにちゅうもんがさっとうした。",
+      "example_meaning": "발매와 동시에 주문이 쇄도했다."
+    },
+    {
+      "word": "炎上",
+      "reading": "えんじょう",
+      "meaning": "(인터넷상) 논란이 됨, 뭇매 맞음",
+      "level": "N2",
+      "example": "彼の発言がSNSで炎上した。",
+      "example_reading": "かれのはつげんがエスエヌエスでえんじょうした。",
+      "example_meaning": "그의 발언이 SNS에서 논란이 되었다."
     },
     {
       "word": "逮捕",
       "reading": "たいほ",
       "meaning": "체포",
       "level": "N2",
-      "example": "警察は容疑者を犯行の翌日に逮捕した。",
-      "example_reading": "けいさつはようぎしゃをはんこうのよくじつにたいほした。",
-      "example_meaning": "경찰은 용의자를 범행 다음 날 체포했다."
-    },
-    {
-      "word": "重傷",
-      "reading": "じゅうしょう",
-      "meaning": "중상, 심한 부상",
-      "level": "N2",
-      "example": "交通事故で歩行者が重傷を負った。",
-      "example_reading": "こうつうじこでほこうしゃがじゅうしょうをおった。",
-      "example_meaning": "교통사고로 보행자가 중상을 입었다."
-    },
-    {
-      "word": "前代未聞",
-      "reading": "ぜんだいみもん",
-      "meaning": "전대미문, 전례 없는",
-      "level": "N1",
-      "example": "そのニュースは前代未聞の出来事として話題になった。",
-      "example_reading": "そのにゅーすはぜんだいみもんのできごととしてわだいになった。",
-      "example_meaning": "그 뉴스는 전대미문의 사건으로 화제가 되었다."
-    },
-    {
-      "word": "手口",
-      "reading": "てぐち",
-      "meaning": "수법, 범행 수법",
-      "level": "N1",
-      "example": "詐欺グループの手口は年々巧妙になっている。",
-      "example_reading": "さぎぐるーぷのてぐちはねんねんこうみょうになっている。",
-      "example_meaning": "사기 그룹의 수법은 해마다 교묘해지고 있다."
-    },
-    {
-      "word": "想定外",
-      "reading": "そうていがい",
-      "meaning": "예상 밖, 상정 외",
-      "level": "N1",
-      "example": "その結果は完全に想定外だった。",
-      "example_reading": "そのけっかはかんぜんにそうていがいだった。",
-      "example_meaning": "그 결과는 완전히 예상 밖이었다."
-    },
-    {
-      "word": "逃走",
-      "reading": "とうそう",
-      "meaning": "도주, 도망",
-      "level": "N1",
-      "example": "犯人は現場から車で逃走したとみられる。",
-      "example_reading": "はんにんはげんばからくるまでとうそうしたとみられる。",
-      "example_meaning": "범인은 현장에서 차로 도주한 것으로 보인다."
+      "example": "警察は容疑者を緊急逮捕した。",
+      "example_reading": "けいさつはようぎしゃをきんきゅうたいほした。",
+      "example_meaning": "경찰은 용의자를 긴급 체포했다."
     }
   ]
 }
