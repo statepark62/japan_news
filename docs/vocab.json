@@ -1,78 +1,69 @@
 {
-  "generated_at": "2026-09-10 08:50 KST",
+  "generated_at": "2026-09-10 09:16 KST",
   "date": "2026-09-10",
   "words": [
     {
-      "word": "舞い込む",
-      "reading": "まいこむ",
-      "meaning": "(소식·바람 등이) 뜻밖에 날아들다, 굴러들어오다",
+      "word": "逃走",
+      "reading": "とうそう",
+      "meaning": "도주, 도망",
       "level": "N2",
-      "example": "彼のもとに突然、海外留学の招待状が舞い込んだ。",
-      "example_reading": "かれのもとに とつぜん、かいがいりゅうがくの しょうたいじょうが まいこんだ。",
-      "example_meaning": "그에게 갑자기 해외 유학 초청장이 날아들었다."
+      "example": "犯人は現場から逃走したが、翌日逮捕された。",
+      "example_reading": "はんにんはげんばからとうそうしたが、よくじつたいほされた。",
+      "example_meaning": "범인은 현장에서 도주했지만 다음날 체포되었다."
     },
     {
-      "word": "衝撃",
-      "reading": "しょうげき",
-      "meaning": "충격",
+      "word": "重傷",
+      "reading": "じゅうしょう",
+      "meaning": "중상, 심각한 부상",
       "level": "N2",
-      "example": "そのニュースは社会に大きな衝撃を与えた。",
-      "example_reading": "そのニュースは しゃかいに おおきな しょうげきを あたえた。",
-      "example_meaning": "그 뉴스는 사회에 큰 충격을 주었다."
+      "example": "交通事故で歩行者が重傷を負った。",
+      "example_reading": "こうつうじこでほこうしゃがじゅうしょうをおった。",
+      "example_meaning": "교통사고로 보행자가 중상을 입었다."
+    },
+    {
+      "word": "想定外",
+      "reading": "そうていがい",
+      "meaning": "예상 밖, 상정 외",
+      "level": "N2",
+      "example": "デビュー後の展開は完全に想定外だった。",
+      "example_reading": "デビューごのてんかいはかんぜんにそうていがいだった。",
+      "example_meaning": "데뷔 이후의 전개는 완전히 예상 밖이었다."
+    },
+    {
+      "word": "舞い込む",
+      "reading": "まいこむ",
+      "meaning": "(뜻밖에) 날아들다, 굴러들어오다",
+      "level": "N1",
+      "example": "突然、思いがけない朗報が舞い込んできた。",
+      "example_reading": "とつぜん、おもいがけないろうほうがまいこんできた。",
+      "example_meaning": "갑자기 뜻밖의 기쁜 소식이 날아들었다."
     },
     {
       "word": "炎上",
       "reading": "えんじょう",
-      "meaning": "(SNS 등에서) 논란이 되다, 악플이 쇄도하다",
+      "meaning": "(SNS 등에서) 비난이 쇄도함, 논란이 되다",
       "level": "N2",
-      "example": "彼の発言がSNSで炎上している。",
-      "example_reading": "かれの はつげんが エスエヌエスで えんじょうしている。",
-      "example_meaning": "그의 발언이 SNS에서 논란이 되고 있다."
+      "example": "彼女の発言がSNSで炎上し、大きな話題になった。",
+      "example_reading": "かのじょのはつげんがエスエヌエスでえんじょうし、おおきなわだいになった。",
+      "example_meaning": "그녀의 발언이 SNS에서 논란이 되어 큰 화제가 되었다."
     },
     {
       "word": "判明",
       "reading": "はんめい",
       "meaning": "판명, 밝혀짐",
       "level": "N2",
-      "example": "調査の結果、原因が判明した。",
-      "example_reading": "ちょうさの けっか、げんいんが はんめいした。",
-      "example_meaning": "조사 결과 원인이 밝혀졌다."
+      "example": "調査の結果、事故の原因が判明した。",
+      "example_reading": "ちょうさのけっか、じこのげんいんがはんめいした。",
+      "example_meaning": "조사 결과, 사고의 원인이 밝혀졌다."
     },
     {
-      "word": "間一髪",
-      "reading": "かんいっぱつ",
-      "meaning": "간발의 차, 아슬아슬한 순간",
-      "level": "N1",
-      "example": "間一髪のところで電車に間に合った。",
-      "example_reading": "かんいっぱつの ところで でんしゃに まにあった。",
-      "example_meaning": "아슬아슬하게 전철 시간에 맞췄다."
-    },
-    {
-      "word": "免れる",
-      "reading": "まぬかれる",
-      "meaning": "(위험·재난 등을) 면하다, 벗어나다",
-      "level": "N1",
-      "example": "彼は運よく事故を免れた。",
-      "example_reading": "かれは うんよく じこを まぬかれた。",
-      "example_meaning": "그는 운 좋게 사고를 면했다."
-    },
-    {
-      "word": "葛藤",
-      "reading": "かっとう",
-      "meaning": "갈등",
-      "level": "N1",
-      "example": "彼女は仕事と家庭の間で葛藤している。",
-      "example_reading": "かのじょは しごとと かていの あいだで かっとうしている。",
-      "example_meaning": "그녀는 일과 가정 사이에서 갈등하고 있다."
-    },
-    {
-      "word": "認知症",
-      "reading": "にんちしょう",
-      "meaning": "치매",
-      "level": "N2",
-      "example": "祖母は最近、認知症と診断された。",
-      "example_reading": "そぼは さいきん、にんちしょうと しんだんされた。",
-      "example_meaning": "할머니는 최근 치매 진단을 받으셨다."
+      "word": "喫煙",
+      "reading": "きつえん",
+      "meaning": "흡연",
+      "level": "N3",
+      "example": "長年の喫煙が原因で健康を害した。",
+      "example_reading": "ながねんのきつえんがげんいんでけんこうをがいした。",
+      "example_meaning": "오랜 흡연이 원인이 되어 건강을 해쳤다."
     }
   ]
 }
