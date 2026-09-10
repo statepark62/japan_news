@@ -1,69 +1,78 @@
 {
-  "generated_at": "2026-09-10 09:16 KST",
+  "generated_at": "2026-09-10 09:32 KST",
   "date": "2026-09-10",
   "words": [
     {
-      "word": "逃走",
-      "reading": "とうそう",
-      "meaning": "도주, 도망",
+      "word": "死去",
+      "reading": "しきょ",
+      "meaning": "사망, 별세",
       "level": "N2",
-      "example": "犯人は現場から逃走したが、翌日逮捕された。",
-      "example_reading": "はんにんはげんばからとうそうしたが、よくじつたいほされた。",
-      "example_meaning": "범인은 현장에서 도주했지만 다음날 체포되었다."
+      "example": "有名な俳優が昨夜、病気のため死去した。",
+      "example_reading": "ゆうめいなはいゆうがゆうべ、びょうきのためしきょした。",
+      "example_meaning": "유명한 배우가 어젯밤 병으로 사망했다."
+    },
+    {
+      "word": "謝罪",
+      "reading": "しゃざい",
+      "meaning": "사죄, 사과",
+      "level": "N2",
+      "example": "会社は不祥事について記者会見で謝罪した。",
+      "example_reading": "かいしゃはふしょうじについてきしゃかいけんでしゃざいした。",
+      "example_meaning": "회사는 불상사에 대해 기자회견에서 사죄했다."
+    },
+    {
+      "word": "逮捕",
+      "reading": "たいほ",
+      "meaning": "체포",
+      "level": "N2",
+      "example": "警察は容疑者を犯行の翌日に逮捕した。",
+      "example_reading": "けいさつはようぎしゃをはんこうのよくじつにたいほした。",
+      "example_meaning": "경찰은 용의자를 범행 다음 날 체포했다."
     },
     {
       "word": "重傷",
       "reading": "じゅうしょう",
-      "meaning": "중상, 심각한 부상",
+      "meaning": "중상, 심한 부상",
       "level": "N2",
       "example": "交通事故で歩行者が重傷を負った。",
       "example_reading": "こうつうじこでほこうしゃがじゅうしょうをおった。",
       "example_meaning": "교통사고로 보행자가 중상을 입었다."
     },
     {
+      "word": "前代未聞",
+      "reading": "ぜんだいみもん",
+      "meaning": "전대미문, 전례 없는",
+      "level": "N1",
+      "example": "そのニュースは前代未聞の出来事として話題になった。",
+      "example_reading": "そのにゅーすはぜんだいみもんのできごととしてわだいになった。",
+      "example_meaning": "그 뉴스는 전대미문의 사건으로 화제가 되었다."
+    },
+    {
+      "word": "手口",
+      "reading": "てぐち",
+      "meaning": "수법, 범행 수법",
+      "level": "N1",
+      "example": "詐欺グループの手口は年々巧妙になっている。",
+      "example_reading": "さぎぐるーぷのてぐちはねんねんこうみょうになっている。",
+      "example_meaning": "사기 그룹의 수법은 해마다 교묘해지고 있다."
+    },
+    {
       "word": "想定外",
       "reading": "そうていがい",
       "meaning": "예상 밖, 상정 외",
-      "level": "N2",
-      "example": "デビュー後の展開は完全に想定外だった。",
-      "example_reading": "デビューごのてんかいはかんぜんにそうていがいだった。",
-      "example_meaning": "데뷔 이후의 전개는 완전히 예상 밖이었다."
-    },
-    {
-      "word": "舞い込む",
-      "reading": "まいこむ",
-      "meaning": "(뜻밖에) 날아들다, 굴러들어오다",
       "level": "N1",
-      "example": "突然、思いがけない朗報が舞い込んできた。",
-      "example_reading": "とつぜん、おもいがけないろうほうがまいこんできた。",
-      "example_meaning": "갑자기 뜻밖의 기쁜 소식이 날아들었다."
+      "example": "その結果は完全に想定外だった。",
+      "example_reading": "そのけっかはかんぜんにそうていがいだった。",
+      "example_meaning": "그 결과는 완전히 예상 밖이었다."
     },
     {
-      "word": "炎上",
-      "reading": "えんじょう",
-      "meaning": "(SNS 등에서) 비난이 쇄도함, 논란이 되다",
-      "level": "N2",
-      "example": "彼女の発言がSNSで炎上し、大きな話題になった。",
-      "example_reading": "かのじょのはつげんがエスエヌエスでえんじょうし、おおきなわだいになった。",
-      "example_meaning": "그녀의 발언이 SNS에서 논란이 되어 큰 화제가 되었다."
-    },
-    {
-      "word": "判明",
-      "reading": "はんめい",
-      "meaning": "판명, 밝혀짐",
-      "level": "N2",
-      "example": "調査の結果、事故の原因が判明した。",
-      "example_reading": "ちょうさのけっか、じこのげんいんがはんめいした。",
-      "example_meaning": "조사 결과, 사고의 원인이 밝혀졌다."
-    },
-    {
-      "word": "喫煙",
-      "reading": "きつえん",
-      "meaning": "흡연",
-      "level": "N3",
-      "example": "長年の喫煙が原因で健康を害した。",
-      "example_reading": "ながねんのきつえんがげんいんでけんこうをがいした。",
-      "example_meaning": "오랜 흡연이 원인이 되어 건강을 해쳤다."
+      "word": "逃走",
+      "reading": "とうそう",
+      "meaning": "도주, 도망",
+      "level": "N1",
+      "example": "犯人は現場から車で逃走したとみられる。",
+      "example_reading": "はんにんはげんばからくるまでとうそうしたとみられる。",
+      "example_meaning": "범인은 현장에서 차로 도주한 것으로 보인다."
     }
   ]
 }
