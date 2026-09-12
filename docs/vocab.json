@@ -1,42 +1,78 @@
 {
-  "generated_at": "2026-09-12 09:35 KST",
-  "date": "2026-09-12",
+  "generated_at": "2026-09-13 08:45 KST",
+  "date": "2026-09-13",
   "words": [
     {
-      "word": "見舞われる",
-      "reading": "みまわれる",
-      "meaning": "(재난·불행 등을) 당하다, 겪다",
+      "word": "祝辞",
+      "reading": "しゅくじ",
+      "meaning": "축사",
       "level": "N2",
-      "example": "昨夜、この地域は激しい大雨に見舞われた。",
-      "example_reading": "さくや、このちいきははげしいおおあめにみまわれた。",
-      "example_meaning": "어젯밤, 이 지역은 심한 폭우를 겪었다."
+      "example": "彼女は結婚式で心のこもった祝辞を述べた。",
+      "example_reading": "かのじょはけっこんしきでこころのこもったしゅくじをのべた。",
+      "example_meaning": "그녀는 결혼식에서 진심 어린 축사를 했다."
     },
     {
-      "word": "無断",
-      "reading": "むだん",
-      "meaning": "무단, 허락 없이",
-      "level": "N2",
-      "example": "彼は上司の許可を得ず、無断で会社の車を使った。",
-      "example_reading": "かれはじょうしのきょかをえず、むだんでかいしゃのくるまをつかった。",
-      "example_meaning": "그는 상사의 허락 없이 무단으로 회사 차를 사용했다."
-    },
-    {
-      "word": "偽造",
-      "reading": "ぎぞう",
-      "meaning": "위조",
-      "level": "N1",
-      "example": "彼女は偽造したパスポートを使って入国しようとした。",
-      "example_reading": "かのじょはぎぞうしたパスポートをつかってにゅうこくしようとした。",
-      "example_meaning": "그녀는 위조한 여권을 사용해서 입국하려 했다."
-    },
-    {
-      "word": "拡大",
-      "reading": "かくだい",
-      "meaning": "확대",
+      "word": "発達",
+      "reading": "はったつ",
+      "meaning": "발달, (기상에서) 세력이 강해짐",
       "level": "N3",
-      "example": "新しいウイルスの感染が全国に拡大している。",
-      "example_reading": "あたらしいウイルスのかんせんがぜんこくにかくだいしている。",
-      "example_meaning": "새로운 바이러스 감염이 전국으로 확대되고 있다."
+      "example": "台風が急速に発達しながら北上している。",
+      "example_reading": "たいふうがきゅうそくにはったつしながらほくじょうしている。",
+      "example_meaning": "태풍이 급속히 발달하면서 북상하고 있다."
+    },
+    {
+      "word": "意識不明",
+      "reading": "いしきふめい",
+      "meaning": "의식불명",
+      "level": "N2",
+      "example": "事故に巻き込まれた男性は意識不明の重体だ。",
+      "example_reading": "じこにまきこまれただんせいはいしきふめいのじゅうたいだ。",
+      "example_meaning": "사고에 휘말린 남성은 의식불명의 중태이다."
+    },
+    {
+      "word": "重体",
+      "reading": "じゅうたい",
+      "meaning": "중태, 위독한 상태",
+      "level": "N2",
+      "example": "彼は交通事故で重体に陥った。",
+      "example_reading": "かれはこうつうじこでじゅうたいにおちいった。",
+      "example_meaning": "그는 교통사고로 중태에 빠졌다."
+    },
+    {
+      "word": "名指し",
+      "reading": "なざし",
+      "meaning": "실명 거론, 콕 집어 지목함",
+      "level": "N2",
+      "example": "彼はミスの責任者として名指しされた。",
+      "example_reading": "かれはミスのせきにんしゃとしてなざしされた。",
+      "example_meaning": "그는 실수의 책임자로 지목되었다."
+    },
+    {
+      "word": "批判殺到",
+      "reading": "ひはんさっとう",
+      "meaning": "비판이 쇄도함",
+      "level": "N1",
+      "example": "その発言に対してSNSで批判が殺到した。",
+      "example_reading": "そのはつげんにたいしてエスエヌエスでひはんがさっとうした。",
+      "example_meaning": "그 발언에 대해 SNS에서 비판이 쇄도했다."
+    },
+    {
+      "word": "釈明",
+      "reading": "しゃくめい",
+      "meaning": "해명, 변명",
+      "level": "N1",
+      "example": "彼は不正について釈明を求められた。",
+      "example_reading": "かれはふせいについてしゃくめいをもとめられた。",
+      "example_meaning": "그는 부정에 대해 해명을 요구받았다."
+    },
+    {
+      "word": "賛否両論",
+      "reading": "さんぴりょうろん",
+      "meaning": "찬반양론",
+      "level": "N1",
+      "example": "その政策には賛否両論がある。",
+      "example_reading": "そのせいさくにはさんぴりょうろんがある。",
+      "example_meaning": "그 정책에는 찬반양론이 있다."
     }
   ]
 }
