@@ -1,78 +1,42 @@
 {
-  "generated_at": "2026-09-12 09:20 KST",
+  "generated_at": "2026-09-12 09:35 KST",
   "date": "2026-09-12",
   "words": [
     {
-      "word": "すら",
-      "reading": "すら",
-      "meaning": "~조차, ~마저",
-      "level": "N1",
-      "example": "彼はひらがなすら書けない。",
-      "example_reading": "かれはひらがなすらかけない。",
-      "example_meaning": "그는 히라가나조차 쓰지 못한다."
+      "word": "見舞われる",
+      "reading": "みまわれる",
+      "meaning": "(재난·불행 등을) 당하다, 겪다",
+      "level": "N2",
+      "example": "昨夜、この地域は激しい大雨に見舞われた。",
+      "example_reading": "さくや、このちいきははげしいおおあめにみまわれた。",
+      "example_meaning": "어젯밤, 이 지역은 심한 폭우를 겪었다."
     },
     {
-      "word": "一斉",
-      "reading": "いっせい",
-      "meaning": "일제히, 동시에",
+      "word": "無断",
+      "reading": "むだん",
+      "meaning": "무단, 허락 없이",
       "level": "N2",
-      "example": "警察は駅前で一斉に取り締まりを行った。",
-      "example_reading": "けいさつはえきまえでいっせいにとりしまりをおこなった。",
-      "example_meaning": "경찰은 역 앞에서 일제히 단속을 실시했다."
+      "example": "彼は上司の許可を得ず、無断で会社の車を使った。",
+      "example_reading": "かれはじょうしのきょかをえず、むだんでかいしゃのくるまをつかった。",
+      "example_meaning": "그는 상사의 허락 없이 무단으로 회사 차를 사용했다."
     },
     {
       "word": "偽造",
       "reading": "ぎぞう",
       "meaning": "위조",
-      "level": "N2",
-      "example": "彼は偽造したパスポートで入国しようとした。",
-      "example_reading": "かれはぎぞうしたパスポートでにゅうこくしようとした。",
-      "example_meaning": "그는 위조한 여권으로 입국하려 했다."
-    },
-    {
-      "word": "異例",
-      "reading": "いれい",
-      "meaning": "이례적임, 전례 없음",
-      "level": "N2",
-      "example": "今年のインフルエンザは異例の早さで流行している。",
-      "example_reading": "ことしのインフルエンザはいれいのはやさでりゅうこうしている。",
-      "example_meaning": "올해 독감은 이례적인 속도로 유행하고 있다."
+      "level": "N1",
+      "example": "彼女は偽造したパスポートを使って入国しようとした。",
+      "example_reading": "かのじょはぎぞうしたパスポートをつかってにゅうこくしようとした。",
+      "example_meaning": "그녀는 위조한 여권을 사용해서 입국하려 했다."
     },
     {
       "word": "拡大",
       "reading": "かくだい",
       "meaning": "확대",
       "level": "N3",
-      "example": "感染がアジア全体に拡大した。",
-      "example_reading": "かんせんがアジアぜんたいにかくだいした。",
-      "example_meaning": "감염이 아시아 전역으로 확대되었다."
-    },
-    {
-      "word": "全貌",
-      "reading": "ぜんぼう",
-      "meaning": "전모, 전체 모습",
-      "level": "N1",
-      "example": "事件の全貌がようやく明らかになった。",
-      "example_reading": "じけんのぜんぼうがようやくあきらかになった。",
-      "example_meaning": "사건의 전모가 마침내 밝혀졌다."
-    },
-    {
-      "word": "引き金",
-      "reading": "ひきがね",
-      "meaning": "방아쇠, (사건의) 계기·도화선",
-      "level": "N2",
-      "example": "そのニュースが株価暴落の引き金となった。",
-      "example_reading": "そのニュースがかぶかぼうらくのひきがねとなった。",
-      "example_meaning": "그 뉴스가 주가 폭락의 방아쇠가 되었다."
-    },
-    {
-      "word": "逮捕",
-      "reading": "たいほ",
-      "meaning": "체포",
-      "level": "N2",
-      "example": "容疑者は昨夜逮捕された。",
-      "example_reading": "ようぎしゃはさくやたいほされた。",
-      "example_meaning": "용의자는 어젯밤 체포되었다."
+      "example": "新しいウイルスの感染が全国に拡大している。",
+      "example_reading": "あたらしいウイルスのかんせんがぜんこくにかくだいしている。",
+      "example_meaning": "새로운 바이러스 감염이 전국으로 확대되고 있다."
     }
   ]
 }
