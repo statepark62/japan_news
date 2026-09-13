@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-13 08:45 KST",
+  "generated_at": "2026-09-13 09:01 KST",
   "date": "2026-09-13",
   "words": [
     {
-      "word": "祝辞",
-      "reading": "しゅくじ",
-      "meaning": "축사",
+      "word": "炎上",
+      "reading": "えんじょう",
+      "meaning": "화재로 불타오름, (SNS 등에서) 논란이 되어 비난이 쏟아짐",
       "level": "N2",
-      "example": "彼女は結婚式で心のこもった祝辞を述べた。",
-      "example_reading": "かのじょはけっこんしきでこころのこもったしゅくじをのべた。",
-      "example_meaning": "그녀는 결혼식에서 진심 어린 축사를 했다."
+      "example": "彼の発言がSNSで炎上した。",
+      "example_reading": "かれのはつげんがエスエヌエスでえんじょうした。",
+      "example_meaning": "그의 발언이 SNS에서 논란이 되어 비난이 쏟아졌다."
     },
     {
-      "word": "発達",
-      "reading": "はったつ",
-      "meaning": "발달, (기상에서) 세력이 강해짐",
-      "level": "N3",
-      "example": "台風が急速に発達しながら北上している。",
-      "example_reading": "たいふうがきゅうそくにはったつしながらほくじょうしている。",
-      "example_meaning": "태풍이 급속히 발달하면서 북상하고 있다."
+      "word": "脱却",
+      "reading": "だっきゃく",
+      "meaning": "(나쁜 상태나 의존 등에서) 벗어남, 탈피",
+      "level": "N1",
+      "example": "彼はギャンブル依存からの脱却を目指している。",
+      "example_reading": "かれはギャンブルいぞんからのだっきゃくをめざしている。",
+      "example_meaning": "그는 도박 의존에서 벗어나는 것을 목표로 하고 있다."
     },
     {
-      "word": "意識不明",
-      "reading": "いしきふめい",
-      "meaning": "의식불명",
+      "word": "依存",
+      "reading": "いぞん",
+      "meaning": "의존",
       "level": "N2",
-      "example": "事故に巻き込まれた男性は意識不明の重体だ。",
-      "example_reading": "じこにまきこまれただんせいはいしきふめいのじゅうたいだ。",
-      "example_meaning": "사고에 휘말린 남성은 의식불명의 중태이다."
+      "example": "スマートフォンへの依存が社会問題になっている。",
+      "example_reading": "スマートフォンへのいぞんがしゃかいもんだいになっている。",
+      "example_meaning": "스마트폰 의존이 사회 문제가 되고 있다."
+    },
+    {
+      "word": "衝突",
+      "reading": "しょうとつ",
+      "meaning": "충돌",
+      "level": "N2",
+      "example": "交差点で車同士が衝突する事故が発生した。",
+      "example_reading": "こうさてんでくるまどうしがしょうとつするじこがはっせいした。",
+      "example_meaning": "교차로에서 차끼리 충돌하는 사고가 발생했다."
     },
     {
       "word": "重体",
       "reading": "じゅうたい",
-      "meaning": "중태, 위독한 상태",
-      "level": "N2",
-      "example": "彼は交通事故で重体に陥った。",
-      "example_reading": "かれはこうつうじこでじゅうたいにおちいった。",
-      "example_meaning": "그는 교통사고로 중태에 빠졌다."
+      "meaning": "중태(위독한 상태)",
+      "level": "N1",
+      "example": "彼は交通事故に遭い、意識不明の重体だという。",
+      "example_reading": "かれはこうつうじこにあい、いしきふめいのじゅうたいだという。",
+      "example_meaning": "그는 교통사고를 당해 의식 불명의 중태라고 한다."
     },
     {
       "word": "名指し",
       "reading": "なざし",
-      "meaning": "실명 거론, 콕 집어 지목함",
+      "meaning": "실명을 거론함, 콕 집어 지목함",
+      "level": "N1",
+      "example": "彼はミスの責任者として名指しで批判された。",
+      "example_reading": "かれはミスのせきにんしゃとしてなざしでひはんされた。",
+      "example_meaning": "그는 실수의 책임자로 콕 집어 비판받았다."
+    },
+    {
+      "word": "殺到",
+      "reading": "さっとう",
+      "meaning": "쇄도, (한꺼번에 많이) 몰려듦",
+      "level": "N1",
+      "example": "新商品の発売直後、店に注文が殺到した。",
+      "example_reading": "しんしょうひんのはつばいちょくご、みせにちゅうもんがさっとうした。",
+      "example_meaning": "신상품 발매 직후, 가게에 주문이 쇄도했다."
+    },
+    {
+      "word": "伺える",
+      "reading": "うかがえる",
+      "meaning": "(상황이나 모습 등을) 엿볼 수 있다, 짐작할 수 있다",
       "level": "N2",
-      "example": "彼はミスの責任者として名指しされた。",
-      "example_reading": "かれはミスのせきにんしゃとしてなざしされた。",
-      "example_meaning": "그는 실수의 책임자로 지목되었다."
-    },
-    {
-      "word": "批判殺到",
-      "reading": "ひはんさっとう",
-      "meaning": "비판이 쇄도함",
-      "level": "N1",
-      "example": "その発言に対してSNSで批判が殺到した。",
-      "example_reading": "そのはつげんにたいしてエスエヌエスでひはんがさっとうした。",
-      "example_meaning": "그 발언에 대해 SNS에서 비판이 쇄도했다."
-    },
-    {
-      "word": "釈明",
-      "reading": "しゃくめい",
-      "meaning": "해명, 변명",
-      "level": "N1",
-      "example": "彼は不正について釈明を求められた。",
-      "example_reading": "かれはふせいについてしゃくめいをもとめられた。",
-      "example_meaning": "그는 부정에 대해 해명을 요구받았다."
-    },
-    {
-      "word": "賛否両論",
-      "reading": "さんぴりょうろん",
-      "meaning": "찬반양론",
-      "level": "N1",
-      "example": "その政策には賛否両論がある。",
-      "example_reading": "そのせいさくにはさんぴりょうろんがある。",
-      "example_meaning": "그 정책에는 찬반양론이 있다."
+      "example": "この資料からは政府の税金の使い方が伺える。",
+      "example_reading": "このしりょうからはせいふのぜいきんのつかいかたがうかがえる。",
+      "example_meaning": "이 자료로부터 정부의 세금 사용 방식을 엿볼 수 있다."
     }
   ]
 }
