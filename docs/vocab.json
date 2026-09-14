@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-14 09:14 KST",
+  "generated_at": "2026-09-14 09:22 KST",
   "date": "2026-09-14",
   "words": [
     {
-      "word": "無職",
-      "reading": "むしょく",
-      "meaning": "무직, 직업이 없음",
+      "word": "有罪判決",
+      "reading": "ゆうざいはんけつ",
+      "meaning": "유죄 판결",
+      "level": "N1",
+      "example": "裁判所は被告に有罪判決を言い渡した。",
+      "example_reading": "さいばんしょはひこくにゆうざいはんけつをいいわたした。",
+      "example_meaning": "법원은 피고에게 유죄 판결을 선고했다."
+    },
+    {
+      "word": "所持",
+      "reading": "しょじ",
+      "meaning": "소지",
       "level": "N2",
-      "example": "彼は会社を辞めてから半年間、無職のままだった。",
-      "example_reading": "かれはかいしゃをやめてから、はんとしかん、むしょくのままだった。",
-      "example_meaning": "그는 회사를 그만둔 후 반년 동안 무직인 채였다."
+      "example": "彼は違法な薬物を所持していた疑いがある。",
+      "example_reading": "かれはいほうなやくぶつをしょじしていたうたがいがある。",
+      "example_meaning": "그는 불법 약물을 소지하고 있었다는 의혹이 있다."
+    },
+    {
+      "word": "報告",
+      "reading": "ほうこく",
+      "meaning": "보고",
+      "level": "N3",
+      "example": "彼女は仕事の進捗を上司に報告した。",
+      "example_reading": "かのじょはしごとのしんちょくをじょうしにほうこくした。",
+      "example_meaning": "그녀는 업무 진척 상황을 상사에게 보고했다."
     },
     {
       "word": "訪問",
       "reading": "ほうもん",
       "meaning": "방문",
       "level": "N3",
-      "example": "首相は来週、被災地を訪問する予定です。",
-      "example_reading": "しゅしょうはらいしゅう、ひさいちをほうもんするよていです。",
-      "example_meaning": "총리는 다음 주 재해 지역을 방문할 예정입니다."
-    },
-    {
-      "word": "被災地",
-      "reading": "ひさいち",
-      "meaning": "피해 지역, 재해를 입은 지역",
-      "level": "N2",
-      "example": "ボランティアたちは被災地で復興作業を手伝った。",
-      "example_reading": "ぼらんてぃあたちはひさいちでふっこうさぎょうをてつだった。",
-      "example_meaning": "자원봉사자들은 재해 지역에서 복구 작업을 도왔다."
+      "example": "来週、取引先を訪問する予定です。",
+      "example_reading": "らいしゅう、とりひきさきをほうもんするよていです。",
+      "example_meaning": "다음 주 거래처를 방문할 예정입니다."
     },
     {
       "word": "衝突",
       "reading": "しょうとつ",
       "meaning": "충돌",
       "level": "N2",
-      "example": "交差点でトラックと乗用車が衝突した。",
-      "example_reading": "こうさてんでとらっくとじょうようしゃがしょうとつした。",
-      "example_meaning": "교차로에서 트럭과 승용차가 충돌했다."
+      "example": "交差点で車二台が衝突した。",
+      "example_reading": "こうさてんでくるまにだいがしょうとつした。",
+      "example_meaning": "교차로에서 차 두 대가 충돌했다."
     },
     {
       "word": "軽傷",
       "reading": "けいしょう",
-      "meaning": "경상, 가벼운 부상",
+      "meaning": "경상",
       "level": "N2",
-      "example": "事故に遭った運転手は軽傷で済んだ。",
-      "example_reading": "じこにあったうんてんしゅはけいしょうですんだ。",
-      "example_meaning": "사고를 당한 운전자는 경상으로 끝났다."
+      "example": "事故に巻き込まれたが、幸い軽傷で済んだ。",
+      "example_reading": "じこにまきこまれたが、さいわいけいしょうですんだ。",
+      "example_meaning": "사고에 휘말렸지만 다행히 경상으로 끝났다."
     },
     {
       "word": "馴れ初め",
       "reading": "なれそめ",
-      "meaning": "(연인·부부가) 처음 사귀게 된 계기, 만남의 시작",
+      "meaning": "(연인이) 처음 만나 사귀게 된 계기",
       "level": "N1",
-      "example": "二人の馴れ初めは大学のサークル活動だったそうです。",
-      "example_reading": "ふたりのなれそめはだいがくのさーくるかつどうだったそうです。",
-      "example_meaning": "두 사람의 만남의 계기는 대학 동아리 활동이었다고 합니다."
+      "example": "二人の馴れ初めは共通の友人の紹介だったそうだ。",
+      "example_reading": "ふたりのなれそめはきょうつうのゆうじんのしょうかいだったそうだ。",
+      "example_meaning": "두 사람이 처음 만나게 된 계기는 공통 친구의 소개였다고 한다."
     },
     {
-      "word": "通りすがり",
-      "reading": "とおりすがり",
-      "meaning": "지나가는 길, 우연히 지나침",
+      "word": "確保",
+      "reading": "かくほ",
+      "meaning": "확보(붙잡음, 신병 확보 등)",
       "level": "N2",
-      "example": "通りすがりの人が倒れた老人を助け起こした。",
-      "example_reading": "とおりすがりのひとがたおれたろうじんをたすけおこした。",
-      "example_meaning": "지나가던 사람이 쓰러진 노인을 일으켜 도왔다."
-    },
-    {
-      "word": "物議を醸す",
-      "reading": "ぶつぎをかもす",
-      "meaning": "물의를 일으키다, 논란을 야기하다",
-      "level": "N1",
-      "example": "その政治家の発言はSNSで物議を醸した。",
-      "example_reading": "そのせいじかのはつげんはえすえぬえすでぶつぎをかもした。",
-      "example_meaning": "그 정치인의 발언은 SNS에서 논란을 일으켰다."
+      "example": "警察は逃げようとした容疑者をすぐに確保した。",
+      "example_reading": "けいさつはにげようとしたようぎしゃをすぐにかくほした。",
+      "example_meaning": "경찰은 도망치려던 용의자를 즉시 확보(체포)했다."
     }
   ]
 }
