@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-15 09:18 KST",
+  "generated_at": "2026-09-15 09:40 KST",
   "date": "2026-09-15",
   "words": [
     {
-      "word": "食い潰す",
-      "reading": "くいつぶす",
-      "meaning": "(재산·유산 등을) 탕진하다, 축내다",
+      "word": "運行",
+      "reading": "うんこう",
+      "meaning": "운행 (교통수단 등이 정해진 노선을 다니는 것)",
+      "level": "N2",
+      "example": "台風の影響で、多くの電車が運行を見合わせている。",
+      "example_reading": "たいふうのえいきょうで、おおくのでんしゃがうんこうをみあわせている。",
+      "example_meaning": "태풍의 영향으로 많은 전철이 운행을 보류하고 있다."
+    },
+    {
+      "word": "顛末",
+      "reading": "てんまつ",
+      "meaning": "전말, 일이 벌어진 자초지종",
       "level": "N1",
-      "example": "彼は親の財産を全部食い潰してしまった。",
-      "example_reading": "かれはおやのざいさんをぜんぶくいつぶしてしまった。",
-      "example_meaning": "그는 부모의 재산을 전부 탕진해 버렸다."
+      "example": "彼は事件の顛末を詳しく説明した。",
+      "example_reading": "かれはじけんのてんまつをくわしくせつめいした。",
+      "example_meaning": "그는 사건의 전말을 자세히 설명했다."
+    },
+    {
+      "word": "反響",
+      "reading": "はんきょう",
+      "meaning": "반향, 사회적 반응",
+      "level": "N2",
+      "example": "そのニュースは大きな反響を呼んだ。",
+      "example_reading": "そのニュースはおおきなはんきょうをよんだ。",
+      "example_meaning": "그 뉴스는 큰 반향을 불러일으켰다."
+    },
+    {
+      "word": "熱意",
+      "reading": "ねつい",
+      "meaning": "열의, 열정",
+      "level": "N3",
+      "example": "彼女は仕事に対する熱意を周囲に示した。",
+      "example_reading": "かのじょはしごとにたいするねついをしゅういにしめした。",
+      "example_meaning": "그녀는 일에 대한 열의를 주위에 보여주었다."
+    },
+    {
+      "word": "遺産",
+      "reading": "いさん",
+      "meaning": "유산 (재산 또는 업적)",
+      "level": "N2",
+      "example": "祖父が残した遺産を家族で分けることになった。",
+      "example_reading": "そふがのこしたいさんをかぞくでわけることになった。",
+      "example_meaning": "할아버지가 남긴 유산을 가족끼리 나누게 되었다."
+    },
+    {
+      "word": "連敗",
+      "reading": "れんぱい",
+      "meaning": "연패 (연속으로 짐)",
+      "level": "N2",
+      "example": "そのチームは開幕から5連敗を喫している。",
+      "example_reading": "そのチームはかいまくからごれんぱいをきっしている。",
+      "example_meaning": "그 팀은 개막부터 5연패를 당하고 있다."
     },
     {
       "word": "異変",
       "reading": "いへん",
-      "meaning": "이변, 심상치 않은 변화",
-      "level": "N2",
-      "example": "最近、体に異変を感じて病院に行った。",
-      "example_reading": "さいきん、からだにいへんをかんじてびょういんにいった。",
-      "example_meaning": "요즘 몸에 이변을 느껴서 병원에 갔다."
-    },
-    {
-      "word": "不適切",
-      "reading": "ふてきせつ",
-      "meaning": "부적절함",
-      "level": "N2",
-      "example": "彼の発言は状況にそぐわない不適切なものだった。",
-      "example_reading": "かれのはつげんはじょうきょうにそぐわないふてきせつなものだった。",
-      "example_meaning": "그의 발언은 상황에 맞지 않는 부적절한 것이었다."
+      "meaning": "이변, 평소와 다른 이상한 변화",
+      "level": "N1",
+      "example": "最近、体に異変を感じたので病院に行った。",
+      "example_reading": "さいきん、からだにいへんをかんじたのでびょういんにいった。",
+      "example_meaning": "최근 몸에 이상을 느껴서 병원에 갔다."
     },
     {
       "word": "波乱万丈",
       "reading": "はらんばんじょう",
-      "meaning": "파란만장",
+      "meaning": "파란만장 (기복이 많고 변화무쌍한 인생 등)",
       "level": "N1",
-      "example": "彼女は波乱万丈な人生を歩んできた。",
-      "example_reading": "かのじょははらんばんじょうなじんせいをあゆんできた。",
-      "example_meaning": "그녀는 파란만장한 인생을 걸어왔다."
-    },
-    {
-      "word": "避難",
-      "reading": "ひなん",
-      "meaning": "피난, 대피",
-      "level": "N3",
-      "example": "大雨のため、住民は避難所に避難した。",
-      "example_reading": "おおあめのため、じゅうみんはひなんじょにひなんした。",
-      "example_meaning": "폭우 때문에 주민들은 대피소로 피난했다."
-    },
-    {
-      "word": "警戒",
-      "reading": "けいかい",
-      "meaning": "경계, 주의",
-      "level": "N2",
-      "example": "台風接近のため、大雨に警戒してください。",
-      "example_reading": "たいふうせっきんのため、おおあめにけいかいしてください。",
-      "example_meaning": "태풍 접근으로 인해 폭우에 경계해 주세요."
-    },
-    {
-      "word": "炎上",
-      "reading": "えんじょう",
-      "meaning": "(SNS 등에서) 악플 쇄도, 논란이 됨",
-      "level": "N2",
-      "example": "彼の不適切な発言がSNSで炎上した。",
-      "example_reading": "かれのふてきせつなはつげんがえすえぬえすでえんじょうした。",
-      "example_meaning": "그의 부적절한 발언이 SNS에서 논란이 됐다."
-    },
-    {
-      "word": "水没",
-      "reading": "すいぼつ",
-      "meaning": "수몰, 물에 잠김",
-      "level": "N1",
-      "example": "大雨で地下街が水没する恐れがある。",
-      "example_reading": "おおあめでちかがいがすいぼつするおそれがある。",
-      "example_meaning": "폭우로 지하상가가 수몰될 우려가 있다."
+      "example": "彼の人生は波乱万丈で、まるで小説のようだ。",
+      "example_reading": "かれのじんせいははらんばんじょうで、まるでしょうせつのようだ。",
+      "example_meaning": "그의 인생은 파란만장해서 마치 소설 같다."
     }
   ]
 }
