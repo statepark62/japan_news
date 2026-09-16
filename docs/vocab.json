@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-16 08:58 KST",
+  "generated_at": "2026-09-16 09:23 KST",
   "date": "2026-09-16",
   "words": [
+    {
+      "word": "困惑",
+      "reading": "こんわく",
+      "meaning": "곤혹, 당혹",
+      "level": "N2",
+      "example": "突然の質問に困惑してしまった。",
+      "example_reading": "とつぜんのしつもんにこんわくしてしまった。",
+      "example_meaning": "갑작스러운 질문에 당혹스러워졌다."
+    },
+    {
+      "word": "憂慮",
+      "reading": "ゆうりょ",
+      "meaning": "우려, 걱정",
+      "level": "N1",
+      "example": "専門家たちはこの問題を憂慮している。",
+      "example_reading": "せんもんかたちはこのもんだいをゆうりょしている。",
+      "example_meaning": "전문가들은 이 문제를 우려하고 있다."
+    },
+    {
+      "word": "逆走",
+      "reading": "ぎゃくそう",
+      "meaning": "역주행",
+      "level": "N1",
+      "example": "高速道路での逆走は非常に危険な行為だ。",
+      "example_reading": "こうそくどうろでのぎゃくそうはひじょうにきけんなこういだ。",
+      "example_meaning": "고속도로에서의 역주행은 매우 위험한 행위이다."
+    },
+    {
+      "word": "厳罰",
+      "reading": "げんばつ",
+      "meaning": "엄벌",
+      "level": "N1",
+      "example": "悪質な犯罪には厳罰を求める声が多い。",
+      "example_reading": "あくしつなはんざいにはげんばつをもとめるこえがおおい。",
+      "example_meaning": "악질적인 범죄에는 엄벌을 요구하는 목소리가 많다."
+    },
     {
       "word": "通報",
       "reading": "つうほう",
       "meaning": "신고, 통보",
       "level": "N2",
-      "example": "近所の人が火事を消防署に通報した。",
-      "example_reading": "きんじょのひとがかじをしょうぼうしょにつうほうした。",
+      "example": "近所の人が火事を消防に通報した。",
+      "example_reading": "きんじょのひとがかじをしょうぼうにつうほうした。",
       "example_meaning": "이웃 사람이 화재를 소방서에 신고했다."
-    },
-    {
-      "word": "運休",
-      "reading": "うんきゅう",
-      "meaning": "(교통편) 운행 중단, 결항",
-      "level": "N2",
-      "example": "台風の影響で新幹線が運休した。",
-      "example_reading": "たいふうのえいきょうでしんかんせんがうんきゅうした。",
-      "example_meaning": "태풍의 영향으로 신칸센이 운행 중단되었다."
     },
     {
       "word": "陥落",
       "reading": "かんらく",
       "meaning": "함락, (순위 등이) 떨어짐",
       "level": "N1",
-      "example": "そのチームは首位から陥落してしまった。",
-      "example_reading": "そのちーむはしゅいからかんらくしてしまった。",
-      "example_meaning": "그 팀은 1위 자리에서 떨어지고 말았다."
+      "example": "そのチームは一気に首位から陥落した。",
+      "example_reading": "そのチームはいっきにしゅいからかんらくした。",
+      "example_meaning": "그 팀은 단숨에 선두 자리에서 밀려났다."
     },
     {
-      "word": "赤字",
-      "reading": "あかじ",
-      "meaning": "적자",
+      "word": "信用",
+      "reading": "しんよう",
+      "meaning": "신용, 신뢰",
+      "level": "N3",
+      "example": "一度失った信用を取り戻すのは難しい。",
+      "example_reading": "いちどうしなったしんようをとりもどすのはむずかしい。",
+      "example_meaning": "한번 잃은 신용을 되찾는 것은 어렵다."
+    },
+    {
+      "word": "運休",
+      "reading": "うんきゅう",
+      "meaning": "(교통편) 운행 중단",
       "level": "N2",
-      "example": "この会社は今年、大幅な赤字を計上した。",
-      "example_reading": "このかいしゃはことし、おおはばなあかじをけいじょうした。",
-      "example_meaning": "이 회사는 올해 큰 폭의 적자를 기록했다."
-    },
-    {
-      "word": "誤算",
-      "reading": "ごさん",
-      "meaning": "오산, 판단 착오",
-      "level": "N1",
-      "example": "彼にとって今回の失敗は大きな誤算だった。",
-      "example_reading": "かれにとってこんかいのしっぱいはおおきなごさんだった。",
-      "example_meaning": "그에게 이번 실패는 큰 오산이었다."
-    },
-    {
-      "word": "言葉遣い",
-      "reading": "ことばづかい",
-      "meaning": "말투, 언어 사용법",
-      "level": "N2",
-      "example": "目上の人には丁寧な言葉遣いを心がけるべきだ。",
-      "example_reading": "めうえのひとにはていねいなことばづかいをこころがけるべきだ。",
-      "example_meaning": "윗사람에게는 정중한 말투를 신경 써야 한다."
-    },
-    {
-      "word": "逆上",
-      "reading": "ぎゃくじょう",
-      "meaning": "격분함, 발끈함",
-      "level": "N1",
-      "example": "注意されて逆上した男は店員を殴った。",
-      "example_reading": "ちゅういされてぎゃくじょうしたおとこはてんいんをなぐった。",
-      "example_meaning": "주의를 받고 격분한 남자는 점원을 때렸다."
-    },
-    {
-      "word": "脅迫",
-      "reading": "きょうはく",
-      "meaning": "협박",
-      "level": "N1",
-      "example": "彼女はSNSで脅迫を受けたと警察に相談した。",
-      "example_reading": "かのじょはえすえぬえすできょうはくをうけたとけいさつにそうだんした。",
-      "example_meaning": "그녀는 SNS에서 협박을 받았다고 경찰에 상담했다."
+      "example": "大雪の影響で新幹線が運休になった。",
+      "example_reading": "おおゆきのえいきょうでしんかんせんがうんきゅうになった。",
+      "example_meaning": "폭설의 영향으로 신칸센이 운행 중단되었다."
     }
   ]
 }
