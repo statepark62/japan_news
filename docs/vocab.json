@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-17 09:06 KST",
+  "generated_at": "2026-09-17 09:34 KST",
   "date": "2026-09-17",
   "words": [
+    {
+      "word": "疑惑",
+      "reading": "ぎわく",
+      "meaning": "의혹",
+      "level": "N2",
+      "example": "政治家に汚職の疑惑がかけられている。",
+      "example_reading": "せいじかに おしょくの ぎわくが かけられている。",
+      "example_meaning": "정치인에게 부패 의혹이 제기되고 있다."
+    },
+    {
+      "word": "意図的",
+      "reading": "いとてき",
+      "meaning": "의도적",
+      "level": "N2",
+      "example": "彼は意図的にその質問を避けた。",
+      "example_reading": "かれは いとてきに その しつもんを さけた。",
+      "example_meaning": "그는 의도적으로 그 질문을 피했다."
+    },
+    {
+      "word": "拠点",
+      "reading": "きょてん",
+      "meaning": "거점, 근거지",
+      "level": "N2",
+      "example": "この会社はアジアに生産拠点を置いている。",
+      "example_reading": "この かいしゃは あじあに せいさん きょてんを おいている。",
+      "example_meaning": "이 회사는 아시아에 생산 거점을 두고 있다."
+    },
+    {
+      "word": "急落",
+      "reading": "きゅうらく",
+      "meaning": "급락",
+      "level": "N1",
+      "example": "円安の影響で株価が急落した。",
+      "example_reading": "えんやすの えいきょうで かぶかが きゅうらくした。",
+      "example_meaning": "엔화 약세의 영향으로 주가가 급락했다."
+    },
+    {
+      "word": "勝ち取る",
+      "reading": "かちとる",
+      "meaning": "쟁취하다, 얻어내다",
+      "level": "N2",
+      "example": "彼女は努力の末に優勝を勝ち取った。",
+      "example_reading": "かのじょは どりょくの すえに ゆうしょうを かちとった。",
+      "example_meaning": "그녀는 노력 끝에 우승을 쟁취했다."
+    },
+    {
+      "word": "悔やむ",
+      "reading": "くやむ",
+      "meaning": "후회하다",
+      "level": "N2",
+      "example": "彼はあの時の決断を今でも悔やんでいる。",
+      "example_reading": "かれは あのときの けつだんを いまでも くやんでいる。",
+      "example_meaning": "그는 그때의 결정을 지금도 후회하고 있다."
+    },
+    {
+      "word": "実態",
+      "reading": "じったい",
+      "meaning": "실태",
+      "level": "N1",
+      "example": "調査によって業界の実態が明らかになった。",
+      "example_reading": "ちょうさに よって ぎょうかいの じったいが あきらかに なった。",
+      "example_meaning": "조사를 통해 업계의 실태가 밝혀졌다."
+    },
     {
       "word": "推奨",
       "reading": "すいしょう",
       "meaning": "추천, 권장",
-      "level": "N2",
-      "example": "この製品は専門家からも推奨されている。",
-      "example_reading": "このせいひんはせんもんかからもすいしょうされている。",
-      "example_meaning": "이 제품은 전문가들에게도 추천받고 있다."
-    },
-    {
-      "word": "進出",
-      "reading": "しんしゅつ",
-      "meaning": "진출",
-      "level": "N2",
-      "example": "その会社は海外市場への進出を計画している。",
-      "example_reading": "そのかいしゃはかいがいしじょうへのしんしゅつをけいかくしている。",
-      "example_meaning": "그 회사는 해외 시장 진출을 계획하고 있다."
-    },
-    {
-      "word": "抜擢",
-      "reading": "ばってき",
-      "meaning": "발탁",
       "level": "N1",
-      "example": "彼は若くして重要なポストに抜擢された。",
-      "example_reading": "かれはわかくしてじゅうようなポストにばってきされた。",
-      "example_meaning": "그는 젊은 나이에 중요한 자리에 발탁되었다."
-    },
-    {
-      "word": "渋滞",
-      "reading": "じゅうたい",
-      "meaning": "정체, 교통체증",
-      "level": "N3",
-      "example": "週末の高速道路はいつも渋滞している。",
-      "example_reading": "しゅうまつのこうそくどうろはいつもじゅうたいしている。",
-      "example_meaning": "주말 고속도로는 항상 정체된다."
-    },
-    {
-      "word": "移籍",
-      "reading": "いせき",
-      "meaning": "이적",
-      "level": "N2",
-      "example": "あの選手は来シーズン、別のチームに移籍する予定だ。",
-      "example_reading": "あのせんしゅはらいシーズン、べつのチームにいせきするよていだ。",
-      "example_meaning": "그 선수는 다음 시즌 다른 팀으로 이적할 예정이다."
-    },
-    {
-      "word": "危機",
-      "reading": "きき",
-      "meaning": "위기",
-      "level": "N3",
-      "example": "会社は経営の危機に直面している。",
-      "example_reading": "かいしゃはけいえいのききにちょくめんしている。",
-      "example_meaning": "회사는 경영 위기에 직면해 있다."
-    },
-    {
-      "word": "距離感",
-      "reading": "きょりかん",
-      "meaning": "거리감",
-      "level": "N2",
-      "example": "友人との適切な距離感を保つことが大切だ。",
-      "example_reading": "ゆうじんとのてきせつなきょりかんをたもつことがたいせつだ。",
-      "example_meaning": "친구와의 적절한 거리감을 유지하는 것이 중요하다."
-    },
-    {
-      "word": "逃亡",
-      "reading": "とうぼう",
-      "meaning": "도망, 도주",
-      "level": "N1",
-      "example": "容疑者は海外へ逃亡した疑いがある。",
-      "example_reading": "ようぎしゃはかいがいへとうぼうしたうたがいがある。",
-      "example_meaning": "용의자는 해외로 도주한 것으로 의심된다."
+      "example": "医師はこの薬の使用を推奨している。",
+      "example_reading": "いしは この くすりの しようを すいしょうしている。",
+      "example_meaning": "의사는 이 약의 사용을 권장하고 있다."
     }
   ]
 }
