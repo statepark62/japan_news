@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-18 09:44 KST",
-  "date": "2026-09-18",
+  "generated_at": "2026-09-19 08:53 KST",
+  "date": "2026-09-19",
   "words": [
     {
-      "word": "ポイ捨て",
-      "reading": "ぽいすて",
-      "meaning": "쓰레기 무단투기",
+      "word": "取り違え",
+      "reading": "とりちがえ",
+      "meaning": "착각, 혼동, 뒤바뀜",
       "level": "N2",
-      "example": "公園でのポイ捨ては条例で禁止されている。",
-      "example_reading": "こうえんでのぽいすては じょうれいで きんしされている。",
-      "example_meaning": "공원에서의 쓰레기 무단투기는 조례로 금지되어 있다."
+      "example": "病院で薬の取り違えが起きないよう、細心の注意を払っている。",
+      "example_reading": "びょういんでくすりのとりちがえがおきないよう、さいしんのちゅういをはらっている。",
+      "example_meaning": "병원에서 약이 뒤바뀌는 일이 생기지 않도록 세심한 주의를 기울이고 있다."
     },
     {
-      "word": "検討",
-      "reading": "けんとう",
-      "meaning": "검토",
-      "level": "N3",
-      "example": "市は新しい条例の導入を検討している。",
-      "example_reading": "しはあたらしいじょうれいのどうにゅうをけんとうしている。",
-      "example_meaning": "시는 새로운 조례 도입을 검토하고 있다."
-    },
-    {
-      "word": "目撃",
-      "reading": "もくげき",
-      "meaning": "목격",
-      "level": "N2",
-      "example": "住宅街でキツネが目撃されて話題になった。",
-      "example_reading": "じゅうたくがいできつねがもくげきされてわだいになった。",
-      "example_meaning": "주택가에서 여우가 목격되어 화제가 되었다."
-    },
-    {
-      "word": "指摘",
-      "reading": "してき",
-      "meaning": "지적",
-      "level": "N2",
-      "example": "専門家がその問題点を指摘した。",
-      "example_reading": "せんもんかがそのもんだいてんをしてきした。",
-      "example_meaning": "전문가가 그 문제점을 지적했다."
-    },
-    {
-      "word": "煽る",
-      "reading": "あおる",
-      "meaning": "(운전 등에서) 위협하다, 부추기다",
+      "word": "憤怒",
+      "reading": "ふんぬ",
+      "meaning": "분노, 격노",
       "level": "N1",
-      "example": "後ろの車に煽られて怖い思いをした。",
-      "example_reading": "うしろのくるまにあおられてこわいおもいをした。",
-      "example_meaning": "뒤차에게 위협 운전을 당해 무서운 경험을 했다."
+      "example": "彼は不当な扱いに憤怒を覚えた。",
+      "example_reading": "かれはふとうなあつかいにふんぬをおぼえた。",
+      "example_meaning": "그는 부당한 대우에 분노를 느꼈다."
     },
     {
-      "word": "余儀なくされる",
-      "reading": "よぎなくされる",
-      "meaning": "어쩔 수 없이 ~하게 되다",
+      "word": "疑惑",
+      "reading": "ぎわく",
+      "meaning": "의혹, 의심",
+      "level": "N2",
+      "example": "政治家の汚職疑惑が明るみに出た。",
+      "example_reading": "せいじかのおしょくぎわくがあかるみにでた。",
+      "example_meaning": "정치인의 비리 의혹이 드러났다."
+    },
+    {
+      "word": "懸念",
+      "reading": "けねん",
+      "meaning": "우려, 걱정",
+      "level": "N2",
+      "example": "経済の先行きに懸念が広がっている。",
+      "example_reading": "けいざいのさきゆきにけねんがひろがっている。",
+      "example_meaning": "경제 전망에 대한 우려가 확산되고 있다."
+    },
+    {
+      "word": "真価",
+      "reading": "しんか",
+      "meaning": "진가, 참된 가치",
       "level": "N1",
-      "example": "狭い道でトラックはバックを余儀なくされた。",
-      "example_reading": "せまいみちでとらっくはばっくをよぎなくされた。",
-      "example_meaning": "좁은 길에서 트럭은 후진을 할 수밖에 없었다."
+      "example": "困難な状況でこそ、その人の真価が問われる。",
+      "example_reading": "こんななじょうきょうでこそ、そのひとのしんかがとわれる。",
+      "example_meaning": "어려운 상황에서야말로 그 사람의 진가가 시험받는다."
     },
     {
-      "word": "赤字",
-      "reading": "あかじ",
-      "meaning": "적자",
+      "word": "厳重",
+      "reading": "げんじゅう",
+      "meaning": "엄중함, 철저함",
       "level": "N2",
-      "example": "円安の影響で貿易赤字が拡大している。",
-      "example_reading": "えんやすのえいきょうでぼうえきあかじがかくだいしている。",
-      "example_meaning": "엔저 영향으로 무역 적자가 확대되고 있다."
+      "example": "空港では厳重な警備が行われている。",
+      "example_reading": "くうこうではげんじゅうなけいびがおこなわれている。",
+      "example_meaning": "공항에서는 철저한 경비가 이루어지고 있다."
     },
     {
-      "word": "熱愛",
-      "reading": "ねつあい",
-      "meaning": "열애",
-      "level": "N2",
-      "example": "二人の熱愛が週刊誌に報じられた。",
-      "example_reading": "ふたりのねつあいがしゅうかんしにほうじられた。",
-      "example_meaning": "두 사람의 열애가 주간지에 보도되었다."
+      "word": "資金洗浄",
+      "reading": "しきんせんじょう",
+      "meaning": "자금 세탁, 돈세탁",
+      "level": "N1",
+      "example": "銀行は資金洗浄の疑いがある取引を監視している。",
+      "example_reading": "ぎんこうはしきんせんじょうのうたがいがあるとりひきをかんししている。",
+      "example_meaning": "은행은 자금 세탁 의혹이 있는 거래를 감시하고 있다."
+    },
+    {
+      "word": "自白強要",
+      "reading": "じはくきょうよう",
+      "meaning": "자백 강요",
+      "level": "N1",
+      "example": "警察による自白強要が問題視されている。",
+      "example_reading": "けいさつによるじはくきょうようがもんだいしされている。",
+      "example_meaning": "경찰에 의한 자백 강요가 문제시되고 있다."
     }
   ]
 }
