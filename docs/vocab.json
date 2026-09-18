@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-18 09:22 KST",
+  "generated_at": "2026-09-18 09:44 KST",
   "date": "2026-09-18",
   "words": [
     {
-      "word": "円安",
-      "reading": "えんやす",
-      "meaning": "엔화 약세, 엔저",
+      "word": "ポイ捨て",
+      "reading": "ぽいすて",
+      "meaning": "쓰레기 무단투기",
       "level": "N2",
-      "example": "円安が進み、輸入品の価格が上昇している。",
-      "example_reading": "えんやすがすすみ、ゆにゅうひんのかかくがじょうしょうしている。",
-      "example_meaning": "엔화 약세가 진행되어 수입품 가격이 상승하고 있다."
+      "example": "公園でのポイ捨ては条例で禁止されている。",
+      "example_reading": "こうえんでのぽいすては じょうれいで きんしされている。",
+      "example_meaning": "공원에서의 쓰레기 무단투기는 조례로 금지되어 있다."
     },
     {
-      "word": "貿易赤字",
-      "reading": "ぼうえきあかじ",
-      "meaning": "무역 적자",
+      "word": "検討",
+      "reading": "けんとう",
+      "meaning": "검토",
+      "level": "N3",
+      "example": "市は新しい条例の導入を検討している。",
+      "example_reading": "しはあたらしいじょうれいのどうにゅうをけんとうしている。",
+      "example_meaning": "시는 새로운 조례 도입을 검토하고 있다."
+    },
+    {
+      "word": "目撃",
+      "reading": "もくげき",
+      "meaning": "목격",
       "level": "N2",
-      "example": "日本は今年、過去最大の貿易赤字を記録した。",
-      "example_reading": "にほんはことし、かこさいだいのぼうえきあかじをきろくした。",
-      "example_meaning": "일본은 올해 사상 최대의 무역적자를 기록했다."
+      "example": "住宅街でキツネが目撃されて話題になった。",
+      "example_reading": "じゅうたくがいできつねがもくげきされてわだいになった。",
+      "example_meaning": "주택가에서 여우가 목격되어 화제가 되었다."
     },
     {
-      "word": "訃報",
-      "reading": "ふほう",
-      "meaning": "부고, 사망 소식",
-      "level": "N1",
-      "example": "突然の訃報に、多くのファンが悲しみに暮れた。",
-      "example_reading": "とつぜんのふほうに、おおくのふぁんがかなしみにくれた。",
-      "example_meaning": "갑작스러운 부고에 많은 팬들이 슬픔에 잠겼다."
-    },
-    {
-      "word": "憔悴",
-      "reading": "しょうすい",
-      "meaning": "초췌함, 심신이 지쳐 야윔",
-      "level": "N1",
-      "example": "彼女は長時間の看病で憔悴しきっていた。",
-      "example_reading": "かのじょはちょうじかんのかんびょうでしょうすいしきっていた。",
-      "example_meaning": "그녀는 장시간의 간병으로 완전히 초췌해져 있었다."
-    },
-    {
-      "word": "喪失感",
-      "reading": "そうしつかん",
-      "meaning": "상실감",
-      "level": "N1",
-      "example": "大切な人を失った喪失感は簡単には消えない。",
-      "example_reading": "たいせつなひとをうしなったそうしつかんはかんたんにはきえない。",
-      "example_meaning": "소중한 사람을 잃은 상실감은 쉽게 사라지지 않는다."
-    },
-    {
-      "word": "警鐘",
-      "reading": "けいしょう",
-      "meaning": "경종, 경고",
-      "level": "N1",
-      "example": "専門家は環境破壊の危険性に警鐘を鳴らしている。",
-      "example_reading": "せんもんかはかんきょうはかいのきけんせいにけいしょうをならしている。",
-      "example_meaning": "전문가는 환경 파괴의 위험성에 경종을 울리고 있다."
-    },
-    {
-      "word": "放置",
-      "reading": "ほうち",
-      "meaning": "방치",
+      "word": "指摘",
+      "reading": "してき",
+      "meaning": "지적",
       "level": "N2",
-      "example": "問題を放置すると、事態はさらに悪化するだろう。",
-      "example_reading": "もんだいをほうちすると、じたいはさらにあっかするだろう。",
-      "example_meaning": "문제를 방치하면 사태는 더욱 악화될 것이다."
+      "example": "専門家がその問題点を指摘した。",
+      "example_reading": "せんもんかがそのもんだいてんをしてきした。",
+      "example_meaning": "전문가가 그 문제점을 지적했다."
     },
     {
-      "word": "救急搬送",
-      "reading": "きゅうきゅうはんそう",
-      "meaning": "응급 이송",
+      "word": "煽る",
+      "reading": "あおる",
+      "meaning": "(운전 등에서) 위협하다, 부추기다",
+      "level": "N1",
+      "example": "後ろの車に煽られて怖い思いをした。",
+      "example_reading": "うしろのくるまにあおられてこわいおもいをした。",
+      "example_meaning": "뒤차에게 위협 운전을 당해 무서운 경험을 했다."
+    },
+    {
+      "word": "余儀なくされる",
+      "reading": "よぎなくされる",
+      "meaning": "어쩔 수 없이 ~하게 되다",
+      "level": "N1",
+      "example": "狭い道でトラックはバックを余儀なくされた。",
+      "example_reading": "せまいみちでとらっくはばっくをよぎなくされた。",
+      "example_meaning": "좁은 길에서 트럭은 후진을 할 수밖에 없었다."
+    },
+    {
+      "word": "赤字",
+      "reading": "あかじ",
+      "meaning": "적자",
       "level": "N2",
-      "example": "彼は意識を失い、病院へ救急搬送された。",
-      "example_reading": "かれはいしきをうしない、びょういんへきゅうきゅうはんそうされた。",
-      "example_meaning": "그는 의식을 잃고 병원으로 응급 이송되었다."
+      "example": "円安の影響で貿易赤字が拡大している。",
+      "example_reading": "えんやすのえいきょうでぼうえきあかじがかくだいしている。",
+      "example_meaning": "엔저 영향으로 무역 적자가 확대되고 있다."
+    },
+    {
+      "word": "熱愛",
+      "reading": "ねつあい",
+      "meaning": "열애",
+      "level": "N2",
+      "example": "二人の熱愛が週刊誌に報じられた。",
+      "example_reading": "ふたりのねつあいがしゅうかんしにほうじられた。",
+      "example_meaning": "두 사람의 열애가 주간지에 보도되었다."
     }
   ]
 }
