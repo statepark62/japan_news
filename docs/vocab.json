@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-19 09:22 KST",
+  "generated_at": "2026-09-19 09:35 KST",
   "date": "2026-09-19",
   "words": [
     {
+      "word": "苦言",
+      "reading": "くげん",
+      "meaning": "쓴소리, 충고",
+      "level": "N1",
+      "example": "上司は部下の態度に苦言を呈した。",
+      "example_reading": "じょうしはぶかのたいどにくげんをていした。",
+      "example_meaning": "상사는 부하의 태도에 쓴소리를 했다."
+    },
+    {
       "word": "失態",
       "reading": "しったい",
-      "meaning": "실태, 실수, 망신스러운 실수",
+      "meaning": "실태, 창피한 실수",
       "level": "N1",
-      "example": "彼は大事な会議で資料を忘れるという失態を演じた。",
-      "example_reading": "かれはだいじなかいぎでしりょうをわすれるというしったいをえんじた。",
-      "example_meaning": "그는 중요한 회의에서 자료를 잊어버리는 실수를 저질렀다."
+      "example": "彼は会議で大きな失態を演じてしまった。",
+      "example_reading": "かれはかいぎでおおきなしったいをえんじてしまった。",
+      "example_meaning": "그는 회의에서 큰 실수를 저지르고 말았다."
     },
     {
       "word": "憤怒",
       "reading": "ふんぬ",
       "meaning": "분노, 격노",
       "level": "N1",
-      "example": "不公平な判定に観客は憤怒の声を上げた。",
-      "example_reading": "ふこうへいなはんていにかんきゃくはふんぬのこえをあげた。",
-      "example_meaning": "불공평한 판정에 관중은 분노의 목소리를 냈다."
+      "example": "国民は不公平な判決に憤怒した。",
+      "example_reading": "こくみんはふこうへいなはんけつにふんぬした。",
+      "example_meaning": "국민은 불공평한 판결에 격노했다."
     },
     {
       "word": "疑惑",
       "reading": "ぎわく",
-      "meaning": "의혹, 의심",
+      "meaning": "의혹",
       "level": "N2",
-      "example": "その政治家は汚職の疑惑をかけられている。",
-      "example_reading": "そのせいじかはおしょくのぎわくをかけられている。",
-      "example_meaning": "그 정치인은 부패 의혹을 받고 있다."
+      "example": "その政治家は汚職の疑惑を持たれている。",
+      "example_reading": "そのせいじかはおしょくのぎわくをもたれている。",
+      "example_meaning": "그 정치인은 부정부패 의혹을 받고 있다."
     },
     {
-      "word": "懸念",
-      "reading": "けねん",
-      "meaning": "우려, 걱정",
-      "level": "N2",
-      "example": "経済の悪化に対する懸念が広がっている。",
-      "example_reading": "けいざいのあっかにたいするけねんがひろがっている。",
-      "example_meaning": "경제 악화에 대한 우려가 확산되고 있다."
+      "word": "波紋",
+      "reading": "はもん",
+      "meaning": "파문, 여파",
+      "level": "N1",
+      "example": "その発言は社会に大きな波紋を広げた。",
+      "example_reading": "そのはつげんはしゃかいにおおきなはもんをひろげた。",
+      "example_meaning": "그 발언은 사회에 큰 파문을 일으켰다."
     },
     {
       "word": "真価",
       "reading": "しんか",
       "meaning": "진가, 참된 가치",
       "level": "N1",
-      "example": "困難な状況でこそ、その人の真価が問われる。",
-      "example_reading": "こんなんなじょうきょうでこそ、そのひとのしんかがとわれる。",
-      "example_meaning": "어려운 상황에서야말로 그 사람의 진가가 시험받는다."
+      "example": "困難な状況でこそ、彼の真価が発揮される。",
+      "example_reading": "こんなんなじょうきょうでこそ、かれのしんかがはっきされる。",
+      "example_meaning": "어려운 상황에서야말로 그의 진가가 발휘된다."
     },
     {
       "word": "厳重",
       "reading": "げんじゅう",
       "meaning": "엄중함, 철저함",
       "level": "N2",
-      "example": "台風接近のため、厳重な警戒が呼びかけられた。",
-      "example_reading": "たいふうせっきんのため、げんじゅうなけいかいがよびかけられた。",
-      "example_meaning": "태풍 접근으로 인해 엄중한 경계가 촉구되었다."
+      "example": "台風に備えて厳重な警戒が呼びかけられた。",
+      "example_reading": "たいふうにそなえてげんじゅうなけいかいがよびかけられた。",
+      "example_meaning": "태풍에 대비해 철저한 경계가 촉구되었다."
     },
     {
-      "word": "資金洗浄",
-      "reading": "しきんせんじょう",
-      "meaning": "자금세탁, 돈세탁",
-      "level": "N1",
-      "example": "警察はその会社が資金洗浄に関与した疑いで捜査している。",
-      "example_reading": "けいさつはそのかいしゃがしきんせんじょうにかんよしたうたがいでそうさしている。",
-      "example_meaning": "경찰은 그 회사가 자금세탁에 관여한 혐의로 수사하고 있다."
-    },
-    {
-      "word": "移籍",
-      "reading": "いせき",
-      "meaning": "이적, 소속을 옮김",
+      "word": "秘訣",
+      "reading": "ひけつ",
+      "meaning": "비결",
       "level": "N2",
-      "example": "彼は来シーズン、海外のチームへの移籍を検討している。",
-      "example_reading": "かれはらいシーズン、かいがいのチームへのいせきをけんとうしている。",
-      "example_meaning": "그는 다음 시즌 해외 팀으로의 이적을 검토하고 있다."
+      "example": "健康で長生きする秘訣は規則正しい生活だ。",
+      "example_reading": "けんこうでながいきするひけつはきそくただしいせいかつだ。",
+      "example_meaning": "건강하게 오래 사는 비결은 규칙적인 생활이다."
     }
   ]
 }
