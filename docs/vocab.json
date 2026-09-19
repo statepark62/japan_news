@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-19 09:35 KST",
-  "date": "2026-09-19",
+  "generated_at": "2026-09-20 08:54 KST",
+  "date": "2026-09-20",
   "words": [
     {
-      "word": "苦言",
-      "reading": "くげん",
-      "meaning": "쓴소리, 충고",
-      "level": "N1",
-      "example": "上司は部下の態度に苦言を呈した。",
-      "example_reading": "じょうしはぶかのたいどにくげんをていした。",
-      "example_meaning": "상사는 부하의 태도에 쓴소리를 했다."
-    },
-    {
-      "word": "失態",
-      "reading": "しったい",
-      "meaning": "실태, 창피한 실수",
-      "level": "N1",
-      "example": "彼は会議で大きな失態を演じてしまった。",
-      "example_reading": "かれはかいぎでおおきなしったいをえんじてしまった。",
-      "example_meaning": "그는 회의에서 큰 실수를 저지르고 말았다."
-    },
-    {
-      "word": "憤怒",
-      "reading": "ふんぬ",
-      "meaning": "분노, 격노",
-      "level": "N1",
-      "example": "国民は不公平な判決に憤怒した。",
-      "example_reading": "こくみんはふこうへいなはんけつにふんぬした。",
-      "example_meaning": "국민은 불공평한 판결에 격노했다."
-    },
-    {
-      "word": "疑惑",
-      "reading": "ぎわく",
-      "meaning": "의혹",
+      "word": "詐欺",
+      "reading": "さぎ",
+      "meaning": "사기",
       "level": "N2",
-      "example": "その政治家は汚職の疑惑を持たれている。",
-      "example_reading": "そのせいじかはおしょくのぎわくをもたれている。",
-      "example_meaning": "그 정치인은 부정부패 의혹을 받고 있다."
+      "example": "最近、高齢者を狙った詐欺が増えている。",
+      "example_reading": "さいきん、こうれいしゃをねらったさぎがふえている。",
+      "example_meaning": "최근 고령자를 노린 사기가 늘고 있다."
     },
     {
-      "word": "波紋",
-      "reading": "はもん",
-      "meaning": "파문, 여파",
+      "word": "実態",
+      "reading": "じったい",
+      "meaning": "실태, 실제 상태",
       "level": "N1",
-      "example": "その発言は社会に大きな波紋を広げた。",
-      "example_reading": "そのはつげんはしゃかいにおおきなはもんをひろげた。",
-      "example_meaning": "그 발언은 사회에 큰 파문을 일으켰다."
+      "example": "この調査で業界の実態が明らかになった。",
+      "example_reading": "このちょうさでぎょうかいのじったいがあきらかになった。",
+      "example_meaning": "이 조사로 업계의 실태가 밝혀졌다."
     },
     {
-      "word": "真価",
-      "reading": "しんか",
-      "meaning": "진가, 참된 가치",
+      "word": "告白",
+      "reading": "こくはく",
+      "meaning": "고백",
+      "level": "N2",
+      "example": "彼女は自分の過去について告白した。",
+      "example_reading": "かのじょはじぶんのかこについてこくはくした。",
+      "example_meaning": "그녀는 자신의 과거에 대해 고백했다."
+    },
+    {
+      "word": "認知症",
+      "reading": "にんちしょう",
+      "meaning": "치매",
       "level": "N1",
-      "example": "困難な状況でこそ、彼の真価が発揮される。",
-      "example_reading": "こんなんなじょうきょうでこそ、かれのしんかがはっきされる。",
-      "example_meaning": "어려운 상황에서야말로 그의 진가가 발휘된다."
+      "example": "祖母は認知症の診断を受けた。",
+      "example_reading": "そぼはにんちしょうのしんだんをうけた。",
+      "example_meaning": "할머니는 치매 진단을 받았다."
     },
     {
-      "word": "厳重",
-      "reading": "げんじゅう",
-      "meaning": "엄중함, 철저함",
+      "word": "言い訳",
+      "reading": "いいわけ",
+      "meaning": "변명",
       "level": "N2",
-      "example": "台風に備えて厳重な警戒が呼びかけられた。",
-      "example_reading": "たいふうにそなえてげんじゅうなけいかいがよびかけられた。",
-      "example_meaning": "태풍에 대비해 철저한 경계가 촉구되었다."
+      "example": "彼はいつも遅刻の言い訳ばかりしている。",
+      "example_reading": "かれはいつもちこくのいいわけばかりしている。",
+      "example_meaning": "그는 항상 지각에 대한 변명만 하고 있다."
     },
     {
-      "word": "秘訣",
-      "reading": "ひけつ",
-      "meaning": "비결",
+      "word": "削除",
+      "reading": "さくじょ",
+      "meaning": "삭제",
       "level": "N2",
-      "example": "健康で長生きする秘訣は規則正しい生活だ。",
-      "example_reading": "けんこうでながいきするひけつはきそくただしいせいかつだ。",
-      "example_meaning": "건강하게 오래 사는 비결은 규칙적인 생활이다."
+      "example": "問題のあるコメントはすぐに削除された。",
+      "example_reading": "もんだいのあるコメントはすぐにさくじょされた。",
+      "example_meaning": "문제가 있는 댓글은 즉시 삭제되었다."
+    },
+    {
+      "word": "拡散",
+      "reading": "かくさん",
+      "meaning": "확산",
+      "level": "N2",
+      "example": "そのニュースはSNSで瞬く間に拡散した。",
+      "example_reading": "そのニュースはエスエヌエスでまたたくまにかくさんした。",
+      "example_meaning": "그 뉴스는 SNS에서 순식간에 확산되었다."
+    },
+    {
+      "word": "訂正",
+      "reading": "ていせい",
+      "meaning": "정정, 수정",
+      "level": "N2",
+      "example": "記事の誤りについて訂正記事が出された。",
+      "example_reading": "きじのあやまりについてていせいきじがだされた。",
+      "example_meaning": "기사의 오류에 대해 정정 기사가 나왔다."
     }
   ]
 }
