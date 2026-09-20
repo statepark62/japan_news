@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-20 09:09 KST",
+  "generated_at": "2026-09-20 09:21 KST",
   "date": "2026-09-20",
   "words": [
     {
-      "word": "置き忘れる",
-      "reading": "おきわすれる",
-      "meaning": "물건을 두고 잊어버리다, 놓고 오다",
+      "word": "削除",
+      "reading": "さくじょ",
+      "meaning": "삭제",
       "level": "N2",
-      "example": "電車の中にスマートフォンを置き忘れてしまった。",
-      "example_reading": "でんしゃのなかにスマートフォンをおきわすれてしまった。",
-      "example_meaning": "전철 안에 스마트폰을 두고 내려버렸다."
+      "example": "不適切な写真をウェブサイトから削除した。",
+      "example_reading": "ふてきせつなしゃしんをウェブサイトからさくじょした。",
+      "example_meaning": "부적절한 사진을 웹사이트에서 삭제했다."
+    },
+    {
+      "word": "批判",
+      "reading": "ひはん",
+      "meaning": "비판",
+      "level": "N3",
+      "example": "その政策は多くの国民から批判を受けた。",
+      "example_reading": "そのせいさくはおおくのこくみんからひはんをうけた。",
+      "example_meaning": "그 정책은 많은 국민들로부터 비판을 받았다."
     },
     {
       "word": "騙される",
       "reading": "だまされる",
-      "meaning": "속다, 사기당하다",
+      "meaning": "속다",
       "level": "N3",
-      "example": "彼は詐欺師に騙されて大金を失った。",
-      "example_reading": "かれはさぎしにだまされてたいきんをうしなった。",
-      "example_meaning": "그는 사기꾼에게 속아서 큰돈을 잃었다."
+      "example": "彼女は詐欺師に騙されて全財産を失った。",
+      "example_reading": "かのじょはさぎしにだまされてぜんざいさんをうしなった。",
+      "example_meaning": "그녀는 사기꾼에게 속아 전 재산을 잃었다."
+    },
+    {
+      "word": "容疑者",
+      "reading": "ようぎしゃ",
+      "meaning": "용의자",
+      "level": "N2",
+      "example": "警察は容疑者を追跡している。",
+      "example_reading": "けいさつはようぎしゃをついせきしている。",
+      "example_meaning": "경찰은 용의자를 추적하고 있다."
+    },
+    {
+      "word": "逮捕",
+      "reading": "たいほ",
+      "meaning": "체포",
+      "level": "N2",
+      "example": "警察はその男を殺人容疑で逮捕した。",
+      "example_reading": "けいさつはそのおとこをさつじんようぎでたいほした。",
+      "example_meaning": "경찰은 그 남자를 살인 혐의로 체포했다."
+    },
+    {
+      "word": "特殊詐欺",
+      "reading": "とくしゅさぎ",
+      "meaning": "특수사기(보이스피싱 등 신종 사기)",
+      "level": "N1",
+      "example": "高齢者を狙った特殊詐欺の被害が増加している。",
+      "example_reading": "こうれいしゃをねらったとくしゅさぎのひがいがぞうかしている。",
+      "example_meaning": "노인을 노린 특수사기 피해가 증가하고 있다."
+    },
+    {
+      "word": "差別的",
+      "reading": "さべつてき",
+      "meaning": "차별적",
+      "level": "N2",
+      "example": "その発言は差別的だとして問題になった。",
+      "example_reading": "そのはつげんはさべつてきだとしてもんだいになった。",
+      "example_meaning": "그 발언은 차별적이라며 문제가 되었다."
     },
     {
       "word": "親不孝",
       "reading": "おやふこう",
       "meaning": "불효",
       "level": "N2",
-      "example": "彼女は自分の行動が親不孝だと反省している。",
-      "example_reading": "かのじょはじぶんのこうどうがおやふこうだとはんせいしている。",
-      "example_meaning": "그녀는 자신의 행동이 불효라고 반성하고 있다."
-    },
-    {
-      "word": "熱愛",
-      "reading": "ねつあい",
-      "meaning": "열애",
-      "level": "N2",
-      "example": "二人は熱愛の末に結婚した。",
-      "example_reading": "ふたりはねつあいのすえにけっこんした。",
-      "example_meaning": "두 사람은 열애 끝에 결혼했다."
-    },
-    {
-      "word": "特殊詐欺",
-      "reading": "とくしゅさぎ",
-      "meaning": "특수사기 (보이스피싱 등 신종 사기)",
-      "level": "N1",
-      "example": "特殊詐欺の被害額は年々増加している。",
-      "example_reading": "とくしゅさぎのひがいがくはねんねんぞうかしている。",
-      "example_meaning": "특수사기 피해액은 해마다 증가하고 있다."
-    },
-    {
-      "word": "闇バイト",
-      "reading": "やみバイト",
-      "meaning": "불법·범죄에 연루된 알바(어둠의 알바)",
-      "level": "N1",
-      "example": "闇バイトに応募したことを彼は後悔していると語った。",
-      "example_reading": "やみバイトにおうぼしたことをかれはこうかいしているとかたった。",
-      "example_meaning": "그는 어둠의 알바에 지원한 것을 후회하고 있다고 말했다."
-    },
-    {
-      "word": "認知症",
-      "reading": "にんちしょう",
-      "meaning": "치매",
-      "level": "N2",
-      "example": "祖母は最近、認知症の症状が進んでいる。",
-      "example_reading": "そぼはさいきん、にんちしょうのしょうじょうがすすんでいる。",
-      "example_meaning": "할머니는 최근 치매 증상이 진행되고 있다."
-    },
-    {
-      "word": "絶望",
-      "reading": "ぜつぼう",
-      "meaning": "절망",
-      "level": "N2",
-      "example": "試合に負けた選手たちは絶望の表情を浮かべた。",
-      "example_reading": "しあいにまけたせんしゅたちはぜつぼうのひょうじょうをうかべた。",
-      "example_meaning": "경기에 진 선수들은 절망적인 표정을 지었다."
+      "example": "私は親不孝な息子で、両親に心配ばかりかけている。",
+      "example_reading": "わたしはおやふこうなむすこで、りょうしんにしんぱいばかりかけている。",
+      "example_meaning": "나는 불효자식이라 부모님께 걱정만 끼치고 있다."
     }
   ]
 }
