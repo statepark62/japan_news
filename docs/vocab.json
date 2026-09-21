@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-21 08:51 KST",
+  "generated_at": "2026-09-21 09:17 KST",
   "date": "2026-09-21",
   "words": [
     {
-      "word": "最接近",
-      "reading": "さいせっきん",
-      "meaning": "가장 가까이 접근함, 최근접",
+      "word": "接近",
+      "reading": "せっきん",
+      "meaning": "접근, 다가옴",
       "level": "N2",
-      "example": "台風は今夜、関東地方に最接近する見込みです。",
-      "example_reading": "たいふうは こんや、かんとうちほうに さいせっきん する みこみです。",
-      "example_meaning": "태풍은 오늘 밤 간토 지방에 가장 가까이 접근할 것으로 예상됩니다."
+      "example": "台風が急速に接近している。",
+      "example_reading": "たいふうが きゅうそくに せっきんしている。",
+      "example_meaning": "태풍이 급속히 접근하고 있다."
     },
     {
-      "word": "線状降水帯",
-      "reading": "せんじょうこうすいたい",
-      "meaning": "선상강수대(집중호우를 일으키는 좁고 긴 비구름 띠)",
+      "word": "冠水",
+      "reading": "かんすい",
+      "meaning": "침수 (물에 뒤덮임)",
       "level": "N1",
-      "example": "大雨の影響で線状降水帯が発生し、河川の氾濫が心配されている。",
-      "example_reading": "おおあめの えいきょうで せんじょうこうすいたいが はっせいし、かせんの はんらんが しんぱいされている。",
-      "example_meaning": "폭우의 영향으로 선상강수대가 발생하여 하천 범람이 우려되고 있다."
+      "example": "大雨で道路が冠水し、車が通行できなくなった。",
+      "example_reading": "おおあめで どうろが かんすいし、くるまが つうこうできなくなった。",
+      "example_meaning": "폭우로 도로가 침수되어 차가 통행할 수 없게 되었다."
     },
     {
-      "word": "縮めかねない",
-      "reading": "ちぢめかねない",
-      "meaning": "(수명 등을) 단축시킬지도 모른다",
+      "word": "水没",
+      "reading": "すいぼつ",
+      "meaning": "수몰, 물에 잠김",
+      "level": "N1",
+      "example": "台風の影響で駐車場の車が水没した。",
+      "example_reading": "たいふうの えいきょうで ちゅうしゃじょうの くるまが すいぼつした。",
+      "example_meaning": "태풍의 영향으로 주차장의 차가 물에 잠겼다."
+    },
+    {
+      "word": "長寿",
+      "reading": "ちょうじゅ",
+      "meaning": "장수",
       "level": "N2",
-      "example": "毎日の過度なストレスは寿命を縮めかねない。",
-      "example_reading": "まいにちの かどな すとれすは じゅみょうを ちぢめかねない。",
-      "example_meaning": "매일의 과도한 스트레스는 수명을 단축시킬지도 모른다."
+      "example": "敬老の日は長寿を祝う祝日です。",
+      "example_reading": "けいろうのひは ちょうじゅを いわう しゅくじつです。",
+      "example_meaning": "경로의 날은 장수를 기념하는 국경일입니다."
+    },
+    {
+      "word": "賛否",
+      "reading": "さんぴ",
+      "meaning": "찬반",
+      "level": "N1",
+      "example": "この提案には賛否両論がある。",
+      "example_reading": "この ていあんには さんぴりょうろんが ある。",
+      "example_meaning": "이 제안에는 찬반양론이 있다."
     },
     {
       "word": "値上げ",
       "reading": "ねあげ",
       "meaning": "가격 인상",
       "level": "N3",
-      "example": "電気料金の値上げが来月から実施される。",
-      "example_reading": "でんきりょうきんの ねあげが らいげつから じっしされる。",
-      "example_meaning": "전기 요금 인상이 다음 달부터 시행된다."
+      "example": "来月から電気料金が値上げされる。",
+      "example_reading": "らいげつから でんきりょうきんが ねあげされる。",
+      "example_meaning": "다음 달부터 전기 요금이 인상된다."
     },
     {
-      "word": "賛否",
-      "reading": "さんぴ",
-      "meaning": "찬반, 찬성과 반대",
+      "word": "縮める",
+      "reading": "ちぢめる",
+      "meaning": "줄이다, 단축시키다",
       "level": "N2",
-      "example": "その政策には賛否が分かれている。",
-      "example_reading": "その せいさくには さんぴが わかれている。",
-      "example_meaning": "그 정책에 대해서는 찬반이 갈리고 있다."
+      "example": "過度なストレスは寿命を縮める可能性がある。",
+      "example_reading": "かどな すとれすは じゅみょうを ちぢめる かのうせいが ある。",
+      "example_meaning": "과도한 스트레스는 수명을 줄일 가능성이 있다."
     },
     {
-      "word": "毒親",
-      "reading": "どくおや",
-      "meaning": "독친(자녀에게 해로운 영향을 주는 부모)",
+      "word": "後を継ぐ",
+      "reading": "あとをつぐ",
+      "meaning": "뒤를 잇다, 후계자가 되다",
       "level": "N2",
-      "example": "彼女は毒親に育てられたことをブログで告白した。",
-      "example_reading": "かのじょは どくおやに そだてられた ことを ぶろぐで こくはくした。",
-      "example_meaning": "그녀는 독친 밑에서 자랐다는 것을 블로그에서 고백했다."
-    },
-    {
-      "word": "反撃",
-      "reading": "はんげき",
-      "meaning": "반격",
-      "level": "N2",
-      "example": "彼は批判に対して強く反撃した。",
-      "example_reading": "かれは ひはんに たいして つよく はんげきした。",
-      "example_meaning": "그는 비판에 대해 강하게 반격했다."
-    },
-    {
-      "word": "苦言",
-      "reading": "くげん",
-      "meaning": "고언, 듣기 거북하지만 도움이 되는 충고",
-      "level": "N1",
-      "example": "記者は運営側に厳しい苦言を呈した。",
-      "example_reading": "きしゃは うんえいがわに きびしい くげんを ていした。",
-      "example_meaning": "기자는 운영 측에 엄격한 고언을 던졌다."
+      "example": "彼は父の後を継いで会社を経営している。",
+      "example_reading": "かれは ちちの あとを ついで かいしゃを けいえいしている。",
+      "example_meaning": "그는 아버지의 뒤를 이어 회사를 경영하고 있다."
     }
   ]
 }
