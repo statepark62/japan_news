@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-21 09:17 KST",
+  "generated_at": "2026-09-21 09:27 KST",
   "date": "2026-09-21",
   "words": [
     {
-      "word": "接近",
-      "reading": "せっきん",
-      "meaning": "접근, 다가옴",
-      "level": "N2",
-      "example": "台風が急速に接近している。",
-      "example_reading": "たいふうが きゅうそくに せっきんしている。",
-      "example_meaning": "태풍이 급속히 접근하고 있다."
-    },
-    {
       "word": "冠水",
       "reading": "かんすい",
-      "meaning": "침수 (물에 뒤덮임)",
+      "meaning": "침수, 물에 잠김",
       "level": "N1",
-      "example": "大雨で道路が冠水し、車が通行できなくなった。",
-      "example_reading": "おおあめで どうろが かんすいし、くるまが つうこうできなくなった。",
-      "example_meaning": "폭우로 도로가 침수되어 차가 통행할 수 없게 되었다."
+      "example": "大雨で道路が冠水し、車が通れなくなった。",
+      "example_reading": "おおあめでどうろがかんすいし、くるまがとおれなくなった。",
+      "example_meaning": "큰비로 도로가 침수되어 차가 지나갈 수 없게 되었다."
     },
     {
-      "word": "水没",
-      "reading": "すいぼつ",
-      "meaning": "수몰, 물에 잠김",
-      "level": "N1",
-      "example": "台風の影響で駐車場の車が水没した。",
-      "example_reading": "たいふうの えいきょうで ちゅうしゃじょうの くるまが すいぼつした。",
-      "example_meaning": "태풍의 영향으로 주차장의 차가 물에 잠겼다."
+      "word": "接近",
+      "reading": "せっきん",
+      "meaning": "접근",
+      "level": "N3",
+      "example": "台風が日本列島に接近している。",
+      "example_reading": "たいふうがにほんれっとうにせっきんしている。",
+      "example_meaning": "태풍이 일본 열도에 접근하고 있다."
     },
     {
       "word": "長寿",
       "reading": "ちょうじゅ",
       "meaning": "장수",
       "level": "N2",
-      "example": "敬老の日は長寿を祝う祝日です。",
-      "example_reading": "けいろうのひは ちょうじゅを いわう しゅくじつです。",
-      "example_meaning": "경로의 날은 장수를 기념하는 국경일입니다."
+      "example": "祖母は長寿の秘訣をよく聞かれる。",
+      "example_reading": "そぼはちょうじゅのひけつをよくきかれる。",
+      "example_meaning": "할머니는 장수의 비결을 자주 질문받는다."
     },
     {
-      "word": "賛否",
-      "reading": "さんぴ",
-      "meaning": "찬반",
-      "level": "N1",
-      "example": "この提案には賛否両論がある。",
-      "example_reading": "この ていあんには さんぴりょうろんが ある。",
-      "example_meaning": "이 제안에는 찬반양론이 있다."
+      "word": "継ぐ",
+      "reading": "つぐ",
+      "meaning": "이어받다, 계승하다",
+      "level": "N2",
+      "example": "彼は父の会社を継ぐことになった。",
+      "example_reading": "かれはちちのかいしゃをつぐことになった。",
+      "example_meaning": "그는 아버지의 회사를 이어받게 되었다."
+    },
+    {
+      "word": "定年",
+      "reading": "ていねん",
+      "meaning": "정년",
+      "level": "N3",
+      "example": "父は来年、定年を迎える予定だ。",
+      "example_reading": "ちちはらいねん、ていねんをむかえるよていだ。",
+      "example_meaning": "아버지는 내년에 정년을 맞을 예정이다."
     },
     {
       "word": "値上げ",
       "reading": "ねあげ",
       "meaning": "가격 인상",
       "level": "N3",
-      "example": "来月から電気料金が値上げされる。",
-      "example_reading": "らいげつから でんきりょうきんが ねあげされる。",
-      "example_meaning": "다음 달부터 전기 요금이 인상된다."
+      "example": "最近、多くの食品が値上げされている。",
+      "example_reading": "さいきん、おおくのしょくひんがねあげされている。",
+      "example_meaning": "최근 많은 식품의 가격이 오르고 있다."
     },
     {
-      "word": "縮める",
-      "reading": "ちぢめる",
-      "meaning": "줄이다, 단축시키다",
+      "word": "賛否",
+      "reading": "さんぴ",
+      "meaning": "찬반",
       "level": "N2",
-      "example": "過度なストレスは寿命を縮める可能性がある。",
-      "example_reading": "かどな すとれすは じゅみょうを ちぢめる かのうせいが ある。",
-      "example_meaning": "과도한 스트레스는 수명을 줄일 가능성이 있다."
+      "example": "この政策については賛否が分かれている。",
+      "example_reading": "このせいさくについてはさんぴがわかれている。",
+      "example_meaning": "이 정책에 대해서는 찬반이 갈리고 있다."
     },
     {
-      "word": "後を継ぐ",
-      "reading": "あとをつぐ",
-      "meaning": "뒤를 잇다, 후계자가 되다",
+      "word": "土砂災害",
+      "reading": "どしゃさいがい",
+      "meaning": "산사태 등 토사 재해",
       "level": "N2",
-      "example": "彼は父の後を継いで会社を経営している。",
-      "example_reading": "かれは ちちの あとを ついで かいしゃを けいえいしている。",
-      "example_meaning": "그는 아버지의 뒤를 이어 회사를 경영하고 있다."
+      "example": "大雨により土砂災害の危険性が高まっている。",
+      "example_reading": "おおあめによりどしゃさいがいのきけんせいがたかまっている。",
+      "example_meaning": "큰비로 인해 산사태 위험이 높아지고 있다."
     }
   ]
 }
