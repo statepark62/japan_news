@@ -1,78 +1,69 @@
 {
-  "generated_at": "2026-09-22 09:36 KST",
+  "generated_at": "2026-09-22 09:52 KST",
   "date": "2026-09-22",
   "words": [
     {
+      "word": "驚愕",
+      "reading": "きょうがく",
+      "meaning": "경악",
+      "level": "N1",
+      "example": "彼の突然の辞任に、社員一同驚愕した。",
+      "example_reading": "かれのとつぜんのじにんに、しゃいんいちどうきょうがくした。",
+      "example_meaning": "그의 갑작스러운 사임에 직원 모두가 경악했다."
+    },
+    {
+      "word": "親分",
+      "reading": "おやぶん",
+      "meaning": "두목, 보스",
+      "level": "N2",
+      "example": "彼はその組織の親分として長年君臨してきた。",
+      "example_reading": "かれはそのそしきのおやぶんとしてながねんくんりんしてきた。",
+      "example_meaning": "그는 그 조직의 두목으로서 오랜 세월 군림해왔다."
+    },
+    {
       "word": "展開",
       "reading": "てんかい",
-      "meaning": "전개, (사업 등을) 펼침",
+      "meaning": "전개, (사업 등을) 확장함",
       "level": "N2",
-      "example": "このラーメン店は全国に店舗を展開している。",
-      "example_reading": "このラーメンてんはぜんこくにてんぽをてんかいしている。",
-      "example_meaning": "이 라면 가게는 전국에 점포를 전개하고 있다."
+      "example": "このチェーン店は全国に店舗を展開している。",
+      "example_reading": "このちぇーんてんはぜんこくにてんぽをてんかいしている。",
+      "example_meaning": "이 체인점은 전국에 점포를 전개하고 있다."
     },
     {
       "word": "促す",
       "reading": "うながす",
       "meaning": "촉구하다, 재촉하다",
       "level": "N1",
-      "example": "母親は子供に勉強するよう促した。",
-      "example_reading": "ははおやはこどもにべんきょうするようながした。",
-      "example_meaning": "어머니는 아이에게 공부하도록 재촉했다."
+      "example": "先生は生徒に早く提出するよう促した。",
+      "example_reading": "せんせいはせいとにはやくていしゅつするようにうながした。",
+      "example_meaning": "선생님은 학생에게 빨리 제출하도록 재촉했다."
+    },
+    {
+      "word": "未解決",
+      "reading": "みかいけつ",
+      "meaning": "미해결",
+      "level": "N2",
+      "example": "その事件は10年間、未解決のままだった。",
+      "example_reading": "そのじけんはじゅうねんかん、みかいけつのままだった。",
+      "example_meaning": "그 사건은 10년간 미해결인 채로 있었다."
     },
     {
       "word": "検討",
       "reading": "けんとう",
       "meaning": "검토",
       "level": "N2",
-      "example": "会社は事業の売却を検討していると発表した。",
-      "example_reading": "かいしゃはじぎょうのばいきゃくをけんとうしていると はっぴょうした。",
-      "example_meaning": "회사는 사업 매각을 검토하고 있다고 발표했다."
+      "example": "会社は新しい方針の導入を検討している。",
+      "example_reading": "かいしゃはあたらしいほうしんのどうにゅうをけんとうしている。",
+      "example_meaning": "회사는 새로운 방침 도입을 검토하고 있다."
     },
     {
       "word": "衝突",
       "reading": "しょうとつ",
-      "meaning": "충돌",
+      "meaning": "충돌 (물리적/의견 대립)",
       "level": "N2",
-      "example": "彼女は意見の違いから母親と衝突した。",
-      "example_reading": "かのじょはいけんのちがいからははおやとしょうとつした。",
-      "example_meaning": "그녀는 의견 차이로 어머니와 충돌했다."
-    },
-    {
-      "word": "驚愕",
-      "reading": "きょうがく",
-      "meaning": "경악",
-      "level": "N1",
-      "example": "現地の物価の高さに驚愕した。",
-      "example_reading": "げんちのぶっかのたかさにきょうがくした。",
-      "example_meaning": "현지 물가의 높음에 경악했다."
-    },
-    {
-      "word": "動向",
-      "reading": "どうこう",
-      "meaning": "동향",
-      "level": "N1",
-      "example": "台風の今後の動向に注意が必要だ。",
-      "example_reading": "たいふうのこんごのどうこうにちゅういがひつようだ。",
-      "example_meaning": "태풍의 향후 동향에 주의가 필요하다."
-    },
-    {
-      "word": "相次ぐ",
-      "reading": "あいつぐ",
-      "meaning": "잇따르다",
-      "level": "N1",
-      "example": "値上げに対する批判の声が相次いだ。",
-      "example_reading": "ねあげにたいするひはんのこえがあいついだ。",
-      "example_meaning": "가격 인상에 대한 비판의 목소리가 잇따랐다."
-    },
-    {
-      "word": "鑑定",
-      "reading": "かんてい",
-      "meaning": "감정, 감별",
-      "level": "N1",
-      "example": "DNA鑑定の結果、容疑者が特定された。",
-      "example_reading": "ディーエヌエーかんていのけっか、ようぎしゃがとくていされた。",
-      "example_meaning": "DNA 감정 결과 용의자가 특정되었다."
+      "example": "意見の衝突から、二人は口論になった。",
+      "example_reading": "いけんのしょうとつから、ふたりはこうろんになった。",
+      "example_meaning": "의견 충돌로 두 사람은 말다툼이 되었다."
     }
   ]
 }
