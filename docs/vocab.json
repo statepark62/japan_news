@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-21 09:27 KST",
-  "date": "2026-09-21",
+  "generated_at": "2026-09-22 09:36 KST",
+  "date": "2026-09-22",
   "words": [
     {
-      "word": "冠水",
-      "reading": "かんすい",
-      "meaning": "침수, 물에 잠김",
+      "word": "展開",
+      "reading": "てんかい",
+      "meaning": "전개, (사업 등을) 펼침",
+      "level": "N2",
+      "example": "このラーメン店は全国に店舗を展開している。",
+      "example_reading": "このラーメンてんはぜんこくにてんぽをてんかいしている。",
+      "example_meaning": "이 라면 가게는 전국에 점포를 전개하고 있다."
+    },
+    {
+      "word": "促す",
+      "reading": "うながす",
+      "meaning": "촉구하다, 재촉하다",
       "level": "N1",
-      "example": "大雨で道路が冠水し、車が通れなくなった。",
-      "example_reading": "おおあめでどうろがかんすいし、くるまがとおれなくなった。",
-      "example_meaning": "큰비로 도로가 침수되어 차가 지나갈 수 없게 되었다."
+      "example": "母親は子供に勉強するよう促した。",
+      "example_reading": "ははおやはこどもにべんきょうするようながした。",
+      "example_meaning": "어머니는 아이에게 공부하도록 재촉했다."
     },
     {
-      "word": "接近",
-      "reading": "せっきん",
-      "meaning": "접근",
-      "level": "N3",
-      "example": "台風が日本列島に接近している。",
-      "example_reading": "たいふうがにほんれっとうにせっきんしている。",
-      "example_meaning": "태풍이 일본 열도에 접근하고 있다."
-    },
-    {
-      "word": "長寿",
-      "reading": "ちょうじゅ",
-      "meaning": "장수",
+      "word": "検討",
+      "reading": "けんとう",
+      "meaning": "검토",
       "level": "N2",
-      "example": "祖母は長寿の秘訣をよく聞かれる。",
-      "example_reading": "そぼはちょうじゅのひけつをよくきかれる。",
-      "example_meaning": "할머니는 장수의 비결을 자주 질문받는다."
+      "example": "会社は事業の売却を検討していると発表した。",
+      "example_reading": "かいしゃはじぎょうのばいきゃくをけんとうしていると はっぴょうした。",
+      "example_meaning": "회사는 사업 매각을 검토하고 있다고 발표했다."
     },
     {
-      "word": "継ぐ",
-      "reading": "つぐ",
-      "meaning": "이어받다, 계승하다",
+      "word": "衝突",
+      "reading": "しょうとつ",
+      "meaning": "충돌",
       "level": "N2",
-      "example": "彼は父の会社を継ぐことになった。",
-      "example_reading": "かれはちちのかいしゃをつぐことになった。",
-      "example_meaning": "그는 아버지의 회사를 이어받게 되었다."
+      "example": "彼女は意見の違いから母親と衝突した。",
+      "example_reading": "かのじょはいけんのちがいからははおやとしょうとつした。",
+      "example_meaning": "그녀는 의견 차이로 어머니와 충돌했다."
     },
     {
-      "word": "定年",
-      "reading": "ていねん",
-      "meaning": "정년",
-      "level": "N3",
-      "example": "父は来年、定年を迎える予定だ。",
-      "example_reading": "ちちはらいねん、ていねんをむかえるよていだ。",
-      "example_meaning": "아버지는 내년에 정년을 맞을 예정이다."
+      "word": "驚愕",
+      "reading": "きょうがく",
+      "meaning": "경악",
+      "level": "N1",
+      "example": "現地の物価の高さに驚愕した。",
+      "example_reading": "げんちのぶっかのたかさにきょうがくした。",
+      "example_meaning": "현지 물가의 높음에 경악했다."
     },
     {
-      "word": "値上げ",
-      "reading": "ねあげ",
-      "meaning": "가격 인상",
-      "level": "N3",
-      "example": "最近、多くの食品が値上げされている。",
-      "example_reading": "さいきん、おおくのしょくひんがねあげされている。",
-      "example_meaning": "최근 많은 식품의 가격이 오르고 있다."
+      "word": "動向",
+      "reading": "どうこう",
+      "meaning": "동향",
+      "level": "N1",
+      "example": "台風の今後の動向に注意が必要だ。",
+      "example_reading": "たいふうのこんごのどうこうにちゅういがひつようだ。",
+      "example_meaning": "태풍의 향후 동향에 주의가 필요하다."
     },
     {
-      "word": "賛否",
-      "reading": "さんぴ",
-      "meaning": "찬반",
-      "level": "N2",
-      "example": "この政策については賛否が分かれている。",
-      "example_reading": "このせいさくについてはさんぴがわかれている。",
-      "example_meaning": "이 정책에 대해서는 찬반이 갈리고 있다."
+      "word": "相次ぐ",
+      "reading": "あいつぐ",
+      "meaning": "잇따르다",
+      "level": "N1",
+      "example": "値上げに対する批判の声が相次いだ。",
+      "example_reading": "ねあげにたいするひはんのこえがあいついだ。",
+      "example_meaning": "가격 인상에 대한 비판의 목소리가 잇따랐다."
     },
     {
-      "word": "土砂災害",
-      "reading": "どしゃさいがい",
-      "meaning": "산사태 등 토사 재해",
-      "level": "N2",
-      "example": "大雨により土砂災害の危険性が高まっている。",
-      "example_reading": "おおあめによりどしゃさいがいのきけんせいがたかまっている。",
-      "example_meaning": "큰비로 인해 산사태 위험이 높아지고 있다."
+      "word": "鑑定",
+      "reading": "かんてい",
+      "meaning": "감정, 감별",
+      "level": "N1",
+      "example": "DNA鑑定の結果、容疑者が特定された。",
+      "example_reading": "ディーエヌエーかんていのけっか、ようぎしゃがとくていされた。",
+      "example_meaning": "DNA 감정 결과 용의자가 특정되었다."
     }
   ]
 }
