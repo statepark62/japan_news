@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-22 10:06 KST",
-  "date": "2026-09-22",
+  "generated_at": "2026-09-23 08:59 KST",
+  "date": "2026-09-23",
   "words": [
     {
-      "word": "展開",
-      "reading": "てんかい",
-      "meaning": "전개, (사업 등을) 펼침",
+      "word": "離脱",
+      "reading": "りだつ",
+      "meaning": "이탈, 벗어남",
       "level": "N2",
-      "example": "このラーメンチェーンは東京を中心に全国展開されている。",
-      "example_reading": "このラーメンチェーンはとうきょうをちゅうしんにぜんこくてんかいされている。",
-      "example_meaning": "이 라멘 체인점은 도쿄를 중심으로 전국에 전개되고 있다."
+      "example": "彼は怪我のため、途中で試合から離脱した。",
+      "example_reading": "かれはけがのため、とちゅうでしあいからりだつした。",
+      "example_meaning": "그는 부상 때문에 도중에 경기에서 이탈했다."
     },
     {
-      "word": "未解決",
-      "reading": "みかいけつ",
-      "meaning": "미해결",
+      "word": "葛藤",
+      "reading": "かっとう",
+      "meaning": "갈등",
+      "level": "N1",
+      "example": "彼女は仕事と家庭の間で葛藤している。",
+      "example_reading": "かのじょはしごととかていのあいだでかっとうしている。",
+      "example_meaning": "그녀는 일과 가정 사이에서 갈등하고 있다."
+    },
+    {
+      "word": "敗退",
+      "reading": "はいたい",
+      "meaning": "패퇴, 패배하여 탈락함",
       "level": "N2",
-      "example": "その事件は10年以上未解決のままだった。",
-      "example_reading": "そのじけんはじゅうねんいじょうみかいけつのままだった。",
-      "example_meaning": "그 사건은 10년 이상 미해결 상태였다."
+      "example": "日本代表は準決勝で敗退した。",
+      "example_reading": "にほんだいひょうはじゅんけっしょうではいたいした。",
+      "example_meaning": "일본 대표팀은 준결승에서 패퇴했다."
     },
     {
-      "word": "鑑定",
-      "reading": "かんてい",
-      "meaning": "감정, 감별",
-      "level": "N1",
-      "example": "警察は最新のDNA鑑定技術を使って犯人を特定した。",
-      "example_reading": "けいさつはさいしんのDNAかんていぎじゅつをつかってはんにんをとくていした。",
-      "example_meaning": "경찰은 최신 DNA 감정 기술을 사용해 범인을 특정했다."
-    },
-    {
-      "word": "再犯",
-      "reading": "さいはん",
-      "meaning": "재범, 재범죄",
-      "level": "N1",
-      "example": "彼は再犯を防ぐために更生プログラムに参加した。",
-      "example_reading": "かれはさいはんをふせぐためにこうせいプログラムにさんかした。",
-      "example_meaning": "그는 재범을 막기 위해 갱생 프로그램에 참가했다."
-    },
-    {
-      "word": "誤爆",
-      "reading": "ごばく",
-      "meaning": "(메시지 등을) 잘못 보냄, 오폭",
-      "level": "N1",
-      "example": "彼氏に送るはずのメッセージを間違えて友達に誤爆してしまった。",
-      "example_reading": "かれしにおくるはずのメッセージをまちがえてともだちにごばくしてしまった。",
-      "example_meaning": "남자친구에게 보낼 메시지를 실수로 친구에게 잘못 보내버렸다."
-    },
-    {
-      "word": "課金",
-      "reading": "かきん",
-      "meaning": "(게임 등에) 과금, 결제함",
+      "word": "過激",
+      "reading": "かげき",
+      "meaning": "과격함",
       "level": "N2",
-      "example": "息子がスマホゲームに77万円も課金していたことが発覚した。",
-      "example_reading": "むすこがスマホゲームにななじゅうななまんえんもかきんしていたことがはっかくした。",
-      "example_meaning": "아들이 스마트폰 게임에 77만 엔이나 과금했다는 사실이 발각됐다."
+      "example": "彼の過激な発言が物議を醸した。",
+      "example_reading": "かれのかげきなはつげんがぶつぎをかもした。",
+      "example_meaning": "그의 과격한 발언이 논란을 일으켰다."
     },
     {
-      "word": "驚愕",
-      "reading": "きょうがく",
-      "meaning": "경악, 크게 놀람",
-      "level": "N1",
-      "example": "彼はハワイの物価の高さに驚愕した。",
-      "example_reading": "かれはハワイのぶっかのたかさにきょうがくした。",
-      "example_meaning": "그는 하와이의 물가가 비싼 것에 경악했다."
-    },
-    {
-      "word": "親分",
-      "reading": "おやぶん",
-      "meaning": "두목, 보스",
+      "word": "阻止",
+      "reading": "そし",
+      "meaning": "저지, 막음",
       "level": "N2",
-      "example": "組を抜けるため、彼は親分に指を持って行った。",
-      "example_reading": "くみをぬけるため、かれはおやぶんにゆびをもっていった。",
-      "example_meaning": "조직을 나가기 위해 그는 두목에게 손가락을 가지고 갔다."
+      "example": "警察はデモ隊の進行を阻止した。",
+      "example_reading": "けいさつはでもたいのしんこうをそしした。",
+      "example_meaning": "경찰은 시위대의 진행을 저지했다."
+    },
+    {
+      "word": "悪影響",
+      "reading": "あくえいきょう",
+      "meaning": "나쁜 영향, 악영향",
+      "level": "N3",
+      "example": "スマホの使いすぎは子どもに悪影響を及ぼす。",
+      "example_reading": "すまほのつかいすぎはこどもにあくえいきょうをおよぼす。",
+      "example_meaning": "스마트폰을 지나치게 사용하면 아이에게 나쁜 영향을 끼친다."
+    },
+    {
+      "word": "徘徊",
+      "reading": "はいかい",
+      "meaning": "배회, 이리저리 돌아다님",
+      "level": "N1",
+      "example": "夜中に見知らぬ人が近所を徘徊していた。",
+      "example_reading": "よなかにみしらぬひとがきんじょをはいかいしていた。",
+      "example_meaning": "한밤중에 낯선 사람이 동네를 배회하고 있었다."
+    },
+    {
+      "word": "絶句",
+      "reading": "ぜっく",
+      "meaning": "말문이 막힘, 말을 잇지 못함",
+      "level": "N1",
+      "example": "予想外の結果に彼は思わず絶句した。",
+      "example_reading": "よそうがいのけっかにかれはおもわずぜっくした。",
+      "example_meaning": "예상 밖의 결과에 그는 저도 모르게 말문이 막혔다."
     }
   ]
 }
