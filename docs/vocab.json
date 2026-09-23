@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-23 09:36 KST",
+  "generated_at": "2026-09-23 09:53 KST",
   "date": "2026-09-23",
   "words": [
     {
-      "word": "指摘",
-      "reading": "してき",
-      "meaning": "지적",
+      "word": "素顔",
+      "reading": "すがお",
+      "meaning": "민낯, 꾸미지 않은 본모습",
       "level": "N2",
-      "example": "専門家がその政策の問題点を指摘した。",
-      "example_reading": "せんもんかがそのせいさくのもんだいてんをしてきした。",
-      "example_meaning": "전문가가 그 정책의 문제점을 지적했다."
+      "example": "彼女は素顔でも十分美しい。",
+      "example_reading": "かのじょは すがおでも じゅうぶん うつくしい。",
+      "example_meaning": "그녀는 민낯이어도 충분히 아름답다."
+    },
+    {
+      "word": "鎖国",
+      "reading": "さこく",
+      "meaning": "쇄국, 외부와의 교류를 차단하는 상태",
+      "level": "N1",
+      "example": "江戸時代の日本は長い間、鎖国政策を取っていた。",
+      "example_reading": "えどじだいの にほんは ながいあいだ、さこくせいさくを とっていた。",
+      "example_meaning": "에도 시대 일본은 오랫동안 쇄국 정책을 취하고 있었다."
     },
     {
       "word": "懸念",
       "reading": "けねん",
       "meaning": "우려, 걱정",
-      "level": "N1",
-      "example": "経済の先行きに懸念が広がっている。",
-      "example_reading": "けいざいのさきゆきにけねんがひろがっている。",
-      "example_meaning": "경제 전망에 대한 우려가 확산되고 있다."
+      "level": "N2",
+      "example": "専門家たちは経済の先行きに懸念を示している。",
+      "example_reading": "せんもんかたちは けいざいの さきゆきに けねんを しめしている。",
+      "example_meaning": "전문가들은 경제의 앞날에 대해 우려를 나타내고 있다."
     },
     {
       "word": "離脱",
       "reading": "りだつ",
-      "meaning": "이탈, 탈퇴",
-      "level": "N1",
-      "example": "彼は怪我のため代表チームから離脱した。",
-      "example_reading": "かれはけがのためだいひょうちーむからりだつした。",
-      "example_meaning": "그는 부상 때문에 대표팀에서 이탈했다."
+      "meaning": "이탈, 벗어남",
+      "level": "N2",
+      "example": "彼はチームからの離脱を発表した。",
+      "example_reading": "かれは ちーむからの りだつを はっぴょうした。",
+      "example_meaning": "그는 팀에서의 이탈을 발표했다."
     },
     {
       "word": "葛藤",
       "reading": "かっとう",
       "meaning": "갈등",
       "level": "N1",
-      "example": "彼女は仕事と家庭の間で葛藤していた。",
-      "example_reading": "かのじょはしごととかていのあいだでかっとうしていた。",
-      "example_meaning": "그녀는 일과 가정 사이에서 갈등하고 있었다."
-    },
-    {
-      "word": "阻止",
-      "reading": "そし",
-      "meaning": "저지, 막음",
-      "level": "N1",
-      "example": "警察は犯人の逃走を阻止した。",
-      "example_reading": "けいさつははんにんのとうそうをそしした。",
-      "example_meaning": "경찰은 범인의 도주를 저지했다."
-    },
-    {
-      "word": "移住",
-      "reading": "いじゅう",
-      "meaning": "이주",
-      "level": "N2",
-      "example": "彼は都会を離れて田舎に移住した。",
-      "example_reading": "かれはとかいをはなれていなかにいじゅうした。",
-      "example_meaning": "그는 도시를 떠나 시골로 이주했다."
-    },
-    {
-      "word": "過激",
-      "reading": "かげき",
-      "meaning": "과격함, 극단적임",
-      "level": "N2",
-      "example": "彼の発言は過激すぎると批判された。",
-      "example_reading": "かれのはつげんはかげきすぎるとひはんされた。",
-      "example_meaning": "그의 발언은 너무 과격하다고 비판받았다."
+      "example": "彼女は仕事と家庭の間で葛藤している。",
+      "example_reading": "かのじょは しごとと かていの あいだで かっとうしている。",
+      "example_meaning": "그녀는 일과 가정 사이에서 갈등하고 있다."
     },
     {
       "word": "回想",
       "reading": "かいそう",
       "meaning": "회상",
-      "level": "N1",
-      "example": "彼は学生時代を懐かしく回想した。",
-      "example_reading": "かれはがくせいじだいをなつかしくかいそうした。",
-      "example_meaning": "그는 학창 시절을 그립게 회상했다."
+      "level": "N2",
+      "example": "監督は当時の試合を回想しながら語った。",
+      "example_reading": "かんとくは とうじの しあいを かいそうしながら かたった。",
+      "example_meaning": "감독은 당시의 경기를 회상하며 이야기했다."
+    },
+    {
+      "word": "過激",
+      "reading": "かげき",
+      "meaning": "과격함",
+      "level": "N2",
+      "example": "彼の過激な発言がネットで話題になった。",
+      "example_reading": "かれの かげきな はつげんが ねっとで わだいに なった。",
+      "example_meaning": "그의 과격한 발언이 인터넷에서 화제가 되었다."
+    },
+    {
+      "word": "詰む",
+      "reading": "つむ",
+      "meaning": "(상황이) 막히다, 궁지에 몰리다",
+      "level": "N2",
+      "example": "この状況ではもう詰んでいると言わざるを得ない。",
+      "example_reading": "この じょうきょうでは もう つんでいると いわざるを えない。",
+      "example_meaning": "이 상황에서는 이제 끝났다고 말할 수밖에 없다."
     }
   ]
 }
