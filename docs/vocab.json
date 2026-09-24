@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-23 09:53 KST",
-  "date": "2026-09-23",
+  "generated_at": "2026-09-24 09:14 KST",
+  "date": "2026-09-24",
   "words": [
     {
-      "word": "素顔",
-      "reading": "すがお",
-      "meaning": "민낯, 꾸미지 않은 본모습",
-      "level": "N2",
-      "example": "彼女は素顔でも十分美しい。",
-      "example_reading": "かのじょは すがおでも じゅうぶん うつくしい。",
-      "example_meaning": "그녀는 민낯이어도 충분히 아름답다."
-    },
-    {
-      "word": "鎖国",
-      "reading": "さこく",
-      "meaning": "쇄국, 외부와의 교류를 차단하는 상태",
+      "word": "身元不明",
+      "reading": "みもとふめい",
+      "meaning": "신원 불명",
       "level": "N1",
-      "example": "江戸時代の日本は長い間、鎖国政策を取っていた。",
-      "example_reading": "えどじだいの にほんは ながいあいだ、さこくせいさくを とっていた。",
-      "example_meaning": "에도 시대 일본은 오랫동안 쇄국 정책을 취하고 있었다."
+      "example": "海で身元不明の遺体が発見された。",
+      "example_reading": "うみでみもとふめいのいたいがはっけんされた。",
+      "example_meaning": "바다에서 신원 불명의 시신이 발견되었다."
     },
     {
-      "word": "懸念",
-      "reading": "けねん",
-      "meaning": "우려, 걱정",
-      "level": "N2",
-      "example": "専門家たちは経済の先行きに懸念を示している。",
-      "example_reading": "せんもんかたちは けいざいの さきゆきに けねんを しめしている。",
-      "example_meaning": "전문가들은 경제의 앞날에 대해 우려를 나타내고 있다."
-    },
-    {
-      "word": "離脱",
-      "reading": "りだつ",
-      "meaning": "이탈, 벗어남",
-      "level": "N2",
-      "example": "彼はチームからの離脱を発表した。",
-      "example_reading": "かれは ちーむからの りだつを はっぴょうした。",
-      "example_meaning": "그는 팀에서의 이탈을 발표했다."
-    },
-    {
-      "word": "葛藤",
-      "reading": "かっとう",
-      "meaning": "갈등",
+      "word": "乱入",
+      "reading": "らんにゅう",
+      "meaning": "난입",
       "level": "N1",
-      "example": "彼女は仕事と家庭の間で葛藤している。",
-      "example_reading": "かのじょは しごとと かていの あいだで かっとうしている。",
-      "example_meaning": "그녀는 일과 가정 사이에서 갈등하고 있다."
+      "example": "コンサート中に観客が舞台に乱入した。",
+      "example_reading": "こんさーとちゅうにかんきゃくがぶたいにらんにゅうした。",
+      "example_meaning": "콘서트 중에 관객이 무대에 난입했다."
     },
     {
-      "word": "回想",
-      "reading": "かいそう",
-      "meaning": "회상",
-      "level": "N2",
-      "example": "監督は当時の試合を回想しながら語った。",
-      "example_reading": "かんとくは とうじの しあいを かいそうしながら かたった。",
-      "example_meaning": "감독은 당시의 경기를 회상하며 이야기했다."
+      "word": "強要",
+      "reading": "きょうよう",
+      "meaning": "강요",
+      "level": "N1",
+      "example": "上司に飲酒を強要されて困っている。",
+      "example_reading": "じょうしにいんしゅをきょうようされてこまっている。",
+      "example_meaning": "상사에게 음주를 강요당해서 곤란하다."
     },
     {
-      "word": "過激",
-      "reading": "かげき",
-      "meaning": "과격함",
-      "level": "N2",
-      "example": "彼の過激な発言がネットで話題になった。",
-      "example_reading": "かれの かげきな はつげんが ねっとで わだいに なった。",
-      "example_meaning": "그의 과격한 발언이 인터넷에서 화제가 되었다."
+      "word": "殺到",
+      "reading": "さっとう",
+      "meaning": "쇄도(몰림)",
+      "level": "N1",
+      "example": "その発言に対して批判が殺到した。",
+      "example_reading": "そのはつげんにたいしてひはんがさっとうした。",
+      "example_meaning": "그 발언에 대해 비판이 쇄도했다."
     },
     {
-      "word": "詰む",
-      "reading": "つむ",
-      "meaning": "(상황이) 막히다, 궁지에 몰리다",
+      "word": "容疑者",
+      "reading": "ようぎしゃ",
+      "meaning": "용의자",
       "level": "N2",
-      "example": "この状況ではもう詰んでいると言わざるを得ない。",
-      "example_reading": "この じょうきょうでは もう つんでいると いわざるを えない。",
-      "example_meaning": "이 상황에서는 이제 끝났다고 말할 수밖에 없다."
+      "example": "警察は容疑者を逮捕した。",
+      "example_reading": "けいさつはようぎしゃをたいほした。",
+      "example_meaning": "경찰은 용의자를 체포했다."
+    },
+    {
+      "word": "削除",
+      "reading": "さくじょ",
+      "meaning": "삭제",
+      "level": "N3",
+      "example": "問題のある投稿がすぐに削除された。",
+      "example_reading": "もんだいのあるとうこうがすぐにさくじょされた。",
+      "example_meaning": "문제 있는 게시물이 바로 삭제되었다."
+    },
+    {
+      "word": "違和感",
+      "reading": "いわかん",
+      "meaning": "위화감, 이질감",
+      "level": "N2",
+      "example": "彼の説明にどこか違和感を覚えた。",
+      "example_reading": "かれのせつめいにどこかいわかんをおぼえた。",
+      "example_meaning": "그의 설명에 어딘가 위화감을 느꼈다."
+    },
+    {
+      "word": "損失",
+      "reading": "そんしつ",
+      "meaning": "손실",
+      "level": "N2",
+      "example": "この事故で会社は大きな損失を被った。",
+      "example_reading": "このじこでかいしゃはおおきなそんしつをこうむった。",
+      "example_meaning": "이 사고로 회사는 큰 손실을 입었다."
     }
   ]
 }
