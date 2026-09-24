@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-24 09:31 KST",
+  "generated_at": "2026-09-24 09:50 KST",
   "date": "2026-09-24",
   "words": [
     {
-      "word": "身元不明",
-      "reading": "みもとふめい",
-      "meaning": "신원 불명",
+      "word": "幻",
+      "reading": "まぼろし",
+      "meaning": "환상, 꿈, 실체가 없는 것",
+      "level": "N2",
+      "example": "幻の名画がついに発見された。",
+      "example_reading": "まぼろしのめいががついにはっけんされた。",
+      "example_meaning": "환상의 명화가 마침내 발견되었다."
+    },
+    {
+      "word": "行方",
+      "reading": "ゆくえ",
+      "meaning": "행방, 소재",
+      "level": "N2",
+      "example": "事件のあと、容疑者の行方が分からなくなった。",
+      "example_reading": "じけんのあと、ようぎしゃのゆくえがわからなくなった。",
+      "example_meaning": "사건 후, 용의자의 행방을 알 수 없게 되었다."
+    },
+    {
+      "word": "暴行",
+      "reading": "ぼうこう",
+      "meaning": "폭행",
+      "level": "N2",
+      "example": "彼は暴行の疑いで逮捕された。",
+      "example_reading": "かれはぼうこうのうたがいでたいほされた。",
+      "example_meaning": "그는 폭행 혐의로 체포되었다."
+    },
+    {
+      "word": "永久追放",
+      "reading": "えいきゅうついほう",
+      "meaning": "영구 추방",
       "level": "N1",
-      "example": "海岸で身元不明の遺体が発見された。",
-      "example_reading": "かいがんで みもとふめいの いたいが はっけんされた。",
-      "example_meaning": "해안에서 신원 불명의 시신이 발견되었다."
+      "example": "不正行為が発覚し、彼は業界から永久追放された。",
+      "example_reading": "ふせいこういがはっかくし、かれはぎょうかいからえいきゅうついほうされた。",
+      "example_meaning": "부정행위가 발각되어, 그는 업계에서 영구 추방되었다."
+    },
+    {
+      "word": "刹那的",
+      "reading": "せつなてき",
+      "meaning": "찰나적인, 순간적인, 충동적인",
+      "level": "N1",
+      "example": "ストレスから刹那的な買い物をしてしまうことがある。",
+      "example_reading": "すとれすからせつなてきなかいものをしてしまうことがある。",
+      "example_meaning": "스트레스 때문에 순간적인 충동구매를 해버리는 경우가 있다."
+    },
+    {
+      "word": "浪費",
+      "reading": "ろうひ",
+      "meaning": "낭비",
+      "level": "N2",
+      "example": "無駄な浪費を減らすために家計簿をつけ始めた。",
+      "example_reading": "むだなろうひをへらすためにかけいぼをつけはじめた。",
+      "example_meaning": "불필요한 낭비를 줄이기 위해 가계부를 쓰기 시작했다."
+    },
+    {
+      "word": "賛否",
+      "reading": "さんぴ",
+      "meaning": "찬반, 찬성과 반대",
+      "level": "N2",
+      "example": "その政策には賛否が分かれている。",
+      "example_reading": "そのせいさくにはさんぴがわかれている。",
+      "example_meaning": "그 정책에는 찬반이 갈리고 있다."
     },
     {
       "word": "反響",
       "reading": "はんきょう",
       "meaning": "반향, 반응",
       "level": "N2",
-      "example": "その動画は大きな反響を呼んだ。",
-      "example_reading": "その どうがは おおきな はんきょうを よんだ。",
-      "example_meaning": "그 동영상은 큰 반향을 불러일으켰다."
-    },
-    {
-      "word": "民泊",
-      "reading": "みんぱく",
-      "meaning": "민박(에어비앤비 같은 개인 숙박업)",
-      "level": "N2",
-      "example": "住宅街での民泊が近隣住民とのトラブルを引き起こしている。",
-      "example_reading": "じゅうたくがいでの みんぱくが きんりん じゅうみんとの トラブルを ひきおこしている。",
-      "example_meaning": "주택가의 민박이 인근 주민과의 갈등을 일으키고 있다."
-    },
-    {
-      "word": "意気込み",
-      "reading": "いきごみ",
-      "meaning": "의욕, 각오",
-      "level": "N1",
-      "example": "監督は次の試合への意気込みを語った。",
-      "example_reading": "かんとくは つぎの しあいへの いきごみを かたった。",
-      "example_meaning": "감독은 다음 경기에 대한 각오를 밝혔다."
-    },
-    {
-      "word": "強要",
-      "reading": "きょうよう",
-      "meaning": "강요",
-      "level": "N1",
-      "example": "上司が部下に飲酒を強要するのは問題だ。",
-      "example_reading": "じょうしが ぶかに いんしゅを きょうようするのは もんだいだ。",
-      "example_meaning": "상사가 부하에게 음주를 강요하는 것은 문제다."
-    },
-    {
-      "word": "求人票",
-      "reading": "きゅうじんひょう",
-      "meaning": "구인표(구인 공고문)",
-      "level": "N2",
-      "example": "求人票には給料や勤務時間が詳しく書かれている。",
-      "example_reading": "きゅうじんひょうには きゅうりょうや きんむじかんが くわしく かかれている。",
-      "example_meaning": "구인 공고문에는 급여와 근무 시간이 자세히 적혀 있다."
-    },
-    {
-      "word": "容疑者",
-      "reading": "ようぎしゃ",
-      "meaning": "용의자",
-      "level": "N2",
-      "example": "警察は容疑者を逮捕したと発表した。",
-      "example_reading": "けいさつは ようぎしゃを たいほしたと はっぴょうした。",
-      "example_meaning": "경찰은 용의자를 체포했다고 발표했다."
-    },
-    {
-      "word": "違約金",
-      "reading": "いやくきん",
-      "meaning": "위약금",
-      "level": "N1",
-      "example": "契約を途中で解除すると違約金が発生する。",
-      "example_reading": "けいやくを とちゅうで かいじょすると いやくきんが はっせいする。",
-      "example_meaning": "계약을 중도에 해지하면 위약금이 발생한다."
+      "example": "そのニュースは大きな反響を呼んだ。",
+      "example_reading": "そのにゅーすはおおきなはんきょうをよんだ。",
+      "example_meaning": "그 뉴스는 큰 반향을 불러일으켰다."
     }
   ]
 }
