@@ -1,24 +1,69 @@
 {
-  "generated_at": "2026-09-26 09:22 KST",
+  "generated_at": "2026-09-26 09:38 KST",
   "date": "2026-09-26",
   "words": [
+    {
+      "word": "絶句",
+      "reading": "ぜっく",
+      "meaning": "말문이 막힘, 할 말을 잃음",
+      "level": "N1",
+      "example": "彼の突然の発言に、その場にいた全員が絶句した。",
+      "example_reading": "かれのとつぜんのはつげんに、そのばにいたぜんいんがぜっくした。",
+      "example_meaning": "그의 갑작스러운 발언에 그 자리에 있던 모든 사람이 말문이 막혔다."
+    },
+    {
+      "word": "辞意",
+      "reading": "じい",
+      "meaning": "사임할 뜻, 사의",
+      "level": "N1",
+      "example": "社長は経営陣に辞意を伝えたが、まだ正式には発表されていない。",
+      "example_reading": "しゃちょうはけいえいじんにじいをつたえたが、まだせいしきにははっぴょうされていない。",
+      "example_meaning": "사장은 경영진에게 사의를 전했지만 아직 공식적으로 발표되지 않았다."
+    },
+    {
+      "word": "慰留",
+      "reading": "いりゅう",
+      "meaning": "만류함 (사직 등을 말리며 붙잡음)",
+      "level": "N1",
+      "example": "退職を申し出た彼を上司が必死に慰留した。",
+      "example_reading": "たいしょくをもうしでたかれをじょうしがひっしにいりゅうした。",
+      "example_meaning": "퇴직을 신청한 그를 상사가 필사적으로 만류했다."
+    },
+    {
+      "word": "経緯",
+      "reading": "けいい",
+      "meaning": "경위, 자세한 과정",
+      "level": "N2",
+      "example": "事件が起きた経緯を詳しく説明してください。",
+      "example_reading": "じけんがおきたけいいをくわしくせつめいしてください。",
+      "example_meaning": "사건이 일어난 경위를 자세히 설명해 주세요."
+    },
+    {
+      "word": "激怒",
+      "reading": "げきど",
+      "meaning": "격노, 몹시 화를 냄",
+      "level": "N2",
+      "example": "彼は不誠実な対応に激怒し、すぐに帰ってしまった。",
+      "example_reading": "かれはふせいじつなたいおうにげきどし、すぐにかえってしまった。",
+      "example_meaning": "그는 불성실한 대응에 격노하여 바로 돌아가 버렸다."
+    },
+    {
+      "word": "目撃",
+      "reading": "もくげき",
+      "meaning": "목격",
+      "level": "N2",
+      "example": "事故の瞬間を目撃した人が警察に通報した。",
+      "example_reading": "じこのしゅんかんをもくげきしたひとがけいさつにつうほうした。",
+      "example_meaning": "사고 순간을 목격한 사람이 경찰에 신고했다."
+    },
     {
       "word": "格差",
       "reading": "かくさ",
       "meaning": "격차",
       "level": "N2",
-      "example": "都市と地方の経済格差が年々広がっている。",
-      "example_reading": "とし と ちほう の けいざいかくさ が ねんねん ひろがって いる。",
-      "example_meaning": "도시와 지방의 경제 격차가 해마다 벌어지고 있다."
-    },
-    {
-      "word": "交渉",
-      "reading": "こうしょう",
-      "meaning": "교섭, 협상",
-      "level": "N2",
-      "example": "彼は給料アップについて上司と直接交渉した。",
-      "example_reading": "かれ は きゅうりょうあっぷ に ついて じょうし と ちょくせつこうしょう した。",
-      "example_meaning": "그는 급여 인상에 대해 상사와 직접 교섭했다."
+      "example": "都市と地方の所得格差が社会問題になっている。",
+      "example_reading": "としとちほうのしょとくかくさがしゃかいもんだいになっている。",
+      "example_meaning": "도시와 지방의 소득 격차가 사회 문제가 되고 있다."
     },
     {
       "word": "模索",
@@ -26,53 +71,8 @@
       "meaning": "모색",
       "level": "N1",
       "example": "会社は新しい経営方針を模索している。",
-      "example_reading": "かいしゃ は あたらしい けいえいほうしん を もさく して いる。",
+      "example_reading": "かいしゃはあたらしいけいえいほうしんをもさくしている。",
       "example_meaning": "회사는 새로운 경영 방침을 모색하고 있다."
-    },
-    {
-      "word": "容疑者",
-      "reading": "ようぎしゃ",
-      "meaning": "용의자",
-      "level": "N2",
-      "example": "警察は事件の容疑者を逮捕した。",
-      "example_reading": "けいさつ は じけん の ようぎしゃ を たいほ した。",
-      "example_meaning": "경찰은 사건의 용의자를 체포했다."
-    },
-    {
-      "word": "目撃",
-      "reading": "もくげき",
-      "meaning": "목격",
-      "level": "N2",
-      "example": "多くの人がその交通事故を目撃した。",
-      "example_reading": "おおく の ひと が その こうつうじこ を もくげき した。",
-      "example_meaning": "많은 사람들이 그 교통사고를 목격했다."
-    },
-    {
-      "word": "騒然",
-      "reading": "そうぜん",
-      "meaning": "소란함, 술렁임",
-      "level": "N1",
-      "example": "突然の発表に会場は騒然となった。",
-      "example_reading": "とつぜん の はっぴょう に かいじょう は そうぜん と なった。",
-      "example_meaning": "갑작스러운 발표에 회장은 술렁였다."
-    },
-    {
-      "word": "提唱",
-      "reading": "ていしょう",
-      "meaning": "제창, 제안",
-      "level": "N1",
-      "example": "その学者は新しい理論を提唱した。",
-      "example_reading": "その がくしゃ は あたらしい りろん を ていしょう した。",
-      "example_meaning": "그 학자는 새로운 이론을 제창했다."
-    },
-    {
-      "word": "刺す",
-      "reading": "さす",
-      "meaning": "찌르다",
-      "level": "N3",
-      "example": "犯人はナイフで被害者を刺した。",
-      "example_reading": "はんにん は ないふ で ひがいしゃ を さした。",
-      "example_meaning": "범인은 칼로 피해자를 찔렀다."
     }
   ]
 }
