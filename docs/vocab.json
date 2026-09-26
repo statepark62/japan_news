@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-25 09:45 KST",
-  "date": "2026-09-25",
+  "generated_at": "2026-09-26 09:22 KST",
+  "date": "2026-09-26",
   "words": [
     {
-      "word": "契約期間",
-      "reading": "けいやくきかん",
-      "meaning": "계약 기간",
+      "word": "格差",
+      "reading": "かくさ",
+      "meaning": "격차",
       "level": "N2",
-      "example": "この会社との契約期間はあと半年残っている。",
-      "example_reading": "このかいしゃとのけいやくきかんはあとはんとしのこっている。",
-      "example_meaning": "이 회사와의 계약 기간은 아직 반년 남아 있다."
+      "example": "都市と地方の経済格差が年々広がっている。",
+      "example_reading": "とし と ちほう の けいざいかくさ が ねんねん ひろがって いる。",
+      "example_meaning": "도시와 지방의 경제 격차가 해마다 벌어지고 있다."
     },
     {
-      "word": "廃止",
-      "reading": "はいし",
-      "meaning": "폐지",
+      "word": "交渉",
+      "reading": "こうしょう",
+      "meaning": "교섭, 협상",
       "level": "N2",
-      "example": "赤字が続く路線は来年廃止される予定だ。",
-      "example_reading": "あかじがつづくろせんはらいねんはいしされるよていだ。",
-      "example_meaning": "적자가 계속되는 노선은 내년에 폐지될 예정이다."
+      "example": "彼は給料アップについて上司と直接交渉した。",
+      "example_reading": "かれ は きゅうりょうあっぷ に ついて じょうし と ちょくせつこうしょう した。",
+      "example_meaning": "그는 급여 인상에 대해 상사와 직접 교섭했다."
     },
     {
-      "word": "執行猶予",
-      "reading": "しっこうゆうよ",
-      "meaning": "집행유예",
+      "word": "模索",
+      "reading": "もさく",
+      "meaning": "모색",
       "level": "N1",
-      "example": "被告人には執行猶予付きの判決が言い渡された。",
-      "example_reading": "ひこくにんにはしっこうゆうよつきのはんけつがいいわたされた。",
-      "example_meaning": "피고인에게는 집행유예가 붙은 판결이 선고되었다."
+      "example": "会社は新しい経営方針を模索している。",
+      "example_reading": "かいしゃ は あたらしい けいえいほうしん を もさく して いる。",
+      "example_meaning": "회사는 새로운 경영 방침을 모색하고 있다."
     },
     {
-      "word": "憤り",
-      "reading": "いきどおり",
-      "meaning": "분노, 격분",
+      "word": "容疑者",
+      "reading": "ようぎしゃ",
+      "meaning": "용의자",
+      "level": "N2",
+      "example": "警察は事件の容疑者を逮捕した。",
+      "example_reading": "けいさつ は じけん の ようぎしゃ を たいほ した。",
+      "example_meaning": "경찰은 사건의 용의자를 체포했다."
+    },
+    {
+      "word": "目撃",
+      "reading": "もくげき",
+      "meaning": "목격",
+      "level": "N2",
+      "example": "多くの人がその交通事故を目撃した。",
+      "example_reading": "おおく の ひと が その こうつうじこ を もくげき した。",
+      "example_meaning": "많은 사람들이 그 교통사고를 목격했다."
+    },
+    {
+      "word": "騒然",
+      "reading": "そうぜん",
+      "meaning": "소란함, 술렁임",
       "level": "N1",
-      "example": "彼はその不公平な判決に憤りを感じた。",
-      "example_reading": "かれはそのふこうへいなはんけつにいきどおりをかんじた。",
-      "example_meaning": "그는 그 불공평한 판결에 분노를 느꼈다."
+      "example": "突然の発表に会場は騒然となった。",
+      "example_reading": "とつぜん の はっぴょう に かいじょう は そうぜん と なった。",
+      "example_meaning": "갑작스러운 발표에 회장은 술렁였다."
     },
     {
-      "word": "懸念",
-      "reading": "けねん",
-      "meaning": "우려, 걱정",
-      "level": "N2",
-      "example": "台風の影響で工事の遅れが懸念されている。",
-      "example_reading": "たいふうのえいきょうでこうじのおくれがけねんされている。",
-      "example_meaning": "태풍의 영향으로 공사 지연이 우려되고 있다."
+      "word": "提唱",
+      "reading": "ていしょう",
+      "meaning": "제창, 제안",
+      "level": "N1",
+      "example": "その学者は新しい理論を提唱した。",
+      "example_reading": "その がくしゃ は あたらしい りろん を ていしょう した。",
+      "example_meaning": "그 학자는 새로운 이론을 제창했다."
     },
     {
-      "word": "復帰",
-      "reading": "ふっき",
-      "meaning": "복귀",
-      "level": "N2",
-      "example": "彼は長い休養の後、芸能界に復帰した。",
-      "example_reading": "かれはながいきゅうようのあと、げいのうかいにふっきした。",
-      "example_meaning": "그는 오랜 휴식 후 연예계에 복귀했다."
-    },
-    {
-      "word": "更新",
-      "reading": "こうしん",
-      "meaning": "갱신, 경신",
+      "word": "刺す",
+      "reading": "さす",
+      "meaning": "찌르다",
       "level": "N3",
-      "example": "彼女は世界記録を更新した。",
-      "example_reading": "かのじょはせかいきろくをこうしんした。",
-      "example_meaning": "그녀는 세계 기록을 경신했다."
-    },
-    {
-      "word": "代替案",
-      "reading": "だいたいあん",
-      "meaning": "대안, 대체안",
-      "level": "N2",
-      "example": "サービス停止に備えて代替案を提示する必要がある。",
-      "example_reading": "サービスていしにそなえてだいたいあんをていじするひつようがある。",
-      "example_meaning": "서비스 중단에 대비해 대안을 제시할 필요가 있다."
+      "example": "犯人はナイフで被害者を刺した。",
+      "example_reading": "はんにん は ないふ で ひがいしゃ を さした。",
+      "example_meaning": "범인은 칼로 피해자를 찔렀다."
     }
   ]
 }
