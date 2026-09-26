@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-26 09:38 KST",
+  "generated_at": "2026-09-26 09:50 KST",
   "date": "2026-09-26",
   "words": [
     {
-      "word": "絶句",
-      "reading": "ぜっく",
-      "meaning": "말문이 막힘, 할 말을 잃음",
-      "level": "N1",
-      "example": "彼の突然の発言に、その場にいた全員が絶句した。",
-      "example_reading": "かれのとつぜんのはつげんに、そのばにいたぜんいんがぜっくした。",
-      "example_meaning": "그의 갑작스러운 발언에 그 자리에 있던 모든 사람이 말문이 막혔다."
-    },
-    {
-      "word": "辞意",
-      "reading": "じい",
-      "meaning": "사임할 뜻, 사의",
-      "level": "N1",
-      "example": "社長は経営陣に辞意を伝えたが、まだ正式には発表されていない。",
-      "example_reading": "しゃちょうはけいえいじんにじいをつたえたが、まだせいしきにははっぴょうされていない。",
-      "example_meaning": "사장은 경영진에게 사의를 전했지만 아직 공식적으로 발표되지 않았다."
+      "word": "逮捕",
+      "reading": "たいほ",
+      "meaning": "체포",
+      "level": "N2",
+      "example": "警察は窃盗の疑いで男を逮捕した。",
+      "example_reading": "けいさつはせっとうのうたがいでおとこをたいほした。",
+      "example_meaning": "경찰은 절도 혐의로 남성을 체포했다."
     },
     {
       "word": "慰留",
       "reading": "いりゅう",
-      "meaning": "만류함 (사직 등을 말리며 붙잡음)",
+      "meaning": "만류(사직 등을 말리며 붙잡음)",
       "level": "N1",
-      "example": "退職を申し出た彼を上司が必死に慰留した。",
-      "example_reading": "たいしょくをもうしでたかれをじょうしがひっしにいりゅうした。",
-      "example_meaning": "퇴직을 신청한 그를 상사가 필사적으로 만류했다."
+      "example": "彼は辞表を出したが、上司の慰留を受けて残ることにした。",
+      "example_reading": "かれはじひょうをだしたが、じょうしのいりゅうをうけてのこることにした。",
+      "example_meaning": "그는 사표를 냈지만 상사의 만류를 받아들여 남기로 했다."
     },
     {
-      "word": "経緯",
-      "reading": "けいい",
-      "meaning": "경위, 자세한 과정",
-      "level": "N2",
-      "example": "事件が起きた経緯を詳しく説明してください。",
-      "example_reading": "じけんがおきたけいいをくわしくせつめいしてください。",
-      "example_meaning": "사건이 일어난 경위를 자세히 설명해 주세요."
+      "word": "続投",
+      "reading": "ぞくとう",
+      "meaning": "(감독·투수 등이) 유임하여 계속함",
+      "level": "N1",
+      "example": "監督は批判を受けながらも来季の続投を決めた。",
+      "example_reading": "かんとくはひはんをうけながらもらいきのぞくとうをきめた。",
+      "example_meaning": "감독은 비판을 받으면서도 다음 시즌 유임을 결정했다."
+    },
+    {
+      "word": "絶句",
+      "reading": "ぜっく",
+      "meaning": "말문이 막힘",
+      "level": "N1",
+      "example": "衝撃的な事実を知り、彼女は絶句した。",
+      "example_reading": "しょうげきてきなじじつをしり、かのじょはぜっくした。",
+      "example_meaning": "충격적인 사실을 알고 그녀는 말문이 막혔다."
     },
     {
       "word": "激怒",
       "reading": "げきど",
-      "meaning": "격노, 몹시 화를 냄",
+      "meaning": "격노함",
       "level": "N2",
-      "example": "彼は不誠実な対応に激怒し、すぐに帰ってしまった。",
-      "example_reading": "かれはふせいじつなたいおうにげきどし、すぐにかえってしまった。",
-      "example_meaning": "그는 불성실한 대응에 격노하여 바로 돌아가 버렸다."
-    },
-    {
-      "word": "目撃",
-      "reading": "もくげき",
-      "meaning": "목격",
-      "level": "N2",
-      "example": "事故の瞬間を目撃した人が警察に通報した。",
-      "example_reading": "じこのしゅんかんをもくげきしたひとがけいさつにつうほうした。",
-      "example_meaning": "사고 순간을 목격한 사람이 경찰에 신고했다."
+      "example": "彼は約束を破られて激怒した。",
+      "example_reading": "かれはやくそくをやぶられてげきどした。",
+      "example_meaning": "그는 약속을 어긴 것에 격노했다."
     },
     {
       "word": "格差",
       "reading": "かくさ",
       "meaning": "격차",
       "level": "N2",
-      "example": "都市と地方の所得格差が社会問題になっている。",
-      "example_reading": "としとちほうのしょとくかくさがしゃかいもんだいになっている。",
-      "example_meaning": "도시와 지방의 소득 격차가 사회 문제가 되고 있다."
+      "example": "都市と地方の所得格差が広がっている。",
+      "example_reading": "としとちほうのしょとくかくさがひろがっている。",
+      "example_meaning": "도시와 지방의 소득 격차가 벌어지고 있다."
     },
     {
-      "word": "模索",
-      "reading": "もさく",
-      "meaning": "모색",
+      "word": "容疑者",
+      "reading": "ようぎしゃ",
+      "meaning": "용의자",
+      "level": "N2",
+      "example": "警察は容疑者を任意で聴取している。",
+      "example_reading": "けいさつはようぎしゃをにんいでちょうしゅしている。",
+      "example_meaning": "경찰은 용의자를 임의로 조사하고 있다."
+    },
+    {
+      "word": "騒然",
+      "reading": "そうぜん",
+      "meaning": "(놀라움 등으로) 소란스러움",
       "level": "N1",
-      "example": "会社は新しい経営方針を模索している。",
-      "example_reading": "かいしゃはあたらしいけいえいほうしんをもさくしている。",
-      "example_meaning": "회사는 새로운 경영 방침을 모색하고 있다."
+      "example": "突然の発表に会場は騒然となった。",
+      "example_reading": "とつぜんのはっぴょうにかいじょうはそうぜんとなった。",
+      "example_meaning": "갑작스러운 발표에 회장은 소란스러워졌다."
     }
   ]
 }
