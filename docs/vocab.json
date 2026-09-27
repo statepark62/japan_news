@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-27 09:39 KST",
+  "generated_at": "2026-09-27 09:50 KST",
   "date": "2026-09-27",
   "words": [
     {
-      "word": "国家資格",
-      "reading": "こっかしかく",
-      "meaning": "국가자격(국가에서 인정하는 자격증)",
+      "word": "推し活",
+      "reading": "おしかつ",
+      "meaning": "좋아하는 연예인/캐릭터 등을 응원하는 활동(오시카츠, 팬 활동)",
       "level": "N2",
-      "example": "看護師になるには国家資格が必要だ。",
-      "example_reading": "かんごしになるにはこっかしかくがひつようだ。",
-      "example_meaning": "간호사가 되려면 국가자격이 필요하다."
+      "example": "彼女は毎月給料の半分を推し活に使っている。",
+      "example_reading": "かのじょはまいつききゅうりょうのはんぶんをおしかつにつかっている。",
+      "example_meaning": "그녀는 매달 월급의 절반을 팬 활동에 쓰고 있다."
+    },
+    {
+      "word": "多幸感",
+      "reading": "たこうかん",
+      "meaning": "다행감, 큰 행복감",
+      "level": "N1",
+      "example": "コンサートが終わった後も多幸感に包まれていた。",
+      "example_reading": "こんさーとがおわったあともたこうかんにつつまれていた。",
+      "example_meaning": "콘서트가 끝난 후에도 행복감에 휩싸여 있었다."
     },
     {
       "word": "搭乗",
       "reading": "とうじょう",
       "meaning": "탑승",
       "level": "N2",
-      "example": "飛行機への搭乗は9時から始まります。",
-      "example_reading": "ひこうきへのとうじょうはくじからはじまります。",
-      "example_meaning": "비행기 탑승은 9시부터 시작됩니다."
+      "example": "台風の影響で搭乗が大幅に遅れた。",
+      "example_reading": "たいふうのえいきょうでとうじょうがおおはばにおくれた。",
+      "example_meaning": "태풍의 영향으로 탑승이 크게 지연되었다."
     },
     {
       "word": "代役",
       "reading": "だいやく",
-      "meaning": "대역, 대신 맡는 역할",
+      "meaning": "대역, 대신 역할을 맡는 사람",
       "level": "N1",
-      "example": "主役が病気になったので、代役が急遽決まった。",
-      "example_reading": "しゅやくがびょうきになったので、だいやくがきゅうきょきまった。",
-      "example_meaning": "주연이 아파서 대역이 급히 정해졌다."
+      "example": "主演俳優が急病になり、代役が急きょ決まった。",
+      "example_reading": "しゅえんはいゆうがきゅうびょうになり、だいやくがきゅうきょきまった。",
+      "example_meaning": "주연 배우가 갑자기 아파서 대역이 급히 결정되었다."
     },
     {
-      "word": "苦境",
-      "reading": "くきょう",
-      "meaning": "곤경, 어려운 상황",
+      "word": "内部崩壊",
+      "reading": "ないぶほうかい",
+      "meaning": "내부 붕괴",
       "level": "N1",
-      "example": "会社は資金不足で苦境に立たされている。",
-      "example_reading": "かいしゃはしきんぶそくでくきょうにたたされている。",
-      "example_meaning": "회사는 자금 부족으로 곤경에 처해 있다."
+      "example": "組織の内部崩壊が原因で会社は倒産した。",
+      "example_reading": "そしきのないぶほうかいがげんいんでかいしゃはとうさんした。",
+      "example_meaning": "조직의 내부 붕괴가 원인이 되어 회사는 도산했다."
     },
     {
       "word": "常任理事国",
       "reading": "じょうにんりじこく",
-      "meaning": "상임이사국",
+      "meaning": "상임이사국(유엔 안보리 상임이사국)",
       "level": "N1",
       "example": "日本は国連の常任理事国入りを目指している。",
       "example_reading": "にほんはこくれんのじょうにんりじこくいりをめざしている。",
-      "example_meaning": "일본은 유엔 상임이사국 가입을 목표로 하고 있다."
+      "example_meaning": "일본은 유엔 상임이사국 진입을 목표로 하고 있다."
     },
     {
-      "word": "接近",
-      "reading": "せっきん",
-      "meaning": "접근",
+      "word": "活発化",
+      "reading": "かっぱつか",
+      "meaning": "활발화, 활동이 활발해짐",
       "level": "N2",
-      "example": "台風が急速に接近しているので注意が必要だ。",
-      "example_reading": "たいふうがきゅうそくにせっきんしているのでちゅういがひつようだ。",
-      "example_meaning": "태풍이 급속히 접근하고 있어 주의가 필요하다."
+      "example": "台風の接近で前線の活発化が予想される。",
+      "example_reading": "たいふうのせっきんでぜんせんのかっぱつかがよそうされる。",
+      "example_meaning": "태풍의 접근으로 전선의 활발화가 예상된다."
     },
     {
       "word": "敗北",
       "reading": "はいぼく",
       "meaning": "패배",
       "level": "N2",
-      "example": "チームは決勝戦で敗北を喫した。",
-      "example_reading": "チームはけっしょうせんではいぼくをきっした。",
-      "example_meaning": "팀은 결승전에서 패배를 당했다."
-    },
-    {
-      "word": "違和感",
-      "reading": "いわかん",
-      "meaning": "위화감, 어색한 느낌",
-      "level": "N2",
-      "example": "彼の説明にはどこか違和感を覚えた。",
-      "example_reading": "かれのせつめいにはどこかいわかんをおぼえた。",
-      "example_meaning": "그의 설명에는 어딘가 위화감을 느꼈다."
+      "example": "チームは接戦の末、敗北を喫した。",
+      "example_reading": "ちーむはせっせんのすえ、はいぼくをきっした。",
+      "example_meaning": "팀은 접전 끝에 패배를 당했다."
     }
   ]
 }
