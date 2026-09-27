@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-27 09:15 KST",
+  "generated_at": "2026-09-27 09:39 KST",
   "date": "2026-09-27",
   "words": [
+    {
+      "word": "国家資格",
+      "reading": "こっかしかく",
+      "meaning": "국가자격(국가에서 인정하는 자격증)",
+      "level": "N2",
+      "example": "看護師になるには国家資格が必要だ。",
+      "example_reading": "かんごしになるにはこっかしかくがひつようだ。",
+      "example_meaning": "간호사가 되려면 국가자격이 필요하다."
+    },
+    {
+      "word": "搭乗",
+      "reading": "とうじょう",
+      "meaning": "탑승",
+      "level": "N2",
+      "example": "飛行機への搭乗は9時から始まります。",
+      "example_reading": "ひこうきへのとうじょうはくじからはじまります。",
+      "example_meaning": "비행기 탑승은 9시부터 시작됩니다."
+    },
+    {
+      "word": "代役",
+      "reading": "だいやく",
+      "meaning": "대역, 대신 맡는 역할",
+      "level": "N1",
+      "example": "主役が病気になったので、代役が急遽決まった。",
+      "example_reading": "しゅやくがびょうきになったので、だいやくがきゅうきょきまった。",
+      "example_meaning": "주연이 아파서 대역이 급히 정해졌다."
+    },
     {
       "word": "苦境",
       "reading": "くきょう",
       "meaning": "곤경, 어려운 상황",
       "level": "N1",
-      "example": "会社は経営難で苦境に立たされている。",
-      "example_reading": "かいしゃはけいえいなんでくきょうにたたされている。",
-      "example_meaning": "회사는 경영난으로 곤경에 처해 있다."
+      "example": "会社は資金不足で苦境に立たされている。",
+      "example_reading": "かいしゃはしきんぶそくでくきょうにたたされている。",
+      "example_meaning": "회사는 자금 부족으로 곤경에 처해 있다."
     },
     {
-      "word": "違和感",
-      "reading": "いわかん",
-      "meaning": "위화감, 어색한 느낌",
+      "word": "常任理事国",
+      "reading": "じょうにんりじこく",
+      "meaning": "상임이사국",
+      "level": "N1",
+      "example": "日本は国連の常任理事国入りを目指している。",
+      "example_reading": "にほんはこくれんのじょうにんりじこくいりをめざしている。",
+      "example_meaning": "일본은 유엔 상임이사국 가입을 목표로 하고 있다."
+    },
+    {
+      "word": "接近",
+      "reading": "せっきん",
+      "meaning": "접근",
       "level": "N2",
-      "example": "彼の説明には少し違和感を覚えた。",
-      "example_reading": "かれのせつめいにはすこしいわかんをおぼえた。",
-      "example_meaning": "그의 설명에는 조금 위화감을 느꼈다."
-    },
-    {
-      "word": "続出",
-      "reading": "ぞくしゅつ",
-      "meaning": "속출, 잇달아 나옴",
-      "level": "N1",
-      "example": "その発言に対して批判の声が続出した。",
-      "example_reading": "そのはつげんにたいしてひはんのこえがぞくしゅつした。",
-      "example_meaning": "그 발언에 대해 비판의 목소리가 속출했다."
-    },
-    {
-      "word": "注意喚起",
-      "reading": "ちゅういかんき",
-      "meaning": "주의 환기, 경각심을 촉구함",
-      "level": "N1",
-      "example": "市は台風による被害への注意喚起を行った。",
-      "example_reading": "しはたいふうによるひがいへのちゅういかんきをおこなった。",
-      "example_meaning": "시는 태풍으로 인한 피해에 대해 주의를 촉구했다."
-    },
-    {
-      "word": "法的措置",
-      "reading": "ほうてきそち",
-      "meaning": "법적 조치",
-      "level": "N1",
-      "example": "悪質な行為には法的措置を検討する方針だ。",
-      "example_reading": "あくしつなこういにはほうてきそちをけんとうするほうしんだ。",
-      "example_meaning": "악질적인 행위에는 법적 조치를 검토할 방침이다."
-    },
-    {
-      "word": "容疑者",
-      "reading": "ようぎしゃ",
-      "meaning": "용의자",
-      "level": "N2",
-      "example": "警察はその容疑者を逮捕した。",
-      "example_reading": "けいさつはそのようぎしゃをたいほした。",
-      "example_meaning": "경찰은 그 용의자를 체포했다."
+      "example": "台風が急速に接近しているので注意が必要だ。",
+      "example_reading": "たいふうがきゅうそくにせっきんしているのでちゅういがひつようだ。",
+      "example_meaning": "태풍이 급속히 접근하고 있어 주의가 필요하다."
     },
     {
       "word": "敗北",
       "reading": "はいぼく",
       "meaning": "패배",
       "level": "N2",
-      "example": "チームは決勝戦で悔しい敗北を喫した。",
-      "example_reading": "チームはけっしょうせんでくやしいはいぼくをきっした。",
-      "example_meaning": "팀은 결승전에서 분한 패배를 당했다."
+      "example": "チームは決勝戦で敗北を喫した。",
+      "example_reading": "チームはけっしょうせんではいぼくをきっした。",
+      "example_meaning": "팀은 결승전에서 패배를 당했다."
     },
     {
-      "word": "更新",
-      "reading": "こうしん",
-      "meaning": "갱신, 업데이트",
-      "level": "N3",
-      "example": "彼のSNSは半年間更新されていない。",
-      "example_reading": "かれのエスエヌエスははんとしかんこうしんされていない。",
-      "example_meaning": "그의 SNS는 반년 동안 업데이트되지 않았다."
+      "word": "違和感",
+      "reading": "いわかん",
+      "meaning": "위화감, 어색한 느낌",
+      "level": "N2",
+      "example": "彼の説明にはどこか違和感を覚えた。",
+      "example_reading": "かれのせつめいにはどこかいわかんをおぼえた。",
+      "example_meaning": "그의 설명에는 어딘가 위화감을 느꼈다."
     }
   ]
 }
