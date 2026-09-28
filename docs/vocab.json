@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-28 09:49 KST",
+  "generated_at": "2026-09-28 10:09 KST",
   "date": "2026-09-28",
   "words": [
     {
-      "word": "批判",
-      "reading": "ひはん",
-      "meaning": "비판",
-      "level": "N2",
-      "example": "彼の発言は多くの人から批判を受けた。",
-      "example_reading": "かれのはつげんはおおくのひとからひはんをうけた。",
-      "example_meaning": "그의 발언은 많은 사람들에게 비판을 받았다."
-    },
-    {
-      "word": "再開",
-      "reading": "さいかい",
-      "meaning": "재개",
-      "level": "N2",
-      "example": "工事が中断していたが、来週から再開する予定だ。",
-      "example_reading": "こうじがちゅうだんしていたが、らいしゅうからさいかいするよていだ。",
-      "example_meaning": "공사가 중단되어 있었지만 다음 주부터 재개할 예정이다."
-    },
-    {
-      "word": "不倫",
-      "reading": "ふりん",
-      "meaning": "불륜",
+      "word": "殺害",
+      "reading": "さつがい",
+      "meaning": "살해",
       "level": "N1",
-      "example": "彼女は夫の不倫が発覚してショックを受けた。",
-      "example_reading": "かのじょはおっとのふりんがはっかくしてしょっくをうけた。",
-      "example_meaning": "그녀는 남편의 불륜이 발각되어 충격을 받았다."
-    },
-    {
-      "word": "吐露",
-      "reading": "とろ",
-      "meaning": "토로",
-      "level": "N1",
-      "example": "彼は長年抱えていた悩みを友人に吐露した。",
-      "example_reading": "かれはながねんかかえていたなやみをゆうじんにとろした。",
-      "example_meaning": "그는 오랫동안 품고 있던 고민을 친구에게 토로했다."
-    },
-    {
-      "word": "巧み",
-      "reading": "たくみ",
-      "meaning": "능숙함, 교묘함",
-      "level": "N1",
-      "example": "彼女は巧みな話術で観客を引き付けた。",
-      "example_reading": "かのじょはたくみなわじゅつでかんきゃくをひきつけた。",
-      "example_meaning": "그녀는 능숙한 화술로 관객을 사로잡았다."
-    },
-    {
-      "word": "魅了",
-      "reading": "みりょう",
-      "meaning": "매료",
-      "level": "N1",
-      "example": "その歌手の歌声は多くのファンを魅了した。",
-      "example_reading": "そのかしゅのうたごえはおおくのふぁんをみりょうした。",
-      "example_meaning": "그 가수의 노래 소리는 많은 팬을 매료시켰다."
-    },
-    {
-      "word": "結託",
-      "reading": "けったく",
-      "meaning": "결탁",
-      "level": "N1",
-      "example": "数人の従業員が結託して不正を行った。",
-      "example_reading": "すうにんのじゅうぎょういんがけったくしてふせいをおこなった。",
-      "example_meaning": "몇 명의 종업원이 결탁하여 부정을 저질렀다."
+      "example": "彼はナイフで隣人を殺害した容疑で逮捕された。",
+      "example_reading": "かれはナイフでりんじんをさつがいしたようぎでたいほされた。",
+      "example_meaning": "그는 칼로 이웃을 살해한 혐의로 체포되었다."
     },
     {
       "word": "逮捕",
       "reading": "たいほ",
       "meaning": "체포",
       "level": "N2",
-      "example": "容疑者は昨夜、警察に逮捕された。",
-      "example_reading": "ようぎしゃはさくや、けいさつにたいほされた。",
-      "example_meaning": "용의자는 어젯밤 경찰에 체포되었다."
+      "example": "警察は容疑者を殺人の疑いで逮捕した。",
+      "example_reading": "けいさつはようぎしゃをさつじんのうたがいでたいほした。",
+      "example_meaning": "경찰은 용의자를 살인 혐의로 체포했다."
+    },
+    {
+      "word": "躊躇",
+      "reading": "ちゅうちょ",
+      "meaning": "주저, 망설임",
+      "level": "N1",
+      "example": "彼女は返事をするのを躊躇した。",
+      "example_reading": "かのじょはへんじをするのをちゅうちょした。",
+      "example_meaning": "그녀는 대답하는 것을 주저했다."
+    },
+    {
+      "word": "全盛期",
+      "reading": "ぜんせいき",
+      "meaning": "전성기",
+      "level": "N1",
+      "example": "あの選手は全盛期には世界記録を何度も更新した。",
+      "example_reading": "あのせんしゅはぜんせいきにはせかいきろくをなんどもこうしんした。",
+      "example_meaning": "그 선수는 전성기에는 세계 기록을 여러 번 경신했다."
+    },
+    {
+      "word": "衝撃",
+      "reading": "しょうげき",
+      "meaning": "충격",
+      "level": "N2",
+      "example": "そのニュースは多くの人に衝撃を与えた。",
+      "example_reading": "そのニュースはおおくのひとにしょうげきをあたえた。",
+      "example_meaning": "그 뉴스는 많은 사람들에게 충격을 주었다."
+    },
+    {
+      "word": "批判",
+      "reading": "ひはん",
+      "meaning": "비판",
+      "level": "N2",
+      "example": "彼の発言はネット上で激しい批判を浴びた。",
+      "example_reading": "かれのはつげんはネットじょうではげしいひはんをあびた。",
+      "example_meaning": "그의 발언은 인터넷에서 격렬한 비판을 받았다."
+    },
+    {
+      "word": "不倫",
+      "reading": "ふりん",
+      "meaning": "불륜",
+      "level": "N1",
+      "example": "彼の不倫が発覚し、家庭は崩壊した。",
+      "example_reading": "かれのふりんがはっかくし、かていはほうかいした。",
+      "example_meaning": "그의 불륜이 발각되어 가정이 붕괴되었다."
+    },
+    {
+      "word": "演じる",
+      "reading": "えんじる",
+      "meaning": "연기하다",
+      "level": "N2",
+      "example": "彼はドラマで冷酷な父親を演じている。",
+      "example_reading": "かれはドラマでれいこくなちちおやをえんじている。",
+      "example_meaning": "그는 드라마에서 냉혹한 아버지를 연기하고 있다."
     }
   ]
 }
