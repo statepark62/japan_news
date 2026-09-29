@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-29 10:29 KST",
+  "generated_at": "2026-09-29 11:00 KST",
   "date": "2026-09-29",
   "words": [
     {
-      "word": "出没",
-      "reading": "しゅつぼつ",
-      "meaning": "출몰",
+      "word": "挑発",
+      "reading": "ちょうはつ",
+      "meaning": "도발",
+      "level": "N2",
+      "example": "彼は相手を挑発するような態度を取った。",
+      "example_reading": "かれはあいてをちょうはつするようなたいどをとった。",
+      "example_meaning": "그는 상대를 도발하는 듯한 태도를 취했다."
+    },
+    {
+      "word": "期間限定",
+      "reading": "きかんげんてい",
+      "meaning": "기간 한정",
+      "level": "N3",
+      "example": "このケーキは期間限定で販売されている。",
+      "example_reading": "このけーきはきかんげんていではんばいされている。",
+      "example_meaning": "이 케이크는 기간 한정으로 판매되고 있다."
+    },
+    {
+      "word": "検証",
+      "reading": "けんしょう",
+      "meaning": "검증",
+      "level": "N2",
+      "example": "この理論が正しいかどうか検証する必要がある。",
+      "example_reading": "このりろんがただしいかどうかけんしょうするひつようがある。",
+      "example_meaning": "이 이론이 맞는지 검증할 필요가 있다."
+    },
+    {
+      "word": "告白",
+      "reading": "こくはく",
+      "meaning": "고백",
+      "level": "N3",
+      "example": "彼女に自分の気持ちを告白した。",
+      "example_reading": "かのじょにじぶんのきもちをこくはくした。",
+      "example_meaning": "그녀에게 자신의 마음을 고백했다."
+    },
+    {
+      "word": "公表",
+      "reading": "こうひょう",
+      "meaning": "공표, 공개 발표",
+      "level": "N2",
+      "example": "会社は新しい方針を公表した。",
+      "example_reading": "かいしゃはあたらしいほうしんをこうひょうした。",
+      "example_meaning": "회사는 새로운 방침을 공표했다."
+    },
+    {
+      "word": "空回り",
+      "reading": "からまわり",
+      "meaning": "헛돎, 헛수고 (노력이 결실을 맺지 못함)",
       "level": "N1",
-      "example": "最近、この地域にクマが出没しているという情報が相次いでいる。",
-      "example_reading": "さいきん、このちいきにくまがしゅつぼつしているというじょうほうがあいついでいる。",
-      "example_meaning": "최근 이 지역에 곰이 출몰한다는 정보가 잇따르고 있다."
+      "example": "彼の努力は空回りに終わってしまった。",
+      "example_reading": "かれのどりょくはからまわりにおわってしまった。",
+      "example_meaning": "그의 노력은 헛수고로 끝나 버렸다."
+    },
+    {
+      "word": "支え合う",
+      "reading": "ささえあう",
+      "meaning": "서로 돕다, 서로 의지하다",
+      "level": "N2",
+      "example": "困難な時こそ家族で支え合うことが大切だ。",
+      "example_reading": "こんなんなときこそかぞくでささえあうことがたいせつだ。",
+      "example_meaning": "어려운 때일수록 가족끼리 서로 돕는 것이 중요하다."
     },
     {
       "word": "実態",
       "reading": "じったい",
-      "meaning": "실태",
+      "meaning": "실태, 실제 상황",
       "level": "N2",
-      "example": "調査の結果、業界の厳しい実態が明らかになった。",
-      "example_reading": "ちょうさのけっか、ぎょうかいのきびしいじったいがあきらかになった。",
-      "example_meaning": "조사 결과, 업계의 냉혹한 실태가 밝혀졌다."
-    },
-    {
-      "word": "盗撮",
-      "reading": "とうさつ",
-      "meaning": "몰래카메라 촬영(도촬)",
-      "level": "N1",
-      "example": "彼は電車内で女性を盗撮した疑いで逮捕された。",
-      "example_reading": "かれはでんしゃないでじょせいをとうさつしたうたがいでたいほされた。",
-      "example_meaning": "그는 전철 안에서 여성을 몰래 촬영한 혐의로 체포되었다."
-    },
-    {
-      "word": "法廷",
-      "reading": "ほうてい",
-      "meaning": "법정",
-      "level": "N1",
-      "example": "被告人は法廷で自らの無実を主張した。",
-      "example_reading": "ひこくにんはほうていでみずからのむじつをしゅちょうした。",
-      "example_meaning": "피고인은 법정에서 자신의 무죄를 주장했다."
-    },
-    {
-      "word": "動機",
-      "reading": "どうき",
-      "meaning": "동기",
-      "level": "N2",
-      "example": "警察は事件の動機について慎重に捜査を進めている。",
-      "example_reading": "けいさつはじけんのどうきについてしんちょうにそうさをすすめている。",
-      "example_meaning": "경찰은 사건의 동기에 대해 신중히 수사를 진행하고 있다."
-    },
-    {
-      "word": "無許可",
-      "reading": "むきょか",
-      "meaning": "무허가",
-      "level": "N2",
-      "example": "彼は無許可で危険な動物を飼育していた。",
-      "example_reading": "かれはむきょかできけんなどうぶつをしいくしていた。",
-      "example_meaning": "그는 무허가로 위험한 동물을 사육하고 있었다."
-    },
-    {
-      "word": "供述",
-      "reading": "きょうじゅつ",
-      "meaning": "진술",
-      "level": "N1",
-      "example": "容疑者は取り調べで犯行の詳細を供述した。",
-      "example_reading": "ようぎしゃはとりしらべではんこうのしょうさいをきょうじゅつした。",
-      "example_meaning": "용의자는 조사에서 범행의 상세 내용을 진술했다."
-    },
-    {
-      "word": "暴行",
-      "reading": "ぼうこう",
-      "meaning": "폭행",
-      "level": "N1",
-      "example": "男は同僚に暴行を加えたとして書類送検された。",
-      "example_reading": "おとこはどうりょうにぼうこうをくわえたとしてしょるいそうけんされた。",
-      "example_meaning": "남성은 동료에게 폭행을 가한 혐의로 서류송치되었다."
+      "example": "調査で業界の実態が明らかになった。",
+      "example_reading": "ちょうさでぎょうかいのじったいがあきらかになった。",
+      "example_meaning": "조사를 통해 업계의 실태가 밝혀졌다."
     }
   ]
 }
