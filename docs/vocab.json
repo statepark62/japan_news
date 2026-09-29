@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-29 11:00 KST",
+  "generated_at": "2026-09-29 11:15 KST",
   "date": "2026-09-29",
   "words": [
+    {
+      "word": "判決",
+      "reading": "はんけつ",
+      "meaning": "판결",
+      "level": "N2",
+      "example": "裁判所は被告に対して有罪の判決を下した。",
+      "example_reading": "さいばんしょはひこくにたいしてゆうざいのはんけつをくだした。",
+      "example_meaning": "법원은 피고에게 유죄 판결을 내렸다."
+    },
+    {
+      "word": "執行猶予",
+      "reading": "しっこうゆうよ",
+      "meaning": "집행유예",
+      "level": "N1",
+      "example": "初犯だったため、執行猶予付きの判決が出た。",
+      "example_reading": "しょはんだったため、しっこうゆうよつきのはんけつがでた。",
+      "example_meaning": "초범이었기 때문에 집행유예가 붙은 판결이 나왔다."
+    },
+    {
+      "word": "逮捕",
+      "reading": "たいほ",
+      "meaning": "체포",
+      "level": "N2",
+      "example": "警察は容疑者を無許可飼育の疑いで逮捕した。",
+      "example_reading": "けいさつはようぎしゃをむきょかしいくのうたがいでたいほした。",
+      "example_meaning": "경찰은 용의자를 무허가 사육 혐의로 체포했다."
+    },
+    {
+      "word": "相次ぐ",
+      "reading": "あいつぐ",
+      "meaning": "잇따르다",
+      "level": "N2",
+      "example": "今年は北海道で交通事故が相次いでいる。",
+      "example_reading": "ことしはほっかいどうでこうつうじこがあいついでいる。",
+      "example_meaning": "올해는 홋카이도에서 교통사고가 잇따르고 있다."
+    },
+    {
+      "word": "衝突",
+      "reading": "しょうとつ",
+      "meaning": "충돌",
+      "level": "N2",
+      "example": "交差点で二台の車が衝突する事故が発生した。",
+      "example_reading": "こうさてんでにだいのくるまがしょうとつするじこがはっせいした。",
+      "example_meaning": "교차로에서 차 두 대가 충돌하는 사고가 발생했다."
+    },
     {
       "word": "挑発",
       "reading": "ちょうはつ",
       "meaning": "도발",
-      "level": "N2",
-      "example": "彼は相手を挑発するような態度を取った。",
-      "example_reading": "かれはあいてをちょうはつするようなたいどをとった。",
-      "example_meaning": "그는 상대를 도발하는 듯한 태도를 취했다."
-    },
-    {
-      "word": "期間限定",
-      "reading": "きかんげんてい",
-      "meaning": "기간 한정",
-      "level": "N3",
-      "example": "このケーキは期間限定で販売されている。",
-      "example_reading": "このけーきはきかんげんていではんばいされている。",
-      "example_meaning": "이 케이크는 기간 한정으로 판매되고 있다."
+      "level": "N1",
+      "example": "彼の挑発的な態度が相手を怒らせた。",
+      "example_reading": "かれのちょうはつてきなたいどがあいてをおこらせた。",
+      "example_meaning": "그의 도발적인 태도가 상대를 화나게 했다."
     },
     {
       "word": "検証",
       "reading": "けんしょう",
       "meaning": "검증",
       "level": "N2",
-      "example": "この理論が正しいかどうか検証する必要がある。",
-      "example_reading": "このりろんがただしいかどうかけんしょうするひつようがある。",
-      "example_meaning": "이 이론이 맞는지 검증할 필요가 있다."
+      "example": "医師は自分の体で薬の効果を検証した。",
+      "example_reading": "いしはじぶんのからだでくすりのこうかをけんしょうした。",
+      "example_meaning": "의사는 자신의 몸으로 약의 효과를 검증했다."
     },
     {
       "word": "告白",
       "reading": "こくはく",
       "meaning": "고백",
       "level": "N3",
-      "example": "彼女に自分の気持ちを告白した。",
-      "example_reading": "かのじょにじぶんのきもちをこくはくした。",
-      "example_meaning": "그녀에게 자신의 마음을 고백했다."
-    },
-    {
-      "word": "公表",
-      "reading": "こうひょう",
-      "meaning": "공표, 공개 발표",
-      "level": "N2",
-      "example": "会社は新しい方針を公表した。",
-      "example_reading": "かいしゃはあたらしいほうしんをこうひょうした。",
-      "example_meaning": "회사는 새로운 방침을 공표했다."
-    },
-    {
-      "word": "空回り",
-      "reading": "からまわり",
-      "meaning": "헛돎, 헛수고 (노력이 결실을 맺지 못함)",
-      "level": "N1",
-      "example": "彼の努力は空回りに終わってしまった。",
-      "example_reading": "かれのどりょくはからまわりにおわってしまった。",
-      "example_meaning": "그의 노력은 헛수고로 끝나 버렸다."
-    },
-    {
-      "word": "支え合う",
-      "reading": "ささえあう",
-      "meaning": "서로 돕다, 서로 의지하다",
-      "level": "N2",
-      "example": "困難な時こそ家族で支え合うことが大切だ。",
-      "example_reading": "こんなんなときこそかぞくでささえあうことがたいせつだ。",
-      "example_meaning": "어려운 때일수록 가족끼리 서로 돕는 것이 중요하다."
-    },
-    {
-      "word": "実態",
-      "reading": "じったい",
-      "meaning": "실태, 실제 상황",
-      "level": "N2",
-      "example": "調査で業界の実態が明らかになった。",
-      "example_reading": "ちょうさでぎょうかいのじったいがあきらかになった。",
-      "example_meaning": "조사를 통해 업계의 실태가 밝혀졌다."
+      "example": "彼は家族に自分の秘密を告白した。",
+      "example_reading": "かれはかぞくにじぶんのひみつをこくはくした。",
+      "example_meaning": "그는 가족에게 자신의 비밀을 고백했다."
     }
   ]
 }
