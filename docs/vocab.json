@@ -1,42 +1,61 @@
 {
-  "generated_at": "2026-10-03 10:13 KST",
+  "generated_at": "2026-10-03 10:23 KST",
   "date": "2026-10-03",
   "words": [
     {
-      "word": "集結",
-      "reading": "しゅうけつ",
-      "meaning": "집결, 한 곳에 모임",
-      "level": "N2",
-      "example": "全国から集まったボランティアが会場に集結した。",
-      "example_reading": "ぜんこくからあつまったボランティアがかいじょうにしゅうけつした。",
-      "example_meaning": "전국에서 모인 자원봉사자들이 회장에 집결했다."
+      "word": "孤島",
+      "reading": "ことう",
+      "meaning": "고도, 외딴 섬",
+      "level": "N1",
+      "example": "その村は陸の孤島と呼ばれるほど交通が不便だ。",
+      "example_reading": "そのむらはりくのことうとよばれるほどこうつうがふべんだ。",
+      "example_meaning": "그 마을은 육지의 고도라고 불릴 정도로 교통이 불편하다.",
+      "example_meaning_note": ""
+    },
+    {
+      "word": "極めて",
+      "reading": "きわめて",
+      "meaning": "극히, 매우",
+      "level": "N1",
+      "example": "この作業は極めて危険なので注意が必要だ。",
+      "example_reading": "このさぎょうはきわめてきけんなのでちゅういがひつようだ。",
+      "example_meaning": "이 작업은 극히 위험하므로 주의가 필요하다."
     },
     {
       "word": "懸念",
       "reading": "けねん",
       "meaning": "우려, 걱정",
       "level": "N2",
-      "example": "専門家たちは経済の先行きに懸念を示した。",
-      "example_reading": "せんもんかたちはけいざいのさきゆきにけねんをしめした。",
-      "example_meaning": "전문가들은 경제 전망에 우려를 나타냈다."
+      "example": "専門家たちは景気の悪化に懸念を示した。",
+      "example_reading": "せんもんかたちはけいきのあっかにけねんをしめした。",
+      "example_meaning": "전문가들은 경기 악화에 우려를 나타냈다."
     },
     {
-      "word": "不正",
-      "reading": "ふせい",
-      "meaning": "부정, 부정행위",
+      "word": "不正利用",
+      "reading": "ふせいりよう",
+      "meaning": "부정 이용, 부정 사용",
       "level": "N2",
-      "example": "会社のシステムが不正にアクセスされ、情報が流出した。",
-      "example_reading": "かいしゃのシステムがふせいにアクセスされ、じょうほうがりゅうしゅつした。",
-      "example_meaning": "회사의 시스템이 부정하게 접근당해 정보가 유출되었다."
+      "example": "クレジットカードが不正利用される被害が増えている。",
+      "example_reading": "クレジットカードがふせいりようされるひがいがふえている。",
+      "example_meaning": "신용카드가 부정 이용되는 피해가 늘고 있다."
     },
     {
-      "word": "明かす",
-      "reading": "あかす",
-      "meaning": "밝히다, 털어놓다",
-      "level": "N2",
-      "example": "彼は長年隠していた秘密をついに明かした。",
-      "example_reading": "かれはながねんかくしていたひみつをついにあかした。",
-      "example_meaning": "그는 오랫동안 숨겨온 비밀을 마침내 밝혔다."
+      "word": "出馬",
+      "reading": "しゅつば",
+      "meaning": "출마",
+      "level": "N1",
+      "example": "彼は次の選挙に出馬することを決意した。",
+      "example_reading": "かれはつぎのせんきょにしゅつばすることをけついした。",
+      "example_meaning": "그는 다음 선거에 출마하기로 결심했다."
+    },
+    {
+      "word": "壮絶",
+      "reading": "そうぜつ",
+      "meaning": "처절함, 처절한",
+      "level": "N1",
+      "example": "彼女は壮絶な過去を乗り越えて成功を収めた。",
+      "example_reading": "かのじょはそうぜつなかこをのりこえてせいこうをおさめた。",
+      "example_meaning": "그녀는 처절한 과거를 극복하고 성공을 거두었다."
     },
     {
       "word": "流出",
@@ -52,27 +71,9 @@
       "reading": "ふっき",
       "meaning": "복귀",
       "level": "N2",
-      "example": "彼女は怪我から回復し、半年ぶりに舞台に復帰した。",
-      "example_reading": "かのじょはけがからかいふくし、はんとしぶりにぶたいにふっきした。",
-      "example_meaning": "그녀는 부상에서 회복하여 반년 만에 무대에 복귀했다."
-    },
-    {
-      "word": "連行",
-      "reading": "れんこう",
-      "meaning": "연행, 강제로 데려감",
-      "level": "N1",
-      "example": "容疑者は警察署に連行された。",
-      "example_reading": "ようぎしゃはけいさつしょにれんこうされた。",
-      "example_meaning": "용의자는 경찰서로 연행되었다."
-    },
-    {
-      "word": "壮絶",
-      "reading": "そうぜつ",
-      "meaning": "장렬함, 처절함",
-      "level": "N1",
-      "example": "彼の壮絶な人生経験は多くの人に感動を与えた。",
-      "example_reading": "かれのそうぜつなじんせいけいけんはおおくのひとにかんどうをあたえた。",
-      "example_meaning": "그의 처절한 인생 경험은 많은 사람들에게 감동을 주었다."
+      "example": "彼女は長い休養の後、芸能界に復帰した。",
+      "example_reading": "かのじょはながいきゅうようのあと、げいのうかいにふっきした。",
+      "example_meaning": "그녀는 긴 휴양 후 연예계에 복귀했다."
     }
   ]
 }
